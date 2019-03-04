@@ -1,0 +1,494 @@
+itemGroup.gorenger=Himitsu Sentai Gorenger
+itemGroup.gokaiger=Kaizoku Sentai Gokaiger
+itemGroup.kyoryuger=Zyuden Sentai Kyoryuger
+itemGroup.kyoryuger_brave=Zyuden Sentai Kyoryuger Brave
+itemGroup.lupinranger=Kaitou Sentai Lupinranger
+itemGroup.patranger=Keisatsu Sentai Patranger
+itemGroup.ryusoulger=Kishiryu Sentai Ryusouger
+
+tile.gorenger_ore.name=Gorenger Ore
+tile.gokaiger_ore.name=Gokaiger Ore
+tile.kyoryuger_ore.name=Kyoryuger Ore
+tile.kyoryuger_brave_ore.name= Kyoryuger Brave Ore
+tile.lupinranger_ore.name=Lupinranger Ore
+tile.patranger_ore.name=Patranger Ore
+tile.ryusoulger_ore.name=Ryusoulger Ore
+
+item.gorenger_star.name=Gorenger Star
+item.blank_ranger_key.name=Blank Ranger Key
+item.empty_zyudenchi.name=Empty Zyudenchi
+item.empty_brave_zyudenchi.name=Empty Brave Zyudenchi
+item.lupinranger_badge.name=Lupinranger Badge
+item.patranger_badge.name=Patranger Badge
+item.blank_ryusoul.name=Blank Ryusoul
+
+item.gorengerhead.name=Gorenger Helmet
+item.gorengertroso.name=Gorenger Chestplate
+item.gorengerlegs.name=Gorenger Leggings
+
+item.gorenger_belt_akarenger.name=Akarenger Belt
+item.gorenger_belt_aorenger.name=Aorenger Belt
+item.gorenger_belt_kirenger.name=Kirenger Belt
+item.gorenger_belt_momorenger.name=Momorenger Belt
+item.gorenger_belt_midorenger.name=Midorenger Belt
+
+item.gorenger_belt_orenjirenger.name=Orenjirenger Belt
+item.gorenger_belt_kurorenger.name=Kurorenger Belt
+item.gorenger_belt_shirorenger.name=Shirorenger Belt
+item.gorenger_belt_gurerenger.name=Gurerenger Belt
+item.gorenger_belt_murasakinorenger.name=Murasakinorenger Belt
+item.gorenger_belt_baiorettorenger.name=Baiorettorenger Belt
+item.gorenger_belt_kasshokurenger.name=Kasshokurenger Belt
+item.gorenger_belt_ginrenger.name=Ginrenger Belt
+item.gorenger_belt_gorudorenger.name=Gorudorenger Belt
+item.gorenger_belt_shianrenger.name=Shianrenger Belt
+
+item.akarenger_star.name=Akarenger Star
+item.aorenger_star.name=Aorenger Star
+item.kirenger_star.name=Kirenger Star
+item.momorenger_star.name=Momorenger Star
+item.midorenger_star.name=Midorenger Star
+
+item.orenjirenger_star.name=Orenjirenger Star
+item.kurorenger_star.name=Kurorenger Star
+item.shirorenger_star.name=Shirorenger Star
+item.gurerenger_star.name=Gurerenger Star
+item.murasakinorenger_star.name=Murasakinorenger Star
+item.baiorettorenger_star.name=Baiorettorenger Star
+item.kasshokurenger_star.name=Kasshokurenger Star
+item.ginrenger_star.name=Ginrenger Star
+item.gorudorenger_star.name=Gorudorenger Star
+item.shianrenger_star.name=Shianrenger Star
+
+item.gokaigerhead.name=Gokaiger Helmet
+item.gokaigertroso.name=Gokaiger Chestplate
+item.gokaigerlegs.name=Gokaiger Leggings
+
+item.mobirate_gokai_red.name=Mobirate (Gokai Red)
+item.mobirate_gokai_blue.name=Mobirate (Gokai Blue)
+item.mobirate_gokai_yellow.name=Mobirate (Gokai Yellow)
+item.mobirate_gokai_green.name=Mobirate (Gokai Green)
+item.mobirate_gokai_pink.name=Mobirate (Gokai Pink)
+
+item.mobirate_gokai_orange.name=Mobirate (Gokai Orange)
+item.mobirate_gokai_black.name=Mobirate (Gokai Black)
+item.mobirate_gokai_white.name=Mobirate (Gokai White)
+item.mobirate_gokai_purple.name=Mobirate (Gokai Purple)
+item.mobirate_gokai_violet.name=Mobirate (Gokai Violet)
+item.mobirate_gokai_gray.name=Mobirate (Gokai Gray)
+item.mobirate_gokai_brown.name=Mobirate (Gokai Brown)
+item.mobirate_gokai_cyan.name=Mobirate (Gokai Cyan)
+
+item.gokaicellular_gokai_silver.name=Gokaicellular (Gokai Silver)
+item.gokaicellular_gokai_gold.name=Gokaicellular (Gokai Gold)
+item.gokaicellular_gokai_dark.name=Gokaicellular (Gokai Dark)
+
+item.gokai_red_ranger_key.name=Gokai Red Key
+item.gokai_blue_ranger_key.name=Gokai Blue Key
+item.gokai_yellow_ranger_key.name=Gokai Yellow Key
+item.gokai_green_ranger_key.name=Gokai Green Key
+item.gokai_pink_ranger_key.name=Gokai Pink Key
+
+item.gokai_orange_ranger_key.name=Gokai Orange Key
+item.gokai_black_ranger_key.name=Gokai Black Key
+item.gokai_white_ranger_key.name=Gokai White Key
+item.gokai_purple_ranger_key.name=Gokai Purple Key
+item.gokai_violet_ranger_key.name=Gokai Violet Key
+item.gokai_gray_ranger_key.name=Gokai Gray Key
+item.gokai_brown_ranger_key.name=Gokai Brown Key
+item.gokai_cyan_ranger_key.name=Gokai Cyan Key
+
+item.gokai_silver_ranger_key.name=Gokai Silver Key
+item.gokai_gold_ranger_key.name=Gokai Gold Key
+item.gokai_dark_ranger_key.name=Gokai Dark Key
+
+item.kyoryugerhead.name=Kyoryuger Helmet
+item.kyoryugertroso.name=Kyoryuger Chestplate
+item.kyoryugerlegs.name=Kyoryuger Leggings
+
+item.gaburevolver_kyoryu_red.name=Gaburevolver (Kyoryu Red)
+item.gaburevolver_kyoryu_black.name=Gaburevolver (Kyoryu Black)
+item.gaburevolver_kyoryu_blue.name=Gaburevolver (Kyoryu Blue)
+item.gaburevolver_kyoryu_green.name=Gaburevolver (Kyoryu Green)
+item.gaburevolver_kyoryu_pink.name=Gaburevolver (Kyoryu Pink)
+
+item.gaburichanger_kyoryu_gold.name=Gaburichanger (Kyoryu Gold)
+
+item.spirit_zyudenchi_kyoryu_cyan.name=Spirit Zyudenchi (Kyoryu Cyan)
+item.gaburevolver_kyoryu_cyan.name=Gaburevolver (Kyoryu Cyan 2)
+item.spirit_zyudenchi_kyoryu_gray.name=Spirit Zyudenchi (Kyoryu Gray)
+item.gaburevolver_kyoryu_gray.name=Gaburevolver (Kyoryu Gray 2)
+item.gaburevolver_kyoryu_violet.name=Gaburevolver (Kyoryu Violet)
+
+item.gigagaburevolver_kyoryu_silver.name=Gigagaburevolver (Kyoryu Silver)
+
+item.gaburevolver_kyoryu_yellow.name=Gaburevolver (Kyoryu Yellow)
+item.gaburevolver_kyoryu_orange.name=Gaburevolver (Kyoryu Orange)
+item.gaburevolver_kyoryu_aqua.name=Gaburevolver (Kyoryu Aqua)
+item.gaburevolver_kyoryu_magenta.name=Gaburevolver (Kyoryu Magenta)
+item.gaburevolver_kyoryu_crimson.name=Gaburevolver (Kyoryu Crimson)
+item.gigagaburevolver_kyoryu_indigo.name=Gigagaburevolver (Kyoryu Indigo)
+item.gaburevolver_kyoryu_vermilion.name=Gaburevolver (Kyoryu Vermilion)
+item.gaburevolver_kyoryu_lavender.name=Gaburevolver (Kyoryu Lavender)
+item.gaburichanger_kyoryu_white.name=Gaburichanger (Kyoryu White)
+item.gaburevolver_kyoryu_limegreen.name=Gaburevolver (Kyoryu Limegreen)
+item.gaburevolver_kyoryu_cobalt.name=Gaburevolver (Kyoryu Cobalt)
+item.gaburevolver_kyoryu_scarlet.name=Gaburevolver (Kyoryu Scarlet)
+item.gaburevolver_kyoryu_lightgray.name=Gaburevolver (Kyoryu Lightgray)
+
+item.gigagaburevolver_kyoryu_neongreen.name=Gigagaburevolver (Kyoryu Neongreen)
+item.gaburevolver_kyoryu_royalblue.name=Gaburevolver (Kyoryu Royalblue)
+item.gaburichanger_kyoryu_lightblue.name=Gaburichanger (Kyoryu Lightblue)
+item.gaburevolver_kyoryu_darkgray.name=Gaburevolver (Kyoryu Darkgray)
+item.gaburevolver_kyoryu_firered.name=Gaburevolver (Kyoryu Firered)
+item.gaburevolver_kyoryu_neonyellow.name=Gaburevolver (Kyoryu Neonyellow)
+item.gaburevolver_kyoryu_brown.name=Gaburevolver (Kyoryu Brown)
+item.gaburevolver_kyoryu_purple.name=Gaburevolver (Kyoryu Purple)
+
+item.gaburevolver_kyoryu_navy.name=Gaburevolver (Kyoryu Navy)
+item.gaburevolver_deathryuger.name=Gaburevolver (Deathryuger)
+
+item.gabutyra_de_carnival.name=Gabutyra De Carnival
+
+item.gaburevolver.name=Gaburevolver
+item.gaburichanger.name=Gaburichanger
+item.gigagaburevolver.name=Gigagaburevolver
+item.minityra.name=Minityra
+item.gaburicarnival.name=GaburiCarnival
+
+item.kyoryu_red_armed_on.name=Kyoryu Red Armed On
+item.kyoryu_black_armed_on.name=Kyoryu Black Armed On
+item.kyoryu_blue_armed_on.name=Kyoryu Blue Armed On
+item.kyoryu_green_armed_on.name=Kyoryu Green Armed On
+item.kyoryu_pink_armed_on.name=Kyoryu Pink Armed On
+
+item.kyoryu_gold_armed_on.name=Kyoryu Gold Armed On
+
+item.samba_carnival.name=Samba Carnival
+item.western_carnival.name=Western Carnival
+item.macho_carnival.name=Macho Carnival
+item.kung_fu_carnival.name=Kung Fu Carnival
+item.special_carnival.name=Special Carnival
+item.tv_maga_carnival.name=TV Maga Carnival
+
+item.gabutyra_zyudenchi.name=Gabutyra Zyudenchi
+item.parasagun_zyudenchi.name=Parasagun Zyudenchi
+item.stegotchi_zyudenchi.name=Stegotchi Zyudenchi
+item.zakutor_zyudenchi.name=Zakutor Zyudenchi
+item.dricera_zyudenchi.name=Dricera Zyudenchi
+
+item.pteragordon_zyudenchi.name=Pteragordon Zyudenchi
+
+item.ankydon_zyudenchi.name=Ankydon Zyudenchi
+item.bunpachy_zyudenchi.name=Bunpachy Zyudenchi
+item.plezuon_zyudenchi.name=Plezuon Zyudenchi
+
+item.bragigas_zyudenchi.name=Bragigas Zyudenchi
+
+item.deinochaser_zyudenchi.name=Deinochaser Zyudenchi
+item.deinosgrander_zyudenchi.name=Deinosgrander Zyudenchi
+item.kentorospiker_zyudenchi.name=Kentorospiker Zyudenchi
+item.stymero_zyudenchi.name=Stymero Zyudenchi
+item.allomerus_zyudenchi.name=Allomerus Zyudenchi
+item.beyonsmo_zyudenchi.name=Beyonsmo Zyudenchi
+item.igeranodon_zyudenchi.name=Igeranodon Zyudenchi
+item.ovirappoo_zyudenchi.name=Ovirappoo Zyudenchi
+item.tuperanda_zyudenchi.name=Tuperanda Zyudenchi
+item.gurumonite_zyudenchi.name=Gurumonite Zyudenchi
+item.archenolon_zyudenchi.name=Archenolon Zyudenchi
+item.pukuptor_zyudenchi.name=Pukuptor Zyudenchi
+item.futabain_zyudenchi.name=Futabain Zyudenchi
+
+item.speedrus_zyudenchi.name=Speedrus Zyudenchi
+item.prisukeos_zyudenchi.name=Prisukeos Zyudenchi
+item.fuwanycto_zyudenchi.name=Fuwanycto Zyudenchi
+item.kachicox_zyudenchi.name=Kachicox Zyudenchi
+item.karateta_zyudenchi.name=Karateta Zyudenchi
+item.taekwondonto_zyudenchi.name=Taekwondonto Zyudenchi
+item.manoki_zyudenchi.name=Manoki Zyudenchi
+item.ichthyogu_zyudenchi.name=Ichthyogu Zyudenchi
+
+item.tobaspino_zyudenchi.name=Tobaspino Zyudenchi
+item.deathryuger_zyudenchi.name=Deathryuger Zyudenchi
+
+item.carnival_zyudenchi.name=Carnival Zyudenchi
+
+item.brave_kyoryugerhead.name=Brave Kyoryuger Helmet
+item.brave_kyoryugertroso.name=Brave Kyoryuger Chestplate
+item.brave_kyoryugerlegs.name=Brave Kyoryuger Leggings
+
+item.gabugaburevolver_brave_kyoryu_red.name=Gabugaburevolver (Brave Kyoryu Red)
+item.gabugaburevolver_brave_kyoryu_black.name=Gabugaburevolver (Brave Kyoryu Black)
+item.gabugaburevolver_brave_kyoryu_blue.name=Gabugaburevolver (Brave Kyoryu Blue)
+item.gabugaburevolver_brave_kyoryu_green.name=Gabugaburevolver (Brave Kyoryu Green)
+item.gabugaburevolver_brave_kyoryu_pink.name=Gabugaburevolver (Brave Kyoryu Pink)
+
+item.gabugaburichanger_brave_kyoryu_gold.name=Gabugaburichanger (Brave Kyoryu Gold)
+
+item.gabugaburevolver_brave_kyoryu_cyan.name=Gabugaburevolver (Brave Kyoryu Cyan)
+item.gabugaburevolver_brave_kyoryu_gray.name=Gabugaburevolver (Brave Kyoryu Gray)
+item.gabugaburevolver_brave_kyoryu_violet.name=Gabugaburevolver (Brave Kyoryu Violet)
+
+item.gigagabugaburevolver_brave_kyoryu_silver.name=Gigagabugaburevolver (Brave Kyoryu Silver)
+
+item.gabugaburevolver_brave_kyoryu_yellow.name=Gabugaburevolver (Brave Kyoryu Yellow)
+item.gabugaburevolver_brave_kyoryu_orange.name=Gabugaburevolver (Brave Kyoryu Orange)
+item.gabugaburevolver_brave_kyoryu_aqua.name=Gabugaburevolver (Brave Kyoryu Aqua)
+item.gabugaburevolver_brave_kyoryu_magenta.name=Gabugaburevolver (Brave Kyoryu Magenta)
+item.gabugaburevolver_brave_kyoryu_crimson.name=Gabugaburevolver (Brave Kyoryu Crimson)
+item.gigagabugaburevolver_brave_kyoryu_indigo.name=Gigagabugaburevolver (Brave Kyoryu Indigo)
+item.gabugaburevolver_brave_kyoryu_vermilion.name=Gabugaburevolver (Brave Kyoryu Vermilion)
+item.gabugaburevolver_brave_kyoryu_lavender.name=Gabugaburevolver (Brave Kyoryu Lavender)
+item.gabugaburichanger_brave_kyoryu_white.name=Gabugaburichanger (Brave Kyoryu White)
+item.gabugaburevolver_brave_kyoryu_limegreen.name=Gabugaburevolver (Brave Kyoryu Limegreen)
+item.gabugaburevolver_brave_kyoryu_cobalt.name=Gabugaburevolver (Brave Kyoryu Cobalt)
+item.gabugaburevolver_brave_kyoryu_scarlet.name=Gabugaburevolver (Brave Kyoryu Scarlet)
+item.gabugaburevolver_brave_kyoryu_lightgray.name=Gabugaburevolver (Brave Kyoryu Lightgray)
+
+item.gigagabugaburevolver_brave_kyoryu_neongreen.name=Gigagabugaburevolver (Brave Kyoryu Neongreen)
+item.gabugaburevolver_brave_kyoryu_royalblue.name=Gabugaburevolver (Brave Kyoryu Royalblue)
+item.gabugaburichanger_brave_kyoryu_lightblue.name=Gabugaburichanger (Brave Kyoryu Lightblue)
+item.gabugaburevolver_brave_kyoryu_darkgray.name=Gabugaburevolver (Brave Kyoryu Darkgray)
+item.gabugaburevolver_brave_kyoryu_firered.name=Gabugaburevolver (Brave Kyoryu Firered)
+item.gabugaburevolver_brave_kyoryu_neonyellow.name=Gabugaburevolver (Brave Kyoryu Neonyellow)
+item.gabugaburevolver_brave_kyoryu_brown.name=Gabugaburevolver (Brave Kyoryu Brown)
+item.gabugaburevolver_brave_kyoryu_purple.name=Gabugaburevolver (Brave Kyoryu Purple)
+
+item.gabugaburevolver_brave_kyoryu_navy.name=Gabugaburevolver (Brave Kyoryu Navy)
+item.gabugaburevolver_brave_deathryuger.name=Gabugaburevolver (Brave Deathryuger)
+
+item.gabugaburevolver.name=Gabugaburevolver
+item.gabugaburichanger.name=Gabugaburichanger
+item.gigagabugaburevolver.name=Gigagabugaburevolver
+
+item.guntyra_zyudenchi.name=Guntyra Zyudenchi
+item.stegonsaw_zyudenchi.name=Stegonsaw Zyudenchi
+item.shovecera_zyudenchi.name=Shovecera Zyudenchi
+item.parasaber_zyudenchi.name=Parasaber Zyudenchi
+item.rapx_zyudenchi.name=Rapx Zyudenchi
+
+item.pteravolt_zyudenchi.name=Pteravolt Zyudenchi
+
+item.lupinhead.name=Lupinranger Helmet
+item.lupintroso.name=Lupinranger Chestplate
+item.lupinlegs.name=Lupinranger Leggings
+
+item.vs_changer_lupin_red.name=VS Changer (Lupin Red)
+item.vs_changer_lupin_blue.name=VS Changer (Lupin BLue)
+item.vs_changer_lupin_yellow.name=VS Changer (Lupin Yellow)
+
+item.vs_changer_lupin_green.name=VS Changer (Lupin Green)
+item.vs_changer_lupin_black.name=VS Changer (Lupin Black)
+item.vs_changer_lupin_white.name=VS Changer (Lupin White)
+item.vs_changer_lupin_crimson.name=VS Changer (Lupin Crimson)
+item.vs_changer_lupin_navy.name=VS Changer (Lupin Navy)
+
+item.vs_changer_lupin_hammer.name=VS Changer (Lupin Hammer)
+item.vs_changer_lupin_jackpot.name=VS Changer (Lupin Jackpot)
+item.vs_changer_lupin_music.name=VS Changer (Lupin Music)
+item.vs_changer_lupin_paint.name=VS Changer (Lupin Paint)
+item.vs_changer_lupin_prism.name=VS Changer (Lupin Prism)
+item.vs_changer_lupin_christmas.name=VS Changer (Lupin Christmas)
+item.vs_changer_lupin_special.name=VS Changer (Lupin Special)
+
+item.vs_changer_lupin_brown.name=VS Changer (Lupin Brown)
+item.vs_changer_lupin_cyan.name=VS Changer (Lupin Cyan)
+item.vs_changer_lupin_gray.name=VS Changer (Lupin Gray)
+item.vs_changer_lupin_orange.name=VS Changer (Lupin Orange)
+item.vs_changer_lupin_pink.name=VS Changer (Lupin Pink)
+item.vs_changer_lupin_purple.name=VS Changer (Lupin Purple)
+item.vs_changer_lupin_violet.name=VS Changer (Lupin Violet)
+
+item.x_changer_lupin_x.name=X Changer (Lupin X)
+item.y_changer_lupin_y.name=Y Changer (Lupin Y)
+item.storm_changer_lupin_fire_storm.name=Storm Changer (Lupin Fire Storm)
+item.prision_changer_lupin_prision_chain.name=Prision Changer (Lupin Prision Chain)
+
+item.vs_changer_lupin_striker.name=VS Changer (Lupin Striker)
+
+item.vs_changer_lupin.name=VS Changer (Lupin)
+item.vs_changer_black_lupin.name=VS Changer Black (Lupin)
+item.vs_changer_red_lupin.name=VS Changer Red (Lupin)
+item.vs_changer_silver.name=VS Changer Silver
+item.lupin_magnum.name=Lupin Magnum
+
+item.lupin_x_changer.name=X Changer (Lupin)
+item.lupin_y_changer.name=Y Changer (Lupin)
+item.lupin_storm_changer.name=Storm Changer (Lupin)
+item.lupin_prision_changer.name=Prision Changer (Lupin)
+
+item.red_dial_fighter.name=Red Dial Fighter
+item.blue_dial_fighter.name=Blue Dial Fighter
+item.yellow_dial_fighter.name=Yellow Dial Fighter
+
+item.cyclone_dial_fighter.name=Cyclone Dial Fighter
+item.scissors_dial_fighter.name=Scissors Dial Fighter
+item.blade_dial_fighter.name=Blade Dial Fighter
+item.magic_dial_fighter.name=Magic Dial Fighter
+item.victory_striker.name=Victory Striker
+
+item.hammer_dial_fighter.name=Hammer Dial Fighter
+item.jackpot_striker.name=Jackpot Striker
+item.music_dial_fighter.name=Music Dial Fighter
+item.paint_dial_fighter.name=Paint Dial Fighter
+item.prism_dial_fighter.name=Prism Dial Fighter
+item.christmas_dial_fighter.name=Christmas Dial Fighter
+item.special_dial_fighter.name=Special Dial Fighter
+
+item.brown_dial_fighter.name=Brown Dial Fighter
+item.cyan_dial_fighter.name=Cyan Dial Fighter
+item.gray_dial_fighter.name=Gray Dial Fighter
+item.orange_dial_fighter.name=Orange Dial Fighter
+item.pink_dial_fighter.name=Pink Dial Fighter
+item.purple_dial_fighter.name=Purple Dial Fighter
+item.violet_dial_fighter.name=Violet Dial Fighter
+
+item.jackpot_striker_lupin_tricolor.name=Jackpot Striker (Lupin Tricolor)
+
+item.x_train_silver.name=X Train Silver
+item.x_train_fire.name=X Train Fire
+item.x_train_chain.name=X Train Chain
+item.y_train_gold.name=Y Train Gold
+
+item.scissors_shield.name=Scissors Shield
+item.blade_boomerang.name=Blade Boomerang
+
+item.goodstriker_lupin_mode.name=Goodstriker (Lupin Mode)
+
+item.patrenhead.name=Patranger Helmet
+item.patrentroso.name=Patranger Chestplate
+item.patrenlegs.name=Patranger Leggings
+
+item.vs_changer_patren_1go.name=VS Changer (Patren 1go)
+item.vs_changer_patren_2go.name=VS Changer (Patren 2go)
+item.vs_changer_patren_3go.name=VS Changer (Patren 3go)
+item.vs_changer_patren_4go.name=VS Changer (Patren 4go)
+item.vs_changer_patren_5go.name=VS Changer (Patren 5go)
+item.vs_changer_patren_6go.name=VS Changer (Patren 6go)
+item.vs_changer_patren_7go.name=VS Changer (Patren 7go)
+item.vs_changer_patren_8go.name=VS Changer (Patren 8go)
+item.vs_changer_patren_9go.name=VS Changer (Patren 9go)
+item.vs_changer_patren_10go.name=VS Changer (Patren 10go)
+item.vs_changer_patren_11go.name=VS Changer (Patren 11go)
+item.vs_changer_patren_12go.name=VS Changer (Patren 12go)
+item.vs_changer_patren_13go.name=VS Changer (Patren 13go)
+item.vs_changer_patren_flash.name=VS Changer (Patren Flash)
+item.vs_changer_patren_dog.name=VS Changer (Patren Dog)
+item.vs_changer_patren_music.name=VS Changer (Patren Music)
+item.vs_changer_patren_cement.name=VS Changer (Patren Cement)
+item.vs_changer_patren_christmas.name=VS Changer (Patren Christmas)
+item.vs_changer_patren_justice.name=VS Changer (Patren Justice)
+
+item.x_changer_patren_x.name=X Changer (Patren X)
+item.y_changer_patren_y.name=Y Changer (Patren Y)
+item.storm_changer_patren_thunder_storm.name=X Changer (Patren Thunder Storm)
+item.prision_changer_patren_prision_jail.name=X Changer (Patren Prision Jail)
+
+item.vs_changer_patren_striker.name=VS Changer (Patren Striker)
+
+item.vs_changer_patren.name=VS Changer (Patren)
+item.vs_changer_black_patren.name=VS Changer Black (Patren)
+item.vs_changer_red_patren.name=VS Changer Red (Patren)
+item.vs_changer_gold.name=VS Changer Gold
+item.patren_magnum.name=Patren Magnum
+
+item.patren_x_changer.name=X Changer (Patren)
+item.patren_storm_changer.name=Storm Changer (Patren)
+item.patren_prision_changer.name=Prision Changer (Patren)
+
+item.trigger_machine_1go.name=Trigger Machine 1go
+item.trigger_machine_2go.name=Trigger Machine 2go
+item.trigger_machine_3go.name=Trigger Machine 3go
+item.trigger_machine_biker.name=Trigger Machine Biker
+item.trigger_machine_crane.name=Trigger Machine Crane
+item.trigger_machine_drill.name=Trigger Machine Drill
+item.trigger_machine_splash.name=Trigger Machine Splash
+item.siren_striker.name=Siren Striker
+item.trigger_machine_flash.name=Trigger Machine Flash
+item.trigger_machine_dog.name=Trigger Machine Dog
+item.trigger_machine_music.name=Trigger Machine Music
+item.trigger_machine_cement.name=Trigger Machine Cement
+item.trigger_machine_christmas.name=Trigger Machine Christmas
+item.justice_striker.name=Justice Striker
+
+item.goodstriker_patren_ugo.name=Goodstriker (Patren Ugo)
+
+item.x_train_gold.name=X Train Gold
+item.x_train_thunder.name=X Train Thunder
+item.x_train_jail.name=X Train Jail
+
+item.goodstriker_patren_mode.name=Goodstriker (Patren Mode)
+
+item.ryusoulhead.name=Ryusoulger Helmet
+item.ryusoultroso.name=Ryusoulger Chestplate
+item.ryusoullegs.name=Ryusoulger Leggings
+
+item.ryusoul_changer_ryusoul_red.name=Ryusoul Changer (Ryusoul Red)
+item.ryusoul_changer_ryusoul_black.name=Ryusoul Changer (Ryusoul Black)
+item.ryusoul_changer_ryusoul_blue.name=Ryusoul Changer (Ryusoul Blue)
+item.ryusoul_changer_ryusoul_green.name=Ryusoul Changer (Ryusoul Green)
+item.ryusoul_changer_ryusoul_pink.name=Ryusoul Changer (Ryusoul Pink)
+
+item.mosa_changer_ryusoul_gold.name=Mosa Changer (Ryusoul Gold)
+
+item.ryusoul_changer_ryusoul_orange.name=Ryusoul Changer (Ryusoul Orange)
+item.ryusoul_changer_ryusoul_yellow.name=Ryusoul Changer (Ryusoul Yellow)
+item.ryusoul_changer_ryusoul_gray.name=Ryusoul Changer (Ryusoul Gray)
+item.ryusoul_changer_ryusoul_violet.name=Ryusoul Changer (Ryusoul Violet)
+item.ryusoul_changer_ryusoul_white.name=Ryusoul Changer (Ryusoul White)
+item.ryusoul_changer_ryusoul_brown.name=Ryusoul Changer (Ryusoul Brown)
+item.ryusoul_changer_ryusoul_purple.name=Ryusoul Changer (Ryusoul Purple)
+item.ryusoul_changer_ryusoul_cyan.name=Ryusoul Changer (Ryusoul Cyan)
+
+item.mosa_changer_ryusoul_silver.name=Mosa Changer (Ryusoul Silver)
+
+item.ryusoul_changer_ryusoul_tsuyo.name=Ryusoul Changer (Ryusoul Tsuyo)
+item.ryusoul_changer_ryusoul_nobi.name=Ryusoul Changer (Ryusoul Nobi)
+item.ryusoul_changer_ryusoul_haya.name=Ryusoul Changer (Ryusoul Haya)
+item.ryusoul_changer_ryusoul_kata.name=Ryusoul Changer (Ryusoul Kata)
+item.ryusoul_changer_ryusoul_migake.name=Ryusoul Changer (Ryusoul Migake)
+item.ryusoul_changer_ryusoul_omo.name=Ryusoul Changer (Ryusoul Omo)
+item.ryusoul_changer_ryusoul_mukimuki.name=Ryusoul Changer (Ryusoul Mukimuki)
+item.ryusoul_changer_ryusoul_fue.name=Ryusoul Changer (Ryusoul Fue)
+item.ryusoul_changer_ryusoul_chiisa.name=Ryusoul Changer (Ryusoul Chiisa)
+item.ryusoul_changer_ryusoul_mie.name=Ryusoul Changer (Ryusoul Mie)
+item.ryusoul_changer_ryusoul_mabushi.name=Ryusoul Changer (Ryusoul Mabushi)
+item.ryusoul_changer_ryusoul_kaware.name=Ryusoul Changer (Ryusoul Kaware)
+item.ryusoul_changer_ryusoul_mystery.name=Ryusoul Changer (Ryusoul Mystery)
+
+item.empty_ryusoul_changer.name=Ryusoul Changer (Empty)
+
+item.ryusoul_red.name=Ryusoul Red
+item.ryusoul_black.name=Ryusoul Black
+item.ryusoul_blue.name=Ryusoul Blue
+item.ryusoul_green.name=Ryusoul Green
+item.ryusoul_pink.name=Ryusoul Pink
+
+item.ryusoul_gold.name=Ryusoul Gold
+
+item.ryusoul_orange.name=Ryusoul Orange
+item.ryusoul_yellow.name=Ryusoul Yellow
+item.ryusoul_gray.name=Ryusoul Gray
+item.ryusoul_violet.name=Ryusoul Violet
+item.ryusoul_white.name=Ryusoul White
+item.ryusoul_brown.name=Ryusoul Brown
+item.ryusoul_purple.name=Ryusoul Purple
+item.ryusoul_cyan.name=Ryusoul Cyan
+
+item.ryusoul_silver.name=Ryusoul Silver
+
+item.tsuyosoul.name=TsuyoSoul
+item.nobisoul.name=NobiSoul
+item.hayasoul.name=HayaSoul
+item.katasoul.name=KataSoul
+item.migakesoul.name=MigakeSoul
+item.omosoul.name=OmoSoul
+item.mukimukisoul.name=MukimukiSoul
+item.fuesoul.name=FueSoul
+item.chiisasoul.name=ChiisaSoul
+item.miesoul.name=MieSoul
+item.mabushisoul.name=MabushiSoul
+item.kawaresoul.name=KawareSoul
+item.mysterysoul.name=MysterySoul
+
+item.ryusoul_ken.name=Ryusoul Ken
