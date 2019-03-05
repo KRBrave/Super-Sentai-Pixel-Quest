@@ -421,6 +421,7 @@ public class RiderItems {
 	public static Item vs_changer_patren_1go = new item_vs_changer("vs_changer_patren_1go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_1go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item vs_changer_patren_2go = new item_vs_changer("vs_changer_patren_2go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_2go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item vs_changer_patren_3go = new item_vs_changer("vs_changer_patren_3go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_3go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	
 	public static Item vs_changer_patren_4go = new item_vs_changer("vs_changer_patren_4go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_4go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item vs_changer_patren_5go = new item_vs_changer("vs_changer_patren_5go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_5go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item vs_changer_patren_6go = new item_vs_changer("vs_changer_patren_6go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_6go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
