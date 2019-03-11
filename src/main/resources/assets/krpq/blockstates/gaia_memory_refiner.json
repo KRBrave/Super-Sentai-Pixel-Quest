@@ -1,8 +1,0 @@
-{
-    "variants":{   
-    "facing=north": { "model": "krpq:gaia_memory_refiner" },
-    "facing=south": { "model": "krpq:gaia_memory_refiner", "y": 180 },
-    "facing=west": { "model": "krpq:gaia_memory_refiner", "y": 270 },
-    "facing=east": { "model": "krpq:gaia_memory_refiner", "y": 90 }
-  }
- }

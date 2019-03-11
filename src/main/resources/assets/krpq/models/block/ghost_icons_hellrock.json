@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "krpq:blocks/ghost_icons_hellrock"
-    }
-}
