@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "krpq:items/prism_bicker_charge"
+    }
+}

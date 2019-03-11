@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "krpq:monitor" },
+        "facing=south": { "model": "krpq:monitor", "y": 180 },
+        "facing=west":  { "model": "krpq:monitor", "y": 270 },
+        "facing=east":  { "model": "krpq:monitor", "y": 90 }
+    }
+}

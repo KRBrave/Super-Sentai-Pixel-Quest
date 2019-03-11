@@ -1,0 +1,9 @@
+{
+    "variants":{
+     "facing=north": { "model": "krpq:pandorabox" },
+        "facing=south": { "model": "krpq:pandorabox", "y": 180 },
+        "facing=west":  { "model": "krpq:pandorabox", "y": 270 },
+        "facing=east":  { "model": "krpq:pandorabox", "y": 90 }
+ 
+  }
+ }

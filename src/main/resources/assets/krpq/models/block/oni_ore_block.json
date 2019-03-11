@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "krpq:blocks/oni_ore_block"
+    }
+}

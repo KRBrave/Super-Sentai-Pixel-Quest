@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "krpq:blocks/evolt_block"
+    }
+}
