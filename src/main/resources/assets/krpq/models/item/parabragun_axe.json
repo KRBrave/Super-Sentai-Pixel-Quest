@@ -1,0 +1,15 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "krpq:items/parabragun_axe"
+    },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "krpq:item/parabragun_gun"
+        }
+    ]
+}

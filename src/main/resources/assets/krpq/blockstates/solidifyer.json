@@ -1,0 +1,8 @@
+{
+    "variants":{   
+    "facing=north": { "model": "krpq:solidifyer" },
+    "facing=south": { "model": "krpq:solidifyer", "y": 180 },
+    "facing=west": { "model": "krpq:solidifyer", "y": 270 },
+    "facing=east": { "model": "krpq:solidifyer", "y": 90 }
+  }
+ }

@@ -1,0 +1,6 @@
+{
+    "parent": "builtin/generated",
+    "textures": {
+        "layer0": "krpq:items/super_taka_ooodriver"
+    }
+}
