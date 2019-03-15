@@ -2806,6 +2806,8 @@ public class RiderItems {
 
 	public static Item yurusen_gamma_icon = new Item_ore("yurusen_gamma_icon").setCreativeTab(Tabs.tabghost);
 	public static Item sister_gamma_icon = new Item_ore("sister_gamma_icon").setCreativeTab(Tabs.tabghost);
+	
+	public static Item grateful_mugen_boost_icon = new Item_ghost_Icons(0, 65, 1,"grateful_mugen_boost_icon").setCreativeTab(Tabs.tabghost);
 
 	// Ex-Aid
 	public static Item gashacon_breaker = new ItemBaseSword("gashacon_breaker", Tabs.gashacon_breaker)

@@ -74,6 +74,16 @@ public class item_ghost_armor2 extends ItemArmor implements IHasModel
 							return Refercence.MODID+":textures/armor/"+ CoreNamenecrom[item_ghostdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"1")]+".png";
 						
 						
+					}else if (belt.RIDER == "ghost_grateful"){
+						if (item_ghostdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="grateful_mugen_boost")
+						{
+							return Refercence.MODID+":textures/armor/ghost_" + item_ghostdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) + "_1.png";
+						}
+						else
+						{
+							return Refercence.MODID+":textures/armor/"+ belt.RIDER +".png";
+						}
+					
 					}else{
 						
 							return Refercence.MODID+":textures/armor/"+ belt.RIDER +".png";

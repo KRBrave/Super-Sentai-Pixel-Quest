@@ -214,8 +214,10 @@ public class BipedLockseed extends ModelBiped
 
 				}else if (stack.getItem() instanceof item_ghostdriver){
 					if (stack.getItem()==RiderItems.eyecon_driver_g){
-
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/grateful_damashii_2.png"));
+						if(item_ghostdriver.get_lock(stack)!="grateful_mugen_boost")
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/grateful_damashii_2.png"));
+						}
 
 					}
 				}else if (stack.getItem() instanceof item_zikudriver){
