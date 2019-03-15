@@ -14,7 +14,7 @@ import javax.annotation.Nonnull;
 
 import krpq.RiderItems;
 import krpq.item.item_panel;
-import krpq.item.build.Item_full_bottle;
+import krpq.item.Build.Item_full_bottle;
 
 import java.util.function.Supplier;
 
