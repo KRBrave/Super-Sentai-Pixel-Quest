@@ -113,6 +113,10 @@ import krpq.item.ryuki.Item_vent;
 import krpq.item.ryuki.item_ryukiarmor;
 import krpq.item.ryuki.item_ryukiarmor2;
 import krpq.item.ryuki.item_ryukidriver;
+import krpq.item.shinobi.item_shinobi_armor;
+import krpq.item.shinobi.item_shinobi_armor2;
+import krpq.item.shinobi.item_shinobi_changer;
+import krpq.item.shinobi.item_shinobi_medal;
 import krpq.item.wizard.Item_wizard_ring;
 import krpq.item.wizard.Item_wizard_rings_efts;
 import krpq.item.wizard.item_wizardarmor;
@@ -320,6 +324,10 @@ public class RiderItems {
 	public static Item blank_miridewatch = new Item_ore("blank_miridewatch").setCreativeTab(Tabs.tabzi_o);
 	public static Block watch_hellrock = new ore_block("watch_hellrock", Material.ROCK, blank_miridewatch, 2)
 			.setHardness(9.9F).setCreativeTab(Tabs.tabzi_o);
+	
+	public static Item shinobi_changer_blank = new Item_ore("shinobi_changer_blank").setCreativeTab(Tabs.tabShinobi);
+	public static Block shinobi_ore = new ore_block("shinobi_ore", Material.ROCK, shinobi_changer_blank, 2)
+			.setHardness(9.9F).setCreativeTab(Tabs.tabShinobi);
 
 	public static Item amazon_cell_vial = new Item_ore("amazon_cell_vial").setCreativeTab(Tabs.tabamazons);
 	public static Block amazon_cell_block = new ore_block("amazon_cell_block", Material.ROCK, amazon_cell_vial, 2)
@@ -3696,7 +3704,29 @@ public static Item mic_full_bottle = new Item_full_bottle(11, "1", "mic_full_bot
 	public static Item ziku_driver_genm = new Item_ore("ziku_driver_genm");
 
 	public static Item oma_zi_o_cape = new Item_ore("oma_zi_o_cape");
+	
+	//Shinobi
+	public static Item shinobi_head = new item_shinobi_armor("shinobi_head", ArmorMaterial.DIAMOND, 4,
+			EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabShinobi);
+	public static Item shinobi_torso = new item_shinobi_armor2("shinobi_torso", ArmorMaterial.DIAMOND, 4,
+			EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabShinobi);
+	public static Item shinobi_legs = new item_shinobi_armor2("shinobi_legs", ArmorMaterial.DIAMOND, 4,
+			EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabShinobi);
 
+	public static Item shinobi_changer = new item_shinobi_changer("shinobi_changer", ArmorMaterial.DIAMOND, 4,
+			"shinobi", 0).setMaxStackSize(1).setCreativeTab(Tabs.tabShinobi);
+	
+	public static Item shinobi_medal = new item_shinobi_medal(0, "shinobi_medal").setCreativeTab(Tabs.tabShinobi);
+	public static Item shinobi_spin_shuriken = new item_shinobi_medal(0, "shinobi_spin_shuriken").setCreativeTab(Tabs.tabShinobi);
+	public static Item shinobi_spin_sword = new item_shinobi_medal(1, "shinobi_spin_sword").setCreativeTab(Tabs.tabShinobi);
+	public static Item shinobi_spin_stealth = new item_shinobi_medal(2, "shinobi_spin_stealth").setCreativeTab(Tabs.tabShinobi);
+	public static Item shinobi_spin_scythe = new item_shinobi_medal(3, "shinobi_spin_scythe").setCreativeTab(Tabs.tabShinobi);
+	public static Item shinobi_steel_medal = new item_shinobi_medal(4, "shinobi_steel_medal").setCreativeTab(Tabs.tabShinobi);
+	public static Item shinobi_strength_medal = new item_shinobi_medal(5, "shinobi_strength_medal").setCreativeTab(Tabs.tabShinobi);
+	public static Item shinobi_scar_medal = new item_shinobi_medal(6, "shinobi_scar_medal").setCreativeTab(Tabs.tabShinobi);
+	public static Item shinobi_saikou_whistle = new item_shinobi_medal(7, "shinobi_saikou_whistle").setCreativeTab(Tabs.tabShinobi);
+	
+	//Amazons
 	public static Item amazonshead = new item_amazonsarmor("amazonshead", ArmorMaterial.DIAMOND, 4,
 			EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabamazons);
 	public static Item amazonstroso = new item_amazonsarmor2("amazonstroso", ArmorMaterial.DIAMOND, 4,
