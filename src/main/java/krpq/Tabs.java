@@ -315,6 +315,12 @@ public class Tabs {
 			return new ItemStack(RiderItems.zi_ohead);
 		}
 	};
+	public static CreativeTabs tabShinobi = new CreativeTabs("tabShinobi") {
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(RiderItems.shinobi_head);
+		}
+	};
 	public static CreativeTabs tabamazons = new CreativeTabs("tabamazons") {
 		@Override
 		public ItemStack getTabIconItem() {

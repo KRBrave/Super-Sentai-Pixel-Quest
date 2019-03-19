@@ -12,6 +12,7 @@ import krpq.RiderItems;
 import krpq.item.Ex_Aid.item_ex_aiddriver;
 import krpq.item.gaim.item_Gaimdriver;
 import krpq.item.ghost.item_ghostdriver;
+import krpq.item.shinobi.item_shinobi_changer;
 import krpq.item.zi_o.item_zikudriver;
 import krpq.util.Refercence;
 import net.minecraft.client.Minecraft;
@@ -199,6 +200,8 @@ public class BipedLockseed extends ModelBiped
 
 		if (entity instanceof  EntityLivingBase){
 			ItemStack stack  =   ((EntityLivingBase) entity).getItemStackFromSlot(EntityEquipmentSlot.FEET);
+			
+			EntityLivingBase player = ((EntityLivingBase)entity);
 
 			if (stack!=null){
 				if (stack.getItem() instanceof item_Gaimdriver){
@@ -231,6 +234,11 @@ public class BipedLockseed extends ModelBiped
 				
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_ex_aiddriver.get_lock(stack) +"_2.png"));
 				
+				}
+				else if (stack.getItem() instanceof item_shinobi_changer) {
+					String rider = ((item_shinobi_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+					
+					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+item_shinobi_changer.get_lock(stack)+"_2.png"));
 				}
 			}
 		}
