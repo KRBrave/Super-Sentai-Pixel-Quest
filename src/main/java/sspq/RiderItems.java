@@ -423,21 +423,25 @@ public class RiderItems {
 	public static Item vs_changer_patren_3go = new item_vs_changer("vs_changer_patren_3go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_3go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	
 	public static Item vs_changer_patren_4go = new item_vs_changer("vs_changer_patren_4go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_4go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
-	public static Item vs_changer_patren_5go = new item_vs_changer("vs_changer_patren_5go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_5go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
-	public static Item vs_changer_patren_6go = new item_vs_changer("vs_changer_patren_6go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_6go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
-	public static Item vs_changer_patren_7go = new item_vs_changer("vs_changer_patren_7go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_7go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	public static Item vs_changer_patren_5go = new item_vs_changer("vs_changer_patren_5go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_5go", "patranger_crane").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	public static Item vs_changer_patren_6go = new item_vs_changer("vs_changer_patren_6go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_6go", "patranger_splash").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	public static Item vs_changer_patren_7go = new item_vs_changer("vs_changer_patren_7go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_7go", "patranger_siren").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	public static Item vs_changer_patren_14go = new item_vs_changer("vs_changer_patren_14go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_14go", "lupin_crimson_victory").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	
+	public static Item vs_changer_patren_cement = new item_vs_changer("vs_changer_patren_cement","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_cement").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	public static Item vs_changer_patren_justice = new item_vs_changer("vs_changer_patren_justice","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_justice").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	public static Item vs_changer_patren_music = new item_vs_changer("vs_changer_patren_music","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_music").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	public static Item vs_changer_patren_dog = new item_vs_changer("vs_changer_patren_dog","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_dog").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	public static Item vs_changer_patren_flash = new item_vs_changer("vs_changer_patren_flash","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_flash").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	public static Item vs_changer_patren_christmas = new item_vs_changer("vs_changer_patren_christmas","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_christmas").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	public static Item vs_changer_patren_special = new item_vs_changer("vs_changer_patren_special","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_special").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	
 	public static Item vs_changer_patren_8go = new item_vs_changer("vs_changer_patren_8go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_8go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item vs_changer_patren_9go = new item_vs_changer("vs_changer_patren_9go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_9go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item vs_changer_patren_10go = new item_vs_changer("vs_changer_patren_10go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_10go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item vs_changer_patren_11go = new item_vs_changer("vs_changer_patren_11go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_11go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item vs_changer_patren_12go = new item_vs_changer("vs_changer_patren_12go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_12go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item vs_changer_patren_13go = new item_vs_changer("vs_changer_patren_13go","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_13go").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
-	public static Item vs_changer_patren_flash = new item_vs_changer("vs_changer_patren_flash","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_flash").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
-	public static Item vs_changer_patren_dog = new item_vs_changer("vs_changer_patren_dog","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_dog").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
-	public static Item vs_changer_patren_music = new item_vs_changer("vs_changer_patren_music","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_music").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
-	public static Item vs_changer_patren_cement = new item_vs_changer("vs_changer_patren_cement","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_cement").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
-	public static Item vs_changer_patren_christmas = new item_vs_changer("vs_changer_patren_christmas","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_christmas").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
-	public static Item vs_changer_patren_justice = new item_vs_changer("vs_changer_patren_justice","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_justice").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 			
 	public static Item x_changer_patren_x = new item_vs_changer("x_changer_patren_x","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_x").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item y_changer_patren_y = new item_vs_changer("y_changer_patren_y","patranger",1, ArmorMaterial.DIAMOND, 4,"patren_y").setMaxStackSize(1).setCreativeTab(Tabs.patranger);
@@ -455,29 +459,42 @@ public class RiderItems {
 	public static Item patren_x_changer = new Item_gun("patren_x_changer",Tabs.patren_x_changer).setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item patren_storm_changer = new Item_gun("patren_storm_changer",Tabs.patren_storm_changer).setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	public static Item patren_prision_changer = new Item_gun("patren_prision_changer",Tabs.patren_prision_changer).setMaxStackSize(1).setCreativeTab(Tabs.patranger);
+	public static Item patren_y_changer = new Item_gun("patren_y_changer",Tabs.patren_x_changer).setMaxStackSize(1).setCreativeTab(Tabs.patranger);
 	
 	public static Item trigger_machine_1go= new item_lupin_collection("trigger_machine_1go", 0, 0,"patranger",1).setCreativeTab(Tabs.patranger);
 	public static Item trigger_machine_2go= new item_lupin_collection("trigger_machine_2go", 0, 0,"patranger",2).setCreativeTab(Tabs.patranger);
 	public static Item trigger_machine_3go= new item_lupin_collection("trigger_machine_3go", 0, 0,"patranger",3).setCreativeTab(Tabs.patranger);
+	
 	public static Item trigger_machine_biker= new item_lupin_collection("trigger_machine_biker", 0, 0,"patranger",4).setCreativeTab(Tabs.patranger);
 	public static Item trigger_machine_crane= new item_lupin_collection("trigger_machine_crane", 0, 2,"patranger",5).setCreativeTab(Tabs.patranger);
 	public static Item trigger_machine_drill= new item_lupin_collection("trigger_machine_drill", 0, 2,"patranger",5).setCreativeTab(Tabs.patranger);
 	public static Item trigger_machine_splash= new item_lupin_collection("trigger_machine_splash", 0, 4,"patranger",6).setCreativeTab(Tabs.patranger);
 	public static Item siren_striker= new item_lupin_collection("siren_striker", 0, 6,"patranger",7).setCreativeTab(Tabs.patranger);
-	public static Item trigger_machine_flash= new item_lupin_collection("trigger_machine_flash", 0, 0,"patranger",14).setCreativeTab(Tabs.patranger);
-	public static Item trigger_machine_dog= new item_lupin_collection("trigger_machine_dog", 0, 0,"patranger",15).setCreativeTab(Tabs.patranger);
-	public static Item trigger_machine_music= new item_lupin_collection("trigger_machine_music", 0, 0,"patranger",16).setCreativeTab(Tabs.patranger);
-	public static Item trigger_machine_cement= new item_lupin_collection("trigger_machine_cement", 0, 0,"patranger",17).setCreativeTab(Tabs.patranger);
-	public static Item trigger_machine_christmas= new item_lupin_collection("trigger_machine_christmas", 0, 0,"patranger",18).setCreativeTab(Tabs.patranger);
-	public static Item justice_striker= new item_lupin_collection("justice_striker", 0, 0,"patranger",19).setCreativeTab(Tabs.patranger);
+	
+	public static Item trigger_machine_cement= new item_lupin_collection("trigger_machine_cement", 0, 0,"patranger",8).setCreativeTab(Tabs.patranger);
+	public static Item justice_striker= new item_lupin_collection("justice_striker", 0, 0,"patranger",9).setCreativeTab(Tabs.patranger);
+	public static Item trigger_machine_music= new item_lupin_collection("trigger_machine_music", 0, 0,"patranger",10).setCreativeTab(Tabs.patranger);
+	public static Item trigger_machine_dog= new item_lupin_collection("trigger_machine_dog", 0, 0,"patranger",11).setCreativeTab(Tabs.patranger);
+	public static Item trigger_machine_flash= new item_lupin_collection("trigger_machine_flash", 0, 0,"patranger",12).setCreativeTab(Tabs.patranger);
+	public static Item trigger_machine_christmas= new item_lupin_collection("trigger_machine_christmas", 0, 0,"patranger",13).setCreativeTab(Tabs.patranger);
+	public static Item trigger_machine_special= new item_lupin_collection("trigger_machine_special", 0, 0,"patranger",14).setCreativeTab(Tabs.patranger);
+	
+	public static Item trigger_machine_8go=new item_lupin_collection("trigger_machine_8go", 0, 0,"patranger",15).setCreativeTab(Tabs.patranger);
+	public static Item trigger_machine_9go=new item_lupin_collection("trigger_machine_9go", 0, 0,"patranger",16).setCreativeTab(Tabs.patranger);
+	public static Item trigger_machine_10go=new item_lupin_collection("trigger_machine_10go", 0, 0,"patranger",17).setCreativeTab(Tabs.patranger);
+	public static Item trigger_machine_11go=new item_lupin_collection("trigger_machine_11go", 0, 0,"patranger",18).setCreativeTab(Tabs.patranger);
+	public static Item trigger_machine_12go=new item_lupin_collection("trigger_machine_12go", 0, 0,"patranger",19).setCreativeTab(Tabs.patranger);
+	public static Item trigger_machine_13go=new item_lupin_collection("trigger_machine_13go", 0, 0,"patranger",20).setCreativeTab(Tabs.patranger);
+	public static Item trigger_machine_15go=new item_lupin_collection("trigger_machine_15go", 0, 0,"patranger",21).setCreativeTab(Tabs.patranger);
 	
 	public static Item goodstriker_patren_ugo= new item_lupin_collection("goodstriker_patren_ugo", 0, 1,"patranger",1).setCreativeTab(Tabs.patranger);
 	
-	public static Item x_train_gold= new item_lupin_collection("x_train_gold", 0, 0,"patranger",20).setCreativeTab(Tabs.patranger);
-	public static Item x_train_thunder= new item_lupin_collection("x_train_thunder", 0, 0,"patranger",22).setCreativeTab(Tabs.patranger);
-	public static Item x_train_jail= new item_lupin_collection("x_train_jail", 0, 0,"patranger",23).setCreativeTab(Tabs.patranger);
+	public static Item x_train_gold= new item_lupin_collection("x_train_gold", 0, 0,"patranger",22).setCreativeTab(Tabs.patranger);
+	public static Item x_train_thunder= new item_lupin_collection("x_train_thunder", 0, 0,"patranger",23).setCreativeTab(Tabs.patranger);
+	public static Item x_train_jail= new item_lupin_collection("x_train_jail", 0, 0,"patranger",24).setCreativeTab(Tabs.patranger);
+	public static Item y_train_silver= new item_lupin_collection("y_train_silver", 0, 0,"patranger",25).setCreativeTab(Tabs.patranger);
 	
-	public static Item goodstriker_patren_mode= new item_lupin_collection("goodstriker_patren_mode", 0, 0,"patranger",24).setCreativeTab(Tabs.patranger);
+	public static Item goodstriker_patren_mode= new item_lupin_collection("goodstriker_patren_mode", 0, 0,"patranger",26).setCreativeTab(Tabs.patranger);
 	
 	public static Item ryusoulhead = new item_ryusoulger_armor("ryusoulhead","ryusoulger", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.ryusoulger);
 	public static Item ryusoultroso = new item_ryusoulger_armor2("ryusoultroso","ryusoulger", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.ryusoulger);

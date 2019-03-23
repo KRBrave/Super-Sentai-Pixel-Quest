@@ -2,6 +2,6 @@
   "_comment": "Generated using MiningMark48's JSON Generator.",
   "parent": "item/handheld",
   "textures": {
-    "layer0": "sspq:items/vs_changer_black"
+    "layer0": "sspq:items/vs_changer_patren_8go"
   }
 }
