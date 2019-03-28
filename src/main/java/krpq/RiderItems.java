@@ -271,7 +271,7 @@ public class RiderItems {
 	public static Block hellwizardgemblock = new ore_block("hellwizardgemblock", Material.ROCK, wizardgem2, 3)
 			.setHardness(9.9F).setCreativeTab(Tabs.tabwizard);
 
-	public static Item himawari_lockseed = new Item_ore("himawari_lockseed").setCreativeTab(Tabs.tabGaim);
+	public static Item himawari_lockseed = new Item_lockseed(1, 66, "himawari_lockseed").setCreativeTab(Tabs.tabGaim);
 	public static Block himawari_lockseedblock = new ore_block("himawari_lockseedblock", Material.ROCK,
 			himawari_lockseed, 2).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabGaim);
 
@@ -2199,6 +2199,9 @@ public class RiderItems {
 			.setCreativeTab(Tabs.tabGaim);
 	public static Item maja_yomimaru = new ItemBaseSword("maja_yomimaru", Tabs.yomimaru).setMaxStackSize(1)
 			.setCreativeTab(Tabs.tabGaim);
+	
+	public static Item tangomaru = new ItemBaseSword("tangomaru", Tabs.tangomaru).setMaxStackSize(1)
+			.setCreativeTab(Tabs.tabGaim);
 
 	public static Item Gaimhead = new item_Gaimarmor3("gaimhead", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD)
 			.setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
@@ -2207,6 +2210,7 @@ public class RiderItems {
 	public static Item Gaimlegs = new item_Gaimarmor2("gaimlegs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS)
 			.setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 
+	public static Item sengoku_driver_himawari = new Item_ore("sengoku_driver_himawari");
 	public static Item sengoku_driver_matsubokkuri = new Item_ore("sengoku_driver_matsubokkuri");
 	public static Item sengoku_driver_kurumi = new Item_ore("sengoku_driver_kurumi");
 	public static Item sengoku_driver_donguri = new Item_ore("sengoku_driver_donguri");
@@ -2294,6 +2298,10 @@ public class RiderItems {
 	public static Item sengoku_driver_zangetsu_kachidoki = new Item_ore("sengoku_driver_zangetsu_kachidoki");
 	public static Item zangetsu_kachidoki_lockseed = new Item_lockseed(3, 65, "zangetsu_kachidoki_lockseed")
 			.setCreativeTab(Tabs.tabGaim);
+	
+	public static Item sengoku_driver_ryugen_kachidoki = new Item_ore("sengoku_driver_ryugen_kachidoki");
+	public static Item ryugen_kachidoki_lockseed = new Item_lockseed(3, 67, "ryugen_kachidoki_lockseed")
+			.setCreativeTab(Tabs.tabGaim);
 
 	public static Item sengoku_driver_jinba_black = new Item_ore("sengoku_driver_jinba_black");
 	public static Item dark_orange_lockseed = new Item_lockseed(3, 33, "dark_orange_lockseed")
@@ -2308,6 +2316,14 @@ public class RiderItems {
 
 	public static Item sengoku_driver_natsumikan = new Item_ore("sengoku_driver_natsumikan");
 	public static Item natsumikan_lockseed = new Item_lockseed(1, 63, "natsumikan_lockseed")
+			.setCreativeTab(Tabs.tabGaim);
+	
+	public static Item sengoku_driver_tango = new Item_ore("sengoku_driver_tango");
+	public static Item tango_lockseed = new Item_lockseed(1, 68, "tango_lockseed")
+			.setCreativeTab(Tabs.tabGaim);
+	
+	public static Item sengoku_driver_midori_budou = new Item_ore("sengoku_driver_midori_budou");
+	public static Item midori_budou_lockseed = new Item_lockseed(1, 69, "midori_budou_lockseed")
 			.setCreativeTab(Tabs.tabGaim);
 
 	public static Item sengoku_driver_drive = new Item_ore("sengoku_driver_drive");
@@ -2391,6 +2407,18 @@ public class RiderItems {
 			"barvo", "durian_arms", 0, sengoku_driver_durian).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 	public static Item sengoku_driver_knuckle = new item_Gaimdriver("sengoku_driver_knuckle", ArmorMaterial.DIAMOND, 4,
 			3, "knuckle", "kurumi_arms", 0, sengoku_driver_kurumi).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+	public static Item sengoku_driver_togetta = new item_Gaimdriver("sengoku_driver_togetta", ArmorMaterial.DIAMOND, 4,
+			3, "togetta", "pine_arms", 0, sengoku_driver_pine).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+	public static Item sengoku_driver_amai = new item_Gaimdriver("sengoku_driver_amai", ArmorMaterial.DIAMOND, 4,
+			3, "amai", "ichigo_arms", 0, sengoku_driver_ichigo).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+	public static Item sengoku_driver_daiutanai = new item_Gaimdriver("sengoku_driver_daiutanai", ArmorMaterial.DIAMOND, 4,
+			3, "daiutanai", "suika_arms", 0, sengoku_driver_suika).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+	public static Item sengoku_driver_gladiator = new item_Gaimdriver("sengoku_driver_gladiator", ArmorMaterial.DIAMOND, 4,
+			3, "gladiator", "mango_arms", 0, sengoku_driver_mango).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+	public static Item sengoku_driver_geki = new item_Gaimdriver("sengoku_driver_geki", ArmorMaterial.DIAMOND, 4,
+			3, "geki", "kiwi_arms", 0, sengoku_driver_kiwi).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+	public static Item sengoku_driver_shido = new item_Gaimdriver("sengoku_driver_shido", ArmorMaterial.DIAMOND, 4, 3,
+			"shido", "himawari_arms", 0, sengoku_driver_himawari).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 	public static Item sengoku_driver_bujin_gaim = new item_Gaimdriver("sengoku_driver_bujin_gaim",
 			ArmorMaterial.DIAMOND, 4, 3, "bujin_gaim", "blood_orange_arms", 0, sengoku_driver_blood_orange)
 					.setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
@@ -2762,6 +2790,9 @@ public class RiderItems {
 			.setCreativeTab(Tabs.tabghost);
 	public static Item shinsengumi_icon = new Item_ghost_Icons(0, 40, 1, "shinsengumi_icon")
 			.setCreativeTab(Tabs.tabghost);
+	
+	public static Item fabre_icon = new Item_ghost_Icons(0, 66, 1, "fabre_icon").setCreativeTab(Tabs.tabghost);
+	public static Item geronimo_icon = new Item_ghost_Icons(0, 67, 1, "geronimo_icon").setCreativeTab(Tabs.tabghost);
 
 	public static Item showa_ghost_icon = new Item_ghost_Icons(0, 43, 1, "showa_ghost_icon")
 			.setCreativeTab(Tabs.tabghost);

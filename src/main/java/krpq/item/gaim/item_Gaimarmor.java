@@ -64,6 +64,9 @@ public class item_Gaimarmor extends ItemArmor implements IHasModel
 						if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="yomotsu_heguri_arms"){
 						
 							return Refercence.MODID+":textures/armor/"+ "ryugen_yomi" +".png";
+						}else	if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="ryugen_kachidoki_arms"){
+
+							return Refercence.MODID+":textures/armor/"+ "ryugen_kachidoki" +".png";
 						}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="jimbar_dragon_arms"){
 
 							return Refercence.MODID+":textures/armor/"+ "ryugen_jimber" +".png";

@@ -155,6 +155,8 @@ public class Tabs {
 			22);
 	public static ToolMaterial suika_sojinto_baron_ver = new EnumHelper().addToolMaterial("suika_sojinto", 10, 6000,
 			12.0F, 8.0F, 22);
+	
+	public static ToolMaterial tangomaru = new EnumHelper().addToolMaterial("tangomaru", 10, 4000, 12.0F, 5.0F, 22);
 
 	public static ToolMaterial gan_gun_saber_blade = new EnumHelper().addToolMaterial("gan_gun_saber_blade", 10, 3500,
 			12.0F, 5.0F, 22);
