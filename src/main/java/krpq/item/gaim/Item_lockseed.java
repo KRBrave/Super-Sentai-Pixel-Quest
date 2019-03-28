@@ -143,6 +143,12 @@ public class Item_lockseed extends Item implements IHasModel
 
 					}else if (num == 3){
 
+						if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== RiderItems.sengoku_driver_ryugen){
+							if (ARMS[num2] == "ryugen_kachidoki_arms"){
+								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2, "1");
+								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+							}
+						}
 						if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== RiderItems.sengoku_driver_zangetsu){
 							if (ARMS[num2] == "zangetsu_kachidoki_arms"){
 								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2, "1");

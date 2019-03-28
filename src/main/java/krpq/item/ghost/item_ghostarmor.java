@@ -5,6 +5,7 @@ import javax.annotation.Nullable;
 
 import krpq.TokuCraft_core;
 import krpq.item.gaim.item_Gaimarmor;
+import krpq.item.gaim.item_Gaimdriver;
 import krpq.model.tokuArmorModel;
 import krpq.util.IHasModel;
 import krpq.util.Refercence;
@@ -122,19 +123,48 @@ public class item_ghostarmor extends ItemArmor implements IHasModel
 			{
 				tokuArmorModel armorModel = new tokuArmorModel();
 
-				
-				armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.CHEST;
-				armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.CHEST;
-				armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.CHEST;
-				
-				armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
-				armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
-				
-				armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.LEGS;
-				
-				armorModel.bipedHead2.showModel = slot == EntityEquipmentSlot.HEAD;
-				armorModel.bipedHeadwear2.showModel = slot == EntityEquipmentSlot.HEAD;
+				if (living instanceof  EntityLivingBase)
+				{
+					ItemStack istack  =   ((EntityLivingBase) living).getItemStackFromSlot(EntityEquipmentSlot.FEET);
+					
+					EntityLivingBase player = ((EntityLivingBase)living);
 
+					if (istack!=null)
+					{
+						if (istack.getItem() instanceof item_ghostdriver)
+						{
+							if (item_ghostdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="grateful_mugen_boost")
+							{
+								armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.LEGS;
+								armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.CHEST;
+								armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.LEGS;
+
+								armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.CHEST;
+								armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
+
+								armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.CHEST;
+								
+								armorModel.bipedHead2.showModel = slot == EntityEquipmentSlot.HEAD;
+								armorModel.bipedHeadwear2.showModel = slot == EntityEquipmentSlot.HEAD;
+							}
+						}
+					}
+				}
+				else
+				{
+					armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.CHEST;
+					armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.CHEST;
+					armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.CHEST;
+				
+					armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
+					armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
+					
+					armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.LEGS;
+				
+					armorModel.bipedHead2.showModel = slot == EntityEquipmentSlot.HEAD;
+					armorModel.bipedHeadwear2.showModel = slot == EntityEquipmentSlot.HEAD;
+				}
+				
 				armorModel.isSneak = defaultModel.isSneak;
 				armorModel.isRiding = defaultModel.isRiding;
 				armorModel.isChild = defaultModel.isChild;

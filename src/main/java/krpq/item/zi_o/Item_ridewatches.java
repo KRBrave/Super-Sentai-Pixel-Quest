@@ -22,7 +22,12 @@ public class Item_ridewatches extends Item implements IHasModel
 	public int num2;
 	public boolean works_with_decade_ridewatch=false;
 
-	public static String[] ARMS= new String[] {"base","build","exaid","ghost","drive","gaim","wizard","fourze","ooo","w","kiva","deno","kabuto","hibiki","blade","faiz","ryuki","agito","kuuga","genm","decade","exaid_w","quiz","shinobi","kikai"};
+	//                                        {0     ,1      ,2      ,3      ,4      ,5     ,6       ,7       ,8    ,9  ,10    
+	public static String[] ARMS= new String[] {"base","build","exaid","ghost","drive","gaim","wizard","fourze","ooo","w","kiva"
+		  //,11    ,12      ,13      ,14     ,15    , 16    ,17     ,18     ,19    ,20      
+			,"deno","kabuto","hibiki","blade","faiz","ryuki","agito","kuuga","genm","decade"
+		  //,21       ,22    ,23       ,24     ,25       ,26      ,27     ,28    ,29         ,30      }
+			,"exaid_w","quiz","shinobi","kikai","cross-z","grease","rogue","evol","mad_rogue","garren"};
 
 
 
@@ -97,6 +102,11 @@ public class Item_ridewatches extends Item implements IHasModel
 
 								item_zikudriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 								item_zikudriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0, "1");									
+							}else if (this == RiderItems.decade_ridewatch){
+
+								item_zikudriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								item_zikudriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),1, "1");
+								
 							}		
 						}		
 					}
