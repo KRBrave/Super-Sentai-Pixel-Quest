@@ -7,6 +7,8 @@ import org.lwjgl.opengl.GL11;
 
 import sspq.RiderItems;
 import sspq.TokuCraft_core;
+import sspq.item.lupat_ranger.item_lupin_collection;
+import sspq.item.lupat_ranger.item_vs_changer;
 import sspq.model.model_belt;
 import sspq.model.tokuArmorModel;
 import sspq.util.IHasModel;
@@ -42,7 +44,9 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 
 	public String Rider;
 	public String Show;
+	public String Lock;
 	public int SubSet;
+	public Item Belt;
 
 	public item_ryusoul_changer (String name, String show,int subSet,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
@@ -55,6 +59,22 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
+		Show=show;
+		SubSet=subSet;
+	}
+	
+	public item_ryusoul_changer (String name, String show,int subSet,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, String lock)
+	{
+		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		this.material = par2EnumArmorMaterial;
+		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
+		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
+		this.maxStackSize = 1;
+		Rider=rider;
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		TokuCraft_core.ITEMS.add(this);
+		Lock=lock;
 		Show=show;
 		SubSet=subSet;
 	}
@@ -165,7 +185,14 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 	{	
 		item_ryusoul_changer belt = (item_ryusoul_changer) itemstack.getItem();
 		
-		return itemstack.hasTagCompound() ? item_ryusoul.ARMS[itemstack.getTagCompound().getInteger("seed")] : "blank";
+		if (belt.Lock!=null)
+		{
+			return itemstack.hasTagCompound() ? item_ryusoul.ARMS[itemstack.getTagCompound().getInteger("seed")] : belt.Lock;
+		}
+		else 
+		{
+			return itemstack.hasTagCompound() ? item_ryusoul.ARMS[itemstack.getTagCompound().getInteger("seed")] : "blank";
+		}
 	}
 	
 	public static void set_lock(ItemStack itemstack,int flag)
