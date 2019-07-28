@@ -16,7 +16,7 @@ import net.minecraft.nbt.NBTTagCompound;
 
 public class item_drivearmor extends ItemArmor implements IHasModel
 {
-	public static final String[] CoreName= new String[] {"","_wild","_high_speed","_proto","_technique","_fruits","_dead_heat","_formula","_tridoron","_next","_special","_zerodrive","_miracle","_type_speed_wild_technic"};
+	public static final String[] CoreName= new String[] {"","_wild","_high_speed","_proto","_technique","_fruits","_dead_heat","_formula","_tridoron","_next","_special","_zerodrive","_miracle","_type_speed_wild_technic","_get_wild","_ultra_technique",""};
 	public static final String[] CoreName2= new String[] {"mach","mach_dead_heat","chaser","mach_chaser","mach_dead_heat_drive","super_dead_heat","chaser_mach","super_deadheat_mach"};
 
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};

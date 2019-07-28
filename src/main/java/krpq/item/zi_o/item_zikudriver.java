@@ -71,24 +71,32 @@ public class item_zikudriver extends ItemArmor  implements IHasModel
 				model_belt_plus armorModel = new model_belt_plus();
 
 				Item[] form_watch= new Item[] {RiderItems.blanknoitem,RiderItems.ziku_driver_decade,RiderItems.ziku_driver_zi_o_ii};
-				Item[] armor_watch= new Item[] {RiderItems.blanknoitem,RiderItems.ziku_driver_build,RiderItems.ziku_driver_exaid,RiderItems.ziku_driver_ghost,RiderItems.ziku_driver_drive,RiderItems.ziku_driver_gaim,RiderItems.ziku_driver_wizard,RiderItems.ziku_driver_fourze,RiderItems.ziku_driver_ooo,RiderItems.ziku_driver_w,RiderItems.blanknoitem,RiderItems.ziku_driver_deno,RiderItems.ziku_driver_kabuto,RiderItems.ziku_driver_hibiki,RiderItems.ziku_driver_blade,RiderItems.ziku_driver_faiz,RiderItems.ziku_driver_ryuki,RiderItems.ziku_driver_agito,RiderItems.ziku_driver_kuuga,RiderItems.ziku_driver_genm,RiderItems.blanknoitem,RiderItems.ziku_driver_exaid,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.ziku_driver_cross_z,RiderItems.ziku_driver_grease,RiderItems.ziku_driver_rogue,RiderItems.ziku_driver_evol,RiderItems.ziku_driver_mad_rogue,RiderItems.ziku_driver_garren};
-				
+				Item[] armor_watch= new Item[] {RiderItems.blanknoitem        ,RiderItems.ziku_driver_build       ,RiderItems.ziku_driver_exaid       ,RiderItems.ziku_driver_ghost       ,RiderItems.ziku_driver_drive       ,RiderItems.ziku_driver_gaim       ,RiderItems.ziku_driver_wizard       ,RiderItems.ziku_driver_fourze       ,RiderItems.ziku_driver_ooo       ,RiderItems.ziku_driver_w       ,RiderItems.ziku_driver_kiva       ,RiderItems.ziku_driver_deno        ,RiderItems.ziku_driver_kabuto       ,RiderItems.ziku_driver_hibiki       ,RiderItems.ziku_driver_blade       ,RiderItems.ziku_driver_faiz       ,RiderItems.ziku_driver_ryuki       ,RiderItems.ziku_driver_agito       ,RiderItems.ziku_driver_kuuga       ,RiderItems.ziku_driver_genm       ,RiderItems.blanknoitem       ,RiderItems.ziku_driver_exaid       ,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.ziku_driver_cross_z       ,RiderItems.ziku_driver_grease       ,RiderItems.ziku_driver_rogue       ,RiderItems.ziku_driver_evol       ,RiderItems.ziku_driver_mad_rogue       ,RiderItems.ziku_driver_garren       ,RiderItems.ziku_driver_brave       ,RiderItems.ziku_driver_blood       ,RiderItems.ziku_driver_killbus       ,RiderItems.ziku_driver_build_sparkling,RiderItems.ziku_driver_build_hazard,RiderItems.ziku_driver_build_rabbit_rabbit};
+				Item[] decade_watch= new Item[] {RiderItems.ziku_driver_decade,RiderItems.ziku_driver_decade_build,RiderItems.ziku_driver_decade_exaid,RiderItems.ziku_driver_decade_ghost,RiderItems.ziku_driver_decade_drive,RiderItems.ziku_driver_decade_gaim,RiderItems.ziku_driver_decade_wizard,RiderItems.ziku_driver_decade_fourze,RiderItems.ziku_driver_decade_ooo,RiderItems.ziku_driver_decade_w,RiderItems.ziku_driver_decade_kiva,RiderItems.ziku_driver_decade_den_o,RiderItems.ziku_driver_decade_kabuto,RiderItems.ziku_driver_decade_hibiki,RiderItems.ziku_driver_decade_blade,RiderItems.ziku_driver_decade_faiz,RiderItems.ziku_driver_decade_ryuki,RiderItems.ziku_driver_decade_agito,RiderItems.ziku_driver_decade_kuuga,RiderItems.ziku_driver_decade_genm,RiderItems.ziku_driver_decade,RiderItems.ziku_driver_decade_exaid,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.ziku_driver_decade_cross_z,RiderItems.ziku_driver_decade_grease,RiderItems.ziku_driver_decade_rogue,RiderItems.ziku_driver_decade_evol,RiderItems.ziku_driver_decade_mad_rogue,RiderItems.ziku_driver_decade_garren,RiderItems.ziku_driver_decade_brave,RiderItems.ziku_driver_decade_blood,RiderItems.ziku_driver_decade_killbus,RiderItems.blanknoitem                ,RiderItems.blanknoitem             ,RiderItems.blanknoitem                    };
 				
 				armorModel.belt=stack;
 				
-				if (item_zikudriver.get_lockbase(stack)=="gaim"){
+				if (item_zikudriver.get_lockbase(stack)=="gaim" && item_zikudriver.get_core(stack, "1")!=1){
                     armorModel.wings=new ItemStack(RiderItems.gaim_armor_wings);
 				}else if(stack.getItem() == RiderItems.oma_ziku_driver) {
 					armorModel.wings=new ItemStack(RiderItems.oma_zi_o_cape);
                 }else{
                 	  armorModel.wings=new ItemStack(RiderItems.blanknoitem);
                 }
+				
+				armorModel.belt=stack;
+				
+				if (item_zikudriver.get_core(stack, "1")==1)
+				{
+					armorModel.belt2=new ItemStack(form_watch[item_zikudriver.get_core(stack,"1")]);	
+					armorModel.belt3=new ItemStack(decade_watch[item_zikudriver.get_locknum(stack)]);
+				}
+				else
+				{
+					armorModel.belt2=new ItemStack(form_watch[item_zikudriver.get_core(stack,"1")]);	
+					armorModel.belt3=new ItemStack(armor_watch[item_zikudriver.get_locknum(stack)]);
+				}
 					
-						armorModel.belt=stack;
-						armorModel.belt2=new ItemStack(form_watch[item_zikudriver.get_core(stack,"1")]);	
-						armorModel.belt3=new ItemStack(armor_watch[item_zikudriver.get_locknum(stack)]);
-					
-
 				armorModel.isSneak = defaultModel.isSneak;
 				armorModel.isRiding = defaultModel.isRiding;
 				armorModel.isChild = defaultModel.isChild;

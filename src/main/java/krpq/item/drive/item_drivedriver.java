@@ -42,7 +42,7 @@ public class item_drivedriver extends ItemArmor implements IHasModel
 {
 
 
-	public static final String[] tireName= new String[] {"type_speed","wild","max_flare","funky_spike","midnight_shadow","justice_hunter","dream_vegas","dimension_cab","massive_monster","spin_mixer","type_high_speed","type_proto_speed","mega_maxflare","technique","rumble_dump","mad_doctor","hooking_wrecker","fire_braver","rolling_gravity","road_winter","fruits","dead_heat","dead_heat_burst","formula","tridoron","attack123","people_saver","kouji_genbar","gold","type_next","type_special","f01","f02","f03","tridoron_all","miracle","type_speed_wild_technic"};
+	public static final String[] tireName= new String[] {"type_speed","wild","max_flare","funky_spike","midnight_shadow","justice_hunter","dream_vegas","dimension_cab","massive_monster","spin_mixer","type_high_speed","type_proto_speed","mega_maxflare","technique","rumble_dump","mad_doctor","hooking_wrecker","fire_braver","rolling_gravity","road_winter","fruits","dead_heat","dead_heat_burst","formula","tridoron","attack123","people_saver","kouji_genbar","gold","type_next","type_special","f01","f02","f03","tridoron_all","miracle","type_speed_wild_technic","get_wild","ultra_technique",""};
 
 	public static final String[] tireName2nd = new String[] {"kourin","kourin_magarl","kourin_kaksarn","kourin_tomarle","kourin_kikern","wheeler_dynamics","wheeler_dynamics","chaser_mach"};
 

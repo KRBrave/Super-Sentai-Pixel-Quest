@@ -225,7 +225,7 @@ public class type_tire extends ModelBiped
 						this.Shape2.render(par7);
 						GL11.glPopMatrix();
 					}
-				}else if (item_drivedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1){
+				}else if (item_drivedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1 || item_drivedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==14){
 					GL11.glPushMatrix();
 					if (this.isSneak){
 						this.Shape2.offsetY=0.2f;
@@ -311,7 +311,7 @@ public class type_tire extends ModelBiped
 					this.Shape2.render(par7);
 					GL11.glPopMatrix();
 
-				}else if (item_drivedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==4){
+				}else if (item_drivedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==4||item_drivedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==15){
 					GL11.glPushMatrix();
 					GL11.glScalef(1f, 1f, 1f);
 					GL11.glTranslatef(0.1f, -0f, 0f);
@@ -332,6 +332,8 @@ public class type_tire extends ModelBiped
 					}
 					this.Shape1.render(par7);
 					GL11.glPopMatrix();
+				}else if (item_drivedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==16){
+					
 				}else{
 					GL11.glPushMatrix();
 					if (this.isSneak){

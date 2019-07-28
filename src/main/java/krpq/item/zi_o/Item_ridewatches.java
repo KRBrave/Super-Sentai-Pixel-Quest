@@ -26,8 +26,10 @@ public class Item_ridewatches extends Item implements IHasModel
 	public static String[] ARMS= new String[] {"base","build","exaid","ghost","drive","gaim","wizard","fourze","ooo","w","kiva"
 		  //,11    ,12      ,13      ,14     ,15    , 16    ,17     ,18     ,19    ,20      
 			,"deno","kabuto","hibiki","blade","faiz","ryuki","agito","kuuga","genm","decade"
-		  //,21       ,22    ,23       ,24     ,25       ,26      ,27     ,28    ,29         ,30      }
-			,"exaid_w","quiz","shinobi","kikai","cross-z","grease","rogue","evol","mad_rogue","garren"};
+		  //,21       ,22    ,23       ,24     ,25       ,26      ,27     ,28    ,29         ,30      
+			,"exaid_w","quiz","shinobi","kikai","cross-z","grease","rogue","evol","mad_rogue","garren"
+		  //,31     ,32     ,33       ,34               ,35            ,36                   };	
+			,"brave","blood","killbus","build_sparkling","build_hazard","build_rabbit_rabbit"};
 
 
 

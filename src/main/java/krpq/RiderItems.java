@@ -2630,6 +2630,11 @@ public class RiderItems {
 	public static Item next_builder = new Item_ore("next_builder").setCreativeTab(Tabs.tabdrive);
 	public static Item tokujoka_key = new Item_ore("tokujoka_key").setCreativeTab(Tabs.tabdrive);
 
+	//KRPQ Drive
+	public static Item getwildshift = new Item_shift_car(1, 37, "getwildshift").setCreativeTab(Tabs.krpqDrive);
+	public static Item ultratechniqueshift = new Item_shift_car(1, 38, "ultratechniqueshift").setCreativeTab(Tabs.krpqDrive);
+	public static Item super_dead_heat = new Item_shift_car(1, 39, "super_dead_heat").setCreativeTab(Tabs.krpqDrive);
+	
 	// ghost
 
 	public static Item gan_gun_saber_blade = new ItemBaseSword("gan_gun_saber_blade", Tabs.gan_gun_saber_blade)
@@ -3415,9 +3420,6 @@ public class RiderItems {
 	public static Item fullfull_bottle_tank = new Item_full_bottle(4, "2", "fullfull_bottle_tank", 0)
 			.setCreativeTab(Tabs.tabbuild);
 	
-	public static Item fullfull_bottle_rabbittank = new Item_full_bottle(7, "2", "fullfull_bottle_rabbittank", 0)
-			.setCreativeTab(Tabs.tabbuild);
-
 	public static Item genius_full_bottle = new Item_full_bottle(5, "2", "genius_full_bottle", 0)
 			.setCreativeTab(Tabs.tabbuild);
 	public static Item cross_z_build_can = new Item_full_bottle(6, "2", "cross_z_build_can", 0)
@@ -3608,8 +3610,7 @@ public static Item mic_full_bottle = new Item_full_bottle(11, "1", "mic_full_bot
 	public static Item build_driver_genius = new Item_ore("build_driver_genius");
 	public static Item build_driver_cross_z_build = new Item_ore("build_driver_cross_z_build");
 	
-	public static Item build_driver_full_rabbittank = new Item_ore("build_driver_full_rabbittank");
-
+	
 	public static Item hawk_gatling_wings = new Item_ore("hawk_gatling_wings");
 	public static Item phoenix_robo_wings = new Item_ore("phoenix_robo_wings");
 	public static Item night_rogue_wings = new Item_ore("night_rogue_wings");
@@ -3626,6 +3627,12 @@ public static Item mic_full_bottle = new Item_full_bottle(11, "1", "mic_full_bot
 	public static Item build_driver_galaxy = new Item_ore("build_driver_galaxy");
 
 	// public static Item build_driver_ = new Item_ore("build_driver_");
+
+	//KRPQ Build
+	public static Item fullfull_bottle_rabbittank = new Item_full_bottle(7, "2", "fullfull_bottle_rabbittank", 0)
+			.setCreativeTab(Tabs.tabbuild);
+	
+	public static Item build_driver_full_rabbittank = new Item_ore("build_driver_full_rabbittank");
 
 	// Zi-O
 	public static Item gaim_armor_wings = new Item_ore("gaim_armor_wings");
@@ -3673,43 +3680,47 @@ public static Item mic_full_bottle = new Item_full_bottle(11, "1", "mic_full_bot
 
 	public static Item build_ridewatch = new Item_ridewatches(1, 1, "build_ridewatch", true)
 			.setCreativeTab(Tabs.tabzi_o);
-	public static Item cross_z_ridewatch = new Item_ridewatches(1, 25, "cross_z_ridewatch", true)
-			.setCreativeTab(Tabs.tabzi_o);
-	public static Item grease_ridewatch = new Item_ridewatches(1, 26, "grease_ridewatch", true)
-			.setCreativeTab(Tabs.tabzi_o);
-	public static Item rogue_ridewatch = new Item_ridewatches(1, 27, "rogue_ridewatch")
-			.setCreativeTab(Tabs.tabzi_o);
-	public static Item evol_ridewatch = new Item_ridewatches(1, 28, "evol_ridewatch")
-			.setCreativeTab(Tabs.tabzi_o);
-	public static Item mad_rogue_ridewatch = new Item_ridewatches(1, 29, "mad_rogue_ridewatch")
-			.setCreativeTab(Tabs.tabzi_o);
 	public static Item exaid_ridewatch = new Item_ridewatches(1, 2, "exaid_ridewatch", true)
 			.setCreativeTab(Tabs.tabzi_o);
-	public static Item genm_ridewatch = new Item_ridewatches(1, 19, "genm_ridewatch", true).setCreativeTab(Tabs.tabzi_o);
 	public static Item ghost_ridewatch = new Item_ridewatches(1, 3, "ghost_ridewatch", true)
 			.setCreativeTab(Tabs.tabzi_o);
-	public static Item drive_ridewatch = new Item_ridewatches(1, 4, "drive_ridewatch", true).setCreativeTab(Tabs.tabzi_o);
-	public static Item gaim_ridewatch = new Item_ridewatches(1, 5, "gaim_ridewatch", true).setCreativeTab(Tabs.tabzi_o);
-	public static Item wizard_ridewatch = new Item_ridewatches(1, 6, "wizard_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item beast_ridewatch = new Item_ore("beast_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item fourze_ridewatch = new Item_ridewatches(1, 7, "fourze_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item ooo_ridewatch = new Item_ridewatches(1, 8, "ooo_ridewatch", true).setCreativeTab(Tabs.tabzi_o);
-	public static Item w_ridewatch = new Item_ridewatches(1, 9, "w_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item decade_ridewatch = new Item_ridewatches(0, 20, "decade_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item kiva_ridewatch = new Item_ridewatches(1, 10, "kiva_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item deno_ridewatch = new Item_ridewatches(1, 11, "deno_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item kabuto_ridewatch = new Item_ridewatches(1, 12, "kabuto_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item hibiki_ridewatch = new Item_ridewatches(1, 13, "hibiki_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item blade_ridewatch = new Item_ridewatches(1, 14, "blade_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item garren_ridewatch = new Item_ridewatches(1, 30, "garren_ridewatch").setCreativeTab(Tabs.tabzi_o);
+	public static Item drive_ridewatch = new Item_ridewatches(1, 4, "drive_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item gaim_ridewatch = new Item_ridewatches(1, 5, "gaim_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item wizard_ridewatch = new Item_ridewatches(1, 6, "wizard_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item fourze_ridewatch = new Item_ridewatches(1, 7, "fourze_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item ooo_ridewatch = new Item_ridewatches(1, 8, "ooo_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item w_ridewatch = new Item_ridewatches(1, 9, "w_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item decade_ridewatch = new Item_ridewatches(0, 20, "decade_ridewatch")
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item kiva_ridewatch = new Item_ridewatches(1, 10, "kiva_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item deno_ridewatch = new Item_ridewatches(1, 11, "deno_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item kabuto_ridewatch = new Item_ridewatches(1, 12, "kabuto_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item hibiki_ridewatch = new Item_ridewatches(1, 13, "hibiki_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item blade_ridewatch = new Item_ridewatches(1, 14, "blade_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
 	public static Item faiz_ridewatch = new Item_ridewatches(1, 15, "faiz_ridewatch", true)
 			.setCreativeTab(Tabs.tabzi_o);
-	public static Item ryuki_ridewatch = new Item_ridewatches(1, 16, "ryuki_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item agito_ridewatch = new Item_ridewatches(1, 17, "agito_ridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item kuuga_ridewatch = new Item_ridewatches(1, 18, "kuuga_ridewatch").setCreativeTab(Tabs.tabzi_o);
+	public static Item ryuki_ridewatch = new Item_ridewatches(1, 16, "ryuki_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item agito_ridewatch = new Item_ridewatches(1, 17, "agito_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item kuuga_ridewatch = new Item_ridewatches(1, 18, "kuuga_ridewatch", true)
+			.setCreativeTab(Tabs.tabzi_o);
 
-	public static Item woz_miridewatch = new Item_ridewatches(0, 0, "woz_miridewatch").setCreativeTab(Tabs.tabzi_o);
-	public static Item quiz_miridewatch = new Item_ridewatches(2, 22, "quiz_miridewatch").setCreativeTab(Tabs.tabzi_o);
+	public static Item woz_miridewatch = new Item_ridewatches(0, 0, "woz_miridewatch")
+			.setCreativeTab(Tabs.tabzi_o);
+	public static Item quiz_miridewatch = new Item_ridewatches(2, 22, "quiz_miridewatch")
+			.setCreativeTab(Tabs.tabzi_o);
 	public static Item shinobi_miridewatch = new Item_ridewatches(2, 23, "shinobi_miridewatch")
 			.setCreativeTab(Tabs.tabzi_o);
 	public static Item kikai_miridewatch = new Item_ridewatches(2, 24, "kikai_miridewatch")
@@ -3721,11 +3732,6 @@ public static Item mic_full_bottle = new Item_full_bottle(11, "1", "mic_full_bot
 	public static Item another_build_ridewatch = new Item_ore("another_build_ridewatch").setCreativeTab(Tabs.tabzi_o);
 
 	public static Item ziku_driver_build = new Item_ore("ziku_driver_build");
-	public static Item ziku_driver_cross_z = new Item_ore("ziku_driver_cross_z");
-	public static Item ziku_driver_grease = new Item_ore("ziku_driver_grease");
-	public static Item ziku_driver_rogue = new Item_ore("ziku_driver_rogue");
-	public static Item ziku_driver_evol = new Item_ore("ziku_driver_evol");
-	public static Item ziku_driver_mad_rogue = new Item_ore("ziku_driver_mad_rogue");
 	public static Item ziku_driver_exaid = new Item_ore("ziku_driver_exaid");
 	public static Item ziku_driver_ghost = new Item_ore("ziku_driver_ghost");
 	public static Item ziku_driver_drive = new Item_ore("ziku_driver_drive");
@@ -3740,17 +3746,95 @@ public static Item mic_full_bottle = new Item_full_bottle(11, "1", "mic_full_bot
 	public static Item ziku_driver_kabuto = new Item_ore("ziku_driver_kabuto");
 	public static Item ziku_driver_hibiki = new Item_ore("ziku_driver_hibiki");
 	public static Item ziku_driver_blade = new Item_ore("ziku_driver_blade");
-	public static Item ziku_driver_garren = new Item_ore("ziku_driver_garren");
 	public static Item ziku_driver_faiz = new Item_ore("ziku_driver_faiz");
 	public static Item ziku_driver_ryuki = new Item_ore("ziku_driver_ryuki");
 	public static Item ziku_driver_agito = new Item_ore("ziku_driver_agito");
 	public static Item ziku_driver_kuuga = new Item_ore("ziku_driver_kuuga");
 
+	public static Item ziku_driver_decade_build = new Item_ore("ziku_driver_decade_build");
+	public static Item ziku_driver_decade_exaid = new Item_ore("ziku_driver_decade_exaid");
+	public static Item ziku_driver_decade_ghost = new Item_ore("ziku_driver_decade_ghost");
+	public static Item ziku_driver_decade_drive = new Item_ore("ziku_driver_decade_drive");
+	public static Item ziku_driver_decade_gaim = new Item_ore("ziku_driver_decade_gaim");
+	public static Item ziku_driver_decade_wizard = new Item_ore("ziku_driver_decade_wizard");
+	public static Item ziku_driver_decade_fourze = new Item_ore("ziku_driver_decade_fourze");
+	public static Item ziku_driver_decade_ooo = new Item_ore("ziku_driver_decade_ooo");
+	public static Item ziku_driver_decade_w = new Item_ore("ziku_driver_decade_w");
+	public static Item ziku_driver_decade_kiva = new Item_ore("ziku_driver_decade_kiva");
+	public static Item ziku_driver_decade_den_o = new Item_ore("ziku_driver_decade_den_o");
+	public static Item ziku_driver_decade_kabuto = new Item_ore("ziku_driver_decade_kabuto");
+	public static Item ziku_driver_decade_hibiki = new Item_ore("ziku_driver_decade_hibiki");
+	public static Item ziku_driver_decade_blade = new Item_ore("ziku_driver_decade_blade");
+	public static Item ziku_driver_decade_faiz = new Item_ore("ziku_driver_decade_faiz");
+	public static Item ziku_driver_decade_ryuki = new Item_ore("ziku_driver_decade_ryuki");
+	public static Item ziku_driver_decade_agito = new Item_ore("ziku_driver_decade_agito");
+	public static Item ziku_driver_decade_kuuga = new Item_ore("ziku_driver_decade_kuuga");
+	
 	public static Item ziku_driver_zi_o_ii = new Item_ore("ziku_driver_zi_o_ii");
 
-	public static Item ziku_driver_genm = new Item_ore("ziku_driver_genm");
-
 	public static Item oma_zi_o_cape = new Item_ore("oma_zi_o_cape");
+	
+	//KRPQ Zi-O
+	public static Item build_sparkling_ridewatch = new Item_ridewatches(1, 34, "build_sparkling_ridewatch")
+			.setCreativeTab(Tabs.krpqZiO);
+	public static Item build_hazard_ridewatch = new Item_ridewatches(1, 35, "build_hazard_ridewatch")
+			.setCreativeTab(Tabs.krpqZiO);
+	public static Item build_rabbit_rabbit_ridewatch = new Item_ridewatches(1, 36, "build_rabbit_rabbit_ridewatch")
+			.setCreativeTab(Tabs.krpqZiO);
+	public static Item cross_z_ridewatch = new Item_ridewatches(1, 25, "cross_z_ridewatch", true)
+			.setCreativeTab(Tabs.krpqZiO);
+	public static Item grease_ridewatch = new Item_ridewatches(1, 26, "grease_ridewatch", true)
+			.setCreativeTab(Tabs.krpqZiO);
+	public static Item rogue_ridewatch = new Item_ridewatches(1, 27, "rogue_ridewatch", true)
+			.setCreativeTab(Tabs.krpqZiO);
+	public static Item evol_ridewatch = new Item_ridewatches(1, 28, "evol_ridewatch", true)
+			.setCreativeTab(Tabs.krpqZiO);
+	public static Item mad_rogue_ridewatch = new Item_ridewatches(1, 29, "mad_rogue_ridewatch", true)
+			.setCreativeTab(Tabs.krpqZiO);
+	public static Item blood_ridewatch = new Item_ridewatches(1, 32, "blood_ridewatch", true)
+			.setCreativeTab(Tabs.krpqZiO);
+	public static Item killbus_ridewatch = new Item_ridewatches(1, 33, "killbus_ridewatch", true)
+			.setCreativeTab(Tabs.krpqZiO);
+	
+	public static Item brave_ridewatch = new Item_ridewatches(1, 31, "brave_ridewatch", true)
+			.setCreativeTab(Tabs.krpqZiO);
+	public static Item genm_ridewatch = new Item_ridewatches(1, 19, "genm_ridewatch", true)
+			.setCreativeTab(Tabs.krpqZiO);
+	
+	public static Item beast_ridewatch = new Item_ore("beast_ridewatch")
+			.setCreativeTab(Tabs.krpqZiO);
+	
+	public static Item garren_ridewatch = new Item_ridewatches(1, 30, "garren_ridewatch", true)
+			.setCreativeTab(Tabs.krpqZiO);
+	
+	public static Item ziku_driver_build_sparkling = new Item_ore("ziku_driver_build_sparkling");
+	public static Item ziku_driver_build_hazard = new Item_ore("ziku_driver_build_hazard");
+	public static Item ziku_driver_build_rabbit_rabbit = new Item_ore("ziku_driver_build_rabbit_rabbit");
+	public static Item ziku_driver_cross_z = new Item_ore("ziku_driver_cross_z");
+	public static Item ziku_driver_grease = new Item_ore("ziku_driver_grease");
+	public static Item ziku_driver_rogue = new Item_ore("ziku_driver_rogue");
+	public static Item ziku_driver_evol = new Item_ore("ziku_driver_evol");
+	public static Item ziku_driver_mad_rogue = new Item_ore("ziku_driver_mad_rogue");
+	public static Item ziku_driver_blood = new Item_ore("ziku_driver_blood");
+	public static Item ziku_driver_killbus = new Item_ore("ziku_driver_killbus");
+	
+	public static Item ziku_driver_brave = new Item_ore("ziku_driver_brave");
+	public static Item ziku_driver_genm = new Item_ore("ziku_driver_genm");
+	
+	public static Item ziku_driver_garren = new Item_ore("ziku_driver_garren");
+	
+	public static Item ziku_driver_decade_cross_z = new Item_ore("ziku_driver_decade_cross_z");
+	public static Item ziku_driver_decade_grease = new Item_ore("ziku_driver_decade_grease");
+	public static Item ziku_driver_decade_rogue = new Item_ore("ziku_driver_decade_rogue");
+	public static Item ziku_driver_decade_evol = new Item_ore("ziku_driver_decade_evol");
+	public static Item ziku_driver_decade_mad_rogue = new Item_ore("ziku_driver_decade_mad_rogue");
+	public static Item ziku_driver_decade_blood = new Item_ore("ziku_driver_decade_blood");
+	public static Item ziku_driver_decade_killbus = new Item_ore("ziku_driver_decade_killbus");
+	
+	public static Item ziku_driver_decade_brave = new Item_ore("ziku_driver_decade_brave");
+	public static Item ziku_driver_decade_genm = new Item_ore("ziku_driver_decade_genm");
+	
+	public static Item ziku_driver_decade_garren = new Item_ore("ziku_driver_decade_garren");
 	
 	//Shinobi
 	public static Item shinobi_head = new item_shinobi_armor("shinobi_head", ArmorMaterial.DIAMOND, 4,

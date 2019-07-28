@@ -293,6 +293,12 @@ public class Tabs {
 			return new ItemStack(RiderItems.drivehead);
 		}
 	};
+	public static CreativeTabs krpqDrive = new CreativeTabs("krpqDrive") {
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(RiderItems.getwildshift);
+		}
+	};
 	public static CreativeTabs tabghost = new CreativeTabs("tabghost") {
 		@Override
 		public ItemStack getTabIconItem() {
@@ -315,6 +321,12 @@ public class Tabs {
 		@Override
 		public ItemStack getTabIconItem() {
 			return new ItemStack(RiderItems.zi_ohead);
+		}
+	};
+	public static CreativeTabs krpqZiO = new CreativeTabs("krpqZiO") {
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(RiderItems.cross_z_ridewatch);
 		}
 	};
 	public static CreativeTabs tabShinobi = new CreativeTabs("tabShinobi") {
