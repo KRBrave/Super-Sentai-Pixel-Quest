@@ -317,6 +317,12 @@ public class Tabs {
 			return new ItemStack(RiderItems.buildhead);
 		}
 	};
+	public static CreativeTabs krpqBuild = new CreativeTabs("krpqBuild") {
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(RiderItems.lock_evol_bottle);
+		}
+	};
 	public static CreativeTabs tabzi_o = new CreativeTabs("tabzi_o") {
 		@Override
 		public ItemStack getTabIconItem() {

@@ -162,6 +162,13 @@ public class Item_full_bottle extends Item implements IHasModel
 							item_builddriver.set_core(par3EntityPlayer.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0, "3");
 							}
 						}
+						else if (num==8) {
+							if (par3EntityPlayer.inventory.hasItemStack(new ItemStack(RiderItems.hazard_trigger))){
+							item_builddriver.set_core(par3EntityPlayer.getItemStackFromSlot(EntityEquipmentSlot.FEET), num, "2");
+							item_builddriver.set_core(par3EntityPlayer.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0, "1");
+							item_builddriver.set_core(par3EntityPlayer.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0, "3");
+							}
+						}
 						
 					}else if (num2 == "1"||num2 == "3"){
 						item_builddriver.set_core(par3EntityPlayer.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0, "2");
