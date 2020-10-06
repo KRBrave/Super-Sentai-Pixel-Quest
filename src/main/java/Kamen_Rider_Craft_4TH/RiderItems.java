@@ -1415,6 +1415,18 @@ public class RiderItems {
 	public static Item black_mukade_OOOdriver = new Item_ore("black_mukade_ooodriver");
 	public static Item black_sasori_OOOdriver = new Item_ore("black_sasori_ooodriver");
 	public static Item black_taka_OOOdriver = new Item_ore("black_taka_ooodriver");
+	public static Item foundation_ptera_OOOdriver = new Item_ore("foundation_ptera_ooodriver");
+	public static Item foundation_kuwagata_OOOdriver = new Item_ore("foundation_kuwagata_ooodriver");
+	public static Item foundation_lion_OOOdriver = new Item_ore("foundation_lion_ooodriver");
+	public static Item foundation_sai_OOOdriver = new Item_ore("foundation_sai_ooodriver");
+	public static Item foundation_shachi_OOOdriver = new Item_ore("foundation_shachi_ooodriver");
+	public static Item foundation_cobra_OOOdriver = new Item_ore("foundation_cobra_ooodriver");
+	public static Item foundation_same_OOOdriver = new Item_ore("foundation_same_ooodriver");
+	public static Item foundation_shika_OOOdriver = new Item_ore("foundation_shika_ooodriver");
+	public static Item foundation_seiuchi_OOOdriver = new Item_ore("foundation_seiuchi_ooodriver");
+	public static Item foundation_mukade_OOOdriver = new Item_ore("foundation_mukade_ooodriver");
+	public static Item foundation_sasori_OOOdriver = new Item_ore("foundation_sasori_ooodriver");
+	public static Item foundation_taka_OOOdriver = new Item_ore("foundation_taka_ooodriver");
 
 	public static Item tora_OOOdriver = new Item_ore("tora_ooodriver");
 	public static Item kamakiri_OOOdriver = new Item_ore("kamakiri_ooodriver");
@@ -1464,6 +1476,22 @@ public class RiderItems {
 	public static Item black_kangaroo_OOOdriver = new Item_ore("black_kangaroo_ooodriver");
 	public static Item black_yadokari_OOOdriver = new Item_ore("black_yadokari_ooodriver");
 	public static Item black_tora_OOOdriver = new Item_ore("black_tora_ooodriver");
+	public static Item foundation_tricera_OOOdriver = new Item_ore("foundation_tricera_ooodriver");
+	public static Item foundation_kujaku_OOOdriver = new Item_ore("foundation_kujaku_ooodriver");
+	public static Item foundation_kamakiri_OOOdriver = new Item_ore("foundation_kamakiri_ooodriver");
+	public static Item foundation_gorilla_OOOdriver = new Item_ore("foundation_gorilla_ooodriver");
+	public static Item foundation_unagi_OOOdriver = new Item_ore("foundation_unagi_ooodriver");
+	public static Item foundation_kame_OOOdriver = new Item_ore("foundation_kame_ooodriver");
+	public static Item foundation_imagin_OOOdriver = new Item_ore("foundation_imagin_ooodriver");
+	public static Item foundation_kujira_OOOdriver = new Item_ore("foundation_kujira_ooodriver");
+	public static Item foundation_gazelle_OOOdriver = new Item_ore("foundation_gazelle_ooodriver");
+	public static Item foundation_shirokuma_OOOdriver = new Item_ore("foundation_shirokuma_ooodriver");
+	public static Item foundation_hachi_OOOdriver = new Item_ore("foundation_hachi_ooodriver");
+	public static Item foundation_kani_OOOdriver = new Item_ore("foundation_kani_ooodriver");
+	public static Item foundation_panda_OOOdriver = new Item_ore("foundation_panda_ooodriver");
+	public static Item foundation_kangaroo_OOOdriver = new Item_ore("foundation_kangaroo_ooodriver");
+	public static Item foundation_yadokari_OOOdriver = new Item_ore("foundation_yadokari_ooodriver");
+	public static Item foundation_tora_OOOdriver = new Item_ore("foundation_tora_ooodriver");
 
 	public static Item batta_OOOdriver = new Item_ore("batta_ooodriver");
 	public static Item cheetah_OOOdriver = new Item_ore("cheetah_ooodriver");
@@ -1507,6 +1535,20 @@ public class RiderItems {
 	public static Item black_ebi_OOOdriver = new Item_ore("black_ebi_ooodriver");
 	public static Item black_kangaroo2_OOOdriver = new Item_ore("black_kangaroo2_ooodriver");
 	public static Item black_batta_OOOdriver = new Item_ore("black_batta_ooodriver");
+	public static Item foundation_tyranno_OOOdriver = new Item_ore("foundation_tyranno_ooodriver");
+	public static Item foundation_condor_OOOdriver = new Item_ore("foundation_condor_ooodriver");
+	public static Item foundation_cheetah_OOOdriver = new Item_ore("foundation_cheetah_ooodriver");
+	public static Item foundation_zou_OOOdriver = new Item_ore("foundation_zou_ooodriver");
+	public static Item foundation_tako_OOOdriver = new Item_ore("foundation_tako_ooodriver");
+	public static Item foundation_wani_OOOdriver = new Item_ore("foundation_wani_ooodriver");
+	public static Item foundation_shocker_OOOdriver = new Item_ore("foundation_shocker_ooodriver");
+	public static Item foundation_ookamiuo_OOOdriver = new Item_ore("foundation_ookamiuo_ooodriver");
+	public static Item foundation_ushi_OOOdriver = new Item_ore("foundation_ushi_ooodriver");
+	public static Item foundation_penguin_OOOdriver = new Item_ore("foundation_penguin_ooodriver");
+	public static Item foundation_ari_OOOdriver = new Item_ore("foundation_ari_ooodriver");
+	public static Item foundation_ebi_OOOdriver = new Item_ore("foundation_ebi_ooodriver");
+	public static Item foundation_kangaroo2_OOOdriver = new Item_ore("foundation_kangaroo2_ooodriver");
+	public static Item foundation_batta_OOOdriver = new Item_ore("foundation_batta_ooodriver");
 
 
 	public static Item love_OOOdriver = new Item_ore("love_ooodriver");
@@ -1518,6 +1560,9 @@ public class RiderItems {
 	public static Item black_love_OOOdriver = new Item_ore("black_love_ooodriver");
 	public static Item black_love2_OOOdriver = new Item_ore("black_love2_ooodriver");
 	public static Item black_love3_OOOdriver = new Item_ore("black_love3_ooodriver");
+	public static Item foundation_love_OOOdriver = new Item_ore("foundation_love_ooodriver");
+	public static Item foundation_love2_OOOdriver = new Item_ore("foundation_love2_ooodriver");
+	public static Item foundation_love3_OOOdriver = new Item_ore("foundation_love3_ooodriver");
 
 	public static Item tajador_wings = new Item_ore("tajador_wings");
 	public static Item condor_wings = new Item_ore("condor_wings");
@@ -1571,6 +1616,18 @@ public class RiderItems {
 	public static Item black_seiuchi = new Itemmedal(37, "1","black_seiuchi").setCreativeTab(Tabs.tabOOO);
 	public static Item black_mukade = new Itemmedal(38, "1","black_mukade").setCreativeTab(Tabs.tabOOO);
 	public static Item black_ebi = new Itemmedal(39, "1","black_ebi").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_ptera = new Itemmedal(41, "1","foundation_ptera").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_taka = new Itemmedal(42, "1","foundation_taka").setCreativeTab(Tabs.tabOOO);	
+	public static Item foundation_kuwagata = new Itemmedal(43, "1","foundation_kuwagata").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_lion = new Itemmedal(44, "1","foundation_lion").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_sai = new Itemmedal(45, "1","foundation_sai").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_shachi = new Itemmedal(46, "1","foundation_shachi").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_cobra = new Itemmedal(47, "1","foundation_cobra").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_same = new Itemmedal(48, "1","foundation_same").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_shika = new Itemmedal(49, "1","foundation_shika").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_seiuchi = new Itemmedal(50, "1","foundation_seiuchi").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_mukade = new Itemmedal(51, "1","foundation_mukade").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_ebi = new Itemmedal(52, "1","foundation_ebi").setCreativeTab(Tabs.tabOOO);
 
 	public static Item tora = new Itemmedal(0, "2","tora").setCreativeTab(Tabs.tabOOO);
 	public static Item kamakiri = new Itemmedal(1, "2","kamakiri").setCreativeTab(Tabs.tabOOO);
@@ -1621,6 +1678,22 @@ public class RiderItems {
 	public static Item black_panda = new Itemmedal(49, "2","black_panda").setCreativeTab(Tabs.tabOOO);
 	public static Item black_kangaroo = new Itemmedal(50, "2","black_kangaroo").setCreativeTab(Tabs.tabOOO);
 	public static Item black_yadokari = new Itemmedal(51, "2","black_yadokari").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_tricera = new Itemmedal(52, "2","foundation_tricera").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_kujaku = new Itemmedal(53, "2","foundation_kujaku").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_kamakiri = new Itemmedal(54, "2","foundation_kamakiri").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_tora = new Itemmedal(55, "2","foundation_tora").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_gorilla = new Itemmedal(56, "2","foundation_gorilla").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_unagi = new Itemmedal(57, "2","foundation_unagi").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_kame = new Itemmedal(58, "2","foundation_kame").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_imagin = new Itemmedal(59, "2","foundation_imagin").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_kujira = new Itemmedal(60, "2","foundation_kujira").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_gazelle = new Itemmedal(61, "2","foundation_gazelle").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_shirokuma = new Itemmedal(62, "2","foundation_shirokuma").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_hachi = new Itemmedal(63, "2","foundation_hachi").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_kani = new Itemmedal(64, "2","foundation_kani").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_panda = new Itemmedal(66, "2","foundation_panda").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_kangaroo = new Itemmedal(67, "2","foundation_kangaroo").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_yadokari = new Itemmedal(68, "2","foundation_yadokari").setCreativeTab(Tabs.tabOOO);
 
 	public static Item batta = new Itemmedal(0, "3","batta").setCreativeTab(Tabs.tabOOO);
 	public static Item cheetah = new Itemmedal(1, "3","cheetah").setCreativeTab(Tabs.tabOOO);
@@ -1665,6 +1738,20 @@ public class RiderItems {
 	public static Item black_ari = new Itemmedal(42, "3","black_ari").setCreativeTab(Tabs.tabOOO);
 	public static Item black_sasori = new Itemmedal(43, "3","black_sasori").setCreativeTab(Tabs.tabOOO);
 	public static Item black_kangaroo2 = new Itemmedal(45, "3","black_kangaroo2").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_tyranno = new Itemmedal(46, "3","foundation_tyranno").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_condor = new Itemmedal(47, "3","foundation_condor").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_batta = new Itemmedal(48, "3","foundation_batta").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_cheetah = new Itemmedal(49, "3","foundation_cheetah").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_zou = new Itemmedal(50, "3","foundation_zou").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_tako = new Itemmedal(51, "3","foundation_tako").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_wani = new Itemmedal(52, "3","foundation_wani").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_shocker = new Itemmedal(53, "3","foundation_shocker").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_ookamiuo = new Itemmedal(54, "3","foundation_ookamiuo").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_ushi = new Itemmedal(55, "3","foundation_ushi").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_penguin = new Itemmedal(56, "3","foundation_penguin").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_ari = new Itemmedal(57, "3","foundation_ari").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_sasori = new Itemmedal(58, "3","foundation_sasori").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_kangaroo2 = new Itemmedal(60, "3","foundation_kangaroo2").setCreativeTab(Tabs.tabOOO);
 
 	public static Item love_core = new Itemmedal(8, "1","love_core").setCreativeTab(Tabs.tabOOO);
 	public static Item love_core2 = new Itemmedal(11, "2","love_core2").setCreativeTab(Tabs.tabOOO);
@@ -1675,6 +1762,9 @@ public class RiderItems {
 	public static Item black_love = new Itemmedal(40, "1","black_love").setCreativeTab(Tabs.tabOOO);
 	public static Item black_love2 = new Itemmedal(48, "2","black_love2").setCreativeTab(Tabs.tabOOO);
 	public static Item black_love3 = new Itemmedal(44, "3","black_love3").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_love = new Itemmedal(53, "1","foundation_love").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_love2 = new Itemmedal(65, "2","foundation_love2").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_love3 = new Itemmedal(59, "3","foundation_love3").setCreativeTab(Tabs.tabOOO);
 
 	public static Item proto_birth_core = new Item_ore("proto_birth_core").setCreativeTab(Tabs.tabOOO);
 
