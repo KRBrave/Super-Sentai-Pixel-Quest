@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "krpq:items/ongeki_shingen_retsuzan"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "variants":{   
-    "facing=north": { "model": "krpq:purifyer" },
-    "facing=south": { "model": "krpq:purifyer", "y": 180 },
-    "facing=west": { "model": "krpq:purifyer", "y": 270 },
-    "facing=east": { "model": "krpq:purifyer", "y": 90 }
-  }
- }

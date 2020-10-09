@@ -1,8 +1,0 @@
-{
-    "variants":{   
-    "facing=north": { "model": "krpq:gamecreator" },
-    "facing=south": { "model": "krpq:gamecreator", "y": 180 },
-    "facing=west": { "model": "krpq:gamecreator", "y": 270 },
-    "facing=east": { "model": "krpq:gamecreator", "y": 90 }
-  }
- }

@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top": "krpq:blocks/monitorside",
-        "front": "krpq:blocks/monitorfront",
-        "side": "krpq:blocks/monitorside"
-    }
-}
