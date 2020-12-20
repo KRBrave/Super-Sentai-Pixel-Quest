@@ -1,0 +1,56 @@
+
+{
+
+
+
+
+ "type": "minecraft:crafting_shaped",
+
+
+ "pattern": [
+
+
+   "XXX",
+
+
+   "CCC",
+
+
+   "XXX"
+
+
+ ],
+
+
+ "key": {
+
+
+   "X": {
+
+
+     "item": "minecraft:gold_ingot"
+
+
+   }, "C": {
+
+
+     "item": "kamenridercraft4th:taka"
+
+
+   }
+
+
+ },
+
+
+ "result": {
+
+
+   "item": "kamenridercraft4th:super_taka"
+
+
+ }
+
+
+}
+

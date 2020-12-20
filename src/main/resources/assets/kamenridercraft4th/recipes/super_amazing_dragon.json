@@ -1,0 +1,26 @@
+
+{
+
+ "type": "minecraft:crafting_shaped",
+
+
+ "pattern": [
+
+
+   "XXX",
+   "XXX",
+   "XXX"
+ ],
+
+ "key": {
+   "X": {
+     "item": "kamenridercraft4th:kuuga_super_rising_dragon"
+   }
+ },
+
+ "result": {
+
+   "item": "kamenridercraft4th:kuuga_super_amazing_dragon"
+
+ }
+}

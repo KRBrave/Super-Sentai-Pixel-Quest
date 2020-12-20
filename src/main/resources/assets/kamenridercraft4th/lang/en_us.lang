@@ -126,6 +126,7 @@ tile.zectblock.name=ZECT Ore
 tile.imaginsandblock.name=Imagin Sand Ore
 tile.fuestleblock.name=Fuestle Ore
 tile.cellmedalblock.name=Cell Medal Ore
+tile.pqmedalblock.name=Pixel Quest Medal Ore
 tile.ooo_hellrock.name=Birth Core Ore
 tile.gaiamemoryblock.name=Gaia Memory Ore
 tile.gaiamemoryhellrock.name=T2 Gaia Memory Ore

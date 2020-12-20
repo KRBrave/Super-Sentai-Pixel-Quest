@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "kamenridercraft4th:kuuga_super_amazing_mighty"
+    }, 
+    {
+      "item": "kamenridercraft4th:kuuga_super_amazing_dragon"
+    }, 
+    {
+      "item": "kamenridercraft4th:kuuga_super_amazing_pegasus"
+    }, 
+    {
+      "item": "kamenridercraft4th:kuuga_super_amazing_titan"
+    }, 
+    {
+      "item": "kamenridercraft4th:kuuga_ultimate"
+    }
+    ],
+  "result": {
+    "item": "kamenridercraft4th:kuuga_super_rising_ultimate"
+  }
+}

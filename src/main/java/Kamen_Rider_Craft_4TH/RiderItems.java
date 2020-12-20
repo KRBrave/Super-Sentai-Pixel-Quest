@@ -213,6 +213,8 @@ public class RiderItems {
 
 	public static Item cellmedal = new Item_ore("cellmedal").setCreativeTab(Tabs.tabOOO);
 	public static Block cellmedalblock = new ore_block("cellmedalblock",Material.ROCK, cellmedal, 2).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_taka = new Itemmedal(42, "1","foundation_taka").setCreativeTab(Tabs.tabOOO);	
+	public static Block pqmedalblock = new ore_block("pqmedalblock",Material.ROCK, foundation_taka, 2).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabOOO);
 
 	public static Item birth_core= new Item_ore("birth_core").setCreativeTab(Tabs.tabOOO);
 	public static Block ooo_hellrock = new ore_block("ooo_hellrock",Material.ROCK, birth_core, 3).setHardness(9.9F).setCreativeTab(Tabs.tabOOO);
@@ -1700,7 +1702,6 @@ public class RiderItems {
 	public static Item black_mukade = new Itemmedal(38, "1","black_mukade").setCreativeTab(Tabs.tabOOO);
 	public static Item black_ebi = new Itemmedal(39, "1","black_ebi").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_ptera = new Itemmedal(41, "1","foundation_ptera").setCreativeTab(Tabs.tabOOO);
-	public static Item foundation_taka = new Itemmedal(42, "1","foundation_taka").setCreativeTab(Tabs.tabOOO);	
 	public static Item foundation_kuwagata = new Itemmedal(43, "1","foundation_kuwagata").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_lion = new Itemmedal(44, "1","foundation_lion").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_sai = new Itemmedal(45, "1","foundation_sai").setCreativeTab(Tabs.tabOOO);
