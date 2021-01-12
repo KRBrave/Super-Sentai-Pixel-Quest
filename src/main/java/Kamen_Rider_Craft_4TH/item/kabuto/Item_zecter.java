@@ -54,7 +54,7 @@ public class Item_zecter extends Item implements IHasModel
 					}else{
 						item_kabutodriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),1);
 					}
-				}else if(num =="hyper"&((item_kabutodriver)playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider=="kabuto"||num =="hyper"&((item_kabutodriver)playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider=="gatack"){
+				}else if(num =="hyper"){
 					if(item_kabutodriver.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==0){
 						item_kabutodriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2);
 					}else{

@@ -1031,45 +1031,70 @@ public class RiderItems {
 	public static Item zect_kunai = new Item_sword_gun("zect_kunai",Tabs.den_denaxe).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 	public static Item zect_kunai_kunai = new ItemBaseSword("zect_kunai_kunai",Tabs.den_denso).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
-
 	public static Item kabutohead = new item_kabutoarmor("kabutohead",ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 	public static Item kabutotroso = new item_kabutoarmor2("kabutotroso",ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 	public static Item kabutolegs = new item_kabutoarmor2("kabutolegs",ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
 	public static Item kabuto_rider_belt_cast = new Item_ore("kabuto_rider_belt_cast");
 	public static Item kabuto_rider_belt = new item_kabutodriver("kabuto_rider_belt",ArmorMaterial.DIAMOND, 4, "kabuto",kabuto_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_kabuto_rider_belt_cast = new Item_ore("perfect_kabuto_rider_belt_cast");
+	public static Item perfect_kabuto_rider_belt = new item_kabutodriver("perfect_kabuto_rider_belt",ArmorMaterial.DIAMOND, 4, "perfect_kabuto",perfect_kabuto_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
 	public static Item gatack_rider_belt_cast = new Item_ore("gatack_rider_belt_cast");
 	public static Item gatack_rider_belt = new item_kabutodriver("gatack_rider_belt",ArmorMaterial.DIAMOND, 4,"gatack",gatack_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_gatack_rider_belt_cast = new Item_ore("perfect_gatack_rider_belt_cast");
+	public static Item perfect_gatack_rider_belt = new item_kabutodriver("perfect_gatack_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_gatack",perfect_gatack_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
 	public static Item thebee_rider_belt_cast = new Item_ore("thebee_rider_belt_cast");
 	public static Item thebee_rider_belt = new item_kabutodriver("thebee_rider_belt",ArmorMaterial.DIAMOND, 4, "thebee",thebee_rider_belt_cast).setMaxStackSize(1).setTranslationKey("thebee_rider_belt").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_thebee_rider_belt_cast = new Item_ore("perfect_thebee_rider_belt_cast");
+	public static Item perfect_thebee_rider_belt = new item_kabutodriver("perfect_thebee_rider_belt",ArmorMaterial.DIAMOND, 4, "perfect_thebee",perfect_thebee_rider_belt_cast).setMaxStackSize(1).setTranslationKey("thebee_rider_belt").setCreativeTab(Tabs.tabkabuto);
 
 	public static Item drake_rider_belt_cast = new Item_ore("drake_rider_belt_cast");
 	public static Item drake_rider_belt = new item_kabutodriver("drake_rider_belt",ArmorMaterial.DIAMOND, 4, "drake",drake_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_drake_rider_belt_cast = new Item_ore("perfect_drake_rider_belt_cast");
+	public static Item perfect_drake_rider_belt = new item_kabutodriver("perfect_drake_rider_belt",ArmorMaterial.DIAMOND, 4, "perfect_drake",perfect_drake_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
 	public static Item sasword_rider_belt_cast = new Item_ore("sasword_rider_belt_cast");
 	public static Item sasword_rider_belt = new item_kabutodriver("sasword_rider_belt",ArmorMaterial.DIAMOND, 4, "sasword",sasword_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_sasword_rider_belt_cast = new Item_ore("perfect_sasword_rider_belt_cast");
+	public static Item perfect_sasword_rider_belt = new item_kabutodriver("perfect_sasword_rider_belt",ArmorMaterial.DIAMOND, 4, "perfect_sasword",perfect_sasword_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
 	public static Item kickhopper_rider_belt_cast = new Item_ore("kickhopper_rider_belt_cast");
 	public static Item kickhopper_rider_belt = new item_kabutodriver("kickhopper_rider_belt",ArmorMaterial.DIAMOND, 4, "kickhopper",kickhopper_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_kickhopper_rider_belt_cast = new Item_ore("perfect_kickhopper_rider_belt_cast");
+	public static Item perfect_kickhopper_rider_belt = new item_kabutodriver("perfect_kickhopper_rider_belt",ArmorMaterial.DIAMOND, 4, "perfect_kickhopper",perfect_kickhopper_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
 	public static Item puchhopper_rider_belt_cast = new Item_ore("puchhopper_rider_belt_cast");
 	public static Item puchhopper_rider_belt = new item_kabutodriver("puchhopper_rider_belt",ArmorMaterial.DIAMOND, 4,"puchhopper",puchhopper_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_punchhopper_rider_belt_cast = new Item_ore("perfect_punchhopper_rider_belt_cast");
+	public static Item perfect_punchhopper_rider_belt = new item_kabutodriver("perfect_punchhopper_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_punchhopper",perfect_punchhopper_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
 	public static Item dark_kabuto_rider_belt_cast = new Item_ore("dark_kabuto_rider_belt_cast");
 	public static Item dark_kabuto_rider_belt = new item_kabutodriver("dark_kabuto_rider_belt",ArmorMaterial.DIAMOND, 4, "dark_kabuto",dark_kabuto_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_dark_kabuto_rider_belt_cast = new Item_ore("perfect_dark_kabuto_rider_belt_cast");
+	public static Item perfect_dark_kabuto_rider_belt = new item_kabutodriver("perfect_dark_kabuto_rider_belt",ArmorMaterial.DIAMOND, 4, "perfect_dark_kabuto",perfect_dark_kabuto_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
 	public static Item caucasus_rider_belt_cast = new Item_ore("caucasus_rider_belt_cast");
 	public static Item caucasus_rider_belt = new item_kabutodriver("caucasus_rider_belt",ArmorMaterial.DIAMOND, 4, "caucasus",caucasus_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_caucasus_rider_belt_cast = new Item_ore("perfect_caucasus_rider_belt_cast");
+	public static Item perfect_caucasus_rider_belt = new item_kabutodriver("perfect_caucasus_rider_belt",ArmorMaterial.DIAMOND, 4, "perfect_caucasus",perfect_caucasus_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
 	public static Item hercus_rider_belt_cast = new Item_ore("hercus_rider_belt_cast");
 	public static Item hercus_rider_belt = new item_kabutodriver("hercus_rider_belt",ArmorMaterial.DIAMOND, 4, "hercus",hercus_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_hercus_rider_belt_cast = new Item_ore("perfect_hercus_rider_belt_cast");
+	public static Item perfect_hercus_rider_belt = new item_kabutodriver("perfect_hercus_rider_belt",ArmorMaterial.DIAMOND, 4, "perfect_hercus",perfect_hercus_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
-	public static Item ketaros_rider_belt_cast = new Item_ore("ketaros_belt_cast");
+	public static Item ketaros_rider_belt_cast = new Item_ore("ketaros_rider_belt_cast");
 	public static Item ketaros_rider_belt = new item_kabutodriver("ketaros_rider_belt",ArmorMaterial.DIAMOND, 4, "ketaros",ketaros_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_ketaros_rider_belt_cast = new Item_ore("perfect_ketaros_rider_belt_cast");
+	public static Item perfect_ketaros_rider_belt = new item_kabutodriver("perfect_ketaros_rider_belt",ArmorMaterial.DIAMOND, 4, "perfect_ketaros",perfect_ketaros_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
-
+	public static Item lady_rider_belt_cast = new Item_ore("lady_rider_belt_cast");
+	public static Item lady_rider_belt = new item_kabutodriver("lady_rider_belt",ArmorMaterial.DIAMOND, 4, "lady",lady_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_lady_rider_belt_cast = new Item_ore("perfect_lady_rider_belt_cast");
+	public static Item perfect_lady_rider_belt = new item_kabutodriver("perfect_lady_rider_belt",ArmorMaterial.DIAMOND, 4, "perfect_lady",perfect_lady_rider_belt_cast).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
+	
 	public static Item kabuto_zecter = new Item_zecter("kabuto_zecter","kabuto").setCreativeTab(Tabs.tabkabuto);
 	public static Item hyper_zecter = new Item_zecter("hyper_zecter","hyper").setCreativeTab(Tabs.tabkabuto);
 
@@ -1077,16 +1102,26 @@ public class RiderItems {
 	public static Item drake_zecter = new Item_zecter("drake_zecter","drake").setCreativeTab(Tabs.tabkabuto);		
 	public static Item sasword_zecter = new Item_zecter("sasword_zecter","sasword").setCreativeTab(Tabs.tabkabuto);		
 	public static Item gatack_zecter = new Item_zecter("gatack_zecter","gatack").setCreativeTab(Tabs.tabkabuto);
-	public static Item kickhopper_zecter = new Item_ore("kickhopper_zecter").setCreativeTab(Tabs.tabkabuto);
-	public static Item punchhopper_zecter = new Item_ore("punchhopper_zecter").setCreativeTab(Tabs.tabkabuto);
+	public static Item kickhopper_zecter = new Item_zecter("kickhopper_zecter","kickhopper").setCreativeTab(Tabs.tabkabuto);
+	public static Item punchhopper_zecter = new Item_zecter("punchhopper_zecter","puchhopper").setCreativeTab(Tabs.tabkabuto);
 	public static Item dark_kabuto_zecter = new Item_zecter("dark_kabuto_zecter","dark_kabuto").setCreativeTab(Tabs.tabkabuto);
-	public static Item caucasus_zecter = new Item_ore("caucasus_zecter").setCreativeTab(Tabs.tabkabuto);
-	public static Item hercus_zecter = new Item_ore("hercus_zecter").setCreativeTab(Tabs.tabkabuto);
-	public static Item ketaros_zecter = new Item_ore("ketaros_zecter").setCreativeTab(Tabs.tabkabuto);
-
-	public static Item perfectthebee_zecter = new Item_ore("perfectthebee_zecter").setCreativeTab(Tabs.tabkabuto);
-	public static Item perfectdrake_zecter = new Item_ore("perfectdrake_zecter").setCreativeTab(Tabs.tabkabuto);
-	public static Item perfectsasword_zecter = new Item_ore("perfectsasword_zecter").setCreativeTab(Tabs.tabkabuto);
+	public static Item caucasus_zecter = new Item_zecter("caucasus_zecter","caucasus").setCreativeTab(Tabs.tabkabuto);
+	public static Item hercus_zecter = new Item_zecter("hercus_zecter","hercus").setCreativeTab(Tabs.tabkabuto);
+	public static Item ketaros_zecter = new Item_zecter("ketaros_zecter","ketaros").setCreativeTab(Tabs.tabkabuto);
+	public static Item lady_zecter = new Item_zecter("lady_zecter","lady").setCreativeTab(Tabs.tabkabuto);
+	
+	public static Item perfect_kabuto_zecter = new Item_zecter("perfect_kabuto_zecter","perfect_kabuto").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfectthebee_zecter = new Item_zecter("perfectthebee_zecter","perfect_thebee").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfectdrake_zecter = new Item_zecter("perfectdrake_zecter","perfect_drake").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfectsasword_zecter = new Item_zecter("perfectsasword_zecter","perfect_sasword").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_gatack_zecter = new Item_zecter("perfect_gatack_zecter","perfect_gatack").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_kickhopper_zecter = new Item_zecter("perfect_kickhopper_zecter","perfect_kickhopper").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_punchhopper_zecter = new Item_zecter("perfect_punchhopper_zecter","perfect_punchhopper").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_dark_kabuto_zecter = new Item_zecter("perfect_dark_kabuto_zecter","perfect_dark_kabuto").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_caucasus_zecter = new Item_zecter("perfect_caucasus_zecter","perfect_caucasus").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_hercus_zecter = new Item_zecter("perfect_hercus_zecter","perfect_hercus").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_ketaros_zecter = new Item_zecter("perfect_ketaros_zecter","perfect_ketaros").setCreativeTab(Tabs.tabkabuto);
+	public static Item perfect_lady_zecter = new Item_zecter("perfect_lady_zecter","perfect_lady").setCreativeTab(Tabs.tabkabuto);
 
 	public static Item clock_up_pad = new Item_clock_up_pad("clock_up_pad").setCreativeTab(Tabs.tabkabuto);
 
