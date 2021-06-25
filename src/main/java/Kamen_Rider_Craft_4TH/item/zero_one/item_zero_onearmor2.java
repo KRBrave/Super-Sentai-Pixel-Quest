@@ -2,6 +2,7 @@ package Kamen_Rider_Craft_4TH.item.zero_one;
 
 import javax.annotation.Nullable;
 
+import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
 import Kamen_Rider_Craft_4TH.item.ghost.item_ghost_armor3;
 import Kamen_Rider_Craft_4TH.model.bigBiped;
@@ -23,7 +24,7 @@ import net.minecraftforge.fml.relauncher.Side;
 
 public class item_zero_onearmor2 extends ItemArmor implements IHasModel
 {
-	public static final String[] CoreName= new String[] {"","_shining","_assault","_metalcluster","_zero_two","_rampage","_one","_red","_japanese",""};
+	public static final String[] CoreName= new String[] {"","_shining","_assault","_metalcluster","_zero_two","_rampage","_one","_red","_japanese","","_hell"};
 
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
@@ -136,5 +137,10 @@ public class item_zero_onearmor2 extends ItemArmor implements IHasModel
 			}
 		}
 		return null;
+	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
+	{
+		return RiderItems.hiden_metal == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

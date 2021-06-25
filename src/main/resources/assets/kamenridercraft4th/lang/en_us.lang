@@ -63,6 +63,11 @@ entity.GaohMob.name=Kamen Rider Gaoh
 entity.MachineDenBirdMob.name=Machine Den-Bird
 entity.RiseHopperBikeMob.name=Rise Hopper
 
+entity.ZuGumunBaMob.name=Zu-Gumun-Ba
+
+entity.RiotrooperMob.name=Riotrooper
+entity.OrgaMob.name=Horse Orphnoch
+
 entity.new_mole_imagin_sandMob.name=New Mole Imagin (Sand)
 entity.new_mole_imaginMob.name=New Mole Imagin
 entity.MomotarosMob.name=Momotaros
@@ -75,12 +80,34 @@ entity.GingaMob.name=Kamen Rider Ginga
 entity.TrilobiteMagiaMob.name=Trilobite Magia
 entity.dodoChickMob.name=Dodo Magia Chick
 entity.MagiaMob.name=Magia
+entity.BattleRaiderMob.name=Battle Raider
+entity.AbaddonMob.name=Kamen Rider Abaddon
 entity.horobiMob.name=Kamen Rider Horobi
 entity.jinMob.name=Kamen Rider Jin
 entity.ikazuchiMob.name=Kamen Rider Ikazuchi
+entity.NakiMob.name=Kamen Rider Naki
 entity.dodoMagiaMob.name=Dodo Magia
+entity.RaiderMob.name=Raider
 entity.Arc_zeroMob.name=Kamen Rider Ark-Zero
+entity.AbaddonHighMob.name=Kamen Rider Abaddon (High-class)
+entity.EdenMob.name=Kamen Rider Eden
+entity.ZaiaMob.name=Kamen Rider ZAIA
+entity.DireWolfSoldMagiaMob.name=Dire Wolf Sold Magia
+entity.ServalTigerSoldMagiaMob.name=Serval Tiger Sold Magia
+entity.gigerMob.name=Giger
 entity.IsMob.name=Is
+
+entity.DownfallGuardianMob.name=DownFall Guardian
+entity.PhantomCrusherMob.name=Phantom Crusher
+entity.BloodMob.name=Kamen Rider Blood
+entity.KillbusMob.name=Kamen Rider Killbus
+entity.MetalBuildMob.name=Kamen Rider Metal Build
+
+entity.ShimiMob.name=Shimi
+entity.CaliburMob.name=Kamen Rider Calibur
+entity.FalchionMob.name=Kamen Rider Falchion
+
+
 
 effect.fly=Flying
 effect.fire_punch=Fire Punch
@@ -187,12 +214,24 @@ tile.gamecreator.name=Game Creator
 tile.hiden_3d_printing.name=HIDEN 3D Printer
 tile.zaia_3d_printing.name=ZAIA 3D Printer
 
+tile.sword_of_logos_book_analyzer.name=Sword of Logos Book Analyzer
+
 tile.monitor.name=Computer Monitor
 tile.pandorabox.name=Pandora Box
 tile.mighty_block.name=Mighty Action X Block
 tile.wallplate.name=Metal Wall Plate
+tile.white_wallplate.name=Metal Wall Plate
 tile.fangire_glass.name=Fangire Glass
 tile.ganbarizing.name=Ganbarizing Machine
+
+tile.planks_light_blue.name=Wooden Planks
+tile.planks_dark_blue.name=Wooden Planks
+tile.planks_white.name=Wooden Planks
+tile.kamiyama_wall.name=Fantastic Bookstore Kamiyama Interior Wall Block
+tile.door_kamiyama.name=Fantastic Bookstore Kamiyama Door
+tile.sword_of_logos_stairs.name=Southern Base Stairs
+tile.sword_of_logos_bookshelf.name=Southern Base Bookshelf
+tile.planks_big_oak_golden_trim.name=Wooden Planks
 
 tile.denliner_interior.name=Denliner Interior
 tile.denliner_interior_darker.name=Denliner Interior (Dark)
@@ -702,6 +741,9 @@ item.musou_saber_kusarigama.name=Musou Saber (Kusarigama Mode)
 item.dj_gun.name=DJ Gun
 item.dj_gun_taiken_mode.name=DJ Gun (Taiken Mode)
 
+item.zangetsu_dj_gun.name=DJ Gun (Zangetsu)
+item.zangetsu_dj_gun_taiken_mode.name=DJ Gun (Zangetsu)(Taiken Mode)
+
 item.kagematsu.name=Kagematsu
 item.donkachi.name=Donkachi
 item.melon_defender.name=Melon Defender
@@ -734,6 +776,7 @@ item.sengoku_driver_mars.name=Sengoku Driver (Mars)
 item.sengoku_driver_kamuro.name=Sengoku Driver (Kamuro)
 item.sengoku_driver_jam.name=Sengoku Driver (Jam)
 item.sengoku_driver_kurokage_troopers.name=Sengoku Driver (Kurokage Troopers)
+item.sengoku_driver_sylphi.name=Sengoku Driver (Sylphi)
 
 item.sengoku_driver_proto_gaim.name=Sengoku Driver (Proto Gaim)
 item.sengoku_driver_proto_baron.name=Sengoku Driver (Proto Baron)
@@ -1033,6 +1076,7 @@ item.ultimate_kuugacard.name=Final KamenRide Kuuga Ultimate Form
 
 item.k_touch.name=Final Kamen Terminal K-Touch
 item.k_touch_diend.name=Final Kamen Terminal K-Touch (Diend)
+item.neo_k_touch.name=Final Kamen Terminal K-Touch 21
 
 item.ride_booker.name=Ride Booker
 item.diend_driver.name=Diend Driver
@@ -1047,11 +1091,12 @@ item.birth_driver_prototype.name=Prototype Birth Driver
 item.meteor_driver.name=Meteor Driver
 item.nadeshikodriver.name=Nadeshiko Driver
 
-item.fusion_swich.name=Fusion switch
+item.fusion_swich.name=Fusion Switch
 
 
-item.meteor_swich.name=Meteor switch
-item.meteor_storm_swich.name=Meteor Storm switch
+item.meteor_swich.name=Meteor Switch
+item.meteor_storm_swich.name=Meteor Storm Switch
+
 item.nadeshiko_switch.name=Nadeshiko Switch
 
 item.ride_saber.name=Ride Saber
@@ -1251,6 +1296,11 @@ item.mango_punisher.name=Mango Punisher
 item.duri_noko.name=Duri Noko
 item.kiwi_gekirin.name=Kiwi Gekirin
 
+item.shine_donkachi.name=Shine Donkachi
+item.hells_cane.name=Hells Cane
+item.shine_lychee_sword.name=Shine Lychee Sword
+item.king_duri_noko.name=King Duri Noko
+
 item.kabi_daidaimaru.name=Kabi Daidaimaru
 item.maja_yomimaru.name=Maja's Sword
 
@@ -1403,7 +1453,11 @@ item.natsumikan_lockseed.name=Natsumikan Lockseed
 item.xiaolongbao_lockseed.name=Xiaolongbao Lockseed
 item.drained_suika_lockseed.name=Drained Suika Lockseed
 
-item.zangetsu_kachidoki_lockseed.name=Zangetsu Kachidoki Lockseed
+item.lychee_lockseed.name=Lychee Lockseed
+item.king_durian_lockseed.name=King Durian Lockseed
+item.helheim_lockseed.name=Helheim Lockseed
+
+item.zangetsu_kachidoki_lockseed.name=Shin Kachidoki Lockseed
 
 item.techniqueshift.name=Shift Technique
 item.proto_speedshift.name=Shift Proto Speed
@@ -1711,6 +1765,8 @@ item.king_stone_split.name=Split King Stone
 
 item.typhoon_ichigo.name=Typhoon (Ichigo)
 item.typhoon_nigo.name=Typhoon (Nigo)
+
+item.nophoon_kamen_norider.name=Typhoon(Kamen Norider)
 
 item.new_typhoon.name=Typhoon (2016)
 
@@ -2174,8 +2230,9 @@ item.crocodile_crack_full_bottle.name=Crocodile Crack Full Bottle
 item.north_blizzard_full_bottle.name=North Blizzard Full Bottle
 item.prime_rogue_full_bottle.name=Prime Rogue Full Bottle
 item.muscle_galaxy_full_bottle.name=Muscle Galaxy Full Bottle
-item.killbas_spider_full_bottle.name=Killbas Spider Full Bottle
+item.killbas_spider_full_bottle.name=Killbus Spider Full Bottle
 item.grease_full_bottle.name=Grease Full Bottle
+item.metal_tanktank_full_bottle.name=Metal TankTank Full Bottle
 
 item.gear_engine.name=Gear Engine
 item.gear_remocon.name=Gear Remocon
@@ -2210,6 +2267,8 @@ item.nebula_gas_sample.name=Nebula Gas Sample
 item.genius_full_bottle_blank.name=Unfinished Genius Full Bottle
 
 item.dragon_magma_full_bottle.name=Dragon Magma Full Bottle
+
+item.metal_full_bottle.name=Metal Full Bottle
 
 item.evol_trigger.name=Evol Trigger
 
@@ -2246,6 +2305,8 @@ item.another_fourze_driver.name=Another Fourze Driver
 item.another_ooo_driver.name=Another OOO Driver
 item.another_faiz_driver.name=Another Faiz Driver
 item.ziku_driver_tsukuyomi.name=Ziku Driver (Tsukuyomi)
+item.another_w_driver.name=Another W Driver
+item.another_shinobi_driver.name=Another Shinobi Driver
 
 
 item.unfinished_ohma_zi_o_driver_1.name=Unfinished Ohma Ziku Driver Part
@@ -2346,6 +2407,7 @@ item.amazon_alpha_ridewatch.name=Amazon Alpha Ridewatch
 item.amazon_neo_ridewatch.name=Amazon Neo Ridewatch
 
 item.zero_one_ridewatch.name=Zero-One Ridewatch
+item.saber_ridewatch.name=Saber Ridewatch
 
 item.ohma_advent_calendar.name=Ohma Advent Calendar
 
@@ -2367,8 +2429,9 @@ item.zero_onehead.name=Zero One Helmet
 item.zero_onetroso.name=Zero One Chestplate     
 item.zero_onelegs.name=Zero One Leggings   
 
-item.hiden_zero_one_driver.name=Hiden Zero One Driver   
-item.zaia_thousandriver.name=ZAIA Thousandriver
+item.hiden_zero_one_driver.name=Hiden Zero One Driver (Zero-One)
+item.zaia_thousandriver.name=ZAIA Thousandriver (Thouser)
+item.zaia_thousandriver_zaia.name=ZAIA Thousandriver (ZAIA)
 
 item.shot_riser_vulcan.name=AIMS Shot Riser (Vulcan) 
 item.shot_riser_valkyrie.name=AIMS Shot Riser (Valkyrie) 
@@ -2379,22 +2442,55 @@ item.forceriser_ikazuchi.name=MetsubouJinrai ForceRiser (Ikazuchi)
 item.forceriser_naki.name=MetsubouJinrai ForceRiser (Naki)
 item.forceriser_001.name=MetsubouJinrai ForceRiser (001)
 
+item.zetsumetsu_driver.name=Zetsumetsu Driver
+item.metsuboujinrai_driver.name=MetsuBouJinRai Driver
+
 item.cycloneriser_ichigata.name=CycloneRiser (Ichi-Gata)
 
 item.zaia_slashriser_jin.name=ZAIA SlashRiser (Jin)
 
 item.ark_driver_zero.name=Ark Driver-Zero (Ark-Zero)
+item.hiden_zero_one_driver_azu.name=Hiden Zero One Driver (Ark Zero-One)
+
+item.eden_driver.name=Eden Driver (Eden)
+item.lucifer_driver.name=Eden Driver (Lucifer)
+
+item.slash_abaddo_riser_r.name=Slash AbadoRiser (Red)
+item.shot_abaddo_riser_g.name=Shot AbaddoRiser (Grey)
+item.shot_abaddo_riser_b.name=Shot AbaddoRiser (Blue)
+item.slash_abaddo_riser_o.name=Slash AbadoRiser (Orange)
+item.shot_abaddo_riser.name=Shot AbaddoRiser (Abaddon)
+item.slash_abaddo_riser.name=Slash AbaddoRiser (Abaddon)
+
+item.hiden_zero_one_driver_vulcan.name=Hiden Zero One Driver (Vulcan)
 
 item.zetsumeriser_berothra.name=ZetsumeRiser (Berotha Magia)
 item.zetsumeriser_kuehne.name=ZetsumeRiser (Kuehne Magia)
 item.zetsumeriser_ekal.name=ZetsumeRiser (Ekal Magia)
 item.zetsumeriser_dodo.name=ZetsumeRiser (Dodo Magia)
 item.zetsumeriser_neohi.name=ZetsumeRiser (Neohi Magia)
+item.zetsumeriser_onycho.name=ZetsumeRiser (Onycho Magia)
+item.zetsumeriser_vicarya.name=ZetsumeRiser (Vicarya Magia)
+item.zetsumeriser_gaeru.name=ZetsumeRiser (Gaeru Magia)
+item.zetsumeriser_mammoth.name=ZetsumeRiser (Mammoth Magia)
 
 item.zetsumeriser_dodo_custom.name=ZetsumeRiser (Dodo Magia Custom)
-item.zetsumeriser_dodo_custom_v2.name=ZetsumeRiser (Dodo Magia Custom　Two)
+item.zetsumeriser_dodo_custom_v2.name=ZetsumeRiser (Dodo Magia Custom Two)
+
+item.zetsumeriser_arsino.name=ZetsumeRiser (Arsino Magia)
+
+item.raidriser_battle.name=RaidRiser (Battle Raider)
+item.raidriser_buffalo.name=RaidRiser (Crushing Buffalo Raider)
+item.raidriser_whale.name=RaidRiser (Splashing Whale Raider)
+item.raidriser_lion.name=RaidRiser (Dynamaiting Lion Raider)
+item.raidriser_penguin.name=RaidRiser (Storming Penguin Raider)
+item.raidriser_panda.name=RaidRiser (Scouting Panda Raider)
+item.raidriser_jackal.name=RaidRiser (Fighting Jackal Raider)
 
 item.shot_riser_gun.name=AIMS Shot Riser 
+item.zaia_slashriser_sword.name=ZAIA Slash Riser
+item.shot_abaddo_gun.name=Shot AbaddoRiser
+item.slash_abaddo_sword.name=Slash AbaddoRiser
 item.attache_calibur.name=Attache Calibur
 item.attache_shotgun.name=Attache Shotgun
 item.attache_arrow.name=Attache Arrow
@@ -2409,6 +2505,7 @@ item.shining_assault_hopper_progrise_key.name=Shining Assault Hopper Progrise Ke
 item.metalcluster_hopper_progrise_key.name=MetalCluster Hopper Progrise Key
 item.zero_two_progrise_key.name=Zero-Two Progrise Key
 item.red_rising_hopper_progrise_key.name=Red Rising Hopper Progrise Key
+item.hell_hopper_progrise_key.name=Hellrise Progrise Key
 
 item.biting_shark_progrise_key.name=Biting Shark Progrise Key
 item.flaming_tiger_progrise_key.name=Flaming Tiger Progrise Key
@@ -2431,12 +2528,15 @@ item.shooting_wolf_progrise_key.name=Shooting Wolf Progrise Key
 item.assault_wolf_progrise_key.name=Assault Wolf Progrise Key
 item.rampage_gatling_progrise_key.name=Rampage Gatling Progrise Key
 item.punching_kong_progrise_key.name=Punching Kong Progrise Key
+item.dire_wolf_zetsumerise_key.name=Dire Wolf Zetsumerise Key
 
 item.rushing_cheetah_progrise_key.name=Rushing Cheetah Progrise Key
 item.lightning_hornet_progrise_key.name=Lightning Hornet Progrise Key
 item.fighting_jackal_progrise_key.name=Fighting Jackal Progrise Key
+item.serval_tiger_zetsumerisekey.name=Serval Tiger Zetsumerise Key
 
 item.sting_scorpion_progrise_key.name=Sting Scorpion Progrise Key
+item.ark_scorpion_progrise_key.name=Ark Scorpion Progrise Key
 
 item.flying_falcon_progrise_key.name=Flying Falcon Progrise Key
 item.burning_falcon_progrise_key.name=Burning Falcon Progrise Key
@@ -2445,6 +2545,13 @@ item.amazing_caucasus_progrise_key.name=Amazing Caucasus Progrise Key
 item.awaking_arsino_zetsumerise_key.name=Awaking Arsino Zetsumerise Key
 
 item.ark_one_progrise_key.name=Ark-One Progrise Key
+item.ark_zero_one_progrise_key.name=Ark Zero-One Progrise Key
+
+item.eden_zetsumerise_key.name=Eden Zetsumerise Key
+item.crowding_hopper_progrise_key.name=Crowding Hopper Progrise Key
+item.triceratops_zetsumerise_key.name=Triceratops Zetsumerise Key
+item.carnotaurus_zetsumerise_key.name=Carnotaurus Zetsumerise Key
+item.mass_brain_zetsumerise_key.name=Mass Brain Zetsumerise Key
 
 item.berothamagia_zetsumerisekey.name=Berotha Zetsumerise Key
 item.kuehnemagia_zetsumerisekey.name=Kuehne Zetsumerise Key
@@ -2487,10 +2594,36 @@ item.jin_progrise_key.name=Jin Progrise Key
 item.ikazuchi_progrise_key.name=Ikazuchi Progrise Key
 item.naki_progrise_key.name=Naki Progrise Key
 
+item.ark_scorpion_progrise_key.name=Ark Scorpion Progrisekey
+item.realize_rising_hopper_progrise_key.name=Rising Hopper Progrisekey (Realize Ver.)
+
 item.merry_hopper_progrise_key.name=Christmas Rising Hopper Progrise Key
 
 item.hiden_metal.name=Hiden Metal
 item.hiden_risephone.name=Hiden Risephone           
+
+item.kaenken_rekka.name=Kaenken Rekka
+item.suiseiken_nagare.name=Suiseiken Nagare
+item.dogouken_gekido.name=Dogouken Gekido
+item.raimeiken_ikazuchi.name=Raimeiken Ikazuchi
+item.ankokuken_kurayami.name=Ankokuken Kurayami
+item.onjuuken_suzune.name=Onjuuken Suzune
+    
+
+item.kingexcalibur.name=Kingexcalibur
+item.kougouken_saikou.name=Kougouken Saikou
+item.eneiken_noroshi.name=Eneiken Noroshi
+item.jikokuken_kaiji.name=Jikokuken Kaiji
+item.caladbolg.name=Caladbolg
+item.haouken_xross_saber.name=Haouken Xross Saber
+    
+item.fuusouken_hayate_ittouryu.name=Fuusouken Hayate(Ittouryu Mode)
+item.fuusouken_hayate_nitouryu.name=Fuusouken Hayate(Nitouryu Mode)
+item.fuusouken_hayate_nitouryu2.name=Fuusouken Hayate(Nitouryu Mode)
+item.fuusouken_hayate_shuriken.name= Fuusouken Hayate(Shuriken Mode)
+    
+item.mumeiken_kyomu.name=Mumeiken Kyomu
+item.shimi_lot.name=Shimi Lot
 
 item.saberhead.name=Saber Helmet
 item.sabertroso.name=Saber Chestplate
@@ -2499,13 +2632,80 @@ item.saberlegs.name=Saber Leggings
 item.seiken_swordriver_saber.name=Seiken Swordriver (Saber)
 item.seiken_swordriver_blaze.name=Seiken Swordriver (Blades)
 
-item.brave_dragon_wonderride_book.name=Brave Dragon WonderRide Book
+item.seiken_swordriver_espada.name=Seiken Swordriver (Espada)
 
-item.lion_senki_wonderride_book.name=Lion Senki WonderRide Book
+item.sword_of_logos_buckle_buster.name=Sword of Logos Buckle (Buster)
+item.sword_of_logos_buckle_kenzan.name=Sword of Logos Buckle (Kenzan)
+item.sword_of_logos_buckle_slash.name=Sword of Logos Buckle (Slash)
+    
+item.jaken_caliburdriver.name=Jaken Caliburdriver
+item.seiken_swordriver_falchion.name=Haken Bladriver
 
-item.peter_fantasista_wonderride_book.name=Peter Fantasista WonderRide Book
-item.jackun_to_domamenoki_wonderride_book.name=Jackun-to-Domamenoki WonderRide Book
-		   
+item.sword_of_logos_buckle_sabela.name=Royal Sword of Logos Buckle (Sabela)
+item.sword_of_logos_buckle_durendal.name=Royal Sword of Logos Buckle (Durendal)
+item.seiken_saikou_driver.name=Seiken Saikou Driver
+item.solomon_driver.name=Dooms Driver
+
+item.brave_dragon_wonderride_book.name=Brave Dragon Wonder Ride Book
+item.storm_eagle_wonderride_book.name=Storm Eagle Wonder Ride Book
+item.saiyuu_journey_wonderride_book.name=Saiyuu Journey Wonder Ride Book
+    
+item.dragonic_knight_wonder_ride_book.name=Dragonic Knight Wonder Ride Book
+item.emotional_dragon_wonder_ride_book.name=Emotional Dragon Wonder Ride Book
+    
+item.king_of_arthur_wonderride_book.name=King of Arthur Wonder Ride Book
+    
+item.lion_senki_wonderride_book.name=Lion Senki Wonder Ride Book
+item.peter_fantasista_wonderride_book.name=Peter Fantasista Wonder Ride Book
+item.tenkuu_no_pegasus_wonderride_book.name=Tenkuu no Pegasus Wonder Ride Book
+    
+item.lamp_do_alngina_wonderride_book.name=Lamp Do Alangina Wonder Ride Book
+item.needle_hedgehog_wonderride_book.name=Needle Hedgehog Wonder Ride Book
+item.tri_cerberus_wonderride_book.name=Tri Cerberus Wonder Ride Book
+    
+item.genbu_shinwa_wonderride_book.name=Genbu Shinwa Wonder Ride Book
+item.jackun_to_domamenoki_wonderride_book.name=Jackun-to-Domamenoki Wonder Ride Book
+
+item.sarutobi_ninjaden_wonderride_book.name=Sarutobi Ninjaden Wonder Ride Book
+item.kobuta_3_kyouda_wonderride_book.name=Kobuta 3 Kyoudai Wonder Ride Book
+
+item.hanselnuts_to_gretel_wonderride_book.name=Hanselnuts to Gretel Wonder Ride Book
+item.bremen_no_rock_band_wonderride_book.name=Bremen no Rock Band Wonder Ride Book
+
+item.jaaku_dragon_wonder_ride_book.name=Jaaku Dragon Wonder Ride Book 
+item.jaou_dragon_wonder_ride_book.name=Jaou Dragon Wonder Ride Book
+
+item.eternal_phoenix_wonderride_book.name=Eternal Phoenix Wonder Ride Book
+
+item.primitive_dragon_wonder_ride_book.name=Primitive Dragon Wonder Ride Book
+item.elemental_dragon_wonder_ride_book.name=Elemental Dragon Wonder Ride Book
+item.televi_kun_wonderride_book.name=Televi-Kun Wonder Ride Book
+item.king_lion_daisenki_wonderride_book.name=King Lion Daisenki Wonder Ride Book
+item.tategami_hyoujuu_senki_wonderride_book.name=Tategami Hyoujuu Senki Wonder Ride Book
+item.ghost_ijinroku_wonderride_book.name=Ghost Ijinroku Wonder Ride Book
+
+item.daishougun_momoichirou_wonderride_book.name=Daishougun Momoichirou Wonder Ride Book
+item.daikengou_urashimajirou_wonderride_book.name=Daikengou Urashimajirou Wonder Ride Book
+item.daiyokozuna_kinzaburou_wonderride_book.name=Daiyokozuna Kinzaburou Wonder Ride Book
+item.kin_no_buki_gin_no_buki_wonderride_book.name=Kin no Buki Gin no Buki Wonder Ride Book
+item.x_swordman_wonderride_book.name=X-Swordman Wonder Ride Book
+
+item.konchuu_daihyakka_wonderride_book.name=Konchuu Daihyakka Wonder Ride Book
+item.ocean_history_wonderride_book.name=Ocean History Wonder Ride Book
+item.omni_force_wonderride_book.name=Omni Force Wonder Ride Book
+
+item.kirin_no_ongaeshi_wonderride_book.name=Kirin no Ongaeshi Wonder Ride Book
+item.sarukani_wars_wonderride_book.name=Sarukani Wars Wonder Ride Book
+item.bakusou_usagi_to_kame_wonderride_book.name=Bakusou Usagi to Kame Wonder Ride Book
+item.hoshin_kamen_engi_wonderride_book.name=Houshin Kamen Engi Wonder Ride Book
+item.tsuki_no_hime_kaguyan_wonderride_book.name=Tsuki no Hime Kaguyan Wonder Ride Book
+item.osha_jizou_san_wonderride_book.name=Osha Jizou San Wonder Ride Book
+item.issun_bushi_wonderride_book.name=Issun Bushi Wonder Ride Book
+
+item.book_gate_wonder_ride_book.name=Book Gate Wonder Ride Book
+item.blank_wonder_ride_book.name=Blank Wonder Ride Book
+item.book_of_ruin.name=Book Of Ruin
+  		   
 item.amazonshead.name=Amazons Helmet
 item.amazonstroso.name=Amazons Chestplate 
 item.amazonslegs.name=Amazons Leggings
