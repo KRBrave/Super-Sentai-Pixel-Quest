@@ -571,10 +571,60 @@ public class GaimItems {
     public static Item jigoku_heguri_lockseed = new Item_lockseed(1,90,"jigoku_heguri_lockseed").setCreativeTab(Tabs.tabGaim);
     public static Item submondo_heguri_lockseed = new Item_lockseed(1,91,"submondo_heguri_lockseed").setCreativeTab(Tabs.tabGaim);
     
-    public static Item cherry_lockseed = new Item_lockseed(1,92,"cherry_lockseed").setCreativeTab(Tabs.tabGaim);    
-    public static Item dragonfruit_lockseed = new Item_lockseed(1,93,"dragonfruit_lockseed").setCreativeTab(Tabs.tabGaim);  
-    public static Item marron_lockseed = new Item_lockseed(1,94,"marron_lockseed").setCreativeTab(Tabs.tabGaim);
-    public static Item peach_lockseed = new Item_lockseed(1,95,"peach_lockseed").setCreativeTab(Tabs.tabGaim);  
+    public static Item cherry_lockseed = new Item_lockseed(1,92,"cherry_lockseed").AddlockseedToHelheimVine(1).setCreativeTab(Tabs.tabGaim);    
+    public static Item dragonfruit_lockseed = new Item_lockseed(1,93,"dragonfruit_lockseed").AddlockseedToHelheimVine(1).setCreativeTab(Tabs.tabGaim);  
+    public static Item marron_lockseed = new Item_lockseed(1,94,"marron_lockseed").AddlockseedToHelheimVine(1).setCreativeTab(Tabs.tabGaim);
+    public static Item peach_lockseed = new Item_lockseed(1,95,"peach_lockseed").AddlockseedToHelheimVine(1).setCreativeTab(Tabs.tabGaim);  
+    
+    public static Item kurumi_energy_lockseed = new Item_lockseed(1,99,"kurumi_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item donguri_energy_lockseed = new Item_lockseed(1,100,"donguri_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item pine_energy_lockseed = new Item_lockseed(1,101,"pine_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item ichigo_energy_lockseed = new Item_lockseed(1,102,"ichigo_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item orange_energy_lockseed = new Item_lockseed(1,103,"orange_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item banana_energy_lockseed = new Item_lockseed(1,104,"banana_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item budou_energy_lockseed = new Item_lockseed(1,105,"budou_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item suika_energy_lockseed = new Item_lockseed(1,106,"suika_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item mango_energy_lockseed = new Item_lockseed(1,107,"mango_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item durian_energy_lockseed = new Item_lockseed(1,108,"durian_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item kiwi_energy_lockseed = new Item_lockseed(1,109,"kiwi_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+
+    public static Item sengoku_driver_kurumi_energy  = new Item_ore("sengoku_driver_kurumi_energy");
+    public static Item sengoku_driver_donguri_energy  = new Item_ore("sengoku_driver_donguri_energy");
+    public static Item sengoku_driver_pine_energy  = new Item_ore("sengoku_driver_pine_energy");
+    public static Item sengoku_driver_ichigo_energy  = new Item_ore("sengoku_driver_ichigo_energy");
+    public static Item sengoku_driver_orange_energy  = new Item_ore("sengoku_driver_orange_energy");
+    public static Item sengoku_driver_banana_energy  = new Item_ore("sengoku_driver_banana_energy");
+    public static Item sengoku_driver_budou_energy = new Item_ore("sengoku_driver_budou_energy");
+    public static Item sengoku_driver_suika_energy  = new Item_ore("sengoku_driver_suika_energy");
+    public static Item sengoku_driver_mango_energy  = new Item_ore("sengoku_driver_mango_energy");
+    public static Item sengoku_driver_durian_energy  = new Item_ore("sengoku_driver_durian_energy");
+    public static Item sengoku_driver_kiwi_energy  = new Item_ore("sengoku_driver_kiwi_energy");
+    
+    public static Item sengoku_driver_blood_orange_energy  = new Item_ore("sengoku_driver_blood_orange_energy");
+    public static Item blood_orange_energy_lockseed = new Item_lockseed(1,110,"blood_orange_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_fifteen_lock_energy  = new Item_ore("sengoku_driver_fifteen_lock_energy");
+    public static Item fifteen_energy_lockseed = new Item_lockseed(1,111,"fifteen_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_golden_ringo_energy  = new Item_ore("sengoku_driver_golden_ringo_energy");
+    public static Item golden_ringo_energy_lockseed = new Item_lockseed(1,112,"golden_ringo_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_silver_ringo_energy  = new Item_ore("sengoku_driver_silver_ringo_energy");
+    public static Item silver_ringo_energy_lockseed = new Item_lockseed(1,113,"silver_ringo_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_black_ringo_energy  = new Item_ore("sengoku_driver_black_ringo_energy");
+    public static Item black_ringo_energy_lockseed = new Item_lockseed(1,114,"black_ringo_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_watermelon_energy  = new Item_ore("sengoku_driver_watermelon_energy");
+    public static Item watermelon_energy_lockseed = new Item_lockseed(1,115,"watermelon_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_forbidden_ringo_energy = new Item_ore("sengoku_driver_forbidden_ringo_energy");
+    public static Item forbidden_ringo_energy_lockseed = new Item_lockseed(1,116,"forbidden_ringo_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_blood_zakuro_energy  = new Item_ore("sengoku_driver_blood_zakuro_energy");
+    public static Item zakuro_energy_lockseed = new Item_lockseed(1,117,"zakuro_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+
+    public static Item sengoku_driver_maja_lock_energy  = new Item_ore("sengoku_driver_maja_lock_energy");
+    public static Item maja_energy_lockseed  = new Item_lockseed(4,118,"maja_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_lychee_energy  = new Item_ore("sengoku_driver_lychee_energy");
+    public static Item lychee_energy_lockseed  = new Item_lockseed(4,119,"lychee_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_king_durian_energy  = new Item_ore("sengoku_driver_king_durian_energy");
+    public static Item king_durian_energy_lockseed  = new Item_lockseed(4,120,"king_durian_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_hells_energy  = new Item_ore("sengoku_driver_hells_energy");
+    public static Item helheim_energy_lockseed  = new Item_lockseed(4,121,"helheim_energy_lockseed").setCreativeTab(Tabs.tabGaim);
     
 	public static void init() {
 	}

@@ -5,6 +5,7 @@ import java.util.Calendar;
 import java.util.UUID;
 
 import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.GaimItems;
 import Kamen_Rider_Craft_4TH.mobs.Boss.EntityBossBase;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Duke;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_EngineBros;
@@ -84,7 +85,7 @@ public class EntityElementaryInvesGreen extends Entity_base_henchmen
 				switch (this.rand.nextInt(50))
 				{
 				case 0:
-					this.dropItem(RiderItems.roulette_lockseed, 1);
+					this.dropItem(GaimItems.roulette_lockseed, 1);
 					break;
 					}
 			}

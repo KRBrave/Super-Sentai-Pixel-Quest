@@ -2,9 +2,11 @@ package Kamen_Rider_Craft_4TH.mobs.bikes;
 
 
 import java.util.Calendar;
+
 import java.util.UUID;
 
 import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.GaimItems;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
@@ -61,7 +63,7 @@ public class EntitySakuraHurricane extends EntityBikeBase
     {
 if (!this.world.isRemote){
 
-    			this.dropItem(RiderItems.sakura_hurricane, 1);
+    			this.dropItem(GaimItems.sakura_hurricane, 1);
 
         
     }
