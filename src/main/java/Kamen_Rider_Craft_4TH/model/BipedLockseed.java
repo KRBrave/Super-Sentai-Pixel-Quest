@@ -8,6 +8,7 @@ package Kamen_Rider_Craft_4TH.model;
 
 import org.lwjgl.opengl.GL11;
 
+import Kamen_Rider_Craft_4TH.GaimItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.item.Ex_Aid.item_ex_aiddriver;
 import Kamen_Rider_Craft_4TH.item.gaim.item_Gaimdriver;
@@ -205,7 +206,7 @@ public class BipedLockseed extends ModelBiped
 			ItemStack stack  =   ((EntityLivingBase) entity).getItemStackFromSlot(EntityEquipmentSlot.FEET);
 			ItemStack stack2  =   ((EntityLivingBase) entity).getItemStackFromSlot(EntityEquipmentSlot.HEAD);
 			if (stack!=null){
-				if (stack.getItem() instanceof item_Gaimdriver & stack2.getItem()==RiderItems.Gaimhead){
+				if (stack.getItem() instanceof item_Gaimdriver & stack2.getItem()==GaimItems.Gaimhead){
 					if (item_Gaimdriver.get_lock(stack)=="energy_dragon_fruits_arms"){
 
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/energy_prototype_dragon_fruits_arms.png"));

@@ -4,6 +4,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
+import Kamen_Rider_Craft_4TH.GaimItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
 import Kamen_Rider_Craft_4TH.model.model_belt;
@@ -81,16 +82,65 @@ public class item_Gaimdriver extends ItemArmor  implements IHasModel
 				model_belt_plus armorModel = new model_belt_plus();
 
 				if (this.RIDER=="ryugen"&this.get_lock(stack)=="yomotsu_heguri_arms"){
-					armorModel.belt = new ItemStack(RiderItems.sengoku_driver_ryugen_yomi);
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_ryugen_yomi);
 
 				}else if (this.RIDER=="zangetsu"&this.get_lock(stack)=="watermelon_arms"){
-					armorModel.belt = new ItemStack(RiderItems.sengoku_driver_zangetsu_watermelon);
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_zangetsu_watermelon);
 
 				}else{
 					armorModel.belt=stack;
 				}
 
-				Item[] LOCK= new Item[] {RiderItems.himawari_lockseed,RiderItems.sengoku_driver_matsubokkuri,RiderItems.sengoku_driver_kurumi,RiderItems.sengoku_driver_donguri,RiderItems.sengoku_driver_melon,RiderItems.sengoku_driver_pine, RiderItems.sengoku_driver_ichigo, RiderItems.sengoku_driver_orange, RiderItems.sengoku_driver_banana, RiderItems.sengoku_driver_budou, RiderItems.sengoku_driver_mango, RiderItems.sengoku_driver_durian, RiderItems.sengoku_driver_kiwi, RiderItems.sengoku_driver_lemon_energy, RiderItems.sengoku_driver_cherry_energy, RiderItems.sengoku_driver_peach_energy, RiderItems.sengoku_driver_melon_energy,RiderItems.sengoku_driver_jinba_lemon,RiderItems.sengoku_driver_jinba_cherry,RiderItems.sengoku_driver_jinba_peach,RiderItems.sengoku_driver_jinba_melon,RiderItems.sengoku_driver_matsubokkuri_energy,RiderItems.sengoku_driver_kachidoki,RiderItems.sengoku_driver_kiwami,RiderItems.sengoku_driver_yomotsu_heguri,RiderItems.sengoku_driver_blood_orange,RiderItems.sengoku_driver_fifteen_lock,RiderItems.sengoku_driver_golden_ringo,RiderItems.sengoku_driver_silver_ringo,RiderItems.sengoku_driver_black_ringo,RiderItems.sengoku_driver_watermelon,RiderItems.sengoku_driver_forbidden_ringo,RiderItems.sengoku_driver_forbidden_ringo,RiderItems.sengoku_driver_jinba_black,RiderItems.sengoku_driver_wizard,RiderItems.sengoku_driver_fourze,RiderItems.sengoku_driver_ooo,RiderItems.sengoku_driver_w,RiderItems.sengoku_driver_decade,RiderItems.sengoku_driver_rider_ichigo,RiderItems.sengoku_driver_suika,RiderItems.sengoku_driver_lemon,RiderItems.sengoku_driver_dragon_fruits_energy,RiderItems.sengoku_driver_dragon_fruits_energy,RiderItems.sengoku_driver_orange_fr,RiderItems.sengoku_driver_drive,RiderItems.sengoku_driver_jinba_marron,RiderItems.sengoku_driver_blood_zakuro,RiderItems.sengoku_driver_kuuga,RiderItems.sengoku_driver_agito,RiderItems.sengoku_driver_ryuki,RiderItems.sengoku_driver_faiz,RiderItems.sengoku_driver_blade,RiderItems.sengoku_driver_hibiki,RiderItems.sengoku_driver_kaubuto,RiderItems.sengoku_driver_den_o,RiderItems.sengoku_driver_kiva,RiderItems.sengoku_driver_gaim_lock,RiderItems.sengoku_driver_kabi_orange,RiderItems.sengoku_driver_maja_lock,RiderItems.sengoku_driver_jinba_dragon,RiderItems.sengoku_driver_jinba_melon_melon,RiderItems.sengoku_driver_jinba_melon_durian,RiderItems.sengoku_driver_natsumikan,RiderItems.sengoku_driver_black_baron,RiderItems.sengoku_driver_zangetsu_kachidoki,RiderItems.sengoku_driver_haljo_heguri,RiderItems.sengoku_driver_diyu_heguri,RiderItems.sengoku_driver_lucifer_heguri,RiderItems.sengoku_driver_silver_lucifer_heguri,RiderItems.sengoku_driver_golden_lucifer_heguri,RiderItems.sengoku_driver_proto_nokuni_heguri,RiderItems.sengoku_driver_enma_heguri,RiderItems.sengoku_driver_black_lucifer_heguri,RiderItems.sengoku_driver_nether_heguri,RiderItems.sengoku_driver_abyss_heguri,RiderItems.sengoku_driver_naraka_heguri,RiderItems.sengoku_driver_helreginn_heguri,RiderItems.sengoku_driver_apollyon_heguri,RiderItems.sengoku_driver_taishan_heguri,RiderItems.sengoku_driver_orcus_heguri,RiderItems.sengoku_driver_inferno_heguri,RiderItems.sengoku_driver_nokuni_heguri,RiderItems.sengoku_driver_tartarus_heguri,RiderItems.sengoku_driver_daimaoh_heguri,RiderItems.sengoku_driver_zetsubo_heguri,RiderItems.sengoku_driver_taizai_heguri,RiderItems.sengoku_driver_yomi_heguri,RiderItems.sengoku_driver_sin_heguri,RiderItems.sengoku_driver_hades_heguri,RiderItems.sengoku_driver_jigoku_heguri,RiderItems.sengoku_driver_submondo_heguri,RiderItems.sengoku_driver_cherry,RiderItems.sengoku_driver_dragonfruit,RiderItems.sengoku_driver_marron,RiderItems.sengoku_driver_peach,RiderItems.sengoku_driver_zangetsu_kachidoki,RiderItems.sengoku_driver_lychee,RiderItems.sengoku_driver_king_durian,RiderItems.sengoku_driver_hells};
+				Item[] LOCK= new Item[] {RiderItems.himawari_lockseed,GaimItems.sengoku_driver_matsubokkuri
+						,GaimItems.sengoku_driver_kurumi,GaimItems.sengoku_driver_donguri,
+						GaimItems.sengoku_driver_melon,GaimItems.sengoku_driver_pine,
+						GaimItems.sengoku_driver_ichigo, GaimItems.sengoku_driver_orange,
+						GaimItems.sengoku_driver_banana, GaimItems.sengoku_driver_budou,
+						GaimItems.sengoku_driver_mango, GaimItems.sengoku_driver_durian,
+						GaimItems.sengoku_driver_kiwi, GaimItems.sengoku_driver_lemon_energy,
+						GaimItems.sengoku_driver_cherry_energy, GaimItems.sengoku_driver_peach_energy,
+						GaimItems.sengoku_driver_melon_energy,GaimItems.sengoku_driver_jinba_lemon,
+						GaimItems.sengoku_driver_jinba_cherry,GaimItems.sengoku_driver_jinba_peach,
+						GaimItems.sengoku_driver_jinba_melon,GaimItems.sengoku_driver_matsubokkuri_energy,
+						GaimItems.sengoku_driver_kachidoki,GaimItems.sengoku_driver_kiwami,
+						GaimItems.sengoku_driver_yomotsu_heguri,GaimItems.sengoku_driver_blood_orange,
+						GaimItems.sengoku_driver_fifteen_lock,GaimItems.sengoku_driver_golden_ringo,
+						GaimItems.sengoku_driver_silver_ringo,GaimItems.sengoku_driver_black_ringo,
+						GaimItems.sengoku_driver_watermelon,GaimItems.sengoku_driver_forbidden_ringo,
+						GaimItems.sengoku_driver_forbidden_ringo,GaimItems.sengoku_driver_jinba_black,
+						GaimItems.sengoku_driver_wizard,GaimItems.sengoku_driver_fourze,
+						GaimItems.sengoku_driver_ooo,GaimItems.sengoku_driver_w,
+						GaimItems.sengoku_driver_decade,GaimItems.sengoku_driver_rider_ichigo,
+						GaimItems.sengoku_driver_suika,GaimItems.sengoku_driver_lemon,
+						GaimItems.sengoku_driver_dragon_fruits_energy,GaimItems.sengoku_driver_dragon_fruits_energy,
+						GaimItems.sengoku_driver_orange_fr,GaimItems.sengoku_driver_drive,
+						GaimItems.sengoku_driver_jinba_marron,GaimItems.sengoku_driver_blood_zakuro,
+						GaimItems.sengoku_driver_kuuga,GaimItems.sengoku_driver_agito,
+						GaimItems.sengoku_driver_ryuki,GaimItems.sengoku_driver_faiz,
+						GaimItems.sengoku_driver_blade,GaimItems.sengoku_driver_hibiki,
+						GaimItems.sengoku_driver_kaubuto,GaimItems.sengoku_driver_den_o,
+						GaimItems.sengoku_driver_kiva,GaimItems.sengoku_driver_gaim_lock,
+						GaimItems.sengoku_driver_kabi_orange,GaimItems.sengoku_driver_maja_lock,
+						GaimItems.sengoku_driver_jinba_dragon,GaimItems.sengoku_driver_jinba_melon_melon,
+						GaimItems.sengoku_driver_jinba_melon_durian,GaimItems.sengoku_driver_natsumikan,
+						GaimItems.sengoku_driver_black_baron,GaimItems.sengoku_driver_zangetsu_kachidoki,
+						GaimItems.sengoku_driver_haljo_heguri,GaimItems.sengoku_driver_diyu_heguri,
+						GaimItems.sengoku_driver_lucifer_heguri,GaimItems.sengoku_driver_silver_lucifer_heguri,
+						GaimItems.sengoku_driver_golden_lucifer_heguri,GaimItems.sengoku_driver_proto_nokuni_heguri,
+						GaimItems.sengoku_driver_enma_heguri,GaimItems.sengoku_driver_black_lucifer_heguri,
+						GaimItems.sengoku_driver_nether_heguri,GaimItems.sengoku_driver_abyss_heguri,
+						GaimItems.sengoku_driver_naraka_heguri,GaimItems.sengoku_driver_helreginn_heguri,
+						GaimItems.sengoku_driver_apollyon_heguri,GaimItems.sengoku_driver_taishan_heguri,
+						GaimItems.sengoku_driver_orcus_heguri,GaimItems.sengoku_driver_inferno_heguri,
+						GaimItems.sengoku_driver_nokuni_heguri,GaimItems.sengoku_driver_tartarus_heguri,
+						GaimItems.sengoku_driver_daimaoh_heguri,GaimItems.sengoku_driver_zetsubo_heguri,
+						GaimItems.sengoku_driver_taizai_heguri,GaimItems.sengoku_driver_yomi_heguri,
+						GaimItems.sengoku_driver_sin_heguri,GaimItems.sengoku_driver_hades_heguri,
+						GaimItems.sengoku_driver_jigoku_heguri,GaimItems.sengoku_driver_submondo_heguri,
+						GaimItems.sengoku_driver_cherry,GaimItems.sengoku_driver_dragonfruit,
+						GaimItems.sengoku_driver_marron,GaimItems.sengoku_driver_peach,
+						GaimItems.sengoku_driver_zangetsu_kachidoki,GaimItems.sengoku_driver_lychee,
+						GaimItems.sengoku_driver_king_durian,GaimItems.sengoku_driver_hells};
 
 				if (stack.hasTagCompound()){
 					if( stack.getTagCompound().getInteger("seed")!=0)
@@ -173,9 +223,9 @@ public class item_Gaimdriver extends ItemArmor  implements IHasModel
 			if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST)!= null){
 				if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS)!= null){
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.Gaimlegs){
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.Gaimtroso){
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.Gaimhead){
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == GaimItems.Gaimlegs){
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == GaimItems.Gaimtroso){
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == GaimItems.Gaimhead){
 
 									player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 250, 5,true,false));
 

@@ -5,6 +5,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
+import Kamen_Rider_Craft_4TH.GaimItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
 import Kamen_Rider_Craft_4TH.model.BipedLockseed;
@@ -65,7 +66,7 @@ public class item_Gaimarmor3 extends ItemArmor implements IHasModel
 
 
 
-					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== RiderItems.sengoku_driver_kurokage_troopers&item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="matsubokkuri_arms")
+					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_kurokage_troopers&item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="matsubokkuri_arms")
 					{
 
 						return Refercence.MODID+":textures/armor/energy_matsubokkuri_arms.png";
