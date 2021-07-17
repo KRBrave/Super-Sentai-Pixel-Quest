@@ -430,7 +430,9 @@ public class GaimItems {
     public static Item sengoku_driver_marika_black = new item_Gaimdriver("sengoku_driver_marika_black",ArmorMaterial.DIAMOND, 4, 3,"sengoku_marika_black","peach_arms",0,sengoku_driver_peach).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
     public static Item sengoku_driver_tyrant_black = new item_Gaimdriver("sengoku_driver_tyrant_black",ArmorMaterial.DIAMOND, 4, 3,"sengoku_tyrant_black","dragonfruit_arms",0,sengoku_driver_dragonfruit).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);     
     public static Item sengoku_driver_maja_black = new item_Gaimdriver("sengoku_driver_maja_black",ArmorMaterial.DIAMOND, 4, 3,"maja_black","maja_arms",0,sengoku_driver_maja_lock).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_sylphi_black = new item_Gaimdriver("sengoku_driver_sylphi_black",ArmorMaterial.DIAMOND, 4, 3,"sylphi_black","hells_arms",0,sengoku_driver_hells).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 
+    
     public static Item sengoku_driver_gaim_watermelon = new item_Gaimdriver("sengoku_driver_gaim_watermelon",ArmorMaterial.DIAMOND, 4, 3,"gaim_watermelon","watermelon_arms",0,sengoku_driver_watermelon).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
     public static Item sengoku_driver_ryugen_watermelon = new item_Gaimdriver("sengoku_driver_ryugen_watermelon",ArmorMaterial.DIAMOND, 4, 3,"ryugen_watermelon","watermelon_arms",0,sengoku_driver_watermelon).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
     public static Item sengoku_driver_baron_watermelon = new item_Gaimdriver("sengoku_driver_baron_watermelon",ArmorMaterial.DIAMOND, 4, 3,"baron_watermelon","watermelon_arms",0,sengoku_driver_watermelon).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
@@ -468,6 +470,7 @@ public class GaimItems {
     public static Item sengoku_driver_tyrant_yomi = new item_Gaimdriver("sengoku_driver_tyrant_yomi",ArmorMaterial.DIAMOND, 4, 3,"tyrant_yomi","diyu_heguri_arms",0,sengoku_driver_diyu_heguri).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);        
     public static Item sengoku_driver_maja_yomi = new item_Gaimdriver("sengoku_driver_maja_yomi",ArmorMaterial.DIAMOND, 4, 3,"maja_yomi","maja_arms",0,sengoku_driver_maja_lock).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
     public static Item sengoku_driver_baron_yomi = new item_Gaimdriver("sengoku_driver_baron_yomi",ArmorMaterial.DIAMOND, 4, 3,"baron_yomi","tartarus_heguri_arms",0,sengoku_driver_tartarus_heguri).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item sengoku_driver_sylphi_yomi = new item_Gaimdriver("sengoku_driver_sylphi_yomi",ArmorMaterial.DIAMOND, 4, 3,"sylphi_yomi","haljo_heguri_arms",0,sengoku_driver_haljo_heguri).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 
     
     public static Item sengoku_driver_maja = new item_Gaimdriver("sengoku_driver_maja",ArmorMaterial.DIAMOND, 4, 3,"maja","maja_arms",0,sengoku_driver_maja_lock).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
@@ -614,7 +617,7 @@ public class GaimItems {
     public static Item watermelon_energy_lockseed = new Item_lockseed(1,115,"watermelon_energy_lockseed").setCreativeTab(Tabs.tabGaim);
     public static Item sengoku_driver_forbidden_ringo_energy = new Item_ore("sengoku_driver_forbidden_ringo_energy");
     public static Item forbidden_ringo_energy_lockseed = new Item_lockseed(1,116,"forbidden_ringo_energy_lockseed").setCreativeTab(Tabs.tabGaim);
-    public static Item sengoku_driver_blood_zakuro_energy  = new Item_ore("sengoku_driver_blood_zakuro_energy");
+    public static Item sengoku_driver_zakuro_energy  = new Item_ore("sengoku_driver_blood_zakuro_energy");
     public static Item zakuro_energy_lockseed = new Item_lockseed(1,117,"zakuro_energy_lockseed").setCreativeTab(Tabs.tabGaim);
 
     public static Item sengoku_driver_maja_lock_energy  = new Item_ore("sengoku_driver_maja_lock_energy");
