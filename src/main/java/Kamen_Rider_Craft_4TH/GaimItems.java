@@ -508,6 +508,7 @@ public class GaimItems {
     public static Item genesis_driver_kurokage_shin = new item_Gaimdriver("genesis_driver_kurokage_shin",ArmorMaterial.DIAMOND, 4, 3,"kurokage_shin","energy_matsubokkuri_arms",1,sengoku_driver_matsubokkuri_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
     public static Item genesis_driver_tyrant = new item_Gaimdriver("genesis_driver_tyrant",ArmorMaterial.DIAMOND, 4, 3,"tyrant","energy_prototype_dragon_fruits_arms",1,sengoku_driver_dragon_fruits_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 
+    
     public static Item matsubokkuri_lockseed = new Item_lockseed(1,1,"matsubokkuri_lockseed").AddlockseedToHelheimVine(20).setCreativeTab(Tabs.tabGaim);
     public static Item kurumi_lockseed = new Item_lockseed(1,2,"kurumi_lockseed").AddlockseedToHelheimVine(20).setCreativeTab(Tabs.tabGaim);
     public static Item donguri_lockseed = new Item_lockseed(1,3,"donguri_lockseed").AddlockseedToHelheimVine(20).setCreativeTab(Tabs.tabGaim);
@@ -617,7 +618,7 @@ public class GaimItems {
     public static Item watermelon_energy_lockseed = new Item_lockseed(1,115,"watermelon_energy_lockseed").setCreativeTab(Tabs.tabGaim);
     public static Item sengoku_driver_forbidden_ringo_energy = new Item_ore("sengoku_driver_forbidden_ringo_energy");
     public static Item forbidden_ringo_energy_lockseed = new Item_lockseed(1,116,"forbidden_ringo_energy_lockseed").setCreativeTab(Tabs.tabGaim);
-    public static Item sengoku_driver_zakuro_energy  = new Item_ore("sengoku_driver_blood_zakuro_energy");
+    public static Item sengoku_driver_zakuro_energy  = new Item_ore("sengoku_driver_zakuro_energy");
     public static Item zakuro_energy_lockseed = new Item_lockseed(1,117,"zakuro_energy_lockseed").setCreativeTab(Tabs.tabGaim);
 
     public static Item sengoku_driver_maja_lock_energy  = new Item_ore("sengoku_driver_maja_lock_energy");
@@ -629,6 +630,20 @@ public class GaimItems {
     public static Item sengoku_driver_hells_energy  = new Item_ore("sengoku_driver_hells_energy");
     public static Item helheim_energy_lockseed  = new Item_lockseed(4,121,"helheim_energy_lockseed").setCreativeTab(Tabs.tabGaim);
     
+    public static Item genesis_driver_gaim_shin = new item_Gaimdriver("genesis_driver_gaim_shin",ArmorMaterial.DIAMOND, 4, 3,"gaim_shin","energy_orange_arms",0,sengoku_driver_orange_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_ryugen_shin = new item_Gaimdriver("genesis_driver_ryugen_shin",ArmorMaterial.DIAMOND, 4, 3,"ryugen_shin","energy_budou_arms",0,sengoku_driver_budou_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_gridon_shin = new item_Gaimdriver("genesis_driver_gridon_shin",ArmorMaterial.DIAMOND, 4, 3,"gridon_shin","energy_donguri_arms",0,sengoku_driver_donguri_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_barvo_shin = new item_Gaimdriver("genesis_driver_barvo_shin",ArmorMaterial.DIAMOND, 4, 3,"barvo_shin","energy_durian_arms",0,sengoku_driver_durian_energy ).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_knuckle_shin = new item_Gaimdriver("genesis_driver_knuckle_shin",ArmorMaterial.DIAMOND, 4, 3,"knuckle_shin","energy_kurumi_arms",0,sengoku_driver_kurumi_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_fifteen_shin = new item_Gaimdriver("genesis_driver_fifteen_shin",ArmorMaterial.DIAMOND, 4, 3,"fifteen_shin","energy_fifteen_arms",0,sengoku_driver_fifteen_lock_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_mars_shin = new item_Gaimdriver("genesis_driver_mars_shin",ArmorMaterial.DIAMOND, 4, 3,"mars_shin","energy_golden_arms",0,sengoku_driver_golden_ringo_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_kamuro_shin = new item_Gaimdriver("genesis_driver_kamuro_shin",ArmorMaterial.DIAMOND, 4, 3,"kamuro_shin","energy_silver_arms",0,sengoku_driver_silver_ringo_energy).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_jam_shin = new item_Gaimdriver("genesis_driver_jam_shin",ArmorMaterial.DIAMOND, 4, 3,"jam_shin","energy_darkness_arms",0,sengoku_driver_black_ringo_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_idunn_shin = new item_Gaimdriver("genesis_driver_idunn_shin",ArmorMaterial.DIAMOND, 4, 3,"idunn_shin","energy_ringo_arms",0,sengoku_driver_forbidden_ringo_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_savior_shin = new item_Gaimdriver("genesis_driver_savior_shin",ArmorMaterial.DIAMOND, 4, 3,"savior_shin","energy_zakuro_arms",0,sengoku_driver_zakuro_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_maja_shin = new item_Gaimdriver("genesis_driver_maja_shin",ArmorMaterial.DIAMOND, 4, 3,"maja_shin","energy_maja_arms",0,sengoku_driver_maja_lock_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item genesis_driver_sylphi_shin = new item_Gaimdriver("genesis_driver_sylphi_shin",ArmorMaterial.DIAMOND, 4, 3,"sylphi_shin","energy_hells_arms",0,sengoku_driver_hells_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+
 	public static void init() {
 	}
 
