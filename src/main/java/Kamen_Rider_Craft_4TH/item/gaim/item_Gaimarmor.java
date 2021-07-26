@@ -158,7 +158,9 @@ public class item_Gaimarmor extends ItemArmor implements IHasModel
 								return Refercence.MODID+":textures/armor/"+ "gridon_yomi" +".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="king_durian_arms"){
 								return Refercence.MODID+":textures/armor/"+ "gridon_king" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
+								return Refercence.MODID+":textures/armor/"+ "gridon_lychee" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "gridon" +".png";
 						}else if (belt.RIDER == "kurokage"){
