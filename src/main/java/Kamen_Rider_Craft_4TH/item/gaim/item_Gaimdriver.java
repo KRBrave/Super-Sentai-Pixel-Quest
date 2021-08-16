@@ -40,7 +40,8 @@ public class item_Gaimdriver extends ItemArmor  implements IHasModel
 	public String LOCK;
 	public int DRIVER;
 	public Item DIFLOCK;
-	public static String[] ARMS= new String[] {"","matsubokkuri_arms","kurumi_arms", "donguri_arms","melon_arms","pine_arms", "ichigo_arms", "orange_arms", "banana_arms", "budou_arms", "mango_arms", "durian_arms", "kiwi_arms", "energy_lemon_arms", "energy_cherry_arms", "energy_peach_arms", "energy_melon_arms","jimbar_lemon_arms","jimbar_cherry_arms","jimbar_peach_arms","jimbar_melon_arms", "energy_matsubokkuri_arms", "kachidoki_arms", "kiwami_arms", "yomotsu_heguri_arms", "blood_orange_arms", "fifteen_arms", "golden_arms", "silver_arms", "darkness_arms", "watermelon_arms", "ringo_arms","baron_ringo_arms","jimbar_black_arms", "wizard_arms", "fourze_arms", "ooo_arms", "w_arms", "decade_arms", "rider_ichigo_arms","suika_arms","lemon_arms","energy_dragon_fruits_arms","energy_prototype_dragon_fruits_arms","fresh_orange_arms","drive_arms","jimbar_marron_arms","blood_zakuro_arms","kuuga_arms","agito_arms","ryuki_arms","faiz_arms","blade_arms","hibiki_arms","kabuto_arms","den_o_arms","kiva_arms","gaim_arms","kabi_orange_arms","maja_arms","jimbar_dragon_arms","jimbar_melon_arms_zangetsu","jimbar_melon_arms_barvo","natsumikan_arms","black_baron_arms", "zangetsu_kachidoki_arms","haljo_heguri_arms","diyu_heguri_arms","lucifer_heguri_arms","silver_lucifer_arms","golden_lucifer_heguri_arms","proto_nokuni_heguri_arms","enma_heguri_arms","black_lucifer_heguri_arms","nether_heguri_arms","abyss_heguri_arms","naraka_heguri_arms","helreginn_heguri_arms","apollyon_heguri_arms","taishan_heguri_arms","orcus_heguri_arms","inferno_heguri_arms","nokuni_heguri_arms","tartarus_heguri_arms","daimaoh_heguri_arms","zetsubo_heguri_arms","taizai_heguri_arms","yomi_heguri_arms","sin_heguri_arms","hades_heguri_arms","jigoku_heguri_arms","submondo_heguri_arms","cherry_arms","dragonfruit_arms","marron_arms","peach_arms","lychee_arms","king_durian_arms","hells_arms"};
+	public static String[] ARMS= new String[] {"","matsubokkuri_arms","kurumi_arms", "donguri_arms","melon_arms","pine_arms", "ichigo_arms", "orange_arms", "banana_arms", "budou_arms", "mango_arms", "durian_arms", "kiwi_arms", "energy_lemon_arms", "energy_cherry_arms", "energy_peach_arms", "energy_melon_arms","jimbar_lemon_arms","jimbar_cherry_arms","jimbar_peach_arms","jimbar_melon_arms", "energy_matsubokkuri_arms", "kachidoki_arms", "kiwami_arms", "yomotsu_heguri_arms", "blood_orange_arms", "fifteen_arms", "golden_arms", "silver_arms", "darkness_arms", "watermelon_arms", "ringo_arms","baron_ringo_arms","jimbar_black_arms", "wizard_arms", "fourze_arms", "ooo_arms", "w_arms", "decade_arms", "rider_ichigo_arms","suika_arms","lemon_arms","energy_dragon_fruits_arms","energy_prototype_dragon_fruits_arms","fresh_orange_arms","drive_arms","jimbar_marron_arms","blood_zakuro_arms","kuuga_arms","agito_arms","ryuki_arms","faiz_arms","blade_arms","hibiki_arms","kabuto_arms","den_o_arms","kiva_arms","gaim_arms","kabi_orange_arms","maja_arms","jimbar_dragon_arms","jimbar_melon_arms_zangetsu","jimbar_melon_arms_barvo","natsumikan_arms","black_baron_arms", "zangetsu_kachidoki_arms","haljo_heguri_arms","diyu_heguri_arms","lucifer_heguri_arms","silver_lucifer_arms","golden_lucifer_heguri_arms","proto_nokuni_heguri_arms","enma_heguri_arms","black_lucifer_heguri_arms","nether_heguri_arms","abyss_heguri_arms","naraka_heguri_arms","helreginn_heguri_arms","apollyon_heguri_arms","taishan_heguri_arms","orcus_heguri_arms","inferno_heguri_arms","nokuni_heguri_arms","tartarus_heguri_arms","daimaoh_heguri_arms","zetsubo_heguri_arms","taizai_heguri_arms","yomi_heguri_arms","sin_heguri_arms","hades_heguri_arms","jigoku_heguri_arms","submondo_heguri_arms","cherry_arms","dragonfruit_arms","marron_arms","peach_arms","lychee_arms","king_durian_arms","hells_arms"
+												,"kurumi_energy_arms","donguri_energy_arms","pine_energy_arms","ichigo_energy_arms","orange_energy_arms","banana_energy_arms","budou_energy_arms","suika_energy_arms","mango_energy_arms","durian_energy_arms","kiwi_energy_arms","blood_orange_energy_arms","fifteen_energy_arms","golden_ringo_energy_arms","silver_ringo_energy_arms","black_ringo_energy_arms","watermelon_energy_arms","forbidden_ringo_energy_arms","zakuro_energy_arms","maja_energy_arms","lychee_energy_arms","king_durian_energy_arms","hells_energy_arms","ryugen_kachidoki_arms","baron_kachidoki_arms","barvo_kachidoki_arms","gridon_kachidoki_arms","kurokage_kachidoki_arms","knuckle_kachidoki_arms","duke_kachidoki_arms","sigurd_kachidoki_arms","marika_kachidoki_arms","tyrant_kachidoki_arms","savior_kachidoki_arms","fifteen_kachidoki_arms","maja_kachidoki_arms","mars_kachidoki_arms","kamuro_kachidoki_arms","jam_kachidoki_arms","sylphi_kachidoki_arms"};
 
 
 
@@ -83,10 +84,120 @@ public class item_Gaimdriver extends ItemArmor  implements IHasModel
 
 				if (this.RIDER=="ryugen"&this.get_lock(stack)=="yomotsu_heguri_arms"){
 					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_ryugen_yomi);
+					
+				}else if (this.RIDER=="zangetsu"&this.get_lock(stack)=="yomi_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_zangetsu_yomi);
+
+				}else if (this.RIDER=="gaim"&this.get_lock(stack)=="daimaoh_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_gaim_yomi);
+					
+				}else if (this.RIDER=="baron"&this.get_lock(stack)=="tartarus_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_baron_yomi);
+					
+				}else if (this.RIDER=="barvo"&this.get_lock(stack)=="orcus_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_barvo_yomi);
+					
+				}else if (this.RIDER=="gridon"&this.get_lock(stack)=="sin_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_gridon_yomi);
+					
+				}else if (this.RIDER=="kurokage"&this.get_lock(stack)=="jigoku_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_kurokage_yomi);
+					
+				}else if (this.RIDER=="knuckle"&this.get_lock(stack)=="hades_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_knuckle_yomi);
+					
+				}else if (this.RIDER=="sengoku_duke"&this.get_lock(stack)=="nether_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_duke_yomi);
+					
+				}else if (this.RIDER=="sengoku_sigurd"&this.get_lock(stack)=="helreginn_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_sigurd_yomi);
+					
+				}else if (this.RIDER=="sengoku_marika"&this.get_lock(stack)=="naraka_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_marika_yomi);
+					
+				}else if (this.RIDER=="sengoku_tyrant"&this.get_lock(stack)=="diyu_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_tyrant_yomi);
+					
+				}else if (this.RIDER=="savior"&this.get_lock(stack)=="enma_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_savior_yomi);
+					
+				}else if (this.RIDER=="fifteen"&this.get_lock(stack)=="yomotsu_dokuro_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_fifteen_yomi);
+					
+				}else if (this.RIDER=="maja"&this.get_lock(stack)=="daimaoh_dokuro_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_maja_yomi);
+					
+				}else if (this.RIDER=="mars"&this.get_lock(stack)=="golden_lucifer_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_mars_yomi);
+					
+				}else if (this.RIDER=="kamuro"&this.get_lock(stack)=="silver_lucifer_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_kamuro_yomi);
+					
+				}else if (this.RIDER=="jam"&this.get_lock(stack)=="black_lucifer_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_jam_yomi);
+					
+				}else if (this.RIDER=="idunn"&this.get_lock(stack)=="forbidden_lucifer_heguri_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_idunn_yomi);
+					
+				}else if (this.RIDER=="ryugen"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_ryugen_watermelon);
 
 				}else if (this.RIDER=="zangetsu"&this.get_lock(stack)=="watermelon_arms"){
 					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_zangetsu_watermelon);
+					
+				}else if (this.RIDER=="gaim"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_gaim_watermelon);
 
+				}else if (this.RIDER=="baron"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_baron_watermelon);
+					
+				}else if (this.RIDER=="barvo"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_barvo_watermelon);
+					
+				}else if (this.RIDER=="gridon"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_gridon_watermelon);
+					
+				}else if (this.RIDER=="sengoku_duke"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_duke_watermelon);
+					
+				}else if (this.RIDER=="kurokage"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_kurokage_watermelon);
+					
+				}else if (this.RIDER=="knuckle"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_knuckle_watermelon);
+					
+				}else if (this.RIDER=="sengoku_sigurd"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_sigurd_watermelon);
+					
+				}else if (this.RIDER=="sengoku_marika"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_marika_watermelon);
+					
+				}else if (this.RIDER=="sengoku_tyrant"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_tyrant_watermelon);
+					
+				}else if (this.RIDER=="fifteen"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_fifteen_watermelon);
+					
+				}else if (this.RIDER=="maja"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_maja_watermelon);
+					
+				}else if (this.RIDER=="savior"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_savior_watermelon);
+					
+				}else if (this.RIDER=="mars"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_mars_watermelon);
+					
+				}else if (this.RIDER=="kamuro"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_kamuro_watermelon);
+					
+				}else if (this.RIDER=="jam"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_jam_watermelon);
+					
+				}else if (this.RIDER=="idunn"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_idunn_watermelon);
+					
+				}else if (this.RIDER=="sylphi"&this.get_lock(stack)=="watermelon_arms"){
+					armorModel.belt = new ItemStack(GaimItems.sengoku_driver_sylphi_watermelon);
 				}else{
 					armorModel.belt=stack;
 				}
@@ -139,8 +250,28 @@ public class item_Gaimdriver extends ItemArmor  implements IHasModel
 						GaimItems.sengoku_driver_jigoku_heguri,GaimItems.sengoku_driver_submondo_heguri,
 						GaimItems.sengoku_driver_cherry,GaimItems.sengoku_driver_dragonfruit,
 						GaimItems.sengoku_driver_marron,GaimItems.sengoku_driver_peach,
-						GaimItems.sengoku_driver_lychee,
-						GaimItems.sengoku_driver_king_durian,GaimItems.sengoku_driver_hells};
+						GaimItems.sengoku_driver_lychee,GaimItems.sengoku_driver_king_durian,
+						GaimItems.sengoku_driver_hells,GaimItems.sengoku_driver_kurumi_energy,
+						GaimItems.sengoku_driver_donguri_energy,GaimItems.sengoku_driver_pine_energy,
+						GaimItems.sengoku_driver_ichigo_energy,GaimItems.sengoku_driver_orange_energy,
+						GaimItems.sengoku_driver_banana_energy,GaimItems.sengoku_driver_budou_energy,
+						GaimItems.sengoku_driver_suika_energy,GaimItems.sengoku_driver_mango_energy,
+						GaimItems.sengoku_driver_durian_energy,GaimItems.sengoku_driver_kiwi_energy,
+						GaimItems.sengoku_driver_blood_orange_energy,GaimItems.sengoku_driver_fifteen_lock_energy,
+						GaimItems.sengoku_driver_golden_ringo_energy,GaimItems.sengoku_driver_silver_ringo_energy,
+						GaimItems.sengoku_driver_black_ringo_energy,GaimItems.sengoku_driver_watermelon_energy,
+						GaimItems.sengoku_driver_forbidden_ringo_energy,GaimItems.sengoku_driver_zakuro_energy,
+						GaimItems.sengoku_driver_maja_lock_energy,GaimItems.sengoku_driver_lychee_energy,
+						GaimItems.sengoku_driver_king_durian_energy,GaimItems.sengoku_driver_hells_energy,
+						GaimItems.sengoku_driver_ryugen_kachidoki,GaimItems.sengoku_driver_baron_kachidoki,
+						GaimItems.sengoku_driver_barvo_kachidoki,GaimItems.sengoku_driver_gridon_kachidoki,
+						GaimItems.sengoku_driver_kurokage_kachidoki,GaimItems.sengoku_driver_knuckle_kachidoki,
+						GaimItems.sengoku_driver_duke_kachidoki,GaimItems.sengoku_driver_sigurd_kachidoki,
+						GaimItems.sengoku_driver_marika_kachidoki,GaimItems.sengoku_driver_tyrant_kachidoki,
+						GaimItems.sengoku_driver_savior_kachidoki,GaimItems.sengoku_driver_fifteen_kachidoki,
+						GaimItems.sengoku_driver_maja_kachidoki,GaimItems.sengoku_driver_mars_kachidoki,
+						GaimItems.sengoku_driver_kamuro_kachidoki,GaimItems.sengoku_driver_jam_kachidoki,
+						GaimItems.sengoku_driver_idunn_kachidoki,GaimItems.sengoku_driver_sylphi_kachidoki};
 
 				if (stack.hasTagCompound()){
 					if( stack.getTagCompound().getInteger("seed")!=0)

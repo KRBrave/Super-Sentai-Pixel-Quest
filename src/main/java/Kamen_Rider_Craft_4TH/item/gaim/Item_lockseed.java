@@ -158,6 +158,32 @@ public class Item_lockseed extends Item implements IHasModel
 								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2, "1");
 								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 							}
+						}else if (ARMS[num2] == "kiwami_arms"){
+							if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="zangetsu_kachidoki_arms"){
+								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+					}
+						}
+						if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_baron){
+							if (ARMS[num2] == "baron_kachidoki_arms"){
+								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2, "1");
+								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+							}
+							}else if (ARMS[num2] == "kiwami_arms"){
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="baron_kachidoki_arms"){
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+					}
+						}
+						if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_ryugen){
+							if (ARMS[num2]=="ryugen_kachidoki_arms")
+								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3,"1");
+								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+						}
+							}else if (ARMS[num2] == "kiwami_arms"){
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="ryugen_kachidoki_arms"){
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 						}
 						if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_gaim){
 

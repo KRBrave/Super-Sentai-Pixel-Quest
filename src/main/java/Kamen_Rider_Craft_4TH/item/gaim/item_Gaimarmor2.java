@@ -89,12 +89,14 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							return Refercence.MODID+":textures/armor/"+"ryugen_watermelon" +".png";
 						}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="ryugen_kachidoki_arms"){
 
-								return Refercence.MODID+":textures/armor/"+ "ryugen_kachidoki" +".png";
+							return Refercence.MODID+":textures/armor/"+ "ryugen_kachidoki" +".png";
 						}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="king_durian_arms"){
 							return Refercence.MODID+":textures/armor/"+ "ruygen_king" +".png";
 						}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 							return Refercence.MODID+":textures/armor/"+ "ryugen_lychee" +".png";
+						}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+							return Refercence.MODID+":textures/armor/"+ "ruygen_kiwami" +".png";
 						}else
 							return Refercence.MODID+":textures/armor/"+ "ryugen" +".png";
 						}else if (belt.RIDER == "barvo"){
@@ -135,6 +137,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "zangetsu_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "zangetsu_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "zangetsu" +".png";
 						}else if (belt.RIDER == "duke"){
@@ -160,6 +164,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "baron_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "baron_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "baron" +".png";
 						}else if (belt.RIDER == "gridon"){
