@@ -122,8 +122,7 @@ public class item_Gaimarmor extends ItemArmor implements IHasModel
 
 								return Refercence.MODID+":textures/armor/"+ "zangetsu_lychee" +".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
-								return Refercence.MODID+":textures/armor/"+ "zangetsu_kiwami" +".png"+
-								 Refercence.MODID+":textures/armor/"+"zangetsu_kiwami_arms"+".png";
+								return Refercence.MODID+":textures/armor/"+ "zangetsu_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "zangetsu" +".png";
 						}else if (belt.RIDER == "duke"){

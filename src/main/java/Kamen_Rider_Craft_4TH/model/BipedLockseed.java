@@ -207,6 +207,8 @@ public class BipedLockseed extends ModelBiped
 			ItemStack stack2  =   ((EntityLivingBase) entity).getItemStackFromSlot(EntityEquipmentSlot.HEAD);
 			if (stack!=null){
 				if (stack.getItem() instanceof item_Gaimdriver & stack2.getItem()==GaimItems.Gaimhead){
+					item_Gaimdriver belt = (item_Gaimdriver) stack.getItem();
+					
 					if (item_Gaimdriver.get_lock(stack)=="energy_dragon_fruits_arms"){
 
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/energy_prototype_dragon_fruits_arms.png"));
@@ -215,6 +217,10 @@ public class BipedLockseed extends ModelBiped
 
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blood_orange_arms.png"));
 
+					}
+					else if (stack.getItem()!=GaimItems.sengoku_driver_gaim & item_Gaimdriver.get_lock(stack)=="kiwami_arms")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+belt.RIDER+"_"+item_Gaimdriver.get_lock(stack) +".png"));
 					}
 
 				}else if (stack.getItem() instanceof item_ghostdriver& stack2.getItem()==RiderItems.ghosthead){

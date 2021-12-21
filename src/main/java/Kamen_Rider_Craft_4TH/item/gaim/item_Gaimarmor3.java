@@ -64,12 +64,16 @@ public class item_Gaimarmor3 extends ItemArmor implements IHasModel
 
 				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()  instanceof item_Gaimdriver){
 
-
+					item_Gaimdriver belt = (item_Gaimdriver) player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_kurokage_troopers&item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="matsubokkuri_arms")
 					{
 
 						return Refercence.MODID+":textures/armor/energy_matsubokkuri_arms.png";
+					}
+					else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()!=GaimItems.sengoku_driver_gaim & item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms")
+					{
+						return Refercence.MODID+":textures/armor/"+belt.RIDER+"_"+item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) +".png";
 					}
 					else
 					{
