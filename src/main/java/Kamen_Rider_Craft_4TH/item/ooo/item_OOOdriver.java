@@ -216,7 +216,7 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 						RiderItems.black_OOOdriver,RiderItems.ptera_OOOdriver,RiderItems.taka_OOOdriver,RiderItems.kuwagata_OOOdriver,
 						RiderItems.lion_OOOdriver,RiderItems.sai_OOOdriver,RiderItems.shachi_OOOdriver,RiderItems.cobra_OOOdriver,
 						RiderItems.same_OOOdriver,RiderItems.shika_OOOdriver,RiderItems.seiuchi_OOOdriver,RiderItems.mukade_OOOdriver,
-						RiderItems.ebi_new_OOOdriver,RiderItems.love_OOOdriver,RiderItems.shocker_head_OOOdriver
+						RiderItems.ebi_new_OOOdriver,RiderItems.love_OOOdriver,RiderItems.cobra_OOOdriver
 				};
 				Item[] Medel_chest= new Item[] 
 				{		RiderItems.tora_OOOdriver,RiderItems.kamakiri_OOOdriver,RiderItems.gorilla_OOOdriver,
@@ -241,7 +241,7 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 						RiderItems.unagi_OOOdriver,RiderItems.kame_OOOdriver,RiderItems.imagin_OOOdriver,RiderItems.kujira_OOOdriver,
 						RiderItems.gazelle_OOOdriver,RiderItems.shirokuma_OOOdriver,RiderItems.hachi_OOOdriver,
 						RiderItems.kani_new_OOOdriver,RiderItems.love2_OOOdriver,RiderItems.panda_OOOdriver,
-						RiderItems.kangaroo_OOOdriver,RiderItems.yadokari_OOOdriver,RiderItems.gel_shocker_OOOdriver
+						RiderItems.kangaroo_OOOdriver,RiderItems.yadokari_OOOdriver,RiderItems.gorilla_OOOdriver
 				};
 				Item[] Medel_legs= new Item[] 
 				{		RiderItems.batta_OOOdriver,RiderItems.cheetah_OOOdriver,RiderItems.zou_OOOdriver,RiderItems.condor_OOOdriver,
@@ -263,7 +263,7 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 						RiderItems.wani_OOOdriver,RiderItems.shocker_OOOdriver,RiderItems.ookamiuo_OOOdriver,
 						RiderItems.ushi_OOOdriver,RiderItems.penguin_OOOdriver,RiderItems.ari_OOOdriver,
 						RiderItems.sasori_new_OOOdriver,RiderItems.love3_OOOdriver,RiderItems.kangaroo2_OOOdriver,
-						RiderItems.destron_OOOdriver
+						RiderItems.ookamiuo_OOOdriver
 				};
 
 				armorModel.belt=stack;

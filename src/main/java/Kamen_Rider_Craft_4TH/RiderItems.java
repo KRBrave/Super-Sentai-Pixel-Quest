@@ -1660,7 +1660,6 @@ public class RiderItems {
 	public static Item super_mukade_OOOdriver = new Item_ore("super_mukade_ooodriver");
 	public static Item super_sasori_new_OOOdriver = new Item_ore("super_sasori_new_ooodriver");
 	public static Item black_OOOdriver = new Item_ore("black_ooodriver");
-	public static Item shocker_head_OOOdriver = new Item_ore ("shocker_head_ooodriver");
 
 	public static Item tora_OOOdriver = new Item_ore("tora_ooodriver");
 	public static Item kamakiri_OOOdriver = new Item_ore("kamakiri_ooodriver");
@@ -1837,7 +1836,7 @@ public class RiderItems {
 	public static Item super_hachi = new Itemmedal(29, "2","super_hachi").setCreativeTab(Tabs.tabOOO);
 	public static Item super_kani_new = new Itemmedal(30, "2","super_kani_new").setCreativeTab(Tabs.tabOOO);
 	public static Item super_panda = new Itemmedal(32, "2","super_panda").setCreativeTab(Tabs.tabOOO);
-	public static Item super_kangaroo = new Itemmedal(33, "2","super_kangaroo").setCreativeTab(Tabs.tabOOO);
+	public static Item super_kangaroo = new Itemmedal(33, "2","super_kangaroo").Shift_form(30, "3").setCreativeTab(Tabs.tabOOO);
 	public static Item super_yadokari = new Itemmedal(34, "2","super_yadokari").setCreativeTab(Tabs.tabOOO);
 	public static Item black_tricera = new Itemmedal(35, "2","black_tricera").setCreativeTab(Tabs.tabOOO);
 	public static Item black_kujaku = new Itemmedal(36, "2","black_kujaku").setCreativeTab(Tabs.tabOOO);
@@ -1853,7 +1852,7 @@ public class RiderItems {
 	public static Item black_hachi = new Itemmedal(46, "2","black_hachi").setCreativeTab(Tabs.tabOOO);
 	public static Item black_kani = new Itemmedal(47, "2","black_kani").setCreativeTab(Tabs.tabOOO);
 	public static Item black_panda = new Itemmedal(49, "2","black_panda").setCreativeTab(Tabs.tabOOO);
-	public static Item black_kangaroo = new Itemmedal(50, "2","black_kangaroo").setCreativeTab(Tabs.tabOOO);
+	public static Item black_kangaroo = new Itemmedal(50, "2","black_kangaroo").Shift_form(45, "3").setCreativeTab(Tabs.tabOOO);
 	public static Item black_yadokari = new Itemmedal(51, "2","black_yadokari").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_tricera = new Itemmedal(52, "2","foundation_tricera").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_kujaku = new Itemmedal(53, "2","foundation_kujaku").setCreativeTab(Tabs.tabOOO);
@@ -1869,7 +1868,7 @@ public class RiderItems {
 	public static Item foundation_hachi = new Itemmedal(63, "2","foundation_hachi").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_kani = new Itemmedal(64, "2","foundation_kani").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_panda = new Itemmedal(66, "2","foundation_panda").setCreativeTab(Tabs.tabOOO);
-	public static Item foundation_kangaroo = new Itemmedal(67, "2","foundation_kangaroo").setCreativeTab(Tabs.tabOOO);
+	public static Item foundation_kangaroo = new Itemmedal(67, "2","foundation_kangaroo").Shift_form(60, "3").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_yadokari = new Itemmedal(68, "2","foundation_yadokari").setCreativeTab(Tabs.tabOOO);
 
 	public static Item batta = new Itemmedal(0, "3","batta").setCreativeTab(Tabs.tabOOO);
@@ -1879,7 +1878,7 @@ public class RiderItems {
 	public static Item tako = new Itemmedal(4, "3","tako").setCreativeTab(Tabs.tabOOO);
 	public static Item tyranno = new Itemmedal(5, "3","tyranno").setCreativeTab(Tabs.tabOOO);
 	public static Item wani = new Itemmedal(6, "3","wani").setCreativeTab(Tabs.tabOOO);
-	public static Item shocker = new Itemmedal(7, "3","shocker").Shift_form(16, "1").setCreativeTab(Tabs.tabOOO);
+	public static Item shocker = new Itemmedal(7, "3","shocker").Shift_form(54, "1").setCreativeTab(Tabs.tabOOO);
 	public static Item super_batta = new Itemmedal(8, "3","super_batta").setCreativeTab(Tabs.tabOOO);
 	public static Item ookamiuo = new Itemmedal(11, "3","ookamiuo").setCreativeTab(Tabs.tabOOO);
 	public static Item ushi = new Itemmedal(12, "3","ushi").setCreativeTab(Tabs.tabOOO);
@@ -1899,7 +1898,6 @@ public class RiderItems {
 	public static Item super_penguin = new Itemmedal(26, "3","super_penguin").setCreativeTab(Tabs.tabOOO);
 	public static Item super_ari = new Itemmedal(27, "3","super_ari").setCreativeTab(Tabs.tabOOO);
 	public static Item super_sasori_new = new Itemmedal(28, "3","super_sasori_new").setCreativeTab(Tabs.tabOOO);
-	public static Item super_kangaroo2 = new Itemmedal(30, "3","super_kangaroo2").setCreativeTab(Tabs.tabOOO);
 	public static Item black_tyranno = new Itemmedal(31, "3","black_tyranno").setCreativeTab(Tabs.tabOOO);
 	public static Item black_condor = new Itemmedal(32, "3","black_condor").setCreativeTab(Tabs.tabOOO);
 	public static Item black_batta = new Itemmedal(33, "3","black_batta").setCreativeTab(Tabs.tabOOO);
@@ -1913,7 +1911,6 @@ public class RiderItems {
 	public static Item black_penguin = new Itemmedal(41, "3","black_penguin").setCreativeTab(Tabs.tabOOO);
 	public static Item black_ari = new Itemmedal(42, "3","black_ari").setCreativeTab(Tabs.tabOOO);
 	public static Item black_sasori = new Itemmedal(43, "3","black_sasori").setCreativeTab(Tabs.tabOOO);
-	public static Item black_kangaroo2 = new Itemmedal(45, "3","black_kangaroo2").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_tyranno = new Itemmedal(46, "3","foundation_tyranno").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_condor = new Itemmedal(47, "3","foundation_condor").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_batta = new Itemmedal(48, "3","foundation_batta").setCreativeTab(Tabs.tabOOO);
@@ -1927,7 +1924,6 @@ public class RiderItems {
 	public static Item foundation_penguin = new Itemmedal(56, "3","foundation_penguin").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_ari = new Itemmedal(57, "3","foundation_ari").setCreativeTab(Tabs.tabOOO);
 	public static Item foundation_sasori = new Itemmedal(58, "3","foundation_sasori").setCreativeTab(Tabs.tabOOO);
-	public static Item foundation_kangaroo2 = new Itemmedal(60, "3","foundation_kangaroo2").setCreativeTab(Tabs.tabOOO);
 
 	public static Item love_core = new Itemmedal(8, "1","love_core").setCreativeTab(Tabs.tabOOO);
 	public static Item love_core2 = new Itemmedal(11, "2","love_core2").setCreativeTab(Tabs.tabOOO);
@@ -1987,7 +1983,7 @@ public class RiderItems {
 **/
 
 	public static Item gel_shocker_core = new Itemmedal(69, "2","gel_shocker_core").setCreativeTab(Tabs.tabOOO);
-	public static Item destron_core = new Itemmedal(60, "3","destron_core").setCreativeTab(Tabs.tabOOO);
+	public static Item destron_core = new Itemmedal(61, "3","destron_core").setCreativeTab(Tabs.tabOOO);
 	public static Item god_core = new Item_ore("god_core").setCreativeTab(Tabs.tabOOO);
 	public static Item garanda_core = new Item_ore("garanda_core").setCreativeTab(Tabs.tabOOO);
 	public static Item delza_core = new Item_ore("delza_core").setCreativeTab(Tabs.tabOOO);
