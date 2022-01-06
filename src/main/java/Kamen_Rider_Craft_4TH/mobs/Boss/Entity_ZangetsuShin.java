@@ -105,7 +105,7 @@ if (!this.world.isRemote){
 
    		this.dropItem(GaimItems.melon_energy_lockseed, 1);
    		
-   		this.dropItem(RiderItems.himawari_energy_lockseed, 5);
+   		this.dropItem(GaimItems.himawari_energy_lockseed, 5);
 		
    		switch (this.rand.nextInt(5))
 		{

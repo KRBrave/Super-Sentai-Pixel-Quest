@@ -85,7 +85,7 @@ public class EntityKurokageTroopers extends Entity_base_henchmen
 	{
 		if (!this.world.isRemote){
 
-			this.dropItem(RiderItems.himawari_lockseed, this.rand.nextInt(4));
+			this.dropItem(GaimItems.himawari_lockseed, this.rand.nextInt(4));
 				if (this.getAttackTarget()instanceof EntityPlayer){
 					EntityPlayer playerIn=	(EntityPlayer) this.getAttackTarget();
 					 EntityBossBase entityboss  = new Entity_ZangetsuShin(world);

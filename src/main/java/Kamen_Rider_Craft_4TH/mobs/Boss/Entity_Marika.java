@@ -102,7 +102,7 @@ public class Entity_Marika extends EntityBossBase
     public void onDeath(DamageSource cause)
     {
 if (!this.world.isRemote){
-	this.dropItem(RiderItems.himawari_energy_lockseed, 5);
+	this.dropItem(GaimItems.himawari_energy_lockseed, 5);
 	
    		this.dropItem(GaimItems.peach_energy_lockseed, 1);
 

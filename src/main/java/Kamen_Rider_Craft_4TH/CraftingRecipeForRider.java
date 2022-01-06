@@ -1,14 +1,28 @@
 package Kamen_Rider_Craft_4TH;
 
 
+import java.util.Random;
 import Kamen_Rider_Craft_4TH.util.Refercence;
+import net.minecraft.entity.IMerchant;
+import net.minecraft.entity.passive.EntityVillager.ITradeList;
+import net.minecraft.entity.passive.EntityVillager.PriceInfo;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.village.MerchantRecipe;
+import net.minecraft.village.MerchantRecipeList;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.VillagerRegistry;
+import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerCareer;
+import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerProfession;
+import net.minecraftforge.registries.IForgeRegistry;
 
 public class CraftingRecipeForRider {
 	public static void Crafrting(){
@@ -278,25 +292,9 @@ public class CraftingRecipeForRider {
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":k_touch_diend"),new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.k_touch_diend), new Ingredient[]{Ingredient.fromItem(RiderItems.g4card),Ingredient.fromItem(RiderItems.ryugacard),Ingredient.fromItem(RiderItems.orgacard),Ingredient.fromItem(RiderItems.glaivecard),Ingredient.fromItem(RiderItems.kabukicard),Ingredient.fromItem(RiderItems.caucasuscard),Ingredient.fromItem(RiderItems.arccard),Ingredient.fromItem(RiderItems.skullcard)});	
 
 
-		
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":OOOhead"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.OOOhead,1), "aaa","a a", 'a', RiderItems.cellmedal);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":OOOtroso"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.OOOtroso,1), "a a","aaa","aaa", 'a', RiderItems.cellmedal);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":OOOlegs"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.OOOlegs,1), "aaa","a a","a a", 'a', RiderItems.cellmedal);
-		
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":o_scanner"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.o_scanner,1), "aaa","aba","aaa", 'a', RiderItems.cellmedal, 'b', Items.ENDER_PEARL);
-		
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":OOOdriver"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.OOOdriver,1), "aaa","cde","aaa", 'a', RiderItems.cellmedal,  'c', RiderItems.taka, 'd', RiderItems.tora, 'e', RiderItems.batta);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":aqua_driver"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.aqua_driver,1), "aaa","ada","aaa", 'a', RiderItems.cellmedal, 'd', Items.WATER_BUCKET);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":poseidon_driver"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.poseidon_driver,1), "cae","aaa","ada", 'a', RiderItems.cellmedal,  'c', RiderItems.same, 'd', RiderItems.ookamiuo, 'e', RiderItems.kujira);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":birth_driver"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.birth_driver,1), "aaa","aca","aaa", 'a', RiderItems.cellmedal,  'c', RiderItems.birth_core);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":birth_driver_prototype"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.birth_driver_prototype,1), "aaa","aca","aaa", 'a', RiderItems.cellmedal,  'c', RiderItems.proto_birth_core);
-		
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":medajalibur"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.medajalibur,1), "aaa","aba","aaa", 'a', RiderItems.cellmedal, 'b', RiderItems.base_sword);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":tajaspinner"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.tajaspinner,1), "pat","pbt","aaa", 'a', RiderItems.taka, 'b', RiderItems.base_sword, 'p', RiderItems.condor, 't', RiderItems.kujaku);
+		/**
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":medagaburyu"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.medagaburyu,1), "ptr","aba","aaa", 'a', RiderItems.cellmedal, 'b', RiderItems.base_sword, 'p', RiderItems.ptera, 't', RiderItems.tricera, 'r', RiderItems.tyranno);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":birth_buster"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.birth_buster,1), "ama","aba","aaa", 'a', RiderItems.cellmedal, 'b', RiderItems.base_sword, 'm', RiderItems.birth_core);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":birth_buster_2"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.birth_buster,1), "ama","aba","aaa", 'a', RiderItems.cellmedal, 'b', RiderItems.base_sword, 'm', RiderItems.proto_birth_core);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":deepest_harpoon"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.deepest_harpoon,1), "cad","aba","aea", 'a', RiderItems.cellmedal, 'b', RiderItems.base_sword, 'c', RiderItems.same, 'd', RiderItems.kujira, 'e', RiderItems.ookamiuo);
+		**/
 		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":Fourzehead"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.Fourzehead,1), "aaa","a a", 'a', RiderItems.astroswitch);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":Fourzetroso"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.Fourzetroso,1), "a a","aaa","aaa", 'a', RiderItems.astroswitch);
@@ -425,7 +423,7 @@ public class CraftingRecipeForRider {
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":unfinished_fourtyfive_heisei_ghost_icon"),new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.unfinished_fourtyfive_heisei_ghost_icon), new Ingredient[]{Ingredient.fromItem(RiderItems.kuuga_ghost_icon),Ingredient.fromItem(RiderItems.agito_ghost_icon),Ingredient.fromItem(RiderItems.ryuki_ghost_icon),Ingredient.fromItem(RiderItems.faiz_ghost_icon),Ingredient.fromItem(RiderItems.blade_ghost_icon),Ingredient.fromItem(RiderItems.hibiki_ghost_icon),Ingredient.fromItem(RiderItems.kabuto_ghost_icon),Ingredient.fromItem(RiderItems.den_o_ghost_icon),Ingredient.fromItem(RiderItems.kiva_ghost_icon)});	
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":fourtyfive_heisei_ghost_icon"),new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.fourtyfive_heisei_ghost_icon), new Ingredient[]{Ingredient.fromItem(RiderItems.unfinished_fourtyfive_heisei_ghost_icon),Ingredient.fromItem(RiderItems.decade_ghost_icon),Ingredient.fromItem(RiderItems.double_ghost_icon),Ingredient.fromItem(RiderItems.ooo_ghost_icon),Ingredient.fromItem(RiderItems.fourze_ghost_icon),Ingredient.fromItem(RiderItems.wizard_ghost_icon),Ingredient.fromItem(RiderItems.gaim_ghost_icon),Ingredient.fromItem(RiderItems.drive_ghost_icon),Ingredient.fromItem(RiderItems.ghost_ghost_icon)});	
 
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gamecreator"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.gamecreator,1), "aaa","aba","aaa", 'a', Items.IRON_INGOT, 'b', RiderItems.blank_gashat);		
+		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gamecreator"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderBlocks.gamecreator,1), "aaa","aba","aaa", 'a', Items.IRON_INGOT, 'b', RiderItems.blank_gashat);		
 
 		
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":blank_gashat"),new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.blank_gashat), new Ingredient[]{Ingredient.fromItem(RiderItems.bugster_virus_dna),Ingredient.fromItem(Items.IRON_INGOT),Ingredient.fromItem(Items.REDSTONE)});
@@ -485,32 +483,20 @@ public class CraftingRecipeForRider {
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":parabragun_axe"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.parabragun_axe,1), "ama","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.base_sword, 'm',  RiderItems.perfect_puzzle_gashat);	
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":true_brave_sword"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.true_brave_sword,1), "ama","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.base_sword, 'm',  RiderItems.taddle_legacy_gashat);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":fuuma_sword"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.fuuma_sword,1), "ama","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.base_sword, 'm',  RiderItems.hurricane_ninja_gashat);
-		
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":lets_go_ichigou_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.lets_go_ichigou_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.rider_circuit);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":adventure_guy_kuuga_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.adventure_guy_kuuga_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.kuuga_mighty);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":agito_of_the_sun_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.agito_of_the_sun_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.agito_ground);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":mirror_labryinth_ryuki_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.mirror_labryinth_ryuki_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.dragreder_advent);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":moshi_moshi_faiz_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.moshi_moshi_faiz_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.faiz_mission_memory);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":king_of_poker_blade_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.king_of_poker_blade_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.changebeetle);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":taiko_master_hibik_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.taiko_master_hibik_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.henshin_onsa);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":insect_wars_kabuto_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.insect_wars_kabuto_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.kabuto_zecter);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":time_express_den_o_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.time_express_den_o_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.rider_ticket_sword);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":dokidoki_makai_castle_kiva_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.dokidoki_makai_castle_kiva_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.wakeupfuestle);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":barcode_warrior_decade_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.barcode_warrior_decade_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.decadecard);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":detective_double_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.detective_double_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.joker_memory);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":jungle_ooo_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.jungle_ooo_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.taka);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":space_galaxy_fourze_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.space_galaxy_fourze_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.rocket_swich);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":magic_the_wizard_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.magic_the_wizard_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.flame_ring);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":toukenden_gaim_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.toukenden_gaim_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', GaimItems.orange_lockseed);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":full_throttle_drive_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.full_throttle_drive_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.speedshift);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":kaigan_ghost_gashat"), new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.kaigan_ghost_gashat,1), "aaa","aba","aaa", 'a', RiderItems.blank_gashat, 'b', RiderItems.ore_ghost_icon);
-
+	
 		
 		GameRegistry.addSmelting(new ItemStack(RiderItems.dragon_sclashjelly),new ItemStack(RiderItems.dragon_magma_full_bottle), 1);
 
+		GameRegistry.addSmelting(new ItemStack(RiderItems.cellmedal),new ItemStack(RiderItems.cell_alloy_ingot), 1);
+		GameRegistry.addSmelting(new ItemStack(RiderItems.purple_medals_empty),new ItemStack(Blocks.STONE), 1);
+		
 		if (Item.getByNameOrId("supersentaicraft:red_ryusoul") != null){
 			GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":ryusoulger_ridewatch"),new ResourceLocation(Refercence.MODID+":kamen_rider"),new ItemStack(RiderItems.ryusoulger_ridewatch), new Ingredient[]{Ingredient.fromItem(RiderItems.blank_watch),Ingredient.fromItem(Item.getByNameOrId("supersentaicraft:red_ryusoul"))});
 		}		
+	
+
+	VillagerRegistry.VillagerProfession librarian=ForgeRegistries.VILLAGER_PROFESSIONS.getValue(new ResourceLocation("minecraft:librarian"));
+	librarian.getCareer(5).addTrade(1,new Rider_trades());
 	}
 
 }

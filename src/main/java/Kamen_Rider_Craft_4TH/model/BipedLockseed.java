@@ -9,6 +9,7 @@ package Kamen_Rider_Craft_4TH.model;
 import org.lwjgl.opengl.GL11;
 
 import Kamen_Rider_Craft_4TH.GaimItems;
+import Kamen_Rider_Craft_4TH.ReiwaRiderItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.item.Ex_Aid.item_ex_aiddriver;
 import Kamen_Rider_Craft_4TH.item.gaim.item_Gaimdriver;
@@ -207,8 +208,6 @@ public class BipedLockseed extends ModelBiped
 			ItemStack stack2  =   ((EntityLivingBase) entity).getItemStackFromSlot(EntityEquipmentSlot.HEAD);
 			if (stack!=null){
 				if (stack.getItem() instanceof item_Gaimdriver & stack2.getItem()==GaimItems.Gaimhead){
-					item_Gaimdriver belt = (item_Gaimdriver) stack.getItem();
-					
 					if (item_Gaimdriver.get_lock(stack)=="energy_dragon_fruits_arms"){
 
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/energy_prototype_dragon_fruits_arms.png"));
@@ -217,10 +216,6 @@ public class BipedLockseed extends ModelBiped
 
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blood_orange_arms.png"));
 
-					}
-					else if (stack.getItem()!=GaimItems.sengoku_driver_gaim & item_Gaimdriver.get_lock(stack)=="kiwami_arms")
-					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+belt.RIDER+"_"+item_Gaimdriver.get_lock(stack) +".png"));
 					}
 
 				}else if (stack.getItem() instanceof item_ghostdriver& stack2.getItem()==RiderItems.ghosthead){
@@ -236,7 +231,7 @@ public class BipedLockseed extends ModelBiped
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+((item_zikudriver)stack.getItem()).Rider+ item_zi_oarmor.CoreName[item_zikudriver.get_core(stack, "1")]+"_" +item_zikudriver.get_lockbase(stack)+"_2.png"));
 
 					}
-				}else if (stack.getItem() instanceof item_zero_onedriver&& stack2.getItem()==RiderItems.zero_onehead){
+				}else if (stack.getItem() instanceof item_zero_onedriver&& stack2.getItem()==ReiwaRiderItems.zero_onehead){
 
 					String form;
 					if (item_zero_onedriver.get_lockbase(stack)!="base"){

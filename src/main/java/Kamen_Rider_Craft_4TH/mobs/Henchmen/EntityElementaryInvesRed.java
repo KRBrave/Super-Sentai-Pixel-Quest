@@ -80,7 +80,7 @@ public class EntityElementaryInvesRed extends Entity_base_henchmen
 	{
 		if (!this.world.isRemote){
 
-			this.dropItem(RiderItems.himawari_lockseed, this.rand.nextInt(4));
+			this.dropItem(GaimItems.himawari_lockseed, this.rand.nextInt(4));
 
 				switch (this.rand.nextInt(50))
 				{

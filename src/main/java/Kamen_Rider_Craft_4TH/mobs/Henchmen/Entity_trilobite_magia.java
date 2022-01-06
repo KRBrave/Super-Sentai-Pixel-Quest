@@ -4,7 +4,7 @@ package Kamen_Rider_Craft_4TH.mobs.Henchmen;
 import java.util.Calendar;
 import java.util.UUID;
 
-import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.ReiwaRiderItems;
 import Kamen_Rider_Craft_4TH.mobs.Boss.EntityBossBase;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Para_dx;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Red_Poppy;
@@ -63,6 +63,7 @@ public class Entity_trilobite_magia extends Entity_base_henchmen
 			if (this.getAttackTarget()instanceof EntityPlayer){
 				EntityPlayer playerIn=	(EntityPlayer) this.getAttackTarget();
 				EntityBossBase entityboss  = new Entity_magia(world);
+				Entity_giger entityboss1  = new Entity_giger(world);
 
 				EntityBossBase entity_jin  = new Entity_jin(world);
 				switch (this.rand.nextInt(25))
@@ -87,25 +88,28 @@ public class Entity_trilobite_magia extends Entity_base_henchmen
 					entity_jin.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
 					world.spawnEntity(entity_jin);
 					break;
-
+				case 4:
+					entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+					world.spawnEntity(entityboss1);
+					break;
 				}
 			}
 		}
-		this.dropItem(RiderItems.blank_progrise_key, 1);
-		this.dropItem(RiderItems.hiden_metal, 2);
+		this.dropItem(ReiwaRiderItems.blank_progrise_key, 1);
+		this.dropItem(ReiwaRiderItems.hiden_metal, 2);
 		switch (this.rand.nextInt(25))
 		{
 		case 0:
-			this.dropItem(RiderItems.rising_hopper_progrise_key, 1);
+			this.dropItem(ReiwaRiderItems.rising_hopper_progrise_key, 1);
 			break;
 		case 1:
-			this.dropItem(RiderItems.shooting_wolf_progrise_key, 1);
+			this.dropItem(ReiwaRiderItems.shooting_wolf_progrise_key, 1);
 			break;
 		case 2:
-			this.dropItem(RiderItems.rushing_cheetah_progrise_key, 1);
+			this.dropItem(ReiwaRiderItems.rushing_cheetah_progrise_key, 1);
 			break;
 		case 3:
-			this.dropItem(RiderItems.humagear_progrise_key, 1); 
+			this.dropItem(ReiwaRiderItems.humagear_progrise_key, 1); 
 			break;
 		}
 	}

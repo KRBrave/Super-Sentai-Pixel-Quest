@@ -4,7 +4,7 @@ package Kamen_Rider_Craft_4TH.mobs.Henchmen;
 import java.util.Calendar;
 import java.util.UUID;
 
-import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.ReiwaRiderItems;
 import Kamen_Rider_Craft_4TH.mobs.Boss.EntityBossBase;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Calibur;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Falchion;
@@ -14,6 +14,7 @@ import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_genm;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_legeiel;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_storious;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_zooous;
+import Kamen_Rider_Craft_4TH.mobs.Boss.entity_desast;
 import net.minecraft.block.Block;
 
 import net.minecraft.entity.Entity;
@@ -64,7 +65,7 @@ public class EntityShimi extends Entity_base_henchmen
 	@Override
 	public ItemStack getHeldItemMainhand()
 	{
-		return new ItemStack(RiderItems.shimi_lot);
+		return new ItemStack(ReiwaRiderItems.shimi_lot);
 	}
 
 	public void onDeath(DamageSource cause)
@@ -77,6 +78,7 @@ public class EntityShimi extends Entity_base_henchmen
 				 EntityBossBase entityboss2  = new Entity_legeiel(world);
 				 EntityBossBase entityboss3  = new Entity_storious(world);
 				 EntityBossBase entityboss4  = new Entity_zooous(world);
+				 EntityBossBase entityboss5  = new entity_desast(world);
 				 
 			switch (this.rand.nextInt(20))
 			{
@@ -102,26 +104,32 @@ public class EntityShimi extends Entity_base_henchmen
 				entityboss4.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
 				world.spawnEntity(entityboss4);
 				break;
+				
+			case 4:
+				playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_RED+"Desast!"));
+				entityboss5.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+				world.spawnEntity(entityboss5);
+				break;
 			}
 			}
 			
-			this.dropItem(RiderItems.blank_wonder_ride_book, 1);
+			this.dropItem(ReiwaRiderItems.blank_wonder_ride_book, 1);
 			switch (this.rand.nextInt(20))
 			{
 			case 0:
-				this.dropItem(RiderItems.brave_dragon_wonderride_book, 1);
+				this.dropItem(ReiwaRiderItems.brave_dragon_wonderride_book, 1);
 				break;
 			case 1:
-				this.dropItem(RiderItems.lion_senki_wonderride_book, 1);
+				this.dropItem(ReiwaRiderItems.lion_senki_wonderride_book, 1);
 				break;
 			case 2:
-				this.dropItem(RiderItems.lamp_do_alngina_wonderride_book, 1);
+				this.dropItem(ReiwaRiderItems.lamp_do_alngina_wonderride_book, 1);
 				break;
 			case 3:
-				this.dropItem(RiderItems.jackun_to_domamenoki_wonderride_book, 1); 
+				this.dropItem(ReiwaRiderItems.jackun_to_domamenoki_wonderride_book, 1); 
 				break;
 			case 4:
-				this.dropItem(RiderItems.book_gate_wonder_ride_book, 1); 
+				this.dropItem(ReiwaRiderItems.book_gate_wonder_ride_book, 1); 
 				break;
 			}
 			

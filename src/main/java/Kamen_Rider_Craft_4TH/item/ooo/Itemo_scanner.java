@@ -199,6 +199,8 @@ public class Itemo_scanner extends Item  implements IHasModel
 													if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==5){
 														if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==5){
 															player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 25,2,true,false));
+															player.fallDistance=0; 
+															player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
 														}
 													}
 
@@ -260,11 +262,16 @@ public class Itemo_scanner extends Item  implements IHasModel
 													player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 25,0,true,false));
 													player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 25,3,true,false));
 													player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 25,4,true,false));
+													player.fallDistance=0; 
+													player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
+												
 												}
+												
 												if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==9){
 													player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 25,3,true,false));
 													player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 25,3,true,false));
 													player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 25,5,true,false));
+												
 												}
 												if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "3")==8){
 													player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 25,4,true,false));
@@ -501,6 +508,10 @@ public class Itemo_scanner extends Item  implements IHasModel
 												}}
 
 					
+											}
+				// shocker OOO
+											if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==17){
+												player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));	
 											}
 										}
 								}

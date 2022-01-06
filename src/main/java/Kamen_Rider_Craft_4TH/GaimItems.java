@@ -142,60 +142,63 @@ import static Kamen_Rider_Craft_4TH.item.item_panel.PanelColor.*;
 
 public class GaimItems {
 
-	public static Item musou_saber = new ItemBaseSword("musou_saber",Tabs.musou_saber, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item musou_saber_naginata = new ItemBaseSword("musou_saber_naginata",Tabs.musou_saber_naginata, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item blood_musou_saber_naginata = new ItemBaseSword("blood_musou_saber_naginata",Tabs.musou_saber_naginata, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item musou_saber_kusarigama = new ItemBaseSword("musou_saber_kusarigama",Tabs.musou_saber_kusarigama, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item dj_gun = new Item_gun("dj_gun",Tabs.dj_gun, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+	public static Item himawari_lockseed = new Item_ore("himawari_lockseed").setCreativeTab(Tabs.tabGaim);
+	public static Item himawari_energy_lockseed = new Item_ore("himawari_energy_lockseed").setCreativeTab(Tabs.tabGaim);
 
-    public static Item dj_gun_taiken_mode = new ItemBaseSword("dj_gun_taiken_mode",Tabs.dj_gun_taiken_mode, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+	public static Item musou_saber = new ItemBaseSword("musou_saber",Tabs.musou_saber, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item musou_saber_naginata = new ItemBaseSword("musou_saber_naginata",Tabs.musou_saber_naginata, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item blood_musou_saber_naginata = new ItemBaseSword("blood_musou_saber_naginata",Tabs.musou_saber_naginata, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item musou_saber_kusarigama = new ItemBaseSword("musou_saber_kusarigama",Tabs.musou_saber_kusarigama, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item dj_gun = new Item_gun("dj_gun",Tabs.dj_gun, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 
-    public static Item zangetsu_dj_gun = new Item_gun("zangetsu_dj_gun",Tabs.dj_gun, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item zangetsu_dj_gun_taiken_mode = new ItemBaseSword("zangetsu_dj_gun_taiken_mode",Tabs.dj_gun_taiken_mode, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item dj_gun_taiken_mode = new ItemBaseSword("dj_gun_taiken_mode",Tabs.dj_gun_taiken_mode, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+
+    public static Item zangetsu_dj_gun = new Item_gun("zangetsu_dj_gun",Tabs.dj_gun, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item zangetsu_dj_gun_taiken_mode = new ItemBaseSword("zangetsu_dj_gun_taiken_mode",Tabs.dj_gun_taiken_mode, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 
     
-    public static Item joeshuimu = new ItemBaseSword("joeshuimu",Tabs.dj_gun_taiken_mode, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item sheimu = new ItemBaseSword("sheimu",Tabs.dj_gun_taiken_mode, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item dau = new ItemBaseSword("dau",Tabs.dj_gun_taiken_mode, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item guronbaryamu = new ItemBaseSword("guronbaryamu",Tabs.dj_gun_taiken_mode, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item joeshuimu = new ItemBaseSword("joeshuimu",Tabs.dj_gun_taiken_mode, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item sheimu = new ItemBaseSword("sheimu",Tabs.dj_gun_taiken_mode, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item dau = new ItemBaseSword("dau",Tabs.dj_gun_taiken_mode, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item guronbaryamu = new ItemBaseSword("guronbaryamu",Tabs.dj_gun_taiken_mode, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 
-    public static Item shine_donkachi= new ItemBaseSword("shine_donkachi",Tabs.donkachi, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item shine_lychee_sword = new ItemBaseSword("shine_lychee_sword",Tabs.dj_gun_taiken_mode, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item hells_cane = new ItemBaseSword("hells_cane",Tabs.dj_gun_taiken_mode, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item shine_donkachi= new ItemBaseSword("shine_donkachi",Tabs.donkachi, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item shine_lychee_sword = new ItemBaseSword("shine_lychee_sword",Tabs.dj_gun_taiken_mode, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item hells_cane = new ItemBaseSword("hells_cane",Tabs.dj_gun_taiken_mode, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
     
-    public static Item kagematsu = new ItemBaseSword("kagematsu",Tabs.kagematsu, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item donkachi= new ItemBaseSword("donkachi",Tabs.donkachi, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item melon_defender = new ItemBaseShield("melon_defender", RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item pine_iron = new ItemBaseSword("pine_iron",Tabs.pine_iron, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item ichigo_kunai = new ItemBaseSword("ichigo_kunai",Tabs.ichigo_kunai, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item daidaimaru = new ItemBaseSword("daidaimaru",Tabs.daidaimaru, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item banana_spear= new ItemBaseSword("banana_spear",Tabs.banana_spear, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item budou_ryuhou = new Item_gun("budou_ryuhou",Tabs.budou_ryuhou, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item mango_punisher = new ItemBaseSword("mango_punisher",Tabs.mango_punisher, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item duri_noko = new ItemBaseSword("duri_noko",Tabs.duri_noko, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item kiwi_gekirin = new ItemBaseSword("kiwi_gekirin",Tabs.kiwi_gekirin, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item sonic_arrow = new Item_gun("sonic_arrow",Tabs.sonic_arrow, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item kagematsu_shin = new ItemBaseSword("kagematsu_shin",Tabs.kagematsu_shin, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item suika_sojinto = new ItemBaseSword("suika_sojinto",Tabs.suika_sojinto, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item suika_sojinto_baron_ver = new ItemBaseSword("suika_sojinto_baron_ver",Tabs.suika_sojinto_baron_ver, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item suika_sojinto_knuckle_ver = new ItemBaseSword("suika_sojinto_knuckle_ver",Tabs.suika_sojinto_baron_ver, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item kagematsu = new ItemBaseSword("kagematsu",Tabs.kagematsu, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item donkachi= new ItemBaseSword("donkachi",Tabs.donkachi, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item melon_defender = new ItemBaseShield("melon_defender", GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item pine_iron = new ItemBaseSword("pine_iron",Tabs.pine_iron, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item ichigo_kunai = new ItemBaseSword("ichigo_kunai",Tabs.ichigo_kunai, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item daidaimaru = new ItemBaseSword("daidaimaru",Tabs.daidaimaru, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item banana_spear= new ItemBaseSword("banana_spear",Tabs.banana_spear, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item budou_ryuhou = new Item_gun("budou_ryuhou",Tabs.budou_ryuhou, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item mango_punisher = new ItemBaseSword("mango_punisher",Tabs.mango_punisher, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item duri_noko = new ItemBaseSword("duri_noko",Tabs.duri_noko, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item kiwi_gekirin = new ItemBaseSword("kiwi_gekirin",Tabs.kiwi_gekirin, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item sonic_arrow = new Item_gun("sonic_arrow",Tabs.sonic_arrow, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item kagematsu_shin = new ItemBaseSword("kagematsu_shin",Tabs.kagematsu_shin, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item suika_sojinto = new ItemBaseSword("suika_sojinto",Tabs.suika_sojinto, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item suika_sojinto_baron_ver = new ItemBaseSword("suika_sojinto_baron_ver",Tabs.suika_sojinto_baron_ver, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item suika_sojinto_knuckle_ver = new ItemBaseSword("suika_sojinto_knuckle_ver",Tabs.suika_sojinto_baron_ver, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 
-    public static Item king_duri_noko = new ItemBaseSword("king_duri_noko",Tabs.duri_noko, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item king_duri_noko = new ItemBaseSword("king_duri_noko",Tabs.duri_noko, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
     
-    public static Item blood_daidaimaru = new ItemBaseSword("blood_daidaimaru",Tabs.daidaimaru, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item yomimaru = new ItemBaseSword("yomimaru",Tabs.yomimaru, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item sword_bringer = new ItemBaseSword("sword_bringer",Tabs.sword_bringer, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item apple_reflecter = new ItemBaseShield("apple_reflecter", RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item blood_daidaimaru = new ItemBaseSword("blood_daidaimaru",Tabs.daidaimaru, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item yomimaru = new ItemBaseSword("yomimaru",Tabs.yomimaru, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item sword_bringer = new ItemBaseSword("sword_bringer",Tabs.sword_bringer, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item apple_reflecter = new ItemBaseShield("apple_reflecter", GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
     
-    public static Item lemon_rapier = new ItemBaseSword("lemon_rapier",Tabs.daidaimaru, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item lemon_rapier = new ItemBaseSword("lemon_rapier",Tabs.daidaimaru, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
     
-    public static Item souginjou = new ItemBaseSword("souginjou",Tabs.souginjou, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item dark_daidaimaru = new ItemBaseSword("dark_daidaimaru",Tabs.daidaimaru, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item watermelon_defender = new ItemBaseShield("watermelon_defender", RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item savior_arrow = new Item_gun("savior_arrow",Tabs.savior_arrow, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item souginjou = new ItemBaseSword("souginjou",Tabs.souginjou, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item dark_daidaimaru = new ItemBaseSword("dark_daidaimaru",Tabs.daidaimaru, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item watermelon_defender = new ItemBaseShield("watermelon_defender", GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item savior_arrow = new Item_gun("savior_arrow",Tabs.savior_arrow, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 
-    public static Item kabi_daidaimaru = new ItemBaseSword("kabi_daidaimaru",ToolMaterial.WOOD, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
-    public static Item maja_yomimaru = new ItemBaseSword("maja_yomimaru",Tabs.yomimaru, RiderItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item kabi_daidaimaru = new ItemBaseSword("kabi_daidaimaru",ToolMaterial.WOOD, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
+    public static Item maja_yomimaru = new ItemBaseSword("maja_yomimaru",Tabs.yomimaru, GaimItems.himawari_lockseed).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
 
 
     public static Item Gaimhead = new item_Gaimarmor3("gaimhead",ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);

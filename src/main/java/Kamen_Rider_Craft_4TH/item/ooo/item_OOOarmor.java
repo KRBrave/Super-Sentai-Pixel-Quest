@@ -71,114 +71,24 @@ public class item_OOOarmor extends ItemArmor  implements IHasModel
 
 				}	
 				
-				else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.birth_driver){
+				else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_OOOdriver){
+
+					String rider= ((item_OOOdriver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 					if ( slot == EntityEquipmentSlot.HEAD)
 					{
-						return Refercence.MODID+":textures/armor/"+"birth_1" +".png";
+						return Refercence.MODID+":textures/armor/"+rider+"_1.png";
 					}
 					if ( slot == EntityEquipmentSlot.CHEST)
 					{
-						return Refercence.MODID+":textures/armor/"+"birth_2" +".png";
+						return Refercence.MODID+":textures/armor/"+rider+"_2" +".png";
 					}
 
 					if ( slot == EntityEquipmentSlot.LEGS)
 					{
-						return Refercence.MODID+":textures/armor/"+"birth_3" +".png";
-					}
-					return Refercence.MODID+":textures/armor/blank.png";
-				}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.birth_driver_prototype){
-					if ( slot == EntityEquipmentSlot.HEAD)
-					{
-						return Refercence.MODID+":textures/armor/"+"birth_prototype_1" +".png";
-					}
-					if ( slot == EntityEquipmentSlot.CHEST)
-					{
-						return Refercence.MODID+":textures/armor/"+"birth_prototype_2" +".png";
-					}
-
-					if ( slot == EntityEquipmentSlot.LEGS)
-					{
-						return Refercence.MODID+":textures/armor/"+"birth_prototype_3" +".png";
-					}
-					return Refercence.MODID+":textures/armor/blank.png";
-				}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.poseidon_driver){
-					if ( slot == EntityEquipmentSlot.HEAD)
-					{
-						return Refercence.MODID+":textures/armor/"+"poseidon_1" +".png";
-					}
-					if ( slot == EntityEquipmentSlot.CHEST)
-					{
-						return Refercence.MODID+":textures/armor/"+"poseidon_2" +".png";
-					}
-
-					if ( slot == EntityEquipmentSlot.LEGS)
-					{
-						return Refercence.MODID+":textures/armor/"+"poseidon_3" +".png";
-					}
-					return Refercence.MODID+":textures/armor/blank.png";
-				}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.aqua_driver){
-					if ( slot == EntityEquipmentSlot.HEAD)
-					{
-						return Refercence.MODID+":textures/armor/"+"aqua_1" +".png";
-					}
-					if ( slot == EntityEquipmentSlot.CHEST)
-					{
-						return Refercence.MODID+":textures/armor/"+"aqua_2" +".png";
-					}
-
-					if ( slot == EntityEquipmentSlot.LEGS)
-					{
-						return Refercence.MODID+":textures/armor/"+"aqua_3" +".png";
-					}
-					return Refercence.MODID+":textures/armor/blank.png";
-				}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.core_driver){
-					if ( slot == EntityEquipmentSlot.HEAD)
-					{
-						return Refercence.MODID+":textures/armor/"+"core_1" +".png";
-					}
-					if ( slot == EntityEquipmentSlot.CHEST)
-					{
-						return Refercence.MODID+":textures/armor/"+"core_2" +".png";
-					}
-
-					if ( slot == EntityEquipmentSlot.LEGS)
-					{
-						return Refercence.MODID+":textures/armor/"+"core_3" +".png";
-					}
-					return Refercence.MODID+":textures/armor/blank.png";
-				}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.core_driver_power_up){
-					if ( slot == EntityEquipmentSlot.HEAD)
-					{
-						return Refercence.MODID+":textures/armor/"+"core_power_up_1" +".png";
-					}
-					if ( slot == EntityEquipmentSlot.CHEST)
-					{
-						return Refercence.MODID+":textures/armor/"+"core_power_up_2" +".png";
-					}
-
-					if ( slot == EntityEquipmentSlot.LEGS)
-					{
-						return Refercence.MODID+":textures/armor/"+"core_power_up_3" +".png";
-					}
-					return Refercence.MODID+":textures/armor/blank.png";
-				}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.greeed_blet_ankh){
-					if ( slot == EntityEquipmentSlot.HEAD)
-					{
-						return Refercence.MODID+":textures/armor/"+"ankh_complete_1" +".png";
-					}
-					if ( slot == EntityEquipmentSlot.CHEST)
-					{
-						return Refercence.MODID+":textures/armor/"+"ankh_complete_2" +".png";
-					}
-
-					if ( slot == EntityEquipmentSlot.LEGS)
-					{
-						return Refercence.MODID+":textures/armor/"+"ankh_complete_3" +".png";
+						return Refercence.MODID+":textures/armor/"+rider+"_3" +".png";
 					}
 					return Refercence.MODID+":textures/armor/blank.png";
 				}
-
-
 			}
 		}
 		else
@@ -239,5 +149,9 @@ public class item_OOOarmor extends ItemArmor  implements IHasModel
 	{
 		return maxDamageArray;
 	}
-
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
+	{
+		return RiderItems.cellmedal == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

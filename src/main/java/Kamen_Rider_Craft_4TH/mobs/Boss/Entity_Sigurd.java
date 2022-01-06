@@ -103,7 +103,7 @@ public class Entity_Sigurd extends EntityBossBase
     {
 if (!this.world.isRemote){
 
-	this.dropItem(RiderItems.himawari_energy_lockseed, 5);
+	this.dropItem(GaimItems.himawari_energy_lockseed, 5);
 	
    		this.dropItem(GaimItems.cherry_energy_lockseed, 1);
 

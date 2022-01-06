@@ -98,8 +98,36 @@ if (!this.world.isRemote){
 
    		this.dropItem(RiderItems.smash_bottle, 4);
    		this.dropItem(RiderItems.gear_red, 1);
+   		switch (this.rand.nextInt(9))
+		{
+		case 0:
+			this.dropItem(RiderItems.foundation_taka, 1);
+			break;
+		case 1:
+			this.dropItem(RiderItems.foundation_tora, 1);
+			break;
+		case 2:
+			this.dropItem(RiderItems.foundation_batta, 1);
+			break;
+		case 3:
+			this.dropItem(RiderItems.foundation_tako, 1); 
+			break;
+		case 4:
+			this.dropItem(RiderItems.foundation_kujaku, 1);
+			break;
+		case 5:
+			this.dropItem(RiderItems.foundation_sai, 1);
+			break;
+		case 6:
+			this.dropItem(RiderItems.foundation_condor, 1);
+			break;
+		case 7:
+			this.dropItem(RiderItems.foundation_zou, 1);
+			break;
+			}
+		}
    		
-       }
+       
    }
 }
     

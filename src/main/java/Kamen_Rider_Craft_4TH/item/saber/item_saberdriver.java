@@ -4,8 +4,10 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
+import Kamen_Rider_Craft_4TH.ReiwaRiderItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
+import Kamen_Rider_Craft_4TH.item.ooo.item_OOOdriver;
 import Kamen_Rider_Craft_4TH.item.zi_o.item_zikudriver;
 import Kamen_Rider_Craft_4TH.model.model_belt;
 import Kamen_Rider_Craft_4TH.model.model_belt_plus;
@@ -30,6 +32,7 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -57,7 +60,8 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 			"tsuki_no_hime_kaguyan","osha_jizou_san","issun_bushi","saber_televi_kun","daishougun_momoichirou","daikengou_urashimajirou","daiyokozuna_kinzaburou"};
 
 	public static String[] book_mode= new String[] {"","_jaou_dragon","_dragonic_knight","_emotional_dragon","_ghost","_x_swordman","_x_swordman_wonderful"
-			,"_x_swordman_powerful","_king_lion","_primitive_dragon","_elemental_primitive_dragon","_tategami_hyoujuu_senki","_xross"};
+			,"_x_swordman_powerful","_king_lion","_primitive_dragon","_elemental_primitive_dragon","_tategami_hyoujuu_senki","_xross","_specter","_zenkaiger"
+			,"","_amazing_siren","_arabiana_night","_ultimate_bahamut"};
 
 
 
@@ -105,9 +109,9 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 			if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST)!= null){
 				if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS)!= null){
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.saberlegs){
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.sabertroso){
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.saberhead){
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == ReiwaRiderItems.saberlegs){
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == ReiwaRiderItems.sabertroso){
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == ReiwaRiderItems.saberhead){
 									ItemStack ItemStack = player.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 									if (Rider == "buster"){
@@ -128,6 +132,35 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 5, 0,true,false));
+									}else if (Rider == "solomon"){
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 5,true,false));
+									}else if (Rider == "sabela"){
+										if (player.isSneaking()){
+											player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE,player.posX,player.posY, player.posZ, 0.0D, 0.0D, 0.0D);
+											player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE,player.posX,player.posY+1, player.posZ, 0.0D, 0.0D, 0.0D);
+											player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE,player.posX,player.posY+0.5, player.posZ, 0.0D, 0.0D, 0.0D);
+											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 5, 0,true,false));
+										}
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 2,true,false));
+									}else if (Rider == "durendal"){
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 3,true,false));
+									}else if (Rider == "storious"){
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 7,true,false));
 									}
 
 									if (get_core_for_forms(ItemStack,"l")==1){
@@ -143,11 +176,11 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
 									}else if (get_core_for_forms(ItemStack,"l")==5){
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
 									}else if (get_core_for_forms(ItemStack,"l")==6){
 										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 250, 0,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
 									}
 
@@ -156,7 +189,7 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 0,true,false));
 									}else if (get_core_for_forms(ItemStack,"m")==2){
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
 									}else if (get_core_for_forms(ItemStack,"m")==3){
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));
@@ -170,14 +203,14 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 0,true,false));
 									}else if (get_core_for_forms(ItemStack,"r")==3){
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 1,true,false));
 									}else if (get_core_for_forms(ItemStack,"r")==4){
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));
 									}else if (get_core_for_forms(ItemStack,"r")==5){
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 6,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 2,true,false));
 									}else if (get_core_for_forms(ItemStack,"r")==6){
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 2,true,false));
 									}else if (get_core_for_forms(ItemStack,"r")==7){
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
@@ -188,7 +221,7 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 									}else if (get_core_for_forms(ItemStack,"r")==9){
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 5,true,false));
 									}else if (get_core_for_forms(ItemStack,"r")==10){
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 2,true,false));
 									}else if (get_core_for_forms(ItemStack,"r")==11){
 										player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 5, 0,true,false));
@@ -211,7 +244,7 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 4,true,false));
 									}else if (get_core_for_forms(ItemStack,"r")==17){
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 2,true,false));
 									}else if (get_core_for_forms(ItemStack,"r")==18){
@@ -223,14 +256,14 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
 									}else if (get_core_for_forms(ItemStack,"r")==20){
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 1,true,false));
 									}
 
 									if (get_core_for_forms(ItemStack,"f")==1){
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 1,true,false));
 									}else if (get_core_for_forms(ItemStack,"f")==2){
@@ -252,17 +285,17 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
 									}else if (get_core_for_forms(ItemStack,"f")==6){
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
 									}else if (get_core_for_forms(ItemStack,"f")==7){
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
 									}else if (get_core_for_forms(ItemStack,"f")==8){
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 2,true,false));
@@ -272,18 +305,79 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 									}else if (get_core_for_forms(ItemStack,"f")==9){
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
 									}else if (get_core_for_forms(ItemStack,"f")==10){
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 3,true,false));
+									}else if (get_core_for_forms(ItemStack,"f")==11){
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
+										if (player.isInWater()){
+											if (player.isSneaking()){
+											Vec3d look = player.getLookVec();
+											player.motionX=look.x/2;
+											player.motionY=look.y/2;
+											player.motionZ=look.z/2;
+										}}
+									}else if (get_core_for_forms(ItemStack,"f")==12){
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 3,true,false));
+									}else if (get_core_for_forms(ItemStack,"f")==13){
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 2,true,false));
+									}else if (get_core_for_forms(ItemStack,"f")==14){
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 3,true,false));
+									}else if (get_core_for_forms(ItemStack,"f")==15){
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 5,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
+									}else if (get_core_for_forms(ItemStack,"f")==16){
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
+									}else if (get_core_for_forms(ItemStack,"f")==17){
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 5,true,false));
+									}else if (get_core_for_forms(ItemStack,"f")==18){
+										//"_ultimate_bahamut"
 									}
+										
+								
 
 								}
 							}
@@ -304,13 +398,51 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 			if(stack.getItem() instanceof ItemArmor)
 			{
 				model_belt_plus armorModel = new model_belt_plus();
+				
+				armorModel.belt=stack;
+				
+				Item[] shinjuu= new Item[] {RiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_dragon,ReiwaRiderItems.seiken_swordriver_genbu,
+						ReiwaRiderItems.seiken_swordriver_jaaku_dragon,ReiwaRiderItems.seiken_swordriver_pegasus,ReiwaRiderItems.seiken_swordriver_cerberus,
+						ReiwaRiderItems.seiken_swordriver_phoenix};
+			
+				Item[] seibutsu= new Item[] {RiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_lion,ReiwaRiderItems.seiken_swordriver_hedgehog,
+						ReiwaRiderItems.seiken_swordriver_eagle};
+				
+				Item[] monogatari= new Item[] {RiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_peter,ReiwaRiderItems.seiken_swordriver_jackun,
+						ReiwaRiderItems.seiken_swordriver_alangina,ReiwaRiderItems.seiken_swordriver_butasan,ReiwaRiderItems.seiken_swordriver_ninja,
+						ReiwaRiderItems.seiken_swordriver_arthur,ReiwaRiderItems.seiken_swordriver_kirin,ReiwaRiderItems.seiken_swordriver_sarukani,
+						ReiwaRiderItems.seiken_swordriver_usakame,ReiwaRiderItems.seiken_swordriver_saiyuu,ReiwaRiderItems.seiken_swordriver_hansel,
+						ReiwaRiderItems.seiken_swordriver_bremen,ReiwaRiderItems.seiken_swordriver_houshin_engi,ReiwaRiderItems.seiken_swordriver_kaguyan,
+						ReiwaRiderItems.seiken_swordriver_jizousan,ReiwaRiderItems.seiken_swordriver_issun,ReiwaRiderItems.seiken_swordriver_televikun,
+						ReiwaRiderItems.seiken_swordriver_momoichirou,ReiwaRiderItems.seiken_swordriver_urashima_jirou,ReiwaRiderItems.seiken_swordriver_kinzaburou};
+				
+				Item[] others= new Item[] {RiderItems.blanknoitem,ReiwaRiderItems.jaken_caliburdriver_jaou,ReiwaRiderItems.seiken_swordriver_dragonic,
+						ReiwaRiderItems.seiken_swordriver_emotional,ReiwaRiderItems.seiken_swordriver_ghost,ReiwaRiderItems.seiken_saikou_driver_x_swordman,
+						ReiwaRiderItems.seiken_saikou_driver_x_swordman2,ReiwaRiderItems.seiken_saikou_driver_x_swordman1,ReiwaRiderItems.seiken_swordriver_king_lion,
+						ReiwaRiderItems.seiken_swordriver_primitive,ReiwaRiderItems.seiken_swordriver_elemental,ReiwaRiderItems.seiken_swordriver_tategami,
+						RiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_specter,ReiwaRiderItems.seiken_swordriver_super_hero_senki,
+						ReiwaRiderItems.seiken_swordriver_wonder,ReiwaRiderItems.seiken_swordriver_siren,ReiwaRiderItems.seiken_swordriver_arabiana,
+						ReiwaRiderItems.seiken_swordriver_bahamut};
 
-				if (stack.getItem()==RiderItems.sword_of_logos_buckle_buster){
-					if(living.getHeldItemMainhand().getItem()!= RiderItems.dogouken_gekido&living.getHeldItemOffhand().getItem()!= RiderItems.dogouken_gekido){
-						armorModel.wings= new ItemStack(RiderItems.dogouken_gekido_back);
+	
+				
+				if (stack.getItem()==ReiwaRiderItems.sword_of_logos_buckle_buster){
+					if(living.getHeldItemMainhand().getItem()!= ReiwaRiderItems.dogouken_gekido&living.getHeldItemOffhand().getItem()!= ReiwaRiderItems.dogouken_gekido){
+						armorModel.wings= new ItemStack(ReiwaRiderItems.dogouken_gekido_back);
 					}
 				}
-				armorModel.belt=stack;
+				
+				if (stack.getItem()==ReiwaRiderItems.seiken_swordriver_saber||stack.getItem()==ReiwaRiderItems.seiken_swordriver_blaze||stack.getItem()==ReiwaRiderItems.seiken_swordriver_espada){
+					if (this.get_core_for_forms(stack,"f")==15){
+					armorModel.wings= new ItemStack(ReiwaRiderItems.wonder_ride_books);
+					}
+					armorModel.belt=new ItemStack(ReiwaRiderItems.seiken_swordriver);
+					armorModel.belt2=new ItemStack(shinjuu[this.get_core_for_forms(stack,"l")]);
+				armorModel.belt3=new ItemStack(seibutsu[this.get_core_for_forms(stack,"m")]);
+				armorModel.belt4=new ItemStack(monogatari[this.get_core_for_forms(stack,"r")]);
+				}
+			armorModel.belt5=new ItemStack(others[this.get_core_for_forms(stack,"f")]);
+			
 				armorModel.isSneak = defaultModel.isSneak;
 				armorModel.isRiding = defaultModel.isRiding;
 				armorModel.isChild = defaultModel.isChild;
@@ -458,6 +590,6 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
 	{
-		return RiderItems.blank_wonder_ride_book == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return ReiwaRiderItems.blank_wonder_ride_book == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

@@ -102,7 +102,7 @@ public class Entity_Duke extends EntityBossBase
     public void onDeath(DamageSource cause)
     {
 if (!this.world.isRemote){
-	this.dropItem(RiderItems.himawari_energy_lockseed, 5);
+	this.dropItem(GaimItems.himawari_energy_lockseed, 5);
 		
    		this.dropItem(GaimItems.lemon_energy_lockseed, 1);
 

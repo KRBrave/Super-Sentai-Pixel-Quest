@@ -74,7 +74,7 @@ public class EntityByakkoInves extends Entity_base_henchmen
 	{
 		if (!this.world.isRemote){
 
-			this.dropItem(RiderItems.himawari_lockseed, this.rand.nextInt(8));
+			this.dropItem(GaimItems.himawari_lockseed, this.rand.nextInt(8));
 
 				switch (this.rand.nextInt(50))
 				{

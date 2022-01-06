@@ -202,7 +202,7 @@ public class item_Gaimdriver extends ItemArmor  implements IHasModel
 					armorModel.belt=stack;
 				}
 
-				Item[] LOCK= new Item[] {RiderItems.himawari_lockseed,GaimItems.sengoku_driver_matsubokkuri
+				Item[] LOCK= new Item[] {GaimItems.himawari_lockseed,GaimItems.sengoku_driver_matsubokkuri
 						,GaimItems.sengoku_driver_kurumi,GaimItems.sengoku_driver_donguri,
 						GaimItems.sengoku_driver_melon,GaimItems.sengoku_driver_pine,
 						GaimItems.sengoku_driver_ichigo, GaimItems.sengoku_driver_orange,
