@@ -116,6 +116,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="king_durian_arms"){
 								
 								return Refercence.MODID+":textures/armor/"+ "barvo_king" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "barvo_kiwami" +".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "barvo_lychee" +".png";
@@ -184,6 +186,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "gridon_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "gridon_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "gridon" +".png";
 						}else if (belt.RIDER == "kurokage"){
@@ -202,6 +206,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "kurokage_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "kurokage_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "kurokage" +".png";
 						}else if (belt.RIDER == "knuckle"){
@@ -220,6 +226,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "knuckle_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "knuckle_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "knuckle" +".png";
 						}else if (belt.RIDER == "mars"){
@@ -238,6 +246,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "mars_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "mars_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "mars" +".png";
 						}else if (belt.RIDER == "kamuro"){
@@ -256,6 +266,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "kamuro_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "kamuro_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "kamuro" +".png";
 						}else if (belt.RIDER == "jam"){
@@ -274,6 +286,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "jam_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "jam_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "jam" +".png";
 						}else if (belt.RIDER == "idunn"){
@@ -292,6 +306,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "idunn_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "idunn_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "idunn" +".png";
 						}else if (belt.RIDER == "savior"){
@@ -310,6 +326,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "savior_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "savior_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "savior" +".png";
 						}else if (belt.RIDER == "fifteen"){
@@ -328,6 +346,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "fifteen_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "fifteen_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "fifteen" +".png";
 						}else if (belt.RIDER == "maja"){
@@ -346,6 +366,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "maja_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "maja_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "maja" +".png";
 						}else if (belt.RIDER == "sylphi"){
@@ -364,6 +386,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "sylphi_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "sylphi_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "sylphi" +".png";
 						}else if (belt.RIDER == "sengoku_duke"){
@@ -382,6 +406,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "duke_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "duke_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "sengoku_duke" +".png";
 						}else if (belt.RIDER == "sengoku_marika"){
@@ -400,6 +426,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 									return Refercence.MODID+":textures/armor/"+ "marika_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "marika_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "sengoku_marika" +".png";
 						}else if (belt.RIDER == "sengoku_sigurd"){
@@ -418,6 +446,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 									return Refercence.MODID+":textures/armor/"+ "sigurd_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "sigurd_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "sengoku_sigurd" +".png";
 						}else if (belt.RIDER == "sengoku_tyrant"){
@@ -436,6 +466,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 									return Refercence.MODID+":textures/armor/"+ "tyrant_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
+								return Refercence.MODID+":textures/armor/"+ "tyrant_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "sengoku_tyrant" +".png";
 						}

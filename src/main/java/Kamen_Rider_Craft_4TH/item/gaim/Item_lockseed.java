@@ -169,26 +169,39 @@ public class Item_lockseed extends Item implements IHasModel
 								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 							}
 						}
-						else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_baron){
-							if (ARMS[num2] == "baron_kachidoki_arms"){
+						
+						else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_baron)
+						{
+						 if (ARMS[num2] == "kiwami_arms")
+						 {
+							if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="baron_kachidoki_arms")
+							{
+								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+							} 
+						 }
+							else if (ARMS[num2] == "baron_kachidoki_arms")
+							{
 								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2, "1");
 								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 							}
-							}else if (ARMS[num2] == "kiwami_arms"){
-								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="baron_kachidoki_arms"){
-									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
-									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
-					}
 						}
-						else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_ryugen){
-							if (ARMS[num2]=="ryugen_kachidoki_arms")
+						
+						else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_ryugen)
+						{
+							if (ARMS[num2] == "kiwami_arms")
+						{
+							if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="ryugen_kachidoki_arms")
+							{
+								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+							}
+						}
+							else if (ARMS[num2]=="ryugen_kachidoki_arms")
+							{
 								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3,"1");
 								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
-						}
-							}else if (ARMS[num2] == "kiwami_arms"){
-								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="ryugen_kachidoki_arms"){
-									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
-									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+							}
 						}
 						else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_gaim){
 
@@ -207,6 +220,279 @@ public class Item_lockseed extends Item implements IHasModel
 								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 							}
 						}
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_barvo)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="barvo_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "barvo_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+							
+							
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_gridon)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="gridon_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "gridon_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+							
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_kurokage)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kurokage_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "kurokage_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}			
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_knuckle)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="knuckle_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "knuckle_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}	
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_duke)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="duke_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "duke_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_marika)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="marika_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "marika_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_sigurd)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="sigurd_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "sigurd_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_tyrant)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="tyrant_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "tyrant_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_kamuro)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kamuro_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "kamuro_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_mars)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="mars_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "mars_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_jam)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="jam_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "jam_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_savior)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="savior_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "savior_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_fifteen)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="fifteen_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "fifteen_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_maja)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="maja_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "maja_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_idunn)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="idunn_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "idunn_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						
+							else if(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_sylphi)
+							{
+							 if (ARMS[num2] == "kiwami_arms")
+							 {
+								if (item_Gaimdriver.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="sylphi_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);	
+								} 
+							 }
+								else if (ARMS[num2] == "sylphi_kachidoki_arms")
+								{
+									item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3, "1");
+									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
+								}
+							}
+						}
 					}
 					else if (num == 4){
 
@@ -222,7 +508,7 @@ public class Item_lockseed extends Item implements IHasModel
 							item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 						}
 					}
-				}
+				
 			}
 		
         playerIn.setActiveHand(handIn);
