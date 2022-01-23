@@ -14,9 +14,12 @@ entity.EvoltMob.name=Kamen Rider Evol
 entity.EvoltMob2.name=Kamen Rider Evol (Black Hole Form)
 entity.EvoltMob3.name=Evolt
 entity.HardGuardianMob.name=Hard Guardian
+
 entity.LazerMob.name=Kamen Rider Lazer
 entity.exaidBikeMob.name=Ex-Aid Bike
+
 entity.machine_builder.name=Machine Builder
+
 entity.RemoconBrosMob.name=Remocon Bros
 entity.EngineBrosMob.name=Engine Bros
 entity.HellBrosMob.name=Hell Bros
@@ -43,6 +46,7 @@ entity.RidePlayerMob.name=Ride Player
 entity.Para_dxMob.name=Kamen Rider ParaDX
 entity.Red_PoppyMob.name=Kamen Rider Poppy
 entity.genmMob.name=Kamen Rider GENM
+
 entity.SakuraHurricaneMob.name=Sakura Hurricane
 entity.RoseAttackerMob.name=Rose Attacker
 entity.KurokageTroopersMob.name=Kurokage Trooper
@@ -59,6 +63,10 @@ entity.roshuoMob.name=Roshuo
 entity.redyueMob.name=Redyue
 entity.demushuMob.name=Demushu
 entity.lord_baronMob.name=Lord Baron
+entity.TyrantMob.name=Kamen Rider Tyrant
+entity.KurokageShinMob=Kamen Rider Kurokage Shin
+entity.IdunnShinMob=Kamen Rider Idunn Shin
+
 entity.GaohMob.name=Kamen Rider Gaoh
 entity.MachineDenBirdMob.name=Machine Den-Bird
 entity.RiseHopperBikeMob.name=Rise Hopper
@@ -1066,6 +1074,26 @@ item.hades_heguri_lockseed.name=Hades Heguri Lockseed
 item.Jigoku_heguri_lockseed.name=Jigoku Heguri Lockseed
 item.submondo_heguri_lockseed.name=Submondo Heguri Lockseed
 
+item.black_gaim_lockseed.name=Orange Lockseed (Black Gaim Ver.)
+item.black_kurokage_lockseed.name=Matsubokkori Lockseed (Black Kurokage Ver.)
+item.black_knuckle_lockseed.name=Kurumi Lockseed (Black Knuckle Ver.)
+item.black_gridon_lockseed.name=Dongri Lockseed (Black Gridon Ver.)
+item.black_barvo_lockseed.name=Durian Lockseed (Black Bravo Ver.)
+item.black_zangetsu_lockseed.name=Melon Lockseed (Black Zangetsu Ver.)
+item.black_ryugen_lockseed.name=Budou Lockseed (Black Ryugen Ver.)
+item.black_duke_lockseed.name=Lemon Lockseed (Black Duke Ver.)
+item.black_sigurd_lockseed.name=Cherry Lockseed (Black Sigurd Ver.)
+item.black_marika_lockseed.name=Peach Lockseed (Black Marika Ver.)
+item.black_tyrant_lockseed.name=Dragonfruits Lockseed (Black Tyrant Ver.)
+item.black_bujin_gaim_lockseed.name=Blood Orange Lockseed (Black Bujin Gaim Ver.)
+item.black_fifteen_lockseed.name=Fifteen Lockseed (Black Fifteen Ver.)
+item.black_maja_lockseed.name=Maja Lockseed (Black Maja Ver.)
+item.black_mars_lockseed.name=Golden Ringo Lockseed (Black Mars Ver.)
+item.black_kamuro_lockseed.name=Silver Ringo Lockseed (Black Kamuro Ver.)
+item.black_jam_lockseed.name=Black Ringo Lockseed (Black Jam Ver.)
+item.black_idunn_lockseed.name=Forbidden Ringo Lockseed (Black Idunn Ver.)
+item.black_sylphi_lockseed.name=Hellheim Lockseed (Black Sylphi Ver.)
+item.black_savior_lockseed.name=Zakuro Lockseed (Black Savior Ver.)
 
 item.sakura_hurricane.name=Sakura Hurricane Lock Vehicle
 item.rose_attacker.name=Rose Attacker Lock Vehicle

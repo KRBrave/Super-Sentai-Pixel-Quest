@@ -9,6 +9,7 @@ import Kamen_Rider_Craft_4TH.GaimItems;
 import Kamen_Rider_Craft_4TH.mobs.Boss.EntityBossBase;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Duke;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_EngineBros;
+import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Idunn_Shin;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Kaiser;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_KaiserReverse;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Marika;
@@ -16,7 +17,9 @@ import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Para_dx;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Red_Poppy;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_RemoconBros;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Sigurd;
+import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Tyrant;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_ZangetsuShin;
+import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_kurokage_shin;
 import net.minecraft.block.Block;
 
 import net.minecraft.entity.Entity;
@@ -92,6 +95,9 @@ public class EntityKurokageTroopers extends Entity_base_henchmen
 					 EntityBossBase entityboss2  = new Entity_Marika(world);
 					 EntityBossBase entityboss3  = new Entity_Sigurd(world);
 					 EntityBossBase entityboss4  = new Entity_Duke(world);
+					 EntityBossBase entityboss5  = new Entity_Tyrant(world);
+					 EntityBossBase entityboss6  = new Entity_kurokage_shin(world);
+					 EntityBossBase entityboss7  = new Entity_Idunn_Shin (world);
 					 
 				switch (this.rand.nextInt(15))
 				{
@@ -114,6 +120,21 @@ public class EntityKurokageTroopers extends Entity_base_henchmen
 					playerIn.sendMessage( new TextComponentString(TextFormatting.YELLOW+"Soda! Lemon Energy Arms! Fight, Power! Fight, Power! Fight! Fight! Fight! Fight! Fi-Fi-Fi-Fi-Fight"));
 					entityboss4.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
 					world.spawnEntity(entityboss4);
+					break;
+				case 4:
+					playerIn.sendMessage( new TextComponentString(TextFormatting.RED+"Soda! Dragon Energy Arms!"));
+					entityboss5.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+					world.spawnEntity(entityboss5);
+					break;
+				case 5:
+					playerIn.sendMessage( new TextComponentString(TextFormatting.BLACK+"Liquid! Matsubokkori Energy Arms! Sei! Yoshou! Wasshoi!"));
+					entityboss6.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+					world.spawnEntity(entityboss6);
+					break;
+				case 6:
+					playerIn.sendMessage( new TextComponentString(TextFormatting.WHITE+"Soda! Apple Energy Arms!"));
+					entityboss7.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+					world.spawnEntity(entityboss7);
 					break;
 				}
 				switch (this.rand.nextInt(25))

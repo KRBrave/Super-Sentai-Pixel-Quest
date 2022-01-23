@@ -125,6 +125,24 @@ if (!this.world.isRemote){
 			this.dropItem(GaimItems.suika_energy_lockseed, 1);
 			break;
        }
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.orange_energy_lockseed, 1);
+			break;
+       }
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.budou_energy_lockseed, 1);
+			break;
+       }
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.durian_energy_lockseed, 1);
+			break;
+       }
 }  
    }
 

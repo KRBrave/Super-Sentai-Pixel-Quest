@@ -34,6 +34,7 @@ import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Eternal;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Falchion;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Ginga;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_HellBros;
+import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Idunn_Shin;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Kaiser;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_KaiserReverse;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Marika;
@@ -44,6 +45,7 @@ import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_RemoconBros;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Sabela;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Sigurd;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Solomon;
+import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Tyrant;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_White_Woz;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_ZangetsuShin;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_ankh_complete;
@@ -65,6 +67,7 @@ import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_horobi;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_ikazuchi;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_jin;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_kazari;
+import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_kurokage_shin;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_legeiel;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_legeiel_forbidden;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_lord_baron;
@@ -431,7 +434,12 @@ public class mobsCore {
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":MarikaMob"),Entity_Marika.class, "MarikaMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xfcfb81,0xff84ac);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":SigurdMob"),Entity_Sigurd.class, "SigurdMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xff0000, 0xd2f3e8);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":DukeMob"),Entity_Duke.class, "DukeMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xe5ec25, 0x25c1ec);
-		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":KurokageShinMob"),Entity_kurokage_shin.class, "KurokageShinMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x6a4916, 0x333399);
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":TyrantMob"),Entity_Tyrant.class, "TyrantMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x0d0d0d, 0xc82d2d);
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":IdunnShinMob"),Entity_Idunn_Shin.class, "IdunnShinMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xdc0d0d, 0xdcb40d);
+
+
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":roshuoMob"),Entity_roshuo.class, "roshuoMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xefefef, 0x97c3c5);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":redyueMob"),Entity_redyue.class, "redyueMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xb69d02, 0x277a44);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":demushuMob"),Entity_demushu.class, "demushuMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xb50000, 0x790000);

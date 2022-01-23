@@ -272,7 +272,7 @@ public class GaimItems {
     public static Item sengoku_driver_blood_zakuro  = new Item_ore("sengoku_driver_blood_zakuro");
     public static Item zakuro_lockseed = new Item_lockseed(1,47,"zakuro_lockseed").setCreativeTab(Tabs.tabGaim);
     public static Item sengoku_driver_black_baron  = new Item_ore("sengoku_driver_black_baron");
-    public static Item black_baron_lockseed  = new Item_lockseed(1,8,"black_baron_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item black_baron_lockseed  = new Item_lockseed(1,8,"black_baron_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
     
     public static Item sengoku_driver_zangetsu_kachidoki  = new Item_ore("sengoku_driver_zangetsu_kachidoki");
     public static Item zangetsu_kachidoki_lockseed  = new Item_lockseed(3,65,"zangetsu_kachidoki_lockseed").setCreativeTab(Tabs.tabGaim);
@@ -680,7 +680,7 @@ public class GaimItems {
     public static Item savior_kachidoki_lockseed  = new Item_lockseed(3,132,"savior_kachidoki_lockseed").setCreativeTab(Tabs.tabGaim);
     public static Item sengoku_driver_savior_kiwami = new Item_ore("sengoku_driver_savior_kiwami");
     public static Item sengoku_driver_fifteen_kachidoki  = new Item_ore("sengoku_driver_fifteen_kachidoki");
-    public static Item fifteen_kachidoki_lockseed  = new Item_lockseed(3,133,"zangetsu_fifteen_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item fifteen_kachidoki_lockseed  = new Item_lockseed(3,133,"fifteen_kachidoki_lockseed").setCreativeTab(Tabs.tabGaim);
     public static Item sengoku_driver_fifteen_kiwami = new Item_ore("sengoku_driver_fifteen_kiwami");
     public static Item sengoku_driver_maja_kachidoki  = new Item_ore("sengoku_driver_maja_kachidoki");
     public static Item maja_kachidoki_lockseed  = new Item_lockseed(3,134,"maja_kachidoki_lockseed").setCreativeTab(Tabs.tabGaim);
@@ -700,6 +700,28 @@ public class GaimItems {
     public static Item sengoku_driver_sylphi_kachidoki  = new Item_ore("sengoku_driver_sylphi_kachidoki");
     public static Item sylphi_kachidoki_lockseed  = new Item_lockseed(3,139,"sylphi_kachidoki_lockseed").setCreativeTab(Tabs.tabGaim);
     public static Item sengoku_driver_sylphi_kiwami = new Item_ore("sengoku_driver_sylphi_kiwami");
+    
+    public static Item black_kurokage_lockseed = new Item_lockseed(1,1,"black_kurokage_lockseed").AddlockseedToHelheimVine(6).setCreativeTab(Tabs.tabGaim);
+    public static Item black_knuckle_lockseed = new Item_lockseed(1,2,"black_knuckle_lockseed").AddlockseedToHelheimVine(6).setCreativeTab(Tabs.tabGaim);
+    public static Item black_gridon_lockseed = new Item_lockseed(1,3,"black_gridon_lockseed").AddlockseedToHelheimVine(6).setCreativeTab(Tabs.tabGaim);
+    public static Item black_zangetsu_lockseed = new Item_lockseed(1,4,"black_zangetsu_lockseed").AddlockseedToHelheimVine(3).setCreativeTab(Tabs.tabGaim);
+    public static Item black_gaim_lockseed = new Item_lockseed(1,7,"black_gaim_lockseed").AddlockseedToHelheimVine(3).setCreativeTab(Tabs.tabGaim);
+    public static Item black_ryugen_lockseed = new Item_lockseed(1,9,"black_ryugen_lockseed").AddlockseedToHelheimVine(3).setCreativeTab(Tabs.tabGaim);
+    public static Item black_barvo_lockseed = new Item_lockseed(1,11,"black_barvo_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
+    public static Item black_duke_lockseed = new Item_lockseed(1,92,"black_duke_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
+    public static Item black_sigurd_lockseed = new Item_lockseed(1,93,"black_sigurd_lockseed").AddlockseedToHelheimVine(1).setCreativeTab(Tabs.tabGaim);    
+    public static Item black_tyrant_lockseed = new Item_lockseed(1,94,"black_tyrant_lockseed").AddlockseedToHelheimVine(1).setCreativeTab(Tabs.tabGaim);  
+    public static Item black_marika_lockseed = new Item_lockseed(1,95,"black_marika_lockseed").AddlockseedToHelheimVine(1).setCreativeTab(Tabs.tabGaim);  
+    public static Item black_bujin_gaim_lockseed = new Item_lockseed(1,25,"black_bujin_gaim_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
+    public static Item black_fifteen_lockseed = new Item_lockseed(1,26,"black_fifteen_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
+    public static Item black_mars_lockseed = new Item_lockseed(1,27,"black_mars_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
+    public static Item black_kamuro_lockseed = new Item_lockseed(1,28,"black_kamuro_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
+    public static Item black_jam_lockseed = new Item_lockseed(1,29,"black_jam_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
+    public static Item black_idunn_lockseed = new Item_lockseed(1,31,"black_idunn_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
+    public static Item black_savior_lockseed = new Item_lockseed(1,47,"black_savior_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
+    public static Item black_maja_lockseed  = new Item_lockseed(4,59,"black_maja_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
+    public static Item black_sylphi_lockseed  = new Item_lockseed(4,98,"black_sylphi_lockseed").AddlockseedToHelheimVine(2).setCreativeTab(Tabs.tabGaim);
+
     
 	public static void init() {
 	}

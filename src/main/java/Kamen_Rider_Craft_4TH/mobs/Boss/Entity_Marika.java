@@ -118,6 +118,24 @@ if (!this.world.isRemote){
 			this.dropItem(GaimItems.peach_lockseed, 1);
 			break;
 		}
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.lychee_energy_lockseed, 1);
+			break;
+		}
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.fifteen_energy_lockseed, 1);
+			break;
+		}
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.maja_energy_lockseed, 1);
+			break;
+		}
        }
        
    }

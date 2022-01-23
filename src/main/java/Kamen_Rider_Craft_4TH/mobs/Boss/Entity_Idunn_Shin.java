@@ -63,18 +63,18 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 
-public class Entity_Duke extends EntityBossBase
+public class Entity_Idunn_Shin extends EntityBossBase
 //implements IBossDisplayData
 {
     
 	private String texture;
-	public Entity_Duke(World par1World)
+	public Entity_Idunn_Shin(World par1World)
 	{
 		super(par1World);
 		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.sonic_arrow));
 		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(GaimItems.Gaimtroso));
 		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(GaimItems.Gaimhead));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(GaimItems.genesis_driver_duke));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(GaimItems.genesis_driver_idunn_shin));
 		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(GaimItems.Gaimlegs));
 		
 	}
@@ -104,21 +104,33 @@ public class Entity_Duke extends EntityBossBase
 if (!this.world.isRemote){
 	this.dropItem(GaimItems.himawari_energy_lockseed, 5);
 		
-   		this.dropItem(GaimItems.lemon_energy_lockseed, 1);
+   		this.dropItem(GaimItems.forbidden_ringo_energy_lockseed, 1);
 
    		switch (this.rand.nextInt(5))
 		{
 		case 0:
-			this.dropItem(GaimItems.lemon_lockseed, 1);
+			this.dropItem(GaimItems.mango_energy_lockseed, 1);
 			break;
 		}
    		
    		switch (this.rand.nextInt(5))
 		{
 		case 0:
-			this.dropItem(GaimItems.kiwi_energy_lockseed, 1);
+			this.dropItem(GaimItems.silver_ringo_energy_lockseed, 1);
 			break;
 		}
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.golden_ringo_energy_lockseed, 1);
+			break;
+       }
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.black_ringo_energy_lockseed, 1);
+			break;
+       }
        }
        
    }

@@ -119,6 +119,18 @@ if (!this.world.isRemote){
 			this.dropItem(GaimItems.cherry_lockseed, 1);
 			break;
 		}
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.helheim_energy_lockseed, 1);
+			break;
+		}
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.donguri_energy_lockseed, 1);
+			break;
+		}
        }
        
    }

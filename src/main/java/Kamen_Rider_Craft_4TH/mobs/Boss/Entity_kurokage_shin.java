@@ -63,18 +63,18 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 
-public class Entity_Duke extends EntityBossBase
+public class Entity_kurokage_shin extends EntityBossBase
 //implements IBossDisplayData
 {
     
 	private String texture;
-	public Entity_Duke(World par1World)
+	public Entity_kurokage_shin(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.sonic_arrow));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.kagematsu_shin));
 		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(GaimItems.Gaimtroso));
 		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(GaimItems.Gaimhead));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(GaimItems.genesis_driver_duke));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(GaimItems.genesis_driver_kurokage_shin));
 		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(GaimItems.Gaimlegs));
 		
 	}
@@ -82,7 +82,7 @@ public class Entity_Duke extends EntityBossBase
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(200.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(100.0D);
         this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.30000001192092896D);
         this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(10.0D);
         this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(128.0D);
@@ -104,21 +104,33 @@ public class Entity_Duke extends EntityBossBase
 if (!this.world.isRemote){
 	this.dropItem(GaimItems.himawari_energy_lockseed, 5);
 		
-   		this.dropItem(GaimItems.lemon_energy_lockseed, 1);
+   		this.dropItem(GaimItems.matsubokkuri_energy_lockseed, 1);
 
    		switch (this.rand.nextInt(5))
 		{
 		case 0:
-			this.dropItem(GaimItems.lemon_lockseed, 1);
+			this.dropItem(GaimItems.marron_lockseed, 1);
 			break;
 		}
    		
    		switch (this.rand.nextInt(5))
 		{
 		case 0:
-			this.dropItem(GaimItems.kiwi_energy_lockseed, 1);
+			this.dropItem(GaimItems.kurumi_energy_lockseed, 1);
 			break;
 		}
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.pine_energy_lockseed, 1);
+			break;
+       }
+   		switch (this.rand.nextInt(5))
+		{
+		case 0:
+			this.dropItem(GaimItems.ichigo_energy_lockseed, 1);
+			break;
+       }
        }
        
    }

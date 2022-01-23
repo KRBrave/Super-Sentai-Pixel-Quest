@@ -38,6 +38,7 @@ import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Eternal;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Falchion;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Ginga;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_HellBros;
+import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Idunn_Shin;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Kaiser;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_KaiserReverse;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Marika;
@@ -48,6 +49,7 @@ import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_RemoconBros;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Sabela;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Sigurd;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Solomon;
+import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Tyrant;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_White_Woz;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_ZangetsuShin;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_ankh_complete;
@@ -69,6 +71,7 @@ import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_horobi;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_ikazuchi;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_jin;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_kazari;
+import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_kurokage_shin;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_legeiel;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_legeiel_forbidden;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_lord_baron;
@@ -305,7 +308,12 @@ public class ClientProxyRider extends CommonProxyRider
 		RenderingRegistry.registerEntityRenderingHandler(Entity_Marika.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/marika.png"));
 		RenderingRegistry.registerEntityRenderingHandler(Entity_Sigurd.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/sigurd.png"));
 		RenderingRegistry.registerEntityRenderingHandler(Entity_Duke.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/duke.png"));
-		
+		RenderingRegistry.registerEntityRenderingHandler(Entity_kurokage_shin.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/kurokage_shin.png"));
+		RenderingRegistry.registerEntityRenderingHandler(Entity_Tyrant.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/tyrant.png"));
+		RenderingRegistry.registerEntityRenderingHandler(Entity_Idunn_Shin.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/idunn_shin.png"));
+
+
+
 		RenderingRegistry.registerEntityRenderingHandler(Entity_roshuo.class, new RenderRiderMob2(new tokuMobModel("roshuo_2"), 0.5F,"textures/entities/roshuo_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(Entity_demushu.class, new RenderRiderMob2(new tokuMobModel("demushu_2"), 0.5F,"textures/entities/demushu_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(Entity_redyue.class, new RenderRiderMob2(new tokuMobModel("redyue_2"), 0.5F,"textures/entities/redyue_1.png"));
