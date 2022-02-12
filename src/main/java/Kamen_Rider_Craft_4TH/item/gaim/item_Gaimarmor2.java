@@ -95,6 +95,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 						}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 							return Refercence.MODID+":textures/armor/"+ "ryugen_lychee" +".png";
+						}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_budou_arms") {
+							return Refercence.MODID+":texturs/armor/"+"ryugen_yami"+".png";
 						}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 							return Refercence.MODID+":textures/armor/"+ "ruygen_kiwami" +".png";
 						}else
@@ -116,6 +118,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="king_durian_arms"){
 								
 								return Refercence.MODID+":textures/armor/"+ "barvo_king" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_durian_arms") {
+								return Refercence.MODID+":texturs/armor/"+"barvo_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "barvo_kiwami" +".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
@@ -139,6 +143,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "zangetsu_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_melon_arms") {
+								return Refercence.MODID+":texturs/armor/"+"zangetsu_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "zangetsu_kiwami" +".png";
 							}else
@@ -148,6 +154,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="energy_dragon_fruits_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "duke_hex" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_lemon_energy_arms") {
+								return Refercence.MODID+":texturs/armor/"+"duke_yami"+".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "duke" +".png";
 						}else if (belt.RIDER == "baron"){
@@ -163,6 +171,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 								return Refercence.MODID+":textures/armor/"+ "baron_yomi" +".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="king_durian_arms"){
 								return Refercence.MODID+":textures/armor/"+ "baron_king" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_banana_arms") {
+								return Refercence.MODID+":texturs/armor/"+"baron_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "baron_lychee" +".png";
@@ -186,6 +196,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "gridon_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_dongri_arms") {
+								return Refercence.MODID+":texturs/armor/"+"gridon_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "gridon_kiwami" +".png";
 							}else
@@ -206,6 +218,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "kurokage_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_matsubokkuri_arms") {
+								return Refercence.MODID+":texturs/armor/"+"kurokage_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "kurokage_kiwami" +".png";
 							}else
@@ -226,6 +240,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "knuckle_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_kurumi_arms") {
+								return Refercence.MODID+":texturs/armor/"+"knuckle_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "knuckle_kiwami" +".png";
 							}else
@@ -246,6 +262,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "mars_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_golden_ringo_arms") {
+								return Refercence.MODID+":texturs/armor/"+"mars_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "mars_kiwami" +".png";
 							}else
@@ -266,6 +284,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "kamuro_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_silver-ringo_arms") {
+								return Refercence.MODID+":texturs/armor/"+"kamuro_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "kamuro_kiwami" +".png";
 							}else
@@ -286,6 +306,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "jam_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_black_ringo_arms") {
+								return Refercence.MODID+":texturs/armor/"+"jam_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "jam_kiwami" +".png";
 							}else
@@ -306,6 +328,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "idunn_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_forbidden_ringo_arms") {
+								return Refercence.MODID+":texturs/armor/"+"idunn_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "idunn_kiwami" +".png";
 							}else
@@ -326,6 +350,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "savior_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_zakuro_arms") {
+								return Refercence.MODID+":texturs/armor/"+"savior_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "savior_kiwami" +".png";
 							}else
@@ -346,6 +372,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "fifteen_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_fifteen_arms") {
+								return Refercence.MODID+":texturs/armor/"+"fifteen_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "fifteen_kiwami" +".png";
 							}else
@@ -366,6 +394,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "maja_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_maja_arms") {
+								return Refercence.MODID+":texturs/armor/"+"maja_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "maja_kiwami" +".png";
 							}else
@@ -386,6 +416,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "sylphi_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_hells_arms") {
+								return Refercence.MODID+":texturs/armor/"+"sylphi_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "sylphi_kiwami" +".png";
 							}else
@@ -406,6 +438,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 								return Refercence.MODID+":textures/armor/"+ "duke_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_lemon_arms") {
+								return Refercence.MODID+":texturs/armor/"+"sengoku_duke_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "duke_kiwami" +".png";
 							}else
@@ -426,6 +460,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 									return Refercence.MODID+":textures/armor/"+ "marika_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_peach_arms") {
+								return Refercence.MODID+":texturs/armor/"+"sengoku_marika_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "marika_kiwami" +".png";
 							}else
@@ -446,6 +482,8 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 									return Refercence.MODID+":textures/armor/"+ "sigurd_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_cherry_arms") {
+								return Refercence.MODID+":texturs/armor/"+"sengoku_sigurd_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "sigurd_kiwami" +".png";
 							}else
@@ -466,10 +504,17 @@ public class item_Gaimarmor2 extends ItemArmor implements IHasModel
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lychee_arms"){
 
 									return Refercence.MODID+":textures/armor/"+ "tyrant_lychee" +".png";
+							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_dragonfruit_arms") {
+								return Refercence.MODID+":texturs/armor/"+"sengoku_tyrant_yami"+".png";
 							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kiwami_arms"){
 								return Refercence.MODID+":textures/armor/"+ "tyrant_kiwami" +".png";
 							}else
 								return Refercence.MODID+":textures/armor/"+ "sengoku_tyrant" +".png";
+							
+						}else if (belt.RIDER == "dark_baron_shin") {
+							if	(item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="dark_banana_energy_arms") {
+								return Refercence.MODID+":textures/armor/"+"baron_shin_yami"+".png";
+							}
 						}
 					
 					if (belt.RIDER == "gaim"){

@@ -435,7 +435,7 @@ public class ReiwaRiderItems {
 	public static Item seiken_saikou_driver_x_swordman2 = new Item_ore("seiken_saikou_driver_x_swordman2");
 
 	public static Item wonder_ride_books = new Item_ore("wonder_ride_books");
-	
+	/**
 	//Revice
 	public static Item proto_vistamp = new Item_Vistamps("proto_vistamp").setCreativeTab(Tabs.tabrevice);
 	
@@ -512,7 +512,7 @@ public class ReiwaRiderItems {
 
 	public static Item giff_junior_vistamp = new Item_Vistamps("giff_junior_vistamp").setCreativeTab(Tabs.tabrevice);
 	
-	
+	**/
 	public static void init() {
 	}
 
