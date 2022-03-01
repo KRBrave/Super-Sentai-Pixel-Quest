@@ -14,7 +14,6 @@ entity.EvoltMob.name=Kamen Rider Evol
 entity.EvoltMob2.name=Kamen Rider Evol (Black Hole Form)
 entity.EvoltMob3.name=Evolt
 entity.HardGuardianMob.name=Hard Guardian
-
 entity.LazerMob.name=Kamen Rider Lazer
 entity.exaidBikeMob.name=Ex-Aid Bike
 
@@ -115,6 +114,7 @@ entity.CoreMob.name=Kamen Rider Core
 entity.CorePowerUpMob.name=Kamen Rider Core (Powered Up)
 entity.poseidonMob.name=Kamen Rider Poseidon
 
+entity.super_gingaohMob.name=Super GingaOh
 
 entity.ridevendorVendingMob.name=Ridevendor (Machine Vendor Mode)
 entity.RidevendorMob.name=Ridevendor (Bike Mode)
@@ -175,6 +175,9 @@ entity.ShimiMob.name=Shimi
 entity.CaliburMob.name=Kamen Rider Calibur
 entity.FalchionMob.name=Kamen Rider Falchion
 
+entity.ViceMob.name=Vice(WIP)
+entity.giffJuniorMob.name=Giff Junior
+entity.EvilMob.name=Kamen Rider Evil
 
 effect.fly=Flying
 effect.fire_punch=Fire Punch
@@ -288,14 +291,19 @@ tile.ark_one_boss_block.name=Ark-One Block
 tile.sabela_boss_block.name=Sabela Block
 tile.durendal_boss_block.name=Durendal Block
 tile.solomon_boss_block.name=Solomon Block
-
-
+tile.super_ginga_oh_boss_block.name=Super GingaOh Block
 tile.storious_boss_block.name=Storious Block
 tile.core_boss_block.name=Core Block
 tile.power_up_core_boss_block.name=Powered Up Core Block
 tile.poseidon_boss_block.name=Poseidon Block
 tile.pure_gaia_memory_block.name=Pure Gaia Memory Block
+
 tile.cell_medal_programer.name=Cell Medal Programer
+tile.vistamp_bar.name=Vistamp Bar
+tile.astro_switch_programer.name=Astro Switch Programer
+
+tile.amazon_cell_extractor.name=Amazon Cell Extractor
+tile.amazon_cell_mutator.name=Amazon Cell Mutator
 
 tile.purifyer.name=Fullbottle Purifier
 tile.solidifyer.name=Fullbottle Solidifier
@@ -391,6 +399,15 @@ tile.gaoh_liner_gold.name=Gaoh Liner Gold
 tile.gaoh_liner_green.name=Gaoh Liner Green
 tile.gaoh_liner_windo.name=Gaoh Liner Window
 tile.zero_liner_green.name=Zero Liner Green
+
+tile.rabbit_hutch_cyan.name=Rabbit Hutch Cyan Block
+tile.rabbit_hutch_cyan2.name=Rabbit Hutch Cyan Block
+tile.rabbit_hutch_cyan_light.name=Rabbit Hutch Cyan Block With Light 
+
+tile.rabbit_hutch_light.name=Rabbit Hutch Roof Light 
+tile.rabbit_hutch_computer_stairs.name=Rabbit Hutch Computer Part
+tile.rabbit_hutch_computer_stairs2.name=Rabbit Hutch Computer Part
+
 
 tile.helheim_plant.name=Helheim Plant
 tile.helheim_plant_2.name=Helheim Plant
@@ -744,6 +761,7 @@ item.trigger_magnum.name=Trigger Magnum
 item.skull_magnum.name=Skull Magnum
 item.engine_blade.name=Engine Blade
 item.shield_prism_bicker.name=Prism Bicker Shield
+item.bomb_magnum.name=Bomb Magnum
 
 item.whead.name=W Helmet
 item.wtroso.name=W Chestplate
@@ -833,6 +851,8 @@ item.hee_hackgun.name=Fire Module Hee-Hackgun
 item.barizun_sword.name=Cosmic Module Barizun Sword
 item.meteor_nadeshiko_fusion_rocket.name=Rocket Module (Meteor Nadeshiko Fusion States Ver)
 
+item.meteor_storm_shaft.name=Meteor Storm Shaft
+
 item.fourzehead.name=Fourze Helmet
 item.fourzetroso.name=Fourze Chestplate
 item.fourzelegs.name=Fourze Leggings
@@ -840,6 +860,7 @@ item.fourzelegs.name=Fourze Leggings
 item.fourzedriver.name=Fourze Driver
 item.ikarosdriver.name=Ikaros Driver
 
+item.ginga_oh_driver.name=GingaOh Driver
 
 item.rocket_swich.name=Rocket Switch
 item.launcher_switch.name=Launcher Switch
@@ -894,6 +915,33 @@ item.core_switch.name=Core Switch
 item.solu_switch.name=SOLU Switch
 item.gate_switch.name=Gate Switch
 
+item.rider1_switch.name=1 Switch
+item.rider2_switch.name=2 Switch
+item.v3_switch.name=V3 Switch
+item.riderman_switch.name=Riderman Switch
+item.x_switch.name=X Switch
+item.amazon_switch.name=Amazon Switch
+item.stronger_switch.name=Stronger Switch
+item.skyrider_switch.name=Skyrider Switch
+item.super_1_switch.name=Super-1 Switch
+item.zx_switch.name=ZX Switch
+item.black_switch.name=Black Switch
+item.rx_switch.name=Black RX Switch
+item.kuuga_switch.name=Kuuga Switch
+item.agito_switch.name=Agito Switch
+item.ryuki_switch.name=Ryuki Switch
+item.faiz_switch.name=Faiz Switch
+item.blade_switch.name=Blade Switch
+item.hibiki_switch.name=Hibiki Switch
+item.kabuto_switch.name=Kabuto Switch 
+item.den_o_switch.name=Den-O Switch
+item.kiva_switch.name=Kiva Switch
+item.decade_switch.name=Decade Switch
+item.double_switch.name=Double Switch
+item.ooo_switch.name=OOO Switch
+    
+item.rocket_swich_christmas_ver.name=Rocket Switch (Christmas Ver)
+    
 item.wizarswordgun.name=WizarSwordGun
 item.axcalibur.name=AxCalibur
 item.axcalibur_charge.name=AxCalibur
@@ -1693,6 +1741,7 @@ item.mango_punisher.name=Mango Punisher
 item.duri_noko.name=Duri Noko
 item.kiwi_gekirin.name=Kiwi Gekirin
 
+‎‎
 item.shine_donkachi.name=Shine Donkachi
 item.hells_cane.name=Hells Cane
 item.shine_lychee_sword.name=Shine Lychee Sword
@@ -1989,6 +2038,7 @@ item.caucasus_rider_belt.name=Caucasus Rider Belt
 item.hercus_rider_belt.name=Hercus Rider Belt
 item.ketaros_rider_belt.name=Ketaros Rider Belt
     
+item.lady_rider_belt.name=Lady Rider Belt
 
 item.kabuto_zecter.name=Kabuto Zecter
 item.hyper_zecter.name=Hyper Zecter
@@ -2005,6 +2055,7 @@ item.ketaros_zecter.name=Ketaros Zecter
 item.perfectthebee_zecter.name=Perfect TheBee Zecter
 item.perfectdrake_zecter.name=Perfect Drake Zecter
 item.perfectsasword_zecter.name=Perfect Sasword Zecter
+item.lady_zecter.name=Lady Zecter
 
 item.dienddriver.name=Diend Belt
 
@@ -2901,6 +2952,45 @@ item.kodama_suika_arms.name=Kodama Suika Arms
 item.another_build_ridewatch.name=Another Build Ridewatch
 item.ryusoulger_ridewatch.name=Ryusoulger Ridewatch
 
+item.another_zero_one_ridewatch.name=Another Zero-One Watch
+item.another_zi_o_ridewatch.name=Another Zi-O Watch
+item.another_zi_o_ii_ridewatch.name=Another Zi-O II Watch
+item.another_build_ridewatch.name=Another Build Watch
+item.another_exaid_ridewatch.name=Another Ex-Aid Watch
+item.another_ghost_ridewatch.name=Another Ghost Watch
+item.another_drive_ridewatch.name=Another Drive Watch
+item.another_gaim_ridewatch.name=Another Gaim Watch
+item.another_wizard_ridewatch.name=Another Wizard Watch
+item.another_fourze_ridewatch.name=Another Fourze Watch
+item.another_ooo_ridewatch.name=Another OOO Watch
+item.another_w_ridewatch.name=Another W Watch
+item.another_decade_ridewatch.name=Another Decade Watch
+item.another_diend_ridewatch.name=Another Diend Watch
+item.another_kiva_ridewatch.name=Another Kiva Watch
+item.another_deno_ridewatch.name=Another Den-O Watch
+item.another_kabuto_ridewatch.name=Another Kabuto Watch
+item.another_hibiki_ridewatch.name=Another Hibiki Watch
+item.another_blade_ridewatch.name=Another Blade Watch
+item.another_faiz_ridewatch.name=Another Faiz Watch
+item.another_ryuki_ridewatch.name=Another Ryuki Watch
+item.another_ryuga_ridewatch.name=Another Ryuga Watch
+item.another_agito_ridewatch.name=Another Agito Watch
+item.another_kuuga_ridewatch.name=Another Kuuga Watch
+    
+item.another_ichigo_ridewatch.name=Another Ichigo Watch 
+    
+item.another_shinobi_ridewatch.name=Another Shinobi Watch
+item.another_quiz_ridewatch.name=Another Quiz Watch
+item.another_kikai_ridewatch.name=Another Kikai Watch 
+
+item.amazon_ridewatch.name=Amazon Ridewatch
+item.stronger_ridewatch.name=Stronger Ridewatch
+item.x_ridewatch.name=X Ridewatch
+item.riderman_ridewatch.name=Riderman Ridewatch
+item.v3_ridewatch.name=V3 Ridewatch
+item.nigo_ridewatch.name=Nigo Ridewatch
+item.ichigo_ridewatch.name=Ichigo Ridewatch
+
 item.shuriken_starter.name=Shuriken Starter (Shinobi)
 item.shuriken_starter_hattari.name=Shuriken Starter (Hattari)
 item.quiz_topper.name=Quiz Topper
@@ -3235,6 +3325,70 @@ item.revicelegs.name=Revice Leggings
         
 item.revice_driver.name=Revice Driver       
 item.vice_belt.name=Buddy Buckle(Vice)    
+
+item.two_sidriver_evil.name=Two Sidriver(Evil)
+item.two_sidriver_live.name=Two Sidriver(Live)
+item.demons_driver.name=Demons Driver
+item.libera_driver.name=Libera Driver
+    
+item.rex_vistamp.name=Rex Vistamp
+item.barid_rex_vistamp_closed.name=Barid Rex Vistamp (Incomplete)
+item.barid_rex_vistamp.name=Barid Rex Vistamp
+    
+item.eagle_vistamp.name=Eagle Vistamp
+item.mammoth_vistamp.name=Mammoth Vistamp
+item.megalodon_vistamp.name=Megalodon Vistamp
+item.ptera_vistamp.name=Ptera Vistamp
+item.lion_vistamp.name=Lion Vistamp
+item.jackal_vistamp.name=Jackal Vistamp
+item.kong_vistamp.name=Kong Vistamp
+item.kamakiri_vistamp.name=Kamakiri Vistamp
+item.brachio_vistamp.name=Brachio Vistamp
+item.kajiki_vistamp.name=Kajiki Vistamp
+item.neo_batta_vistamp.name=Neo Batta Vistamp
+item.kangaroo_vistamp.name=Kangaroo Vistamp
+item.bat_vistamp.name=Bat Vistamp
+item.spider_vistamp.name=Spider Vistamp
+item.batta_vistamp.name=Batta Vistamp
+item.mogura_vistamp.name=Mogura Vistamp
+item.scorpion_vistamp.name=Scorpion Vistamp
+item.turtle_vistamp.name=Turtle Vistamp
+item.kujaku_vistamp.name=Kujaku Vistamp
+item.cobra_vistamp.name=Cobra Vistamp
+item.condor_vistamp.name=Condor Vistamp
+item.white_leo_vistamp.name=White Leo Vistamp
+item.quetzalcoatlus_vistamp.name=Quetzalcoatlus Vistamp
+item.cheetah_vistamp.name=Cheetah Proto Vistamp
+item.planarian_vistamp.name=Planarian Proto Vistamp
+item.daiouika_vistamp.name=Daiouika Proto Vistamp
+item.wolf_vistamp.name=Wolf Proto Vistamp
+item.sabertiger_vistamp.name=Sabertiger Proto Vistamp
+    
+item.rex_vistamp_metal.name= Rex Vistamp (Black Metal Plating)
+item.rex_vistamp_christmas.name=Rex Vistamp (Christmas)
+item.rex_vistamp_theme.name=Rex Vistamp (Theme Song) 
+item.toysaurus_vistamp.name=Toysaurus Vistamp
+item.mammoth_vistamp_china.name=Mammoth Vistamp (Chinese Exclusive)
+item.giff_junior_vistamp.name=Giff Junior Vistamp
+           
+
+item.proto_vistamp.name=Proto Vistamp
+    
+item.ohin_buster_50.name=Ohinbuster50
+item.gun_de_phone_50.name=Gundephone50
+item.osutoderu_hammer_50.name=Osutoderuhammer50
+item.revice_lasher.name=Revicelasher
+item.egg_shield.name=Barid Shield
+item.mammoth_gasher.name=Mammoth Gasher
+item.kamakiric_arrow.name=Kamakiric Arrow
+item.evil_blade.name=Evilblade
+item.live_gun.name=Livegun
+item.lovekov_kujaku.name=Lovekov Kujaku Genome
+item.lovekov_turtle.name=Lovekov Turtle Genome
+item.giff_junior_sword.name=Giff Junior Sword
+
+    
+
        
        
 item.amazonshead.name=Amazons Helmet
@@ -3256,6 +3410,17 @@ item.condorer_core_blind_alpha.name=Condorer Core (Blind Alpha)
 
 item.amazon_injector_neo.name=Amazon Injector (Neo)
 item.amazon_injector_new_omega.name=Amazon Injector (New Omega)
+item.amazon_injector_neo_alpha.name=Amazon Injector (Neo Alpha)
+
+item.omega_amazon_cell_vial.name=Omega Amazon Cell Sample
+item.alpha_amazon_cell_vial.name=Alpha Amazon Cell Sample
+item.sigma_amazon_cell_vial.name=Sigma Amazon Cell Sample
+item.neo_amazon_cell_vial.name=Neo Amazon Cell Sample
+
+item.empty_vial.name=Empty Vial
+
+item.gaga_armlet.name=Gaga Armlet
+item.gigi_armlet.name=Gigi Armlet
 
 itemGroup.tab_kikaider=Android Kikaider
 item.kikaider_circuit.name=Kikaider Circuit
