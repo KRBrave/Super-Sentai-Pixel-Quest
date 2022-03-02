@@ -1,10 +1,10 @@
-	package Kamen_Rider_Craft_4TH.item.ooo;
+package Kamen_Rider_Craft_4TH.item.ooo;
 
-	import javax.annotation.Nullable;
+import javax.annotation.Nullable;
 
 import Kamen_Rider_Craft_4TH.RiderItems;
-	import Kamen_Rider_Craft_4TH.TokuCraft_core;
-	import Kamen_Rider_Craft_4TH.item.revice.item_revicedriver;
+import Kamen_Rider_Craft_4TH.TokuCraft_core;
+import Kamen_Rider_Craft_4TH.item.revice.item_revicedriver;
 import Kamen_Rider_Craft_4TH.item.ryuki.item_ryukiarmor2;
 import Kamen_Rider_Craft_4TH.model.clawsModel;
 import Kamen_Rider_Craft_4TH.model.tokuArmorModel;
@@ -12,13 +12,13 @@ import Kamen_Rider_Craft_4TH.util.IHasModel;
 import Kamen_Rider_Craft_4TH.util.Refercence;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.entity.Entity;
-	import net.minecraft.entity.EntityLivingBase;
-	import net.minecraft.entity.player.EntityPlayer;
-	import net.minecraft.inventory.EntityEquipmentSlot;
-	import net.minecraft.item.ItemArmor;
-	import net.minecraft.item.ItemStack;
-	import net.minecraft.item.ItemArmor.ArmorMaterial;
-	import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -124,7 +124,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 			{
 				if(stack.getItem() instanceof item_OOOarmor2)
 				{
-					tokuArmorModel armorModel = new tokuArmorModel();
+					clawsModel armorModel = new clawsModel();
 
 					
 					armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.HEAD;

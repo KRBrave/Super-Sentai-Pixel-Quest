@@ -155,11 +155,11 @@ public class Itemo_scanner extends Item  implements IHasModel
 														player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 25,0,true,false));
 														if (player.isInWater()){
 															if (player.isSneaking()){
-															Vec3d look = par3Entity.getLookVec();
-															player.motionX=look.x/2;
-															player.motionY=look.y/2;
-															player.motionZ=look.z/2;
-														}}
+																Vec3d look = par3Entity.getLookVec();
+																player.motionX=look.x/2;
+																player.motionY=look.y/2;
+																player.motionZ=look.z/2;
+															}}
 													}}
 											}
 											if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==4){
@@ -398,6 +398,10 @@ public class Itemo_scanner extends Item  implements IHasModel
 														}
 													}
 												}
+					// Yadokari							
+												if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==17){
+												player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));	
+											}
 				   // Super Putotyrra
 												if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==17){
 													player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));	

@@ -8,6 +8,7 @@ import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.biome.biomeHelheim;
 import Kamen_Rider_Craft_4TH.biome.biomeSandOfTime;
 import Kamen_Rider_Craft_4TH.biome.biome_northern_base;
+import Kamen_Rider_Craft_4TH.biome.biome_rabbit_hutch;
 import Kamen_Rider_Craft_4TH.world.gen.generators.WorldGenStructure;
 import com.google.common.collect.Lists;
 import net.minecraft.block.Block;
@@ -67,6 +68,14 @@ public class WorldGenCustomStructures implements IWorldGenerator
 	
 	public static final WorldGenStructure northern_base = new WorldGenStructure("northern_base");
 	
+	public static final WorldGenStructure rabbit_hutch = new WorldGenStructure("rabbit_hutch");
+
+	public static final WorldGenStructure core_boss_structuer = new WorldGenStructure("core_boss_structuer");
+	public static final WorldGenStructure BURAKAWANI = new WorldGenStructure("burakawani");
+	
+
+	public static final WorldGenStructure M_BUS = new WorldGenStructure("m_bus");
+	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 		switch(world.provider.getDimension()) {
@@ -81,10 +90,13 @@ public class WorldGenCustomStructures implements IWorldGenerator
 				
 				generateStructureFlames(GINGA, world, random, chunkX, chunkZ,1, 800, Blocks.STONE, BiomeHills.class);
 				
+				generateStructure(BURAKAWANI, world, random, chunkX, chunkZ,-1, 800, Blocks.DIRT, BiomeForest.class, BiomePlains.class);
+				
 				
 				break;
 			case -1:
-				generateStructure(BUILD_WAREHOUSE, world, random, chunkX, chunkZ, 88, 70, Blocks.NETHERRACK, BiomeHell.class);
+				generateStructure(core_boss_structuer, world, random, chunkX, chunkZ, random.nextInt(15)+60, 190, Blocks.NETHERRACK, BiomeHell.class);
+				generateStructure(BUILD_WAREHOUSE, world, random, chunkX, chunkZ, 88, 250, Blocks.NETHERRACK, BiomeHell.class);
 				
 		}
 		if (modDimensionWorldGen.HELHEIM_DIM_ID==world.provider.getDimension()){
@@ -100,6 +112,15 @@ public class WorldGenCustomStructures implements IWorldGenerator
 			if (world.getChunk(new BlockPos(world.getSpawnPoint().getX(),world.getSpawnPoint().getY(),world.getSpawnPoint().getZ()))==world.getChunk(chunkX, chunkZ)){
 			MustGenerateStructure(northern_base, world, random, chunkX, chunkZ,-2, 700, Blocks.ICE,biome_northern_base.class);
 			}
+		}else 	if (modDimensionWorldGen.RABBIT_HUTCH_DIM_ID==world.provider.getDimension()){
+
+			if (world.getChunk(new BlockPos(world.getSpawnPoint().getX(),world.getSpawnPoint().getY(),world.getSpawnPoint().getZ()))==world.getChunk(chunkX, chunkZ)){
+			MustGenerateStructure(rabbit_hutch, world, random, chunkX, chunkZ,-2, 700, Blocks.STONE,biome_rabbit_hutch.class);
+			}
+			
+			generateStructure(M_BUS, world, random, chunkX, chunkZ,-35, 350, Blocks.STONE,biome_rabbit_hutch.class);
+			
+			
 		}else if (modDimensionWorldGen.SANDSOFTIME_DIM_ID==world.provider.getDimension()){
 			generateStructureWM(denliner, world, random, chunkX, chunkZ,0, 300, RiderItems.imaginsandblock,biomeSandOfTime.class);
 			
@@ -146,6 +167,7 @@ public class WorldGenCustomStructures implements IWorldGenerator
 		}
 	}
 	
+
 	
 	public static void generateStructure(WorldGenerator generator, World world, Random random, int chunkX, int chunkZ, int PosY, int chance, Block topBlock,Class<? extends Biome>... classes) {
 		List<Class<? extends Biome>> classesList = Lists.newArrayList(classes);
@@ -170,7 +192,7 @@ public class WorldGenCustomStructures implements IWorldGenerator
 		int x = (chunkX * 16);
 		int z = (chunkZ * 16);
 		int y = calculateGenerationHeight(world, x, z, topBlock);
-		BlockPos pos = new BlockPos (x,82 ,z);
+		BlockPos pos = new BlockPos (x,80 ,z);
 		
 		Class<? extends Biome> biome = world.provider.getBiomeForCoords(pos).getClass();
 		

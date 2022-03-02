@@ -2,15 +2,23 @@ package Kamen_Rider_Craft_4TH.item.fourze;
 
 import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
+import Kamen_Rider_Craft_4TH.blocks.AstroSwitchProgrammer;
+import Kamen_Rider_Craft_4TH.blocks.vistamp_bar;
+import Kamen_Rider_Craft_4TH.item.revice.Item_Vistamps;
 import Kamen_Rider_Craft_4TH.util.IHasModel;
+import Kamen_Rider_Craft_4TH.util.Refercence;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 public class Item_astroswitch extends Item implements IHasModel
@@ -38,7 +46,20 @@ public class Item_astroswitch extends Item implements IHasModel
 	public void registerModels() {
 		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
 	}
-
+	
+	public Item_astroswitch AddLegendCrafting(Item Thing)
+	{
+		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID,"astroswitch_and_"+Thing.getRegistryName()),null,new ItemStack(this), new Ingredient[]{Ingredient.fromItem(RiderItems.astroswitch),Ingredient.fromItem(Thing)});			
+		return this;
+	}
+	public Item_astroswitch AddToAstroSwitchProgrammer(int num)
+	{
+		for (int i1 = 0; i1 < num; ++i1)
+		{
+			AstroSwitchProgrammer.AstroSwitch.add(this);
+		}
+		return this;
+	}
 	@Override
 	 public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer player, EnumHand handIn)
     {

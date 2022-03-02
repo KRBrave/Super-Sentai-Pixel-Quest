@@ -420,7 +420,6 @@ public class ore_block extends Block implements IHasModel {
 			if (rand < 100) return RiderItems.foundation_wani;
 			if (rand < 175) return RiderItems.foundation_panda;
 			if (rand < 180) return RiderItems.foundation_kangaroo;
-			if (rand < 195) return RiderItems.foundation_kangaroo2;
 			if (rand < 208) return RiderItems.foundation_imagin;
 			if (rand < 221) return RiderItems.foundation_shocker;
 			if (rand < 234) return RiderItems.foundation_same;
@@ -465,7 +464,6 @@ public class ore_block extends Block implements IHasModel {
 			if (rand < 620) return RiderItems.black_wani;
 			if (rand < 630) return RiderItems.black_panda;
 			if (rand < 640) return RiderItems.black_kangaroo;
-			if (rand < 650) return RiderItems.black_kangaroo2;
 			if (rand < 660) return RiderItems.black_imagin;
 			if (rand < 666) return RiderItems.black_shocker;
 			if (rand < 670) return RiderItems.black_same;
