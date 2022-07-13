@@ -148,7 +148,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.ichigohead);
+			return new ItemStack(ShowaRiderItems.ichigohead);
 		}
 	};	
 	public static CreativeTabs tabv3 = new CreativeTabs("tabv3")
@@ -160,7 +160,7 @@ public class Tabs {
     }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.v3head);
+			return new ItemStack(ShowaRiderItems.v3head);
 		}
 	};
 	public static CreativeTabs tabx = new CreativeTabs("tabx")
@@ -172,7 +172,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.xhead);
+			return new ItemStack(ShowaRiderItems.xhead);
 		}
 	};
 	public static CreativeTabs tabamazon = new CreativeTabs("tabamazon")
@@ -184,7 +184,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.amazonhead);
+			return new ItemStack(ShowaRiderItems.amazonhead);
 		}
 	};
 	public static CreativeTabs tabstronger = new CreativeTabs("tabstronger")
@@ -196,7 +196,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.strongerhead);
+			return new ItemStack(ShowaRiderItems.strongerhead);
 		}
 	};
 	public static CreativeTabs tabskyrider = new CreativeTabs("tabskyrider")
@@ -208,7 +208,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.skyriderhead);
+			return new ItemStack(ShowaRiderItems.skyriderhead);
 		}
 	};
 	public static CreativeTabs tabsuper_1 = new CreativeTabs("tabsuper_1")
@@ -220,7 +220,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.super_1head);
+			return new ItemStack(ShowaRiderItems.super_1head);
 		}
 	};
 	public static CreativeTabs tabzx = new CreativeTabs("tabzx")
@@ -232,7 +232,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.zx_head);
+			return new ItemStack(ShowaRiderItems.zx_head);
 		}
 	};
 	public static CreativeTabs tabblack = new CreativeTabs("tabblack")
@@ -244,7 +244,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.black_head);
+			return new ItemStack(ShowaRiderItems.black_head);
 		}
 	};
 	public static CreativeTabs tabblack_rx = new CreativeTabs("tabblack_rx")
@@ -256,7 +256,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.black_rx_head);
+			return new ItemStack(ShowaRiderItems.black_rx_head);
 		}
 	};
 	public static CreativeTabs tabshin = new CreativeTabs("tabshin")
@@ -268,7 +268,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.shinhead);
+			return new ItemStack(ShowaRiderItems.shinhead);
 		}
 	};
 	public static CreativeTabs tabzo = new CreativeTabs("tabzo")
@@ -280,7 +280,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.zohead);
+			return new ItemStack(ShowaRiderItems.zohead);
 		}
 	};
 	public static CreativeTabs tabj = new CreativeTabs("tabj")
@@ -292,7 +292,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.jhead);
+			return new ItemStack(ShowaRiderItems.jhead);
 		}
 	};
 	public static CreativeTabs tabkuuga = new CreativeTabs("tabkuuga")
@@ -424,7 +424,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.Whead);
+			return new ItemStack(RiderItems.whead);
 		}
 	};
 	public static CreativeTabs tabOOO = new CreativeTabs("tabOOO")
@@ -472,7 +472,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(GaimItems.Gaimhead);
+			return new ItemStack(RiderItems.Gaimhead);
 		}
 	};
 	public static CreativeTabs tabdrive = new CreativeTabs("tabdrive")
@@ -521,7 +521,7 @@ public class Tabs {
         return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_gorider_items.png");
     }
 		public ItemStack createIcon() {
-		return new ItemStack(RiderItems.akariderhead);
+		return new ItemStack(ShowaRiderItems.akariderhead);
 	}
 	};
 	public static CreativeTabs tabbuild = new CreativeTabs("tabbuild")
@@ -594,7 +594,7 @@ public class Tabs {
 		    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.amazonshead);
+			return new ItemStack(ShowaRiderItems.amazonshead);
 		}
 	};
 	public static CreativeTabs tabG = new CreativeTabs("tabG")
@@ -606,7 +606,7 @@ public class Tabs {
 		    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.ghead);
+			return new ItemStack(ShowaRiderItems.ghead);
 		}
 	};
 	public static CreativeTabs tabdecor = new CreativeTabs("tabdecor")
