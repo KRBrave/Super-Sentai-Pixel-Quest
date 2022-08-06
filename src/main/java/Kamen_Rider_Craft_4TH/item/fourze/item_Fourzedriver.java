@@ -6,9 +6,15 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
+import Kamen_Rider_Craft_4TH.ReiwaRiderItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.ShowaRiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
 import Kamen_Rider_Craft_4TH.item.ooo.item_OOOdriver;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.Item_form_change;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.item_rider_driver;
+import Kamen_Rider_Craft_4TH.item.zero_one.Item_progrise_keys;
+import Kamen_Rider_Craft_4TH.item.zero_one.item_zero_onedriver;
 import Kamen_Rider_Craft_4TH.model.Bipedswich;
 import Kamen_Rider_Craft_4TH.potion.PotionCore;
 import Kamen_Rider_Craft_4TH.util.IHasModel;
@@ -41,8 +47,11 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class item_Fourzedriver extends ItemArmor implements IHasModel
+public class item_Fourzedriver extends item_rider_driver
 {
+	public static final String[] CoreName= new String[] {"base","elek","fire","magnet","cosmic","rocket","rocket_drill","meteor_fusion_states","meteor_nadeshiko_fusion_states","launcher"};
+
+	
 	public static final String[] CircleModuleName= new String[] {"blank","rocket","magic_hand","elek","chain_array","flash","fire","schop","n_magnet","claw","cosmic","meteor","nadeshikorocket","rocketdrill","arm_launcher"
 			,"riderman","stronger","ryuki","den_o","zx","black_rx",""};
 	public static final String[] CrossModuleName= new String[] {"blank","launcher","chainsaw","beat","smoke","stealth","pen","hand","freeze","giantfoot","net","nadeshikoboard","launcher"
@@ -59,17 +68,14 @@ public class item_Fourzedriver extends ItemArmor implements IHasModel
 
 
 
-	public item_Fourzedriver (String name,ArmorMaterial par2EnumArmorMaterial, int par3)
+	public item_Fourzedriver (String name,ArmorMaterial par2EnumArmorMaterial,String rider)
 	{
-		super(par2EnumArmorMaterial, par3,EntityEquipmentSlot.FEET);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.Fourzehead, RiderItems.Fourzetroso, RiderItems.Fourzelegs);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		this.maxStackSize = 1;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
+	
 	@SideOnly(Side.CLIENT)
 	public boolean hasEffect(ItemStack par1ItemStack)
 	{
@@ -99,7 +105,7 @@ public class item_Fourzedriver extends ItemArmor implements IHasModel
 				if(stack.getItem() == RiderItems.ikarosdriver) {
 					armorModel.wings=new ItemStack(RiderItems.ikaros_wing);
 				}else{
-					armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+					armorModel.wings=new ItemStack(ShowaRiderItems.blanknoitem);
 				}
 
 				if (living.getItemStackFromSlot(EntityEquipmentSlot.HEAD)!=null&living.getItemStackFromSlot(EntityEquipmentSlot.CHEST)!=null&living.getItemStackFromSlot(EntityEquipmentSlot.LEGS)!=null){
@@ -124,7 +130,7 @@ public class item_Fourzedriver extends ItemArmor implements IHasModel
 
 				}
 				if(stack.getItem() == RiderItems.ginga_oh_driver) {
-					armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+					armorModel.belt=new ItemStack(ShowaRiderItems.blanknoitem);
 				}else{
 					armorModel.belt=stack;
 
@@ -172,7 +178,7 @@ public class item_Fourzedriver extends ItemArmor implements IHasModel
 												}
 
 											}else if (CircleModuleName[armor.getTagCompound().getInteger("corecircle")]=="flash"){
-												player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 5, 1,true,false));
+												player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 1,true,false));
 
 
 											}else if (CircleModuleName[armor.getTagCompound().getInteger("corecircle")]=="claw"){
@@ -342,7 +348,7 @@ public class item_Fourzedriver extends ItemArmor implements IHasModel
 
 
 											if (SquareModuleName[armor.getTagCompound().getInteger("coresquare")]=="radar"){
-												player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 5, 0,true,false));
+												player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));
 
 											}else if (SquareModuleName[armor.getTagCompound().getInteger("coresquare")]=="camera"){
 												if (player.isSneaking()){
@@ -374,7 +380,7 @@ public class item_Fourzedriver extends ItemArmor implements IHasModel
 												player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
 												player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 3,true,false));
 											}else if (SquareModuleName[armor.getTagCompound().getInteger("coresquare")]=="ooo"){	
-												player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 5, 2,true,false));
+												player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 2,true,false));
 												if (player.isSneaking()){
 													if (item_OOOdriver.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) > 2){
 														Vec3d look = player.getLookVec();
@@ -561,6 +567,50 @@ public class item_Fourzedriver extends ItemArmor implements IHasModel
 	}
 
 
+	public  String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+
+					if (num==1||num==2||num==5||num==7||num==3||num==6||num==8){
+						
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.Fourzedriver){
+
+								return Refercence.MODID+":textures/armor/"+rider+"_"+ CoreName[item_Fourzedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +ext;	
+							}	else if(player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.meteor_driver){
+										if (item_Fourzedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=0){
+										return Refercence.MODID+":textures/armor/"+"meteor_storm"+ext;	
+									}else{
+									return Refercence.MODID+":textures/armor/"+"meteor"+ext;
+									}
+							}else {
+
+								return Refercence.MODID+":textures/armor/"+rider+ext;	
+							}
+							
+					}else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
+						return Refercence.MODID+":textures/armor/blank"+ext;
+					} else{
+						return Refercence.MODID+":textures/armor/blank"+ext;
+
+					}
+				}else{
+					return Refercence.MODID+":textures/armor/blank"+ext;
+				}
+			}else{
+				return Refercence.MODID+":textures/armor/blank"+ext;
+			}
+
+		}
+		return Refercence.MODID+":textures/armor/blank"+ext;
+
+	}
+
+	
 
 	/**
 	 * Returns the 'max damage' factor array for the armor, each piece of armor have a durability factor (that gets

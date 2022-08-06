@@ -13,7 +13,6 @@ import javax.annotation.Nullable;
 import com.google.common.collect.Sets;
 
 import Kamen_Rider_Craft_4TH.RiderItems;
-import Kamen_Rider_Craft_4TH.GaimItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -71,7 +70,7 @@ public class Entity_demushu extends EntityBossBase
 	public Entity_demushu(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.sheimu));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.sheimu));
 		
 	}
   
@@ -99,16 +98,21 @@ public class Entity_demushu extends EntityBossBase
     {
 if (!this.world.isRemote){
 
-   		this.dropItem(GaimItems.black_ringo_lockseed, 1);
-   		this.dropItem(GaimItems.blood_orange_lockseed, 1);
+   		this.dropItem(RiderItems.black_ringo_lockseed, 1);
+   		this.dropItem(RiderItems.blood_orange_lockseed, 1);
    		
-   		this.dropItem(GaimItems.lord_baron_boss_block_part3, 1);
+   		this.dropItem(RiderItems.lord_baron_boss_block_part3, 1);
 
-   		this.dropItem(GaimItems.sheimu, 1);
-   		switch (this.rand.nextInt(5))
+   		switch (this.rand.nextInt(3))
 		{
 		case 0:
-			this.dropItem(GaimItems.zakuro_lockseed, 1);
+	   		this.dropItem(RiderItems.sheimu, 1);
+			break;
+		}
+   		switch (this.rand.nextInt(2))
+		{
+		case 0:
+			this.dropItem(RiderItems.zakuro_lockseed, 1);
 			break;
 		}
        }

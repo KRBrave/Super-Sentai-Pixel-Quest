@@ -60,6 +60,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.BossInfo;
 import net.minecraft.world.BossInfoServer;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.EnumDifficulty;
 import net.minecraft.world.World;
 
@@ -85,15 +86,20 @@ public class EntityBossBase extends EntityZombie
         return false;
     }
 	
+
     /**
-     * Returns the item that this EntityLiving is holding, if any.
-     
-	@Override
-    public ItemStack getHeldItemMainhand()
+     * Gives armor or weapon for entity based on given DifficultyInstance
+     */
+    protected void setEquipmentBasedOnDifficulty(DifficultyInstance difficulty)
     {
-        return new ItemStack(RiderItems.drill_crusher);
+       
     }
-    */
+	
+    protected boolean canEquipItem(ItemStack stack)
+    {
+        return false;
+    }
+ 
 	
     protected void updateAITasks()
     {

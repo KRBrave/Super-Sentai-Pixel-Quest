@@ -1,8 +1,12 @@
 package Kamen_Rider_Craft_4TH.item.amazons;
 
 import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.ShowaRiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
 import Kamen_Rider_Craft_4TH.item.ooo.item_OOOdriver;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.Item_form_change;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.item_rider_driver;
+import Kamen_Rider_Craft_4TH.item.wizard.item_wizarddriver;
 import Kamen_Rider_Craft_4TH.model.model_belt;
 import Kamen_Rider_Craft_4TH.util.IHasModel;
 import Kamen_Rider_Craft_4TH.util.Refercence;
@@ -22,26 +26,17 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 
-public class item_amazonsdriver extends ItemArmor implements IHasModel
+public class item_amazonsdriver extends item_rider_driver
 {
 
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 
-	public String Rider;
 
 	public item_amazonsdriver (String name, ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
-		this.material = par2EnumArmorMaterial;
-		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
-		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		this.maxStackSize = 1;
-		Rider = rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,ShowaRiderItems.amazonshead, ShowaRiderItems.amazonstroso, ShowaRiderItems.amazonslegs);
 	}
 
 	@Override
@@ -66,15 +61,15 @@ public class item_amazonsdriver extends ItemArmor implements IHasModel
 			if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST)!= null){
 				if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS)!= null){
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.amazonslegs){
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.amazonstroso){
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.amazonshead){
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == ShowaRiderItems.amazonslegs){
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == ShowaRiderItems.amazonstroso){
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == ShowaRiderItems.amazonshead){
 
 									if(item_OOOdriver.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))<100){
 
 										item_OOOdriver.set_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),item_OOOdriver.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+1);
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.amazons_driver_alpha){
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ShowaRiderItems.amazons_driver_alpha){
 										
 											if (player.getHeldItemMainhand().isEmpty())
 											{
@@ -85,7 +80,7 @@ public class item_amazonsdriver extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 2,true,false));
 											
 										}									
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.amazons_driver_blind_alpha){
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ShowaRiderItems.amazons_driver_blind_alpha){
 
 											if (player.getHeldItemMainhand().isEmpty())
 											{
@@ -97,7 +92,7 @@ public class item_amazonsdriver extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 5, 0,true,false));											
 										
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.amazons_driver_omega){
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ShowaRiderItems.amazons_driver_omega){
 
 											if (player.getHeldItemMainhand().isEmpty())
 											{
@@ -108,7 +103,7 @@ public class item_amazonsdriver extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 5, 0,true,false));
 										
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.amazons_driver_sigma){
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ShowaRiderItems.amazons_driver_sigma){
 
 											if (player.getHeldItemMainhand().isEmpty())
 											{
@@ -120,7 +115,7 @@ public class item_amazonsdriver extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));
 										
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.neo_amazons_driver_omega){
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ShowaRiderItems.neo_amazons_driver_omega){
 
 											if (player.getHeldItemMainhand().isEmpty())
 											{
@@ -132,7 +127,7 @@ public class item_amazonsdriver extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 5, 1,true,false));
 										
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.neo_amazons_driver_neo){
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ShowaRiderItems.neo_amazons_driver_neo){
 
 											if (player.getHeldItemMainhand().isEmpty())
 											{
@@ -176,7 +171,36 @@ public class item_amazonsdriver extends ItemArmor implements IHasModel
 		return null;
 	}
 
+	public  boolean rendModle(Entity entity, int num)
+	{
+		if (num==2||num==5||num==7||num==1||num==3||num==6||num==8){
+			return true;
+		}else if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 
+					 if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
+
+						return true;
+					} else{
+						return false;
+
+					}
+				
+				}else{
+					return false;
+				}
+			}else{
+				return false;
+			}
+
+		}
+		return false;
+
+	}
 	public static int get_eftTime(ItemStack itemstack)
 	{
 		return itemstack.hasTagCompound() ? itemstack.getTagCompound().getInteger("eftTime") : 100;
@@ -206,7 +230,38 @@ public class item_amazonsdriver extends ItemArmor implements IHasModel
 	}
 
 	
+	public  String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 
+					if (num==1||num==2||num==5||num==7||num==3||num==6||num==8){
+						
+								return Refercence.MODID+":textures/armor/"+rider+ext;	
+							
+					}else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
+						return Refercence.MODID+":textures/armor/blank"+ext;
+					} else{
+						return Refercence.MODID+":textures/armor/blank"+ext;
+
+					}
+				}else{
+					return Refercence.MODID+":textures/armor/blank"+ext;
+				}
+			}else{
+				return Refercence.MODID+":textures/armor/blank"+ext;
+			}
+
+		}
+		return Refercence.MODID+":textures/armor/blank"+ext;
+
+	}
+
+	
 
 
 	/**
@@ -220,7 +275,7 @@ public class item_amazonsdriver extends ItemArmor implements IHasModel
 	
     public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
     {
-    	return RiderItems.amazon_cell_vial == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+    	return ShowaRiderItems.amazon_cell_vial == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
     }
 
 

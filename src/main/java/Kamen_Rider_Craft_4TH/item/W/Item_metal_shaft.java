@@ -57,10 +57,10 @@ public class Item_metal_shaft extends ItemSword implements IHasModel
 				if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST)!= null){
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS)!= null){
 						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.Wlegs){
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.Wtroso){
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.Whead){
-										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.Wdriver){
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.wlegs){
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.wtroso){
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.whead){
+										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.wdriver){
 											if (item_Wdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==1){
 
 

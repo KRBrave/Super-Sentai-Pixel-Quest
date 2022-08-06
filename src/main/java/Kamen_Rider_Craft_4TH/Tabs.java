@@ -472,7 +472,7 @@ public class Tabs {
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.Gaimhead);
+			return new ItemStack(GaimItems.Gaimhead);
 		}
 	};
 	public static CreativeTabs tabdrive = new CreativeTabs("tabdrive")

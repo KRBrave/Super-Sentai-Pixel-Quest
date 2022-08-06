@@ -189,7 +189,7 @@ public class CraftingRecipeForRider {
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":clock_up_pad"), new ResourceLocation("kr_kabuto"),new ItemStack(RiderItems.clock_up_pad,1), "aaa","aba","aaa", 'a', RiderItems.mini_zecter, 'b', Blocks.IRON_BLOCK);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":zect_mizer"), new ResourceLocation("kr_kabuto"),new ItemStack(RiderItems.zect_mizer,1), "aaa","aba","aaa", 'a', RiderItems.mini_zecter, 'b', RiderItems.base_sword);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":perfect_zecter"), new ResourceLocation("kabuto_hyper"),new ItemStack(RiderItems.perfect_zecter,1), "ama","cba","ada", 'a', RiderItems.mini_zecter, 'b', RiderItems.base_sword, 'm', RiderItems.perfectdrake_zecter, 'c', RiderItems.perfectthebee_zecter, 'd', RiderItems.perfectsasword_zecter);
-	
+
 		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":kivahead"), new ResourceLocation("kr_kiva"),new ItemStack(RiderItems.kivahead,1), "aaa","a a", 'a', RiderItems.fuestle);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":kivatroso"), new ResourceLocation("kr_kiva"),new ItemStack(RiderItems.kivatroso,1), "a a","aaa","aaa", 'a', RiderItems.fuestle);
@@ -391,6 +391,7 @@ public class CraftingRecipeForRider {
 
 		GameRegistry.addSmelting(new ItemStack(RiderBlocks.ginga_meteor),new ItemStack(RiderItems.solu_switch), 1);
 
+		
 		GameRegistry.addSmelting(new ItemStack(RiderItems.cellmedal),new ItemStack(RiderItems.cell_alloy_ingot), 1);
 		GameRegistry.addSmelting(new ItemStack(RiderItems.purple_medals_empty),new ItemStack(Blocks.STONE), 1);
 		

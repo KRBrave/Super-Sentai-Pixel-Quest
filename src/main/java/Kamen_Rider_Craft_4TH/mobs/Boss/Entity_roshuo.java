@@ -13,7 +13,6 @@ import javax.annotation.Nullable;
 import com.google.common.collect.Sets;
 
 import Kamen_Rider_Craft_4TH.RiderItems;
-import Kamen_Rider_Craft_4TH.GaimItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -66,47 +65,54 @@ import net.minecraft.world.World;
 public class Entity_roshuo extends EntityBossBase
 //implements IBossDisplayData
 {
-    
+
 	private String texture;
 	public Entity_roshuo(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.joeshuimu));
-		
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.joeshuimu));
+
 	}
-  
-    protected void applyEntityAttributes()
-    {
-        super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(250.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.30000001192092896D);
-        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(12.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(128.0D);
-    }
-  
- 
-    
- 	public EnumCreatureAttribute getCreatureAttribute()
- 	{
- 		return EnumCreatureAttribute.UNDEAD;
- 	}
 
- 	protected boolean shouldBurnInDay()
-    {
-        return false;
-    }
-    public void onDeath(DamageSource cause)
-    {
-if (!this.world.isRemote){
-	this.dropItem(GaimItems.lord_baron_boss_block_part1, 1);
-   		this.dropItem(GaimItems.golden_ringo_lockseed, 1);
-   		this.dropItem(GaimItems.kiwami_lockseed, 1);
-   		
-   		this.dropItem(GaimItems.joeshuimu, 1);
-       }
-       
-   }
+	protected void applyEntityAttributes()
+	{
+		super.applyEntityAttributes();
+		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(250.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.30000001192092896D);
+		this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(12.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(128.0D);
+	}
 
 
+
+	public EnumCreatureAttribute getCreatureAttribute()
+	{
+		return EnumCreatureAttribute.UNDEAD;
+	}
+
+	protected boolean shouldBurnInDay()
+	{
+		return false;
+	}
+	public void onDeath(DamageSource cause)
+	{
+		if (!this.world.isRemote){
+			this.dropItem(RiderItems.lord_baron_boss_block_part1, 1);
+			this.dropItem(RiderItems.golden_ringo_lockseed, 1);
+			this.dropItem(RiderItems.kiwami_lockseed, 1);
+
+			switch (this.rand.nextInt(3))
+			{
+			case 0:
+				this.dropItem(RiderItems.joeshuimu, 1);
+				break;
+			}
+			switch (this.rand.nextInt(2))
+			{
+			case 0:
+				this.dropItem(RiderItems.king_durian_lockseed, 1);
+				break;
+			}
+		}
+	}
 }
-    

@@ -13,7 +13,6 @@ import javax.annotation.Nullable;
 import com.google.common.collect.Sets;
 
 import Kamen_Rider_Craft_4TH.RiderItems;
-import Kamen_Rider_Craft_4TH.GaimItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -71,7 +70,7 @@ public class Entity_redyue extends EntityBossBase
 	public Entity_redyue(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.dau));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.dau));
 		
 	}
   
@@ -98,10 +97,23 @@ public class Entity_redyue extends EntityBossBase
     public void onDeath(DamageSource cause)
     {
 if (!this.world.isRemote){
-	this.dropItem(GaimItems.lord_baron_boss_block_part2, 1);
-   		this.dropItem(GaimItems.silver_ringo_lockseed, 1);
-   		this.dropItem(GaimItems.yomotsu_heguri_lockseed, 1);
-   		this.dropItem(GaimItems.dau, 1);
+	this.dropItem(RiderItems.lord_baron_boss_block_part2, 1);
+   		this.dropItem(RiderItems.silver_ringo_lockseed, 1);
+   		this.dropItem(RiderItems.yomotsu_heguri_lockseed, 1);
+
+   		
+   		switch (this.rand.nextInt(3))
+		{
+		case 0:
+	   		this.dropItem(RiderItems.dau, 1);
+			break;
+		}
+   		switch (this.rand.nextInt(2))
+		{
+		case 0:
+			this.dropItem(RiderItems.helheim_lockseed, 1);
+			break;
+		}
    		
        }
        

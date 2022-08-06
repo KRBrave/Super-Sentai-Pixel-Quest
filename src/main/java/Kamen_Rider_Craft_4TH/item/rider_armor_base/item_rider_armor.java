@@ -1,9 +1,17 @@
 package Kamen_Rider_Craft_4TH.item.rider_armor_base;
 
 
+import javax.annotation.Nullable;
+
+import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.ShowaRiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
+import Kamen_Rider_Craft_4TH.item.Ichigo.item_Ichigoarmor;
+import Kamen_Rider_Craft_4TH.model.tokuArmorModel;
+import Kamen_Rider_Craft_4TH.model.tokuArmorModel2;
 import Kamen_Rider_Craft_4TH.util.IHasModel;
 import Kamen_Rider_Craft_4TH.util.Refercence;
+import net.minecraft.client.model.ModelBiped;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,6 +21,8 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class item_rider_armor extends ItemArmor  implements IHasModel
 {
@@ -21,7 +31,7 @@ public class item_rider_armor extends ItemArmor  implements IHasModel
 	public ArmorMaterial material;
 	public Class<? extends item_rider_driver> BELTCLASS;
 	private final Item base;   
-	
+
 	public item_rider_armor (String name,Class<? extends item_rider_driver> beltClass,ArmorMaterial par2EnumArmorMaterial, int par3, EntityEquipmentSlot par4, Item item)
 	{
 		super(par2EnumArmorMaterial, par3, par4);
@@ -29,64 +39,139 @@ public class item_rider_armor extends ItemArmor  implements IHasModel
 		par2EnumArmorMaterial.getDamageReductionAmount(par4);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(par4));
 		this.maxStackSize = 1;
-        setTranslationKey(name);
-        setRegistryName(name);
-        TokuCraft_core.ITEMS.add(this);
-        BELTCLASS=beltClass;
-        base = item;
+		setTranslationKey(name);
+		setRegistryName(name);
+		TokuCraft_core.ITEMS.add(this);
+		BELTCLASS=beltClass;
+		base = item;
 	}
 
 
 	@Override
-	public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type)
+	@SideOnly(Side.CLIENT)
+	@Nullable
+	public ModelBiped getArmorModel(EntityLivingBase player, ItemStack stack, EntityEquipmentSlot slot, ModelBiped defaultModel)
 	{
+		if(!stack.isEmpty())
+		{
+			if(stack.getItem() instanceof item_rider_armor)
+			{
+				tokuArmorModel2 armorModel = new tokuArmorModel2();
+			
+					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+						item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
 
-		if (entity instanceof EntityLivingBase){
-			EntityLivingBase player = ((EntityLivingBase)entity);
+						if (stack.getItem()==belt.HEAD){
+							armorModel.bipedHead2.showModel = slot == EntityEquipmentSlot.HEAD;
+							armorModel.bipedHeadwear2.showModel = slot == EntityEquipmentSlot.HEAD;
+							armorModel.bigBipedHead2.showModel = slot == EntityEquipmentSlot.HEAD;
+							armorModel.bigBipedHeadwear2.showModel = slot == EntityEquipmentSlot.HEAD;
+							
+							armorModel.big2BipedHead2.showModel = slot == EntityEquipmentSlot.HEAD;
+							armorModel.big2BipedHeadwear2.showModel = slot == EntityEquipmentSlot.HEAD;
 
 
-			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+						}else{
+							armorModel.bipedHead2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bipedHeadwear2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bigBipedHead2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bigBipedHeadwear2.showModel = slot == EntityEquipmentSlot.FEET;
 
-				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem().getClass()==BELTCLASS){
+							armorModel.big2BipedHead2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.big2BipedHeadwear2.showModel = slot == EntityEquipmentSlot.FEET;
 
-					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+						}
+
+						if (stack.getItem()==belt.TORSO){
+							armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.CHEST;
+							armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.CHEST;
+
+							armorModel.bigBipedLeftArm2.showModel = slot == EntityEquipmentSlot.CHEST;
+							armorModel.bigBipedRightArm2.showModel = slot == EntityEquipmentSlot.CHEST;
+
+							armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.CHEST;
+							armorModel.bigBipedBody3.showModel = slot == EntityEquipmentSlot.CHEST;
+							armorModel.big2BipedBody3.showModel = slot == EntityEquipmentSlot.CHEST;
+
+
+						}else{
+							armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.FEET;
+
+							armorModel.bigBipedLeftArm2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bigBipedRightArm2.showModel = slot == EntityEquipmentSlot.FEET;
+
+							armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bigBipedBody3.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.big2BipedBody3.showModel = slot == EntityEquipmentSlot.FEET;
+						}
+
+						if (stack.getItem()==belt.LEGS){
+							armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.LEGS;
+							armorModel.bigBipedBody2.showModel = slot == EntityEquipmentSlot.LEGS;
+							armorModel.bigBipedLeftLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
+							armorModel.bigBipedRightLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
+
+							armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
+							armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
+
+							armorModel.big2BipedBody2.showModel = slot == EntityEquipmentSlot.LEGS;
+							
+						}else{
+							armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bigBipedBody2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bigBipedLeftLeg2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bigBipedRightLeg2.showModel = slot == EntityEquipmentSlot.FEET;
+
+							armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.FEET;
+
+							armorModel.big2BipedBody2.showModel = slot == EntityEquipmentSlot.FEET;
+						}
+					}else{
+						armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.FEET;
+						armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.FEET;
+
+						armorModel.bigBipedLeftArm2.showModel = slot == EntityEquipmentSlot.FEET;
+						armorModel.bigBipedRightArm2.showModel = slot == EntityEquipmentSlot.FEET;
+
+						armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.FEET;
+						armorModel.bigBipedBody3.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bigBipedBody2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bigBipedLeftLeg2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bigBipedRightLeg2.showModel = slot == EntityEquipmentSlot.FEET;
+
+							armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.FEET;
+							
+							armorModel.big2BipedBody3.showModel = slot == EntityEquipmentSlot.FEET;
+							armorModel.big2BipedBody2.showModel = slot == EntityEquipmentSlot.FEET;
+						
+						
+					}
 				
-					if ( slot == EntityEquipmentSlot.LEGS)
-					{
-						return Refercence.MODID+":textures/armor/"+rider+item_rider_driver.get_Form_Item_tex(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),1).getFormName() +"_2.png";
-					}
-					if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST )
-					{
-						return Refercence.MODID+":textures/armor/"+rider+item_rider_driver.get_Form_Item_tex(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),1).getFormName() +"_1.png";
-					}
-					}
-				return Refercence.MODID+":textures/armor/blank.png";
+						armorModel.base = BELTCLASS;
+						armorModel.isSneak = defaultModel.isSneak;
+						armorModel.isRiding = defaultModel.isRiding;
+						armorModel.isChild = defaultModel.isChild;
+						armorModel.rightArmPose = defaultModel.rightArmPose;
+						armorModel.leftArmPose = defaultModel.leftArmPose;
+
+						return armorModel;
+			}
+				
+			}
+				return null;
+			}
+
+			public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
+			{
+				return ShowaRiderItems.rider_circuit == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+			}
+
+			@Override
+			public void registerModels() {
+				TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
 			}
 		}
-		else
-		{
-			return Refercence.MODID+":textures/armor/blank.png";
-		}
-		return Refercence.MODID+":textures/armor/blank.png";
-	}
-
-
-	/**
-	 * Returns the 'max damage' factor array for the armor, each piece of armor have a durability factor (that gets
-	 * multiplied by armor material factor)
-	 */
-	static int[] getMaxDamageArray()
-	{
-		return maxDamageArray;
-	}
-	@Override
-	public void registerModels() {
-		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
-	}
-	
-	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
-	{
-		return base == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
-	}
-
-}

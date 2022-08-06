@@ -30,17 +30,17 @@ public class Itemo_scanner extends Item  implements IHasModel
 	public Itemo_scanner(String name)
 	{
 		super();
-		
+
 		setMaxDamage(0);
 		maxStackSize = 1;
-	       setTranslationKey(name);
-	        setRegistryName(name);
-	        TokuCraft_core.ITEMS.add(this);
-		}
-		@Override
-		public void registerModels() {
-			TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
-		}
+		setTranslationKey(name);
+		setRegistryName(name);
+		TokuCraft_core.ITEMS.add(this);
+	}
+	@Override
+	public void registerModels() {
+		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
+	}
 
 	public void onUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, boolean par5) {
 
@@ -165,7 +165,7 @@ public class Itemo_scanner extends Item  implements IHasModel
 											if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==4){
 												player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 25,0,true,false));
 												if (player.isInWater()){
-													player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 25,0,true,false));
+													player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250,0,true,false));
 												}
 											}
 											if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==4){
@@ -332,7 +332,7 @@ public class Itemo_scanner extends Item  implements IHasModel
 												}
 					// Shigazeshi
 												if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==10){
-													player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 25,0,true,false));
+													player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250,0,true,false));
 												}
 												if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==13){
 													player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 25,1,true,false));											

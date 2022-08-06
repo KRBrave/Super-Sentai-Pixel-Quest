@@ -3,9 +3,12 @@ package Kamen_Rider_Craft_4TH.item.ooo;
 import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
-
 import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.ShowaRiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
+import Kamen_Rider_Craft_4TH.item.fourze.item_Fourzedriver;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.Item_form_change;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.item_rider_driver;
 import Kamen_Rider_Craft_4TH.model.model_belt_plus;
 import Kamen_Rider_Craft_4TH.model.model_belt_w;
 import Kamen_Rider_Craft_4TH.potion.PotionCore;
@@ -34,6 +37,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -41,9 +45,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class item_OOOdriver extends ItemArmor implements IHasModel
 {
-	public static final int[] Corecol1= new int[] {0xff0000,0x7dff09,0xff9204,0xd2d2d2,0x1560c5,0xd919ea,0xe0ba5d,0xff0000};
-	public static final int[] Corecol2= new int[] {0xfcff00,0x6cc43e,0x818181,0xff0000,0x2c41ff,0xd45ef3,0xd9bb64,0xff0000,0xffffff,0xfcff00,0xe8cc00};
-	public static final int[] Corecol3= new int[] {0x0a6e03,0xfff725,0x2e2e2e,0xff0000,0x57b7ff,0x8819ea,0xe0ba5d,0xb79449,0x0a6e03,0xe8cc00};
 
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
@@ -52,31 +53,13 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 
 	public item_OOOdriver (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.OOOhead, RiderItems.OOOtroso, RiderItems.OOOlegs);
+
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		Rider=rider;
-		this.maxStackSize = 1;
-		setTranslationKey(name);
-		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
 
-	}
-	@SideOnly(Side.CLIENT)
-	public boolean hasEffect(ItemStack par1ItemStack)
-	{
-			return !true;
-	}
-	@Override
-	public void registerModels() {
-		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
-	}
-
-	@Override
-	public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type)
-	{
-		return Refercence.MODID+":textures/armor/blank.png";
 	}
 
 	@Override
@@ -133,13 +116,17 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 											}
 										}	
 										if (this.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "birth7")==1){
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 400, 0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.birth_driver_prototype){
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 0,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 0,true,false));
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.birth_x_driver){
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 25,4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 25,2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 25,6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 25,3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 25,3,true,false));
+									
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.aqua_driver){
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
@@ -274,7 +261,7 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 					if (item_OOOdriver.get_core(stack,"birth1")==1){
 						armorModel.wings=new ItemStack(RiderItems.cutter_wing);	
 					}else{
-						armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+						armorModel.wings=new ItemStack(ShowaRiderItems.blanknoitem);
 					}	
 				}
 				if(stack.getItem() == RiderItems.OOOdriver)
@@ -286,12 +273,12 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 					}if (item_OOOdriver.get_core(stack,"1") == 7&item_OOOdriver.get_core(stack,"2") == 9&item_OOOdriver.get_core(stack,"3")==8){
 						if(living.isSneaking() || (living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying))){
 							armorModel.wings=new ItemStack(RiderItems.tajador_wings);	
-							}
-						}else if (item_OOOdriver.get_core(stack,"1") == 15&item_OOOdriver.get_core(stack,"2") == 3&item_OOOdriver.get_core(stack,"3")==3){
-							if(living.isSneaking() || (living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying))){
+						}
+					}else if (item_OOOdriver.get_core(stack,"1") == 15&item_OOOdriver.get_core(stack,"2") == 3&item_OOOdriver.get_core(stack,"3")==3){
+						if(living.isSneaking() || (living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying))){
 							armorModel.wings=new ItemStack(RiderItems.condor_wings);
-							}else{
-							armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+						}else{
+							armorModel.wings=new ItemStack(ShowaRiderItems.blanknoitem);
 						}	
 
 					}
@@ -369,7 +356,98 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 		itemstack.getTagCompound().setInteger("core"+slot, flag);
 	}
 
+	public  boolean rendModle(Entity entity, int num)
+	{
+			return true;
+	} 
 
+	public  String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+
+					if (num==1||num==13){
+
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.OOOdriver){
+							if (   item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"1")==0&& item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"2")==3& item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"3")==3)
+							{
+								return Refercence.MODID+":textures/armor/"+"ooo_"+ "super_taka"+".png";
+							}else {
+								return Refercence.MODID+":textures/armor/"+"ooo_"+ Itemmedal.CoreName1[item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"1")] +".png";
+							}
+						}						
+						else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_OOOdriver){
+
+							if (rider=="birth"||rider=="birth_prototype"){
+								if(num==13){
+									return Refercence.MODID+":textures/armor/"+item_OOOdriver.get_claws_torso(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";	
+
+								}else{
+									return Refercence.MODID+":textures/armor/"+rider+item_OOOdriver.get_claws_eyes(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+								}
+							}else{
+								return Refercence.MODID+":textures/armor/"+rider+"_1.png";
+							}
+						}			
+
+					}else if (num==2||num==5||num==7){
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.OOOdriver){
+							return Refercence.MODID+":textures/armor/"+"ooo_"+ Itemmedal.CoreName2[item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"2")] +ext;
+						}	
+						else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_OOOdriver){
+							return Refercence.MODID+":textures/armor/"+rider+"_2" +".png";
+
+						}
+
+					}else if (num==3||num==6||num==8){
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.OOOdriver){
+							return Refercence.MODID+":textures/armor/"+"ooo_"+ Itemmedal.CoreName3[item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"3")] +ext;
+						}	
+						else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_OOOdriver){
+							return Refercence.MODID+":textures/armor/"+rider+"_3" +".png";
+
+						}
+
+					}else if (num==10||num==11){
+						if (rider=="birth"||rider=="birth_prototype"){
+							return Refercence.MODID+":textures/armor/"+item_OOOdriver.get_claws_legs(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+						}else{
+							return Refercence.MODID+":textures/armor/blank"+ext;
+						}
+					}
+
+					else if (num==9){
+						if (rider=="birth"||rider=="birth_prototype"){
+							return Refercence.MODID+":textures/armor/"+item_OOOdriver.get_claws_l_arms(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";	
+						}else{
+							return Refercence.MODID+":textures/armor/blank"+ext;
+						}
+					} else if (num==4){
+						if (rider=="birth"||rider=="birth_prototype"){
+							return Refercence.MODID+":textures/armor/"+item_OOOdriver.get_claws_r_arms(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";	
+						}else{
+							return Refercence.MODID+":textures/armor/blank"+ext;
+						}
+					}
+					else{
+						return Refercence.MODID+":textures/armor/blank"+ext;
+
+					}
+				}else{
+					return Refercence.MODID+":textures/armor/blank"+ext;
+				}
+			}else{
+				return Refercence.MODID+":textures/armor/blank"+ext;
+			}
+
+		}
+		return Refercence.MODID+":textures/armor/blank"+ext;
+
+	}
 
 
 	/**
@@ -381,11 +459,6 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 		return maxDamageArray;
 	}
 
-
-	public boolean hasOverlay(ItemStack stack)
-	{
-		return stack.getItem()==RiderItems.OOOdriver || getColor(stack) != 0x00FFFFFF;
-	}
 
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
 	{

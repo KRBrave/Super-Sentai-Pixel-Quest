@@ -2,12 +2,21 @@ package Kamen_Rider_Craft_4TH.item.zi_o;
 
 import javax.annotation.Nullable;
 
+import Kamen_Rider_Craft_4TH.ReiwaRiderItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.ShowaRiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
 import Kamen_Rider_Craft_4TH.item.ooo.item_OOOdriver;
+import Kamen_Rider_Craft_4TH.item.revice.Item_Vistamps;
+import Kamen_Rider_Craft_4TH.item.revice.item_revicedriver;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.Item_form_change;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.item_rider_driver;
 import Kamen_Rider_Craft_4TH.model.model_belt_plus;
+import Kamen_Rider_Craft_4TH.potion.PotionCore;
 import Kamen_Rider_Craft_4TH.util.IHasModel;
+import Kamen_Rider_Craft_4TH.util.Refercence;
 import net.minecraft.client.model.ModelBiped;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -22,8 +31,10 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class item_zikudriver extends ItemArmor  implements IHasModel
+public class item_zikudriver extends item_rider_driver
 {
+
+	public static final String[] CoreName= new String[] {"","_decade","_ii","","_trinity","_grand","_bibiru","_ohma","_majesty","_woz"};
 
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
@@ -36,16 +47,13 @@ public class item_zikudriver extends ItemArmor  implements IHasModel
 
 	public item_zikudriver (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, int driver)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.zi_ohead, RiderItems.zi_otroso, RiderItems.zi_olegs);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
 		DRIVER = driver;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 	@SideOnly(Side.CLIENT)
 	public boolean hasEffect(ItemStack par1ItemStack)
@@ -70,14 +78,14 @@ public class item_zikudriver extends ItemArmor  implements IHasModel
 
 				model_belt_plus armorModel = new model_belt_plus();
 
-				Item[] form_watch= new Item[] {RiderItems.blanknoitem,RiderItems.ziku_driver_decade,RiderItems.ziku_driver_zi_o_ii,RiderItems.blanknoitem,RiderItems.ziku_driver_zi_o_trinity,RiderItems.ziku_driver_zi_o_grand,RiderItems.ziku_driver_bibiru_geiz,RiderItems.ziku_driver_zio_ohma,RiderItems.ziku_driver_majesty,RiderItems.ziku_driver_woz};
-				Item[] armor_watch= new Item[] {RiderItems.blanknoitem,RiderItems.ziku_driver_build,RiderItems.ziku_driver_exaid,RiderItems.ziku_driver_ghost,
+				Item[] form_watch= new Item[] {ShowaRiderItems.blanknoitem,RiderItems.ziku_driver_decade,RiderItems.ziku_driver_zi_o_ii,ShowaRiderItems.blanknoitem,RiderItems.ziku_driver_zi_o_trinity,RiderItems.ziku_driver_zi_o_grand,RiderItems.ziku_driver_bibiru_geiz,RiderItems.ziku_driver_zio_ohma,RiderItems.ziku_driver_majesty,RiderItems.ziku_driver_woz};
+				Item[] armor_watch= new Item[] {ShowaRiderItems.blanknoitem,RiderItems.ziku_driver_build,RiderItems.ziku_driver_exaid,RiderItems.ziku_driver_ghost,
 						RiderItems.ziku_driver_drive,RiderItems.ziku_driver_gaim,RiderItems.ziku_driver_wizard,RiderItems.ziku_driver_fourze,RiderItems.ziku_driver_ooo
-						,RiderItems.ziku_driver_w,RiderItems.blanknoitem,RiderItems.ziku_driver_deno,RiderItems.ziku_driver_kabuto,RiderItems.ziku_driver_hibiki,
+						,RiderItems.ziku_driver_w,ShowaRiderItems.blanknoitem,RiderItems.ziku_driver_deno,RiderItems.ziku_driver_kabuto,RiderItems.ziku_driver_hibiki,
 						RiderItems.ziku_driver_blade,RiderItems.ziku_driver_faiz,RiderItems.ziku_driver_ryuki,RiderItems.ziku_driver_agito,RiderItems.ziku_driver_kuuga
-						,RiderItems.ziku_driver_genm,RiderItems.blanknoitem,RiderItems.ziku_driver_exaid,RiderItems.blanknoitem,RiderItems.blanknoitem,
-						RiderItems.blanknoitem,RiderItems.ziku_driver_geizrevive,RiderItems.ziku_driver_geizrevive,RiderItems.blanknoitem,RiderItems.blanknoitem
-						,RiderItems.blanknoitem,RiderItems.ziku_driver_saber};
+						,RiderItems.ziku_driver_genm,ShowaRiderItems.blanknoitem,RiderItems.ziku_driver_exaid,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
+						ShowaRiderItems.blanknoitem,RiderItems.ziku_driver_geizrevive,RiderItems.ziku_driver_geizrevive,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem
+						,ShowaRiderItems.blanknoitem,RiderItems.ziku_driver_saber};
 				
 				
 				armorModel.belt=stack;
@@ -87,7 +95,7 @@ public class item_zikudriver extends ItemArmor  implements IHasModel
 				}else if(stack.getItem() == RiderItems.oma_ziku_driver) {
 					armorModel.wings=new ItemStack(RiderItems.oma_zi_o_cape);
                 }else{
-                	  armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+                	  armorModel.wings=new ItemStack(ShowaRiderItems.blanknoitem);
                 }
 					
 						armorModel.belt=stack;
@@ -220,13 +228,13 @@ public class item_zikudriver extends ItemArmor  implements IHasModel
 											}
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 2,true,false));
 										}else  if (item_zikudriver.get_lockbase(armor)=="ooo"){											
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 5, 0,true,false));	
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));	
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
 										}else  if (item_zikudriver.get_lockbase(armor)=="faiz"){
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));																						
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 5, 0,true,false));		
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));		
 										}else  if (item_zikudriver.get_lockbase(armor)=="ryuki"){
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 2,true,false));																						
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
@@ -249,7 +257,7 @@ public class item_zikudriver extends ItemArmor  implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 1,true,false));
 										}else  if (item_zikudriver.get_lockbase(armor)=="kiva"){
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 5, 0,true,false));	
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));	
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));	
 										}else  if (item_zikudriver.get_lockbase(armor)=="blade"){
@@ -311,7 +319,7 @@ public class item_zikudriver extends ItemArmor  implements IHasModel
 												player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
 												player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));
 												player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 4,true,false));
-												player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 5, 0,true,false));		
+												player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));		
 											}else if (item_zikudriver.get_lockbase(armor)=="decade"){
 												player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));
 												player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));
@@ -342,7 +350,7 @@ public class item_zikudriver extends ItemArmor  implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 5, 0,true,false));	
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));	
 											
 										}else if (item_zikudriver.get_core(armor, "1")==5){
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false));	
@@ -385,6 +393,7 @@ public class item_zikudriver extends ItemArmor  implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 8,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
 										
 									}
 									else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.beyondriver){
@@ -445,8 +454,82 @@ public class item_zikudriver extends ItemArmor  implements IHasModel
 		}
 	}
 }
-	
+	public  boolean rendModle(Entity entity, int num)
+	{
+		if (num==2||num==5||num==7||num==1||num==3||num==6||num==8){
+			return true;
+		}else if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 
+					 if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
+
+						return true;
+					} else{
+						return false;
+
+					}
+				
+				}else{
+					return false;
+				}
+			}else{
+				return false;
+			}
+
+		}
+		return false;
+
+	}
+	public  String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+
+					String form = item_revicedriver.get_lockbase(player.getItemStackFromSlot(EntityEquipmentSlot.FEET));
+					
+					 if (num==1||num==2||num==5||num==7||num==3||num==6||num==8){
+						
+					
+						if (item_zikudriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==1){
+							return Refercence.MODID+":textures/armor/"+rider+CoreName[item_zikudriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")]+"_"+item_zikudriver.get_lockbase(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+							}else{
+								return Refercence.MODID+":textures/armor/"+rider+CoreName[item_zikudriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")]+ext;	
+							}
+						
+					}else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
+
+
+						if (item_zikudriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==1){
+
+							return Refercence.MODID+":textures/armor/"+item_zikudriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_decade_ver"+ext;
+
+						}else{
+
+							return Refercence.MODID+":textures/armor/"+rider+CoreName[item_zikudriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")]+"_" +item_zikudriver.get_lockbase(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+					} else{
+						return Refercence.MODID+":textures/armor/blank"+ext;
+
+					}
+				}else{
+					return Refercence.MODID+":textures/armor/blank"+ext;
+				}
+			}else{
+				return Refercence.MODID+":textures/armor/blank"+ext;
+			}
+
+		}
+		return Refercence.MODID+":textures/armor/blank"+ext;
+
+	}
 	
 	public static void set_lock(ItemStack itemstack,int flag)
 	{

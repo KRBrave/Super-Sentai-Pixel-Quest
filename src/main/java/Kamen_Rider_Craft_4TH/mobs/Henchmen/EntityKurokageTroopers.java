@@ -140,7 +140,10 @@ public class EntityKurokageTroopers extends Entity_base_henchmen
 				switch (this.rand.nextInt(25))
 				{
 				case 0:
-					this.dropItem(GaimItems.matsubokkuri_energy_lockseed, 1);
+					this.dropItem(RiderItems.matsubokkuri_energy_lockseed, 1);
+					break;
+				case 1:
+					this.dropItem(RiderItems.fake_donguri_lockseed, 1);
 					break;
 					}
 				

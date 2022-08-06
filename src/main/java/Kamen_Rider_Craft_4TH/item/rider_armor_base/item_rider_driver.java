@@ -7,10 +7,14 @@ import javax.annotation.Nullable;
 import org.lwjgl.opengl.GL11;
 
 import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.ShowaRiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
 import Kamen_Rider_Craft_4TH.blocks.hiden_3d_printing;
+import Kamen_Rider_Craft_4TH.item.revice.Item_Vistamps;
 import Kamen_Rider_Craft_4TH.item.zero_one.Item_progrise_keys;
 import Kamen_Rider_Craft_4TH.model.model_belt;
+import Kamen_Rider_Craft_4TH.model.model_belt_plus;
+import Kamen_Rider_Craft_4TH.model.tokuArmorModel;
 import Kamen_Rider_Craft_4TH.util.IHasModel;
 import Kamen_Rider_Craft_4TH.util.Refercence;
 import net.minecraft.client.Minecraft;
@@ -67,16 +71,17 @@ public class item_rider_driver extends ItemArmor implements IHasModel
 
 	}
 
+
 	public item_rider_driver belt(boolean num)
 	{
 		belt=num;
 		return this;
 	}
-	
+
 	@SideOnly(Side.CLIENT)
 	public boolean hasEffect(ItemStack par1ItemStack)
 	{
-			return !true;
+		return !true;
 	}
 	@Override
 	public void registerModels() {
@@ -115,6 +120,78 @@ public class item_rider_driver extends ItemArmor implements IHasModel
 		}
 	}
 
+	public  boolean rendModle(Entity entity, int num)
+	{
+		if (num==2||num==5||num==7||num==1||num==3||num==6||num==8){
+			return true;
+		}else if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+
+					 if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
+
+						return item_rider_driver.get_Form_Item_tex(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),1).get2ndLyer()!="blank"? true:false;
+					} else{
+						return false;
+
+					}
+				
+				}else{
+					return false;
+				}
+			}else{
+				return false;
+			}
+
+		}
+		return false;
+
+	}
+
+	
+	public  String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+
+					if (num==1){
+								return Refercence.MODID+":textures/armor/"+rider+item_rider_driver.get_Form_Item_tex(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),1).getFormName()+ext;
+				
+
+					}else if (num==2||num==5||num==7){
+					
+							return Refercence.MODID+":textures/armor/"+rider+item_rider_driver.get_Form_Item_tex(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),1).getFormName()+ext;
+					
+					}else if (num==3||num==6||num==8){
+						
+							return Refercence.MODID+":textures/armor/"+rider+item_rider_driver.get_Form_Item_tex(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),1).getFormName()+ext;
+			
+					}else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
+
+						return Refercence.MODID+":textures/armor/"+item_rider_driver.get_Form_Item_tex(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),1).get2ndLyer()+ext;
+
+					} else{
+						return Refercence.MODID+":textures/armor/blank"+ext;
+
+					}
+				}else{
+					return Refercence.MODID+":textures/armor/blank"+ext;
+				}
+			}else{
+				return Refercence.MODID+":textures/armor/blank"+ext;
+			}
+
+		}
+		return Refercence.MODID+":textures/armor/blank"+ext;
+
+	}
 
 
 	@Override
@@ -126,16 +203,21 @@ public class item_rider_driver extends ItemArmor implements IHasModel
 		{
 			if(stack.getItem() instanceof ItemArmor)
 			{
-				model_belt armorModel = new model_belt();
-				
+				model_belt_plus armorModel = new model_belt_plus();
+
 				if(belt == true){
-					armorModel.belt=new ItemStack(RiderItems.blanknoitem);
-				}else if (get_Form_Item(stack,1).getBelt()==RiderItems.blanknoitem ){
+					armorModel.belt=new ItemStack(ShowaRiderItems.blanknoitem);
+				}else if (get_Form_Item(stack,1).getBelt()==ShowaRiderItems.blanknoitem ){
 					armorModel.belt=stack;
 				}else 
 				{
 					armorModel.belt=new ItemStack(get_Form_Item(stack,1).getBelt());
 				}
+
+
+				armorModel.wings=new ItemStack(get_Form_Item(stack,1).getWing());
+
+
 				armorModel.isSneak = defaultModel.isSneak;
 				armorModel.isRiding = defaultModel.isRiding;
 				armorModel.isChild = defaultModel.isChild;
@@ -178,11 +260,11 @@ public class item_rider_driver extends ItemArmor implements IHasModel
 	{
 		if (!itemstack.hasTagCompound())
 		{
-			return (Item_form_change) RiderItems.blanknoform;
+			return  ((item_rider_driver)itemstack.getItem()).Base_Form_Item;
 		}else if (Item.getItemById(itemstack.getTagCompound().getInteger("slot"+SLOT))instanceof Item_form_change){
 			return (Item_form_change) Item.getItemById(itemstack.getTagCompound().getInteger("slot"+SLOT));
 		}else{
-			return (Item_form_change) RiderItems.blanknoform;
+			return  ((item_rider_driver)itemstack.getItem()).Base_Form_Item;
 		}
 	}
 	public static void set_Form_Item(ItemStack itemstack, Item ITEM,int SLOT)
@@ -194,9 +276,11 @@ public class item_rider_driver extends ItemArmor implements IHasModel
 		itemstack.getTagCompound().setInteger("slot"+SLOT, Item.getIdFromItem(ITEM));
 
 	}
-	
+
+
+
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
 	{
-		return RiderItems.blanknoitem == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return ShowaRiderItems.blanknoitem == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

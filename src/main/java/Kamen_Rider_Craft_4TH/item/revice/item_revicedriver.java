@@ -5,33 +5,43 @@ import javax.annotation.Nullable;
 import Kamen_Rider_Craft_4TH.ReiwaRiderItems;
 import Kamen_Rider_Craft_4TH.RiderBlocks;
 import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.ShowaRiderItems;
 import Kamen_Rider_Craft_4TH.Tabs;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
 import Kamen_Rider_Craft_4TH.item.ooo.item_OOOdriver;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.Item_form_change;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.item_rider_driver;
 import Kamen_Rider_Craft_4TH.item.zero_one.Item_progrise_keys;
 import Kamen_Rider_Craft_4TH.item.zero_one.item_zero_onedriver;
 import Kamen_Rider_Craft_4TH.model.Model_breaking_mammoth;
 import Kamen_Rider_Craft_4TH.model.model_belt_plus;
 import Kamen_Rider_Craft_4TH.potion.PotionCore;
 import Kamen_Rider_Craft_4TH.util.IHasModel;
+import Kamen_Rider_Craft_4TH.util.Refercence;
 import net.minecraft.client.model.ModelBiped;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class item_revicedriver extends ItemArmor  implements IHasModel
+public class item_revicedriver extends item_rider_driver
 {
 
+	public static final String[] CoreName= new String[] {"","_barid_rex","_volcano_rex","_jack_revice","_revice","_holy"};
+	
+	
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
@@ -43,16 +53,57 @@ public class item_revicedriver extends ItemArmor  implements IHasModel
 
 	public item_revicedriver (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, int driver)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,ReiwaRiderItems.revicehead, ReiwaRiderItems.revicetroso, ReiwaRiderItems.revicelegs);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
 		DRIVER = driver;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
+		
+		
+		  this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
+	        {
+	            @SideOnly(Side.CLIENT)
+	            public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
+	            {
+	      		  if (stack.getItem()== ReiwaRiderItems.revice_driver){
+	            	
+	            	if (!stack.hasTagCompound())
+	        		{
+	            		return DRIVER;
+	        		}else {
+	            		return stack.getTagCompound().getInteger("seed");
+					}
+	      			
+	            
+	      		  }else{
+	      			return 0;
+	      		  }
+	      		  }
+	        });
+		
+        this.addPropertyOverride(new ResourceLocation("form"), new IItemPropertyGetter()
+        {
+            @SideOnly(Side.CLIENT)
+            public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
+            {
+      		  if (stack.getItem()== ReiwaRiderItems.revice_driver){
+            	
+            	if (!stack.hasTagCompound())
+        		{
+            		return 0;
+        		}else {
+            		return item_revicedriver.get_core(stack, "1");
+				}
+      			
+            
+      		  }else{
+      			return 0;
+      		  }
+      		  }
+        });
+	
 	}
 	@SideOnly(Side.CLIENT)
 	public boolean hasEffect(ItemStack par1ItemStack)
@@ -77,8 +128,22 @@ public class item_revicedriver extends ItemArmor  implements IHasModel
 
 				model_belt_plus armorModel = new model_belt_plus();
 
+				
+				
 				armorModel.belt=stack;
+				String form = Item_Vistamps.ARMS[DRIVER];
 
+				if (item_revicedriver.get_lockbase(stack)!="base") {
+					form = item_revicedriver.get_lockbase(stack);
+				}
+				
+				if (stack.getItem()==ReiwaRiderItems.vice_belt){
+					if(form=="jackal"){
+						armorModel.wings= new ItemStack(ReiwaRiderItems.vice_jackal_genome);
+						armorModel.belt=new ItemStack(ShowaRiderItems.blanknoitem);
+					}
+				}
+				
 				armorModel.isSneak = defaultModel.isSneak;
 				armorModel.isRiding = defaultModel.isRiding;
 				armorModel.isChild = defaultModel.isChild;
@@ -152,8 +217,8 @@ public class item_revicedriver extends ItemArmor  implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250,0,true,false));
 									}else if (form=="mammoth"){
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 25,1,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 25,0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5,1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,0,true,false));
 									}else if (form=="megalodon"){
 										if (player.isInWater()){
 											if (player.isSneaking()){
@@ -170,6 +235,9 @@ public class item_revicedriver extends ItemArmor  implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.PUNCH_BOOST_POTION, 5, 6,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250,0,true,false));
 									}else if (form=="jackal"){
+										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ReiwaRiderItems.vice_belt){
+											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 5, 0,false,false));
+										}
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 2,true,false));
 									}else if (form=="kong"){
@@ -186,16 +254,16 @@ public class item_revicedriver extends ItemArmor  implements IHasModel
 									}else if (form=="condor"){
 										player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250,0,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 250,2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 250,3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5,3,true,false));
 									}else if (form=="kangaroo"){
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 3,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.PUNCH_BOOST_POTION, 5, 6,true,false));
 									}else if (form=="quetzalcoatlus"){
 										player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 250,2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 250,2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 250,3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5,2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5,3,true,false));
 									}else if (form=="white_leo"){
 										player.addPotionEffect(new PotionEffect(PotionCore.PUNCH_BOOST_POTION, 5, 7,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250,0,true,false));
@@ -205,15 +273,34 @@ public class item_revicedriver extends ItemArmor  implements IHasModel
 									
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ReiwaRiderItems.revice_driver){
 										if (base==0){
-										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 25,0,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 250,0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5,0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5,0,true,false));
 										}else if (base==1){
-											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 25,5,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 25,1,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 25,1,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 25,1,true,false));
-											
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5,5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5,1,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,1,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5,1,true,false));
+										}else if (base==2){
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5,5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5,1,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 5,0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5,3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250,0,true,false));
+										}else if (base==3){
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5,5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5,2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5,4,true,false));
+										}else if (base==4){
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5,6,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5,3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5,5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 5,0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250,0,true,false));
 										}
+										
 									}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ReiwaRiderItems.two_sidriver_evil){
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5,0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 0,true,false));
@@ -222,11 +309,33 @@ public class item_revicedriver extends ItemArmor  implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 0,true,false));
 										
+									 if (base==5){
+											player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5,0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5,3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5,5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250,0,true,false));
+										
+										}
+										
 									}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ReiwaRiderItems.demons_driver){
 										player.addPotionEffect(new PotionEffect(MobEffects.POISON, 5, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));
+										
+									}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ReiwaRiderItems.vail_driver){
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250,0,true,false));
+										
+									}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ReiwaRiderItems.over_demons_driver){
+										player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250,0,true,false));
 										
 									}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == ReiwaRiderItems.libera_driver){
 										player.addPotionEffect(new PotionEffect(PotionCore.PUNCH_BOOST_POTION, 5, 5,true,false));
@@ -244,6 +353,103 @@ public class item_revicedriver extends ItemArmor  implements IHasModel
 		}
 	}
 
+	public  boolean rendModle(Entity entity, int num)
+	{
+		if (num==2||num==5||num==7||num==1||num==3||num==6||num==8){
+			return true;
+		}else if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+
+					 if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
+
+						return true;
+					} else{
+						return false;
+
+					}
+				
+				}else{
+					return false;
+				}
+			}else{
+				return false;
+			}
+
+		}
+		return false;
+
+	}
+	public  String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+
+					String form = item_revicedriver.get_lockbase(player.getItemStackFromSlot(EntityEquipmentSlot.FEET));
+					
+					if (num==1){
+						if(form=="jackal"&player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==ReiwaRiderItems.vice_belt){
+							return Refercence.MODID+":textures/armor/vice_jackal_2.png";	
+							
+						}else{
+						return Refercence.MODID+":textures/armor/"+rider+CoreName[item_revicedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")]+ext;
+						}		
+						
+
+					}else if (num==2||num==5||num==7){
+					
+						if(form=="jackal"&player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==ReiwaRiderItems.vice_belt){
+							return Refercence.MODID+":textures/armor/vice_jackal_2.png";	
+							
+						}else{
+						return Refercence.MODID+":textures/armor/"+rider+CoreName[item_revicedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")]+ext;
+						}	
+						
+					}else if (num==3||num==6||num==8){
+						
+						if(form=="jackal"&player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==ReiwaRiderItems.vice_belt){
+							return Refercence.MODID+":textures/armor/vice_jackal_2.png";	
+							
+						}else{
+						return Refercence.MODID+":textures/armor/"+rider+CoreName[item_revicedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")]+ext;
+						}
+						
+					}else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
+
+						
+							if (item_revicedriver.get_lockbase(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="base"){
+								form = item_revicedriver.get_lockbase(player.getItemStackFromSlot(EntityEquipmentSlot.FEET));
+							}else{
+								form = Item_Vistamps.ARMS[((item_revicedriver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).DRIVER];
+							}
+
+								return Refercence.MODID+":textures/armor/"+rider+CoreName[item_revicedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")]+"_" +form+ext;
+					
+						
+					} else{
+						return Refercence.MODID+":textures/armor/blank"+ext;
+
+					}
+				}else{
+					return Refercence.MODID+":textures/armor/blank"+ext;
+				}
+			}else{
+				return Refercence.MODID+":textures/armor/blank"+ext;
+			}
+
+		}
+		return Refercence.MODID+":textures/armor/blank"+ext;
+
+	}
+
+	
 
 	public static int get_lock(ItemStack itemstack)
 	{	
@@ -261,7 +467,7 @@ public class item_revicedriver extends ItemArmor  implements IHasModel
 
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
 	{
-		return ReiwaRiderItems.hiden_metal == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return ReiwaRiderItems.proto_vistamp == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }
 

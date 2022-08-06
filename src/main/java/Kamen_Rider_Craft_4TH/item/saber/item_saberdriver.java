@@ -6,8 +6,11 @@ import org.lwjgl.opengl.GL11;
 
 import Kamen_Rider_Craft_4TH.ReiwaRiderItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.ShowaRiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
 import Kamen_Rider_Craft_4TH.item.ooo.item_OOOdriver;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.Item_form_change;
+import Kamen_Rider_Craft_4TH.item.rider_armor_base.item_rider_driver;
 import Kamen_Rider_Craft_4TH.item.zi_o.item_zikudriver;
 import Kamen_Rider_Craft_4TH.model.model_belt;
 import Kamen_Rider_Craft_4TH.model.model_belt_plus;
@@ -38,14 +41,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class item_saberdriver extends ItemArmor implements IHasModel
+public class item_saberdriver extends item_rider_driver
 {
-	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
-	public String armorNamePrefix;
-	public ArmorMaterial material;
 
-
-	public String Rider;
 	public int BOOK_L;
 	public int BOOK_M;
 	public int BOOK_R;
@@ -67,18 +65,12 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 
 	public item_saberdriver (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider,int book_l,int book_m, int book_r)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
-		this.material = par2EnumArmorMaterial;
-		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
-		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		this.maxStackSize = 1;
-		Rider=rider;
+		
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,ReiwaRiderItems.saberhead, ReiwaRiderItems.sabertroso, ReiwaRiderItems.saberlegs);
+
 		BOOK_L = book_l;
 		BOOK_M = book_m;
 		BOOK_R = book_r;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 
@@ -113,11 +105,14 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == ReiwaRiderItems.sabertroso){
 								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == ReiwaRiderItems.saberhead){
 									ItemStack ItemStack = player.getItemStackFromSlot(EntityEquipmentSlot.FEET);
-
+									
+									player.addPotionEffect(new PotionEffect(PotionCore.SLASH_POTION, 5, 0,true,false));
+									
 									if (Rider == "buster"){
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 0,true,false));
 									}else if (Rider == "kenzan"){
+										
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 6,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 2,true,false));
 									}else if (Rider == "slash"){
@@ -156,6 +151,12 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 3,true,false));
 									}else if (Rider == "storious"){
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 7,true,false));
+									}else if (Rider == "tassel"){
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 6,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 6,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 3,true,false));
@@ -374,7 +375,11 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 5,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 5,true,false));
 									}else if (get_core_for_forms(ItemStack,"f")==18){
-										//"_ultimate_bahamut"
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 5, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 5,true,false));
 									}
 										
 								
@@ -401,14 +406,14 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 				
 				armorModel.belt=stack;
 				
-				Item[] shinjuu= new Item[] {RiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_dragon,ReiwaRiderItems.seiken_swordriver_genbu,
+				Item[] shinjuu= new Item[] {ShowaRiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_dragon,ReiwaRiderItems.seiken_swordriver_genbu,
 						ReiwaRiderItems.seiken_swordriver_jaaku_dragon,ReiwaRiderItems.seiken_swordriver_pegasus,ReiwaRiderItems.seiken_swordriver_cerberus,
 						ReiwaRiderItems.seiken_swordriver_phoenix};
 			
-				Item[] seibutsu= new Item[] {RiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_lion,ReiwaRiderItems.seiken_swordriver_hedgehog,
+				Item[] seibutsu= new Item[] {ShowaRiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_lion,ReiwaRiderItems.seiken_swordriver_hedgehog,
 						ReiwaRiderItems.seiken_swordriver_eagle};
 				
-				Item[] monogatari= new Item[] {RiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_peter,ReiwaRiderItems.seiken_swordriver_jackun,
+				Item[] monogatari= new Item[] {ShowaRiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_peter,ReiwaRiderItems.seiken_swordriver_jackun,
 						ReiwaRiderItems.seiken_swordriver_alangina,ReiwaRiderItems.seiken_swordriver_butasan,ReiwaRiderItems.seiken_swordriver_ninja,
 						ReiwaRiderItems.seiken_swordriver_arthur,ReiwaRiderItems.seiken_swordriver_kirin,ReiwaRiderItems.seiken_swordriver_sarukani,
 						ReiwaRiderItems.seiken_swordriver_usakame,ReiwaRiderItems.seiken_swordriver_saiyuu,ReiwaRiderItems.seiken_swordriver_hansel,
@@ -416,11 +421,11 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 						ReiwaRiderItems.seiken_swordriver_jizousan,ReiwaRiderItems.seiken_swordriver_issun,ReiwaRiderItems.seiken_swordriver_televikun,
 						ReiwaRiderItems.seiken_swordriver_momoichirou,ReiwaRiderItems.seiken_swordriver_urashima_jirou,ReiwaRiderItems.seiken_swordriver_kinzaburou};
 				
-				Item[] others= new Item[] {RiderItems.blanknoitem,ReiwaRiderItems.jaken_caliburdriver_jaou,ReiwaRiderItems.seiken_swordriver_dragonic,
+				Item[] others= new Item[] {ShowaRiderItems.blanknoitem,ReiwaRiderItems.jaken_caliburdriver_jaou,ReiwaRiderItems.seiken_swordriver_dragonic,
 						ReiwaRiderItems.seiken_swordriver_emotional,ReiwaRiderItems.seiken_swordriver_ghost,ReiwaRiderItems.seiken_saikou_driver_x_swordman,
 						ReiwaRiderItems.seiken_saikou_driver_x_swordman2,ReiwaRiderItems.seiken_saikou_driver_x_swordman1,ReiwaRiderItems.seiken_swordriver_king_lion,
 						ReiwaRiderItems.seiken_swordriver_primitive,ReiwaRiderItems.seiken_swordriver_elemental,ReiwaRiderItems.seiken_swordriver_tategami,
-						RiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_specter,ReiwaRiderItems.seiken_swordriver_super_hero_senki,
+						ShowaRiderItems.blanknoitem,ReiwaRiderItems.seiken_swordriver_specter,ReiwaRiderItems.seiken_swordriver_super_hero_senki,
 						ReiwaRiderItems.seiken_swordriver_wonder,ReiwaRiderItems.seiken_swordriver_siren,ReiwaRiderItems.seiken_swordriver_arabiana,
 						ReiwaRiderItems.seiken_swordriver_bahamut};
 
@@ -440,7 +445,7 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 					armorModel.belt2=new ItemStack(shinjuu[this.get_core_for_forms(stack,"l")]);
 				armorModel.belt3=new ItemStack(seibutsu[this.get_core_for_forms(stack,"m")]);
 				armorModel.belt4=new ItemStack(monogatari[this.get_core_for_forms(stack,"r")]);
-				}
+			}
 			armorModel.belt5=new ItemStack(others[this.get_core_for_forms(stack,"f")]);
 			
 				armorModel.isSneak = defaultModel.isSneak;
@@ -579,14 +584,72 @@ public class item_saberdriver extends ItemArmor implements IHasModel
 		}
 		itemstack.getTagCompound().setInteger("core"+slot, flag);
 	}
-	/**
-	 * Returns the 'max damage' factor array for the armor, each piece of armor have a durability factor (that gets
-	 * multiplied by armor material factor)
-	 */
-	static int[] getMaxDamageArray()
+
+	public  boolean rendModle(Entity entity, int num)
 	{
-		return maxDamageArray;
+		if (num==2||num==5||num==7||num==1||num==3||num==6||num==8){
+			return true;
+		}else if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+
+					 if (num==4||num==9||num==10||num==11||num==12||num==13||num==14||num==15||num==16||num==17){
+
+						return true;
+					} else{
+						return false;
+
+					}
+				
+				}else{
+					return false;
+				}
+			}else{
+				return false;
+			}
+
+		}
+		return false;
+
+	} 
+	public   String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase){
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
+				item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
+
+				if (num==11||num==12||num==5||num==14){
+//num==9||num==13||
+					return Refercence.MODID+":textures/armor/"+get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"l")+".png";
+
+				}else if (num==1||num==10||num==2||num==8){
+//num==4||num==7||
+					return Refercence.MODID+":textures/armor/"+get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"r")+".png";
+
+				}else if (num==15||num==16||num==3||num==6||num==17){
+//
+					return Refercence.MODID+":textures/armor/"+get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"m")+".png";
+
+				} else{
+					return Refercence.MODID+":textures/armor/blank"+ext;
+
+				}
+			}else{
+				return Refercence.MODID+":textures/armor/blank"+ext;
+			}
+		}else{
+			return Refercence.MODID+":textures/armor/blank"+ext;
+
+
+		}
+
+
 	}
+
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
 	{

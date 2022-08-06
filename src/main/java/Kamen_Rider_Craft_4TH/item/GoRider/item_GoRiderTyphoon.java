@@ -1,6 +1,7 @@
 package Kamen_Rider_Craft_4TH.item.GoRider;
 
 import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.ShowaRiderItems;
 import Kamen_Rider_Craft_4TH.item.rider_armor_base.Item_form_change;
 import Kamen_Rider_Craft_4TH.item.rider_armor_base.item_rider_driver;
 import Kamen_Rider_Craft_4TH.util.IHasModel;
@@ -16,11 +17,11 @@ public class item_GoRiderTyphoon extends item_rider_driver implements IHasModel
 	public String Rider;
 
 	public item_GoRiderTyphoon (String name, ArmorMaterial par2EnumArmorMaterial, int par3, String rider, Item_form_change baseFormItem) {
-		super(name, par2EnumArmorMaterial, par3, rider,baseFormItem, RiderItems.akariderhead, RiderItems.akaridertroso, RiderItems.akariderlegs);
+		super(name, par2EnumArmorMaterial, par3, rider,baseFormItem, ShowaRiderItems.akariderhead, ShowaRiderItems.akaridertroso, ShowaRiderItems.akariderlegs);
 	}
 	
     public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
     {
-    	return RiderItems.rider_circuit == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+    	return ShowaRiderItems.rider_circuit == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
     }
 }

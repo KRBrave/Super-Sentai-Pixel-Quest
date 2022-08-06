@@ -13,6 +13,7 @@ import javax.annotation.Nullable;
 import com.google.common.collect.Sets;
 
 import Kamen_Rider_Craft_4TH.RiderItems;
+import Kamen_Rider_Craft_4TH.potion.PotionCore;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -78,6 +79,8 @@ public class Entity_Red_Poppy extends EntityBossBase
 		
 	}
   
+
+	
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
@@ -103,6 +106,7 @@ public class Entity_Red_Poppy extends EntityBossBase
 if (!this.world.isRemote){
 
    		this.dropItem(RiderItems.gamedeus_virus_dna, 1);
+   		this.dropItem(RiderItems.doremifa_beat_gasha_trophy, 1);
 
    		switch (this.rand.nextInt(5))
 		{
