@@ -1,5 +1,6 @@
-rar{
+{
   "type": "minecraft:crafting_shapeless",
+  "group": "gaim_fresh",
   "ingredients": [
 {
     
