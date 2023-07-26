@@ -57,7 +57,7 @@ public class item_Gaimdriver extends item_rider_driver
 
 	public item_Gaimdriver (String name,ArmorMaterial par2EnumArmorMaterial, int par3, int par4, String rider, String lock, int driver,Item difLock)
 	{
-		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.Gaimhead, RiderItems.Gaimtroso, RiderItems.Gaimlegs);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,GaimItems.Gaimhead, GaimItems.Gaimtroso, GaimItems.Gaimlegs, GaimItems.himawari_lockseed);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
@@ -66,9 +66,6 @@ public class item_Gaimdriver extends item_rider_driver
 		LOCK = lock;
 		DRIVER = driver;
 		DIFLOCK=difLock;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 	@SideOnly(Side.CLIENT)
 	public boolean hasEffect(ItemStack par1ItemStack)
@@ -755,36 +752,7 @@ public class item_Gaimdriver extends item_rider_driver
 									}
 								}}}}}}}}
 
-	public  boolean rendModle(Entity entity, int num)
-	{
-		if (num==2||num==5||num==7||num==1||num==3||num==6||num==8){
-			return true;
-		}else if (entity instanceof EntityLivingBase){
-			EntityLivingBase player = ((EntityLivingBase)entity);
-			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
-				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
-					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
-					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
-
-					 if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
-
-						return true;
-					} else{
-						return false;
-
-					}
-				
-				}else{
-					return false;
-				}
-			}else{
-				return false;
-			}
-
-		}
-		return false;
-
-	}
+	
 	public  String getTexture(Entity entity, int num,String ext)
 	{
 		if (entity instanceof EntityLivingBase){
@@ -849,7 +817,7 @@ public class item_Gaimdriver extends item_rider_driver
 					}else if (num==1||num==13||num==11||num==10){
 
 
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== RiderItems.sengoku_driver_kurokage_troopers&get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="matsubokkuri_arms")
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_kurokage_troopers&get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="matsubokkuri_arms")
 						{
 
 							return Refercence.MODID+":textures/armor/energy_matsubokkuri_arms.png";
@@ -861,7 +829,7 @@ public class item_Gaimdriver extends item_rider_driver
 
 					} else if (num==9){
 
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== RiderItems.sengoku_driver_kurokage_troopers&get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="matsubokkuri_arms")
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_kurokage_troopers&get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="matsubokkuri_arms")
 						{
 
 							return Refercence.MODID+":textures/armor/energy_matsubokkuri_arms.png";
@@ -871,12 +839,12 @@ public class item_Gaimdriver extends item_rider_driver
 						{
 							return Refercence.MODID+":textures/armor/"+ get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) +".png";
 						}else{
-							return Refercence.MODID+":textures/armor/blank"+ext;
+							return "blank";
 						}
 						}
 					}else if (num==4){
 
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== RiderItems.sengoku_driver_kurokage_troopers&get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="matsubokkuri_arms")
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== GaimItems.sengoku_driver_kurokage_troopers&get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="matsubokkuri_arms")
 						{
 
 							return Refercence.MODID+":textures/armor/energy_matsubokkuri_arms.png";
@@ -896,22 +864,22 @@ public class item_Gaimdriver extends item_rider_driver
 							return Refercence.MODID+":textures/armor/"+ get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) +".png";
 							}
 						}else{
-							return Refercence.MODID+":textures/armor/blank"+ext;
+							return "blank";
 						}
 						}
 					}else{
-						return Refercence.MODID+":textures/armor/blank"+ext;
+						return "blank";
 
 					}
 				}else{
-					return Refercence.MODID+":textures/armor/blank"+ext;
+					return "blank";
 				}
 			}else{
-				return Refercence.MODID+":textures/armor/blank"+ext;
+				return "blank";
 			}
 
 		}
-		return Refercence.MODID+":textures/armor/blank"+ext;
+		return "blank";
 
 	}
 
@@ -922,11 +890,6 @@ public class item_Gaimdriver extends item_rider_driver
 	static int[] getMaxDamageArray()
 	{
 		return maxDamageArray;
-	}
-
-	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
-	{
-		return RiderItems.himawari_lockseed == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 

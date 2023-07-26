@@ -3,6 +3,8 @@ package Kamen_Rider_Craft_4TH.item.ooo;
 import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
+
+import Kamen_Rider_Craft_4TH.PqRiderItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.ShowaRiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
@@ -43,7 +45,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class item_OOOdriver extends ItemArmor implements IHasModel
+public class item_OOOdriver extends item_rider_driver
 {
 
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
@@ -53,12 +55,11 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 
 	public item_OOOdriver (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.OOOhead, RiderItems.OOOtroso, RiderItems.OOOlegs);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.OOOhead, RiderItems.OOOtroso, RiderItems.OOOlegs, RiderItems.cellmedal);
 
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		TokuCraft_core.ITEMS.add(this);
 
 	}
 
@@ -193,14 +194,11 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 						RiderItems.super_taka_OOOdriver,RiderItems.love_OOOdriver,RiderItems.same_OOOdriver,
 						RiderItems.shika_OOOdriver,RiderItems.seiuchi_OOOdriver,RiderItems.mukade_OOOdriver,
 						RiderItems.sasori_new_OOOdriver,RiderItems.taka_OOOdriver,RiderItems.taka_OOOdriver,
-						RiderItems.super_ptera_OOOdriver,RiderItems.super_kuwagata_OOOdriver,RiderItems.super_lion_OOOdriver,
-						RiderItems.super_sai_OOOdriver,RiderItems.super_shachi_OOOdriver,RiderItems.super_cobra_OOOdriver,
-						RiderItems.super_same_OOOdriver,RiderItems.super_shika_OOOdriver,RiderItems.super_seiuchi_OOOdriver,
-						RiderItems.super_mukade_OOOdriver,RiderItems.super_ebi_new_OOOdriver,RiderItems.super_love_OOOdriver,
-						RiderItems.black_OOOdriver,RiderItems.black_OOOdriver,RiderItems.black_OOOdriver,RiderItems.black_OOOdriver,
-						RiderItems.black_OOOdriver,RiderItems.black_OOOdriver,RiderItems.black_OOOdriver,RiderItems.black_OOOdriver,
-						RiderItems.black_OOOdriver,RiderItems.black_OOOdriver,RiderItems.black_OOOdriver,RiderItems.black_OOOdriver,
-						RiderItems.black_OOOdriver,RiderItems.ptera_OOOdriver,RiderItems.taka_OOOdriver,RiderItems.kuwagata_OOOdriver,
+						PqRiderItems.super_ptera_OOOdriver,PqRiderItems.super_kuwagata_OOOdriver,PqRiderItems.super_lion_OOOdriver,
+						PqRiderItems.super_sai_OOOdriver,PqRiderItems.super_shachi_OOOdriver,PqRiderItems.super_cobra_OOOdriver,
+						PqRiderItems.super_same_OOOdriver,PqRiderItems.super_shika_OOOdriver,PqRiderItems.super_seiuchi_OOOdriver,
+						PqRiderItems.super_mukade_OOOdriver,PqRiderItems.super_ebi_new_OOOdriver,PqRiderItems.super_love_OOOdriver,
+						RiderItems.ptera_OOOdriver,RiderItems.taka_OOOdriver,RiderItems.kuwagata_OOOdriver,
 						RiderItems.lion_OOOdriver,RiderItems.sai_OOOdriver,RiderItems.shachi_OOOdriver,RiderItems.cobra_OOOdriver,
 						RiderItems.same_OOOdriver,RiderItems.shika_OOOdriver,RiderItems.seiuchi_OOOdriver,RiderItems.mukade_OOOdriver,
 						RiderItems.ebi_new_OOOdriver,RiderItems.love_OOOdriver,RiderItems.cobra_OOOdriver
@@ -212,18 +210,12 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 						RiderItems.super_tora_OOOdriver,RiderItems.kangaroo_OOOdriver,RiderItems.love2_OOOdriver,
 						RiderItems.kujira_OOOdriver,RiderItems.gazelle_OOOdriver,RiderItems.shirokuma_OOOdriver,
 						RiderItems.hachi_OOOdriver,RiderItems.kani_new_OOOdriver,RiderItems.yadokari_OOOdriver,
-						RiderItems.tora_OOOdriver,RiderItems.super_tricera_OOOdriver,RiderItems.super_kujaku_OOOdriver,
-						RiderItems.super_kamakiri_OOOdriver,RiderItems.super_gorilla_OOOdriver,RiderItems.super_unagi_OOOdriver,
-						RiderItems.super_kame_OOOdriver,RiderItems.super_imagin_OOOdriver,RiderItems.super_kujira_OOOdriver,
-						RiderItems.super_gazelle_OOOdriver,RiderItems.super_shirokuma_OOOdriver,RiderItems.super_hachi_OOOdriver,
-						RiderItems.super_kani_new_OOOdriver,RiderItems.super_love2_OOOdriver,RiderItems.super_panda_OOOdriver,
-						RiderItems.super_kangaroo_OOOdriver,RiderItems.super_yadokari_OOOdriver,RiderItems.black2_OOOdriver,
-						RiderItems.black2_OOOdriver,RiderItems.black2_OOOdriver,RiderItems.black2_OOOdriver,
-						RiderItems.black2_OOOdriver,RiderItems.black2_OOOdriver,RiderItems.black2_OOOdriver,
-						RiderItems.black2_OOOdriver,RiderItems.black2_OOOdriver,RiderItems.black2_OOOdriver,
-						RiderItems.black2_OOOdriver,RiderItems.black2_OOOdriver,RiderItems.black2_OOOdriver,
-						RiderItems.black2_OOOdriver,RiderItems.black2_OOOdriver,RiderItems.black2_OOOdriver,
-						RiderItems.black2_OOOdriver,RiderItems.tricera_OOOdriver,RiderItems.kujaku_OOOdriver,
+						RiderItems.tora_OOOdriver,PqRiderItems.super_tricera_OOOdriver,PqRiderItems.super_kujaku_OOOdriver,
+						PqRiderItems.super_kamakiri_OOOdriver,PqRiderItems.super_gorilla_OOOdriver,PqRiderItems.super_unagi_OOOdriver,
+						PqRiderItems.super_kame_OOOdriver,PqRiderItems.super_imagin_OOOdriver,PqRiderItems.super_kujira_OOOdriver,
+						PqRiderItems.super_gazelle_OOOdriver,PqRiderItems.super_shirokuma_OOOdriver,PqRiderItems.super_hachi_OOOdriver,
+						PqRiderItems.super_kani_new_OOOdriver,PqRiderItems.super_love2_OOOdriver,PqRiderItems.super_panda_OOOdriver,
+						PqRiderItems.super_kangaroo_OOOdriver,PqRiderItems.super_yadokari_OOOdriver,RiderItems.tricera_OOOdriver,RiderItems.kujaku_OOOdriver,
 						RiderItems.kamakiri_OOOdriver,RiderItems.tora_OOOdriver,RiderItems.gorilla_OOOdriver,
 						RiderItems.unagi_OOOdriver,RiderItems.kame_OOOdriver,RiderItems.imagin_OOOdriver,RiderItems.kujira_OOOdriver,
 						RiderItems.gazelle_OOOdriver,RiderItems.shirokuma_OOOdriver,RiderItems.hachi_OOOdriver,
@@ -235,17 +227,12 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 						RiderItems.tako_OOOdriver,RiderItems.tyranno_OOOdriver,RiderItems.wani_OOOdriver,RiderItems.shocker_OOOdriver,
 						RiderItems.super_batta_OOOdriver,RiderItems.kangaroo2_OOOdriver,RiderItems.love3_OOOdriver,
 						RiderItems.ookamiuo_OOOdriver,RiderItems.ushi_OOOdriver,RiderItems.penguin_OOOdriver,RiderItems.ari_OOOdriver,
-						RiderItems.ebi_new_OOOdriver,RiderItems.batta_OOOdriver,RiderItems.super_tyranno_OOOdriver,
-						RiderItems.super_condor_OOOdriver,RiderItems.super_cheetah_OOOdriver,RiderItems.super_zou_OOOdriver,
-						RiderItems.super_tako_OOOdriver,RiderItems.super_wani_OOOdriver,RiderItems.super_shocker_OOOdriver,
-						RiderItems.super_ookamiuo_OOOdriver,RiderItems.super_ushi_OOOdriver,RiderItems.super_penguin_OOOdriver,
-						RiderItems.super_ari_OOOdriver,RiderItems.super_sasori_new_OOOdriver,RiderItems.super_love3_OOOdriver,
-						RiderItems.super_kangaroo2_OOOdriver,RiderItems.black3_OOOdriver,RiderItems.black3_OOOdriver,
-						RiderItems.black3_OOOdriver,RiderItems.black3_OOOdriver,RiderItems.black3_OOOdriver,
-						RiderItems.black3_OOOdriver,RiderItems.black3_OOOdriver,RiderItems.black3_OOOdriver,
-						RiderItems.black3_OOOdriver,RiderItems.black3_OOOdriver,RiderItems.black3_OOOdriver,
-						RiderItems.black3_OOOdriver,RiderItems.black3_OOOdriver,RiderItems.black3_OOOdriver,
-						RiderItems.black3_OOOdriver,RiderItems.tyranno_OOOdriver,RiderItems.condor_OOOdriver,
+						RiderItems.ebi_new_OOOdriver,RiderItems.batta_OOOdriver,PqRiderItems.super_tyranno_OOOdriver,
+						PqRiderItems.super_condor_OOOdriver,PqRiderItems.super_cheetah_OOOdriver,PqRiderItems.super_zou_OOOdriver,
+						PqRiderItems.super_tako_OOOdriver,PqRiderItems.super_wani_OOOdriver,PqRiderItems.super_shocker_OOOdriver,
+						PqRiderItems.super_ookamiuo_OOOdriver,PqRiderItems.super_ushi_OOOdriver,PqRiderItems.super_penguin_OOOdriver,
+						PqRiderItems.super_ari_OOOdriver,PqRiderItems.super_sasori_new_OOOdriver,PqRiderItems.super_love3_OOOdriver,
+						PqRiderItems.super_kangaroo2_OOOdriver,RiderItems.tyranno_OOOdriver,RiderItems.condor_OOOdriver,
 						RiderItems.batta_OOOdriver,RiderItems.cheetah_OOOdriver,RiderItems.zou_OOOdriver,RiderItems.tako_OOOdriver,
 						RiderItems.wani_OOOdriver,RiderItems.shocker_OOOdriver,RiderItems.ookamiuo_OOOdriver,
 						RiderItems.ushi_OOOdriver,RiderItems.penguin_OOOdriver,RiderItems.ari_OOOdriver,
@@ -356,10 +343,7 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 		itemstack.getTagCompound().setInteger("core"+slot, flag);
 	}
 
-	public  boolean rendModle(Entity entity, int num)
-	{
-			return true;
-	} 
+
 
 	public  String getTexture(Entity entity, int num,String ext)
 	{
@@ -416,7 +400,7 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 						if (rider=="birth"||rider=="birth_prototype"){
 							return Refercence.MODID+":textures/armor/"+item_OOOdriver.get_claws_legs(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
 						}else{
-							return Refercence.MODID+":textures/armor/blank"+ext;
+							return "blank";
 						}
 					}
 
@@ -424,28 +408,28 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 						if (rider=="birth"||rider=="birth_prototype"){
 							return Refercence.MODID+":textures/armor/"+item_OOOdriver.get_claws_l_arms(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";	
 						}else{
-							return Refercence.MODID+":textures/armor/blank"+ext;
+							return "blank";
 						}
 					} else if (num==4){
 						if (rider=="birth"||rider=="birth_prototype"){
 							return Refercence.MODID+":textures/armor/"+item_OOOdriver.get_claws_r_arms(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";	
 						}else{
-							return Refercence.MODID+":textures/armor/blank"+ext;
+							return "blank";
 						}
 					}
 					else{
-						return Refercence.MODID+":textures/armor/blank"+ext;
+						return "blank";
 
 					}
 				}else{
-					return Refercence.MODID+":textures/armor/blank"+ext;
+					return "blank";
 				}
 			}else{
-				return Refercence.MODID+":textures/armor/blank"+ext;
+				return "blank";
 			}
 
 		}
-		return Refercence.MODID+":textures/armor/blank"+ext;
+		return "blank";
 
 	}
 
@@ -457,12 +441,6 @@ public class item_OOOdriver extends ItemArmor implements IHasModel
 	static int[] getMaxDamageArray()
 	{
 		return maxDamageArray;
-	}
-
-
-	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
-	{
-		return RiderItems.cellmedal == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

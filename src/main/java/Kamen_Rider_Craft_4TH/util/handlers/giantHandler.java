@@ -30,9 +30,11 @@ public class giantHandler
 		final EntityLivingBase entity = event.player;
 		if(event.player.isPotionActive(PotionCore.BIG_POTION)) big = true;
 		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("supersentaicraft"+ ":" + "big"))) big = true;
+		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("ultracraft"+ ":" + "big"))) big = true;
 		
 		if(event.player.isPotionActive(PotionCore.SMALL_POTION)) small = true;
 		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("supersentaicraft"+ ":" + "small"))) small = true;
+		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("ultracraft"+ ":" + "small"))) small = true;
 		if(big&!small){
 				event.player.width= 0.6F* 4.0F;
 				event.player.height=1.8F* 3.0F;
@@ -71,10 +73,8 @@ public class giantHandler
 		boolean small = false;
 	
 		if(entity.isPotionActive(PotionCore.BIG_POTION)) big = true;
-		if(entity.isPotionActive(Potion.getPotionFromResourceLocation("supersentaicraft"+ ":" + "big"))) big = true;
 		
 		if(entity.isPotionActive(PotionCore.SMALL_POTION)) small = true;
-		if(entity.isPotionActive(Potion.getPotionFromResourceLocation("supersentaicraft"+ ":" + "small"))) small = true;
 		
 		
 			if(big&!small)

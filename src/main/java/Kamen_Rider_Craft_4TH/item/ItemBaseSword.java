@@ -43,14 +43,16 @@ public class ItemBaseSword extends ItemSword implements IHasModel
         TokuCraft_core.ITEMS.add(this);
         base = item;
     }
-    	public  ItemBaseSword keep_item(Item item)
+    
+	public  ItemBaseSword keep_item(Item item)
 	{
 		this.setContainerItem(item);
 		getContainerItem();
 		return this;
 	}
 	
-	
+
+    
 	@Override
 	public void registerModels() {
 		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");

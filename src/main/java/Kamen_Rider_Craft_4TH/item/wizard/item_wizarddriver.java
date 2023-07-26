@@ -52,7 +52,7 @@ public class item_wizarddriver extends item_rider_driver
 
 	public item_wizarddriver (String name,ArmorMaterial par2EnumArmorMaterial,String rider)
 	{
-		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.wizardhead, RiderItems.wizardtroso, RiderItems.wizardlegs);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.wizardhead, RiderItems.wizardtroso, RiderItems.wizardlegs, RiderItems.wizardgem);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
@@ -164,6 +164,14 @@ public class item_wizarddriver extends item_rider_driver
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 0,true,false));
+									}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.magewizardriver_foot_soldiers){
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 0,true,false));
+									}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.magewizardriver_captain){
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 0,true,false));
 									}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.magewizardriver_b){
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
@@ -204,7 +212,7 @@ public class item_wizarddriver extends item_rider_driver
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 1,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 0,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 0,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 5,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
 										}else if (this.get_core(armor, "1")==2){
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 1,true,false));
@@ -236,10 +244,8 @@ public class item_wizarddriver extends item_rider_driver
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 5,true,false));
 										}else if (this.get_core(armor, "1")==6){
-											if (player.getHeldItemMainhand().isEmpty())
-											{
-												player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 6,true,false));
-											}
+											player.addPotionEffect(new PotionEffect(PotionCore.PUNCH_BOOST_POTION, 5, 6,true,false));
+											
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 1,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
@@ -296,6 +302,7 @@ public class item_wizarddriver extends item_rider_driver
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 5,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 8,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 5, 0,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
 
 										}else if (this.get_core(armor, "1")==9){
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 3,true,false));
@@ -305,6 +312,7 @@ public class item_wizarddriver extends item_rider_driver
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 6,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 8,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 5, 0,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
 
 										}if (this.get_core(armor, "2")==6){											
 											player.fallDistance=0; 
@@ -341,23 +349,11 @@ public class item_wizarddriver extends item_rider_driver
 
 											}
 										}else if (this.get_core(armor, "2")==1||this.get_core(armor, "2")==9){
-											if (player.isSneaking()){
-												player.fallDistance=0; 
-												if(player.isInWater()){
-													Vec3d look = player.getLookVec();
-													player.motionX=look.x;
-													player.motionY=look.y;
-													player.motionZ=look.z;
-												}else {Vec3d look = player.getLookVec();
-												player.motionX=look.x/2;
-												player.motionY=look.y/2;
-												player.motionZ=look.z/2;
-												}
-											}
-											if (player.getHeldItemMainhand().isEmpty())
-											{
-												player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 6,true,false));
-											}
+
+											player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
+
+											player.addPotionEffect(new PotionEffect(PotionCore.PUNCH_BOOST_POTION, 5, 6,true,false));
+											
 										}else if (this.get_core(armor, "2")==3||this.get_core(armor, "2")==8){
 											if (player.isSneaking()){
 												player.fallDistance=0; 
@@ -366,16 +362,12 @@ public class item_wizarddriver extends item_rider_driver
 													player.motionX=look.x;
 													player.motionY=look.y;
 													player.motionZ=look.z;
-												}else {Vec3d look = player.getLookVec();
-												player.motionX=look.x;
-												player.motionY=look.y;
-												player.motionZ=look.z;
 												}
+
+												player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 0,true,false));
 											}
-											if (player.getHeldItemMainhand().isEmpty())
-											{
-												player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 8,true,false));
-											}
+											player.addPotionEffect(new PotionEffect(PotionCore.PUNCH_BOOST_POTION, 5, 8,true,false));
+											
 										}
 									}
 									}
@@ -406,19 +398,10 @@ public class item_wizarddriver extends item_rider_driver
 
 						}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.beastdriver){
 
-								
-							{	if (item_wizarddriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"1")==6){
-								return Refercence.MODID+":textures/armor/"+"beast_land"+ext;
-								}else if (item_wizarddriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"1")!=5){
-									if (ext=="_2.png"){
+								 if (item_wizarddriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"1")!=5){
 										return Refercence.MODID+":textures/armor/"+"beast"+ext;
-										
-									}else{
-									return Refercence.MODID+":textures/armor/"+"beast"+ CoreName2[item_wizarddriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"1")] +ext;
-									}
 									}else{
 									return Refercence.MODID+":textures/armor/"+"beast_hyper"+ext;
-								}
 							}
 
 						}else {
@@ -427,20 +410,33 @@ public class item_wizarddriver extends item_rider_driver
 							}
 							
 					}else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
-						return Refercence.MODID+":textures/armor/blank"+ext;
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.wizardriver){
+
+							return Refercence.MODID+":textures/armor/"+"wizard_over_"+ CoreName[item_wizarddriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"1")]+ext;	
+							
+					}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.beastdriver){
+						
+							
+								return Refercence.MODID+":textures/armor/"+"beast_over"+ CoreName2[item_wizarddriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"1")] +ext;
+						
+					}else {
+
+							return Refercence.MODID+":textures/armor/"+rider+"_over"+ext;	
+						}
+						
 					} else{
-						return Refercence.MODID+":textures/armor/blank"+ext;
+						return "blank";
 
 					}
 				}else{
-					return Refercence.MODID+":textures/armor/blank"+ext;
+					return "blank";
 				}
 			}else{
-				return Refercence.MODID+":textures/armor/blank"+ext;
+				return "blank";
 			}
 
 		}
-		return Refercence.MODID+":textures/armor/blank"+ext;
+		return "blank";
 
 	}
 
@@ -453,11 +449,6 @@ public class item_wizarddriver extends item_rider_driver
 	static int[] getMaxDamageArray()
 	{
 		return maxDamageArray;
-	}
-	
-	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
-	{
-		return RiderItems.wizardgem == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 

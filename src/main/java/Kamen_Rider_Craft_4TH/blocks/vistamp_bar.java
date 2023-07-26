@@ -69,6 +69,12 @@ public class vistamp_bar extends machine_block  {
 					vistamp2.add(ReiwaRiderItems.volcano_vistamp);
 				}
 		 }
+		 if (player.inventory.hasItemStack(new ItemStack(ReiwaRiderItems.rolling_vistamp))){
+				for (int i1 = 0; i1 < 20; ++i1)
+				{
+					vistamp2.add(ReiwaRiderItems.thunder_gale_vistamp);
+				}
+		 }
 		Random generator = new Random();
 			int rand = generator.nextInt(vistamp2.size());
 			return vistamp2.get(rand);
@@ -78,7 +84,6 @@ public class vistamp_bar extends machine_block  {
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		if (!worldIn.isRemote) {
 			if (player.getHeldItem(hand).getItem() == ReiwaRiderItems.proto_vistamp) process(player, worldIn, pos, hand, getvistampDrop(player));
-			return true;
 		}
 
 		return false;

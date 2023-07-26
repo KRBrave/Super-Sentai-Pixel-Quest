@@ -28,6 +28,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.init.MobEffects;
 import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
@@ -35,6 +36,7 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
@@ -50,10 +52,11 @@ public class item_rider_driver extends ItemArmor implements IHasModel
 	public Item HEAD;
 	public Item TORSO;
 	public Item LEGS;
+	private final Item base;   
 
 	private boolean belt=false;
 
-	public item_rider_driver (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider,Item_form_change baseFormItem,Item head,Item torso,Item legs)
+	public item_rider_driver (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider,Item_form_change baseFormItem,Item head,Item torso,Item legs, Item item)
 	{
 		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
 		this.material = par2EnumArmorMaterial;
@@ -68,6 +71,23 @@ public class item_rider_driver extends ItemArmor implements IHasModel
 		HEAD=head;
 		TORSO=torso;
 		LEGS=legs;
+		base = item;
+		
+		  this.addPropertyOverride(new ResourceLocation("form"), new IItemPropertyGetter()
+	        {
+	            @SideOnly(Side.CLIENT)
+	            public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
+	            {
+	      		  
+	            	if (!stack.hasTagCompound())
+	        		{
+	            		return 0;
+	        		}else {
+	            		return get_Form_Item(stack, 1).getBelt();
+					
+	      		  }
+	      		  }
+	        });
 
 	}
 
@@ -120,37 +140,6 @@ public class item_rider_driver extends ItemArmor implements IHasModel
 		}
 	}
 
-	public  boolean rendModle(Entity entity, int num)
-	{
-		if (num==2||num==5||num==7||num==1||num==3||num==6||num==8){
-			return true;
-		}else if (entity instanceof EntityLivingBase){
-			EntityLivingBase player = ((EntityLivingBase)entity);
-			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
-				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
-					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
-					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
-
-					 if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
-
-						return item_rider_driver.get_Form_Item_tex(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),1).get2ndLyer()!="blank"? true:false;
-					} else{
-						return false;
-
-					}
-				
-				}else{
-					return false;
-				}
-			}else{
-				return false;
-			}
-
-		}
-		return false;
-
-	}
-
 	
 	public  String getTexture(Entity entity, int num,String ext)
 	{
@@ -175,21 +164,25 @@ public class item_rider_driver extends ItemArmor implements IHasModel
 			
 					}else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
 
+						
+						if (item_rider_driver.get_Form_Item_tex(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),1).get2ndLyer()=="blank"){
+							return "blank";
+						}
 						return Refercence.MODID+":textures/armor/"+item_rider_driver.get_Form_Item_tex(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),1).get2ndLyer()+ext;
 
 					} else{
-						return Refercence.MODID+":textures/armor/blank"+ext;
+						return "blank";
 
 					}
 				}else{
-					return Refercence.MODID+":textures/armor/blank"+ext;
+					return "blank";
 				}
 			}else{
-				return Refercence.MODID+":textures/armor/blank"+ext;
+				return "blank";
 			}
 
 		}
-		return Refercence.MODID+":textures/armor/blank"+ext;
+		return "blank";
 
 	}
 
@@ -207,11 +200,8 @@ public class item_rider_driver extends ItemArmor implements IHasModel
 
 				if(belt == true){
 					armorModel.belt=new ItemStack(ShowaRiderItems.blanknoitem);
-				}else if (get_Form_Item(stack,1).getBelt()==ShowaRiderItems.blanknoitem ){
+				}else{
 					armorModel.belt=stack;
-				}else 
-				{
-					armorModel.belt=new ItemStack(get_Form_Item(stack,1).getBelt());
 				}
 
 
@@ -281,6 +271,6 @@ public class item_rider_driver extends ItemArmor implements IHasModel
 
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
 	{
-		return ShowaRiderItems.blanknoitem == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return base == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

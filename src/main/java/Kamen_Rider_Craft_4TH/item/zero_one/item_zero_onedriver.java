@@ -47,7 +47,7 @@ public class item_zero_onedriver extends item_rider_driver
 
 	public item_zero_onedriver (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, int driver)
 	{
-		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,ReiwaRiderItems.zero_onehead, ReiwaRiderItems.zero_onetroso, ReiwaRiderItems.zero_onelegs);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,ReiwaRiderItems.zero_onehead, ReiwaRiderItems.zero_onetroso, ReiwaRiderItems.zero_onelegs, ReiwaRiderItems.hiden_metal);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
@@ -132,7 +132,20 @@ public class item_zero_onedriver extends item_rider_driver
 					}
 				}	
 
-				if (this==ReiwaRiderItems.hiden_zero_one_driver&this.get_core(stack, "1")==9){
+				
+				if (this==ReiwaRiderItems.zaia_slashriser_jin){
+					if(living.isSneaking() || (living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying))){
+						armorModel.wings=new ItemStack( ReiwaRiderItems.jin_burning_falconr_wings);
+					}else{
+						armorModel.wings=new ItemStack( ShowaRiderItems.blanknoitem);
+					}
+				}else if (this==ReiwaRiderItems.forceriser_jin){
+					if(living.isSneaking() || (living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying))){
+						armorModel.wings=new ItemStack( ReiwaRiderItems.jin_falconr_wings);
+					}else{
+						armorModel.wings=new ItemStack( ShowaRiderItems.blanknoitem);
+					}
+				}else if (this==ReiwaRiderItems.hiden_zero_one_driver&this.get_core(stack, "1")==9){
 					armorModel.wings=new ItemStack( ReiwaRiderItems.realize_hopper_lines);
 				}else{
 					armorModel.wings=new ItemStack( ShowaRiderItems.blanknoitem);
@@ -528,7 +541,7 @@ public class item_zero_onedriver extends item_rider_driver
 
 									}
 									else if (form=="mammoth"){
-
+										player.setInvisible(true);
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 25,2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 25,2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.BIG_POTION, 1, 0,true,false));
@@ -577,36 +590,7 @@ public class item_zero_onedriver extends item_rider_driver
 			}
 		}
 	}
-	public  boolean rendModle(Entity entity, int num)
-	{
-		if (num==2||num==5||num==7||num==1||num==3||num==6||num==8){
-			return true;
-		}else if (entity instanceof EntityLivingBase){
-			EntityLivingBase player = ((EntityLivingBase)entity);
-			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null){
-				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
-					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
-					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 
-					 if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
-
-						return true;
-					} else{
-						return false;
-
-					}
-				
-				}else{
-					return false;
-				}
-			}else{
-				return false;
-			}
-
-		}
-		return false;
-
-	}
 	public  String getTexture(Entity entity, int num,String ext)
 	{
 		if (entity instanceof EntityLivingBase){
@@ -615,10 +599,15 @@ public class item_zero_onedriver extends item_rider_driver
 				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_rider_driver){
 					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
 					String rider = GetRider(player);
+				
+					
 					if (num==1||num==2||num==5||num==7||num==3||num==6||num==8){
 						if (item_zero_onedriver.get_lockbase(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="mammoth"){
 							return Refercence.MODID+":textures/armor/blank.png";
 						}else{
+							if (rider == "vulcan"&item_zero_onedriver.get_lockbase(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="wolf"&item_zero_onedriver.get_lockbase(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="base"||rider == "valkyrie"&item_zero_onedriver.get_lockbase(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="cheetah"&item_zero_onedriver.get_lockbase(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="base"){
+								rider = rider+"_base";
+							}
 							return Refercence.MODID+":textures/armor/"+rider+CoreName[item_zero_onedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")]+ext;	
 						}	
 					}else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
@@ -634,18 +623,18 @@ public class item_zero_onedriver extends item_rider_driver
 
 
 					} else{
-						return Refercence.MODID+":textures/armor/blank"+ext;
+						return "blank";
 
 					}
 				}else{
-					return Refercence.MODID+":textures/armor/blank"+ext;
+					return "blank";
 				}
 			}else{
-				return Refercence.MODID+":textures/armor/blank"+ext;
+				return "blank";
 			}
 
 		}
-		return Refercence.MODID+":textures/armor/blank"+ext;
+		return "blank";
 
 	}
 
@@ -656,11 +645,6 @@ public class item_zero_onedriver extends item_rider_driver
 			itemstack.setTagCompound(new NBTTagCompound());
 		}
 		itemstack.getTagCompound().setInteger("seed", flag);
-	}
-
-	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
-	{
-		return ReiwaRiderItems.hiden_metal == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }
 

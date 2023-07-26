@@ -73,7 +73,15 @@ entity.MachineDenBirdMob.name=Machine Den-Bird
 entity.RiseHopperBikeMob.name=Rise Hopper
 entity.Diago_SpeedyMob.name=Diago Speedy
 
+entity.Villager.shocker_villager=Shocker Villager
+entity.Villager.humagear_villager=Humagear Villager
+
 entity.ZuGumunBaMob.name=Zu-Gumun-Ba
+
+entity.PantherasLuteusMob.name=Pantheras Luteus
+entity.AnguisMasculusMob.name=Anguis Masculus
+entity.ElOfTheWaterMob.name=El of the Water
+entity.AnotherAgitoMob.name=Kamen Rider Another Agito
 
 entity.TakaCanMob.name=Taka Candroid
 entity.TakoCanMob.name=Tako Candroid
@@ -102,6 +110,10 @@ entity.shocker_ridersMob.name=Shocker Rider
 entity.RiotrooperMob.name=Riotrooper
 entity.OrgaMob.name=Horse Orphnoch
 
+entity.ZECTrooperMob.name=ZECTrooper
+entity.Shadow_TrooperMob.name=Shadow Trooper
+entity.NeoTrooperMob.name=Neo Trooper
+entity.CaucasusMob.name=Kamen Rider Caucasus
 
 entity.FoundationXMasqueradeMob.name=Foundation X Masquerade Dopant
 entity.EternalMob.name=Kamen Rider Eternal
@@ -203,11 +215,25 @@ entity.GraphiteBugsterMob.name=Graphite Bugster
 entity.DarkGraphiteBugsterMob.name=Dark Graphite Bugster
 entity.GurenGraphiteBugsterMob.name=Guren Graphite Bugster LV99
 
+entity.ghoulsMob.name=Ghouls
+entity.medusaPhantomMob.name=Medusa Phantom
+entity.phoenixPhantomMob.name=Phoenix Phantom
+entity.gremlinPhantomMob.name=Gremlin Phantom
+entity.wisemanMob.name=Kamen Rider Wiseman
+entity.MageFootSoldiersMob.name=Kamen Rider Mage (Foot Soldier)
+entity.MageCaptainMob.name=Kamen Rider Mage (Captain)
+entity.SorcererMob.name=Kamen Rider Sorcerer
+
+entity.PawnJyamatoMob.name=Pawn Jyamato
+entity.JyamatoRiderMob.name=Jyamato Rider
+entity.GMRiderMob.name=GM Rider
+
 effect.fly=Flying
 effect.fire_punch=Fire Punch
 effect.punch_boost=Punch Boost
 effect.big=Enlarging
-
+effect.small=Shrinking
+effect.boost=Rocket Boost
 effect.antipoison=Poison Resistance
 effect.bugster_virus=Bugster Virus
 effect.slash=Slash
@@ -238,6 +264,7 @@ itemGroup.tabzi_o=Kamen Rider Zi-O
 itemGroup.tabzero_one=Kamen Rider Zero-One
 itemGroup.tabsaber=Kamen Rider Saber
 itemGroup.tabrevice=Kamen Rider Revice
+itemGroup.tabgeats=Kamen Rider Geats
 itemGroup.tabdecor=Decorative Items
 itemGroup.tabmisc=Misc Rider Items
 
@@ -255,6 +282,7 @@ itemGroup.tabzo=Kamen Rider ZO
 itemGroup.tabj=Kamen Rider J
 itemGroup.tabG=Kamen Rider G
 itemGroup.tabGoRider=Kamen Sentai Gorider
+itemGroup.tabblack_sun=Kamen Rider Black Sun
 
 tile.stone_kuuga.name=Kuuga Ore
 tile.stone_agito.name=Agito Ore
@@ -329,7 +357,9 @@ tile.goda_boss_block.name=Goda Block
 tile.pure_gaia_memory_block.name=Pure Gaia Memory Block
 tile.taboo_bossblock.name=Taboo Block
 tile.terror_boss_block.name=Terror Block
+tile.wiseman_block.name=Wiseman Block
 
+tile.g_chip_programer.name=G-System Chip Programer
 tile.cell_medal_programer.name=Cell Medal Programer
 tile.vistamp_bar.name=Vistamp Bar
 tile.astro_switch_programer.name=Astro Switch Programer
@@ -348,6 +378,8 @@ tile.gamecreator.name=Game Creator
 
 tile.hiden_3d_printing.name=HIDEN 3D Printer
 tile.zaia_3d_printing.name=ZAIA 3D Printer
+
+tile.kaijin_stone_generator.name=Kaijin Stone Generator
 
 tile.sword_of_logos_book_analyzer.name=Sword of Logos Book Analyzer
 
@@ -391,6 +423,9 @@ tile.sword_of_logos_sword_blade.name=Sword of Logos Sword Blade
 tile.sword_of_logos_arch.name=Sword of Logos Arch
 tile.sword_of_logos_wood_trim.name=Sword of Logos Trimmed Wooden Block
 tile.planks_brown.name=Wooden Planks
+
+tile.overlord_oopart.name=Overlord's Out-of-place Artifact Block
+tile.overlord_oopart2.name=Overlord's Out-of-place Artifact Block
 
 tile.denliner_interior.name=Denliner Interior
 tile.denliner_interior_darker.name=Denliner Interior (Dark)
@@ -451,6 +486,8 @@ tile.helheim_plant_2.name=Helheim Plant
 tile.helheim_plant_3.name=Helheim Plant
 tile.helheim_plant_4.name=Helheim Plant
 
+tile.blue_rose.name=Blue Rose
+
 tile.counter_95do.name=9-5 Counter
 
 tile.ginga_meteor.name=Ginga Meteor Rock
@@ -464,7 +501,7 @@ item.base_bike.name=Base Bike
 item.shocker_emblem.name=Shocker Emblem
 
 item.agito_of_seed.name=Seed of Agito
-item.g3core.name=G3 Core
+item.g3core.name=Blank G-System Chip
 item.bladecard.name=Blank Rouze Card
 item.blank_mission_memory.name=Blank Mission Memory
 item.blankcard.name=Blank Rider Card
@@ -480,7 +517,7 @@ item.birth_core.name=Birth Core
 item.gaiamemory.name=Gaia Memory Fragment
 item.t2gaiamemory.name=T2 Gaia Memory
 item.astroswitch.name=Astroswitch
-item.wizardgem.name=Wizard Gem Stone
+item.wizardgem.name=Magic Stone
 item.wizardgem2.name=Wizard Gem Stone
 item.himawari_lockseed.name=Himawari Lockseed
 item.ghost_icons.name=Blank Ghost Eyecon
@@ -746,6 +783,24 @@ item.foundation_love.name=Foundation X Love Core Medal(Head)
 item.foundation_love2.name=Foundation X Love Core Medal(Arms)
 item.foundation_love3.name=Foundation X Love Core Medal(legs)
 
+item.foundation_x_taka.name=Taka Foundation X Core Medal
+item.foundation_x_kuwagata.name=Kuwagata Foundation X Core Medal
+item.foundation_x_lion.name=Lion Foundation X Core Medal
+item.foundation_x_sai.name=Sai Foundation X Core Medal
+item.foundation_x_shachi.name=Shachi Foundation X Core Medal
+
+item.foundation_x_tora.name=Tora Foundation X Core Medal
+item.foundation_x_kamakiri.name=Kamakiri Foundation X Core Medal
+item.foundation_x_gorilla.name=Gorilla Foundation X Core Medal
+item.foundation_x_kujaku.name=Kujaku Foundation X Core Medal
+item.foundation_x_unagi.name=Unagi Foundation X Core Medal
+
+item.foundation_x_batta.name=Batta Foundation X Core Medal
+item.foundation_x_cheetah.name=Cheetah Foundation X Core Medal
+item.foundation_x_zou.name=Zou Foundation X Core Medal
+item.foundation_x_condor.name=Condor Foundation X Core Medal
+item.foundation_x_tako.name=Tako Foundation X Core Medal
+
 item.zeus_taka.name=Taka Zeus Core Medal
 item.zeus_kuwagata.name=Kuwagata Zeus Core Medal
 item.zeus_lion.name=Lion Zeus Core Medal
@@ -940,6 +995,7 @@ item.billytherod.name=Elek Module Billy The Rod
 item.hee_hackgun.name=Fire Module Hee-Hackgun
 item.barizun_sword.name=Cosmic Module Barizun Sword
 item.meteor_nadeshiko_fusion_rocket.name=Rocket Module (Meteor Nadeshiko Fusion States Ver)
+item.shield_module.name=Shield Module
 
 item.meteor_storm_shaft.name=Meteor Storm Shaft
 
@@ -1634,7 +1690,9 @@ item.nadeshiko_switch.name=Nadeshiko Switch
 item.ride_saber.name=Ride Saber
 item.drag_saber.name=Drag Saber
 item.drag_claw.name=Drag Claw
-item.drag_visor_zwei.name=Drag Visor Zwei
+item.drag_visor_zwei.name=Dragvisorzwei
+
+item.veno_visor_zwei.name=Venovisorzwei
 
 item.wing_lancer.name=Wing Lancer
 item.dark_blade.name=Dark Blade
@@ -1723,8 +1781,9 @@ item.wing_lancer_vent.name=Wing Lancer Sword Vent
 item.dark_blade_vent.name=Dark Blade Sword Vent
 item.veno_saber_vent.name=Veno Saber Sword Vent
 item.wing_slasher_vent.name=Wing Slasher Sword Vent
-item.gold_sabers_vent.name=Gold Sabers Sword Vent
-    
+item.gold_sabers_vent.name=Gold Sabers Sword Vent  
+item.veno_visor_zwei_sword_mode_vent.name=Venovisorzwei Sword Vent
+
 item.abyss_saber_vent.name=Abyss Saber Sword Vent
 item.alternative_sword_vent.name=Alternative Sword Vent
 
@@ -1824,13 +1883,46 @@ item.flower_ring.name=Flower Wizard Ring
 item.dance_ring.name=Dance Wizard Ring
 item.super_sentai_ring.name=Super Sentai Wizard Ring
 
+item.driver_on_ring.name=Driver On Wizard Ring
+item.driver_on_ring_white_wizard.name=Driver On Wizard Ring
+item.beast_driver_on_ring.name=Driver On Ring
+item.beast_engage_ring.name=Engage Ring
+item.chimarise_ring.name=Chimarise Ring
+
+item.common_wizard_ring.name=Common Wizard Ring
+item.chichin_pui_pui_ring.name=Chichin Pui Pui Wizard Ring
+item.create_ring.name=Create Wizard Ring
+item.holy_ring.name=Holy Wizard Ring
+item.fourze_engage_ring.name=Fourze Engage Wizard Ring
+
+item.unknown_amber_ring.name=Unknown Wizard Ring
+item.unknown_red_ring.name=Unknown Wizard Ring
+item.unknown_blue_ring.name=Unknown Wizard Ring
+item.unknown_green_ring.name=Unknown Wizard Ring
+item.unknown_yellow_ring.name=Unknown Wizard Ring
+item.unknown_violet_ring.name=Unknown Wizard Ring
+item.unknown_black_ring.name=Unknown Wizard Ring
+item.unknown_cyan_ring.name=Unknown Wizard Ring
+item.unknown_beast_ring.name=Unknown Wizard Ring
+
+item.wizard_gem_crafting_chisel.name=Wizard Gem Crafting Chisel
+    
+item.wizardgem_red.name=Magic Stone
+item.wizardgem_blue.name=Magic Stone
+item.wizardgem_green.name=Magic Stone
+item.wizardgem_yellow.name=Magic Stone
+item.wizardgem_violet.name=Magic Stone
+item.wizardgem_black.name=Magic Stone
+item.wizardgem_cyan.name=Magic Stone
+item.philosophers_stone.name=Philosopher's Stone
+
 
 item.budou_ryuhou.name=Budou Ryuhou
 item.mango_punisher.name=Mango Punisher
 item.duri_noko.name=Duri Noko
 item.kiwi_gekirin.name=Kiwi Gekirin
 
-‎‎
+
 item.shine_donkachi.name=Shine Donkachi
 item.hells_cane.name=Hells Cane
 item.shine_lychee_sword.name=Shine Lychee Sword
@@ -2055,12 +2147,29 @@ item.kuuga_super_amazing_titan.name=Kuuga Super Amazing Titan
 item.kuuga_amazing_ultimate.name=Kuuga Amazing Ultimate
 item.kuuga_super_amazing_ultimate.name=Kuuga Super Amazing Ultimate
 
+    
+item.guard_acceller.name=Guardacceler
+item.gm_01_scorpion.name=GM-01 Scorpion
+item.gg_02_salamander.name=GM-01 Scorpion + GG-02 Salamander
+item.gs_03_destroyer.name=GS-03 Destroyer
+item.ga_04_antares.name=GA-04 Antoures
+item.gx_05_kerberos.name=GX-05 Kerberos
+item.gx_launcher.name=GX-Launcher
+item.gk_06_unicorn.name=GK-06 Unicorn
+item.g3_shield.name=G3 Shield
+item.g3x_shield.name=G3-X Shield
+item.g4_gigant.name=G4 Gigant
+item.v1_shot.name=V-1 Shot
+item.judgment_staff.name=Judgment Staff
+item.el_of_the_water_staff.name=El of the Water Staff
 
 item.agitohead.name=Agito Helmet
 item.agitotroso.name=Agito Chestplate
 item.agitolegs.name=Agito Leggings
 
 item.alter_ring.name=Alter Ring
+item.alter_ring_reiko.name=Alter Ring(Reiko Takano)
+
 item.meta_factor.name=Meta Factor
 item.ank_point.name=Ank Point
 item.ank_point_burning.name=Ank Point Burning
@@ -2074,6 +2183,8 @@ item.g4_x_belt.name=G4-X Belt
 
 item.g1_belt.name=G1 Belt
 
+item.v1_belt.name=V-1 Belt
+
 item.agito_ground.name=Agito Ground
 item.agito_storm.name=Agito Storm
 item.agito_flame.name=Agito Flame
@@ -2084,12 +2195,14 @@ item.agito_shining.name=Agito Shining
 item.gills.name=Gills
 item.exceed_gills.name=Exceed Gills
 
-item.g1.name=G1
-item.g3.name=G3
-item.g3x.name=G3-X
-item.g3mild.name=G3 Mild
-item.g4.name=G4
-item.g4x.name=G4-X
+item.g1.name=G1 Chip
+item.g3.name=G3 Chip
+item.g3x.name=G3-X Chip
+item.g3mild.name=G3 Mild Chip
+item.g4.name=G4 Chip
+item.g4x.name=G4-X Chip
+
+item.v1.name=V-1 Chip
 
 item.another_agito.name=Another Agito
 item.agito_miracle.name=Agito Miracle
@@ -2108,6 +2221,8 @@ item.sasword_yaiver.name=Sasword Yaiver
 item.gatack_double_calibur.name=Gatack Double Calibur Plus
 item.gatack_double_calibur_minus.name=Gatack Double Calibur Minus
 item.gatack_double_calibur_twin.name=Gatack Double Calibur
+
+item.machinegun_blade.name=Machinegun Blade
 
 item.zect_kunai.name=ZECT Kunai Gun
 item.zect_kunai_kunai.name=ZECT Kunai Gun (Kunai Mode)
@@ -2128,6 +2243,11 @@ item.puchhopper_rider_belt.name=Punchhopper Rider Belt
 item.caucasus_rider_belt.name=Caucasus Rider Belt
 item.hercus_rider_belt.name=Hercus Rider Belt
 item.ketaros_rider_belt.name=Ketaros Rider Belt
+    
+item.zectrooper_belt.name=ZECTrooper Belt
+item.shadow_trooper_belt.name=Shadow Trooper Belt
+item.brightrooper_belt.name=Brightrooper Belt
+item.neotrooper_belt.name=Neotrooper Rider Belt    
     
 item.lady_rider_belt.name=Lady Rider Belt
 
@@ -2158,7 +2278,8 @@ item.lemon_lockseed.name=Lemon Lockseed
 item.marron_energy_lockseed.name=Marron Energy Lockseed
 item.zakuro_lockseed.name=Zakuro Lockseed
 
-item.drivedrivergold.name=Drive Driver Gold
+item.drivedrivergold.name=Banno Driver 
+item.drivedriverbronze.name=Banno Driver(Bronze)
 item.metro_pd_driver_honoh.name=Metro PD Driver Honoh
 
 item.handle_sword.name=Handle-Ken
@@ -2462,6 +2583,9 @@ item.blackwizardriver.name=Black Wizardriver
 item.magewizardriver.name=Mage's Belt (Orange)
 item.magewizardriver_b.name=Mage's Belt (Blue)
 item.magewizardriver_g.name=Mage's Belt (Green)
+
+item.magewizardriver_captain.name=Mage's Belt (Captain)
+item.magewizardriver_foot_soldiers.name=Mage's Belt (Foot Soldiers)
 item.sorcererdriver.name=Sorcererdriver
 
 item.darkwizardriver.name=Dark Wizardriver
@@ -2990,6 +3114,7 @@ item.another_faiz_driver.name=Another Faiz Driver
 item.ziku_driver_tsukuyomi.name=Ziku Driver (Tsukuyomi)
 item.another_w_driver.name=Another W Driver
 item.another_shinobi_driver.name=Another Shinobi Driver
+item.another_altering.name=Another Altering
 
 item.unfinished_ohma_zi_o_driver_1.name=Unfinished Ohma Ziku Driver Part
 item.unfinished_ohma_zi_o_driver_2.name=Unfinished Ohma Ziku Driver Part
@@ -3005,6 +3130,9 @@ item.zikan_zaclaw.name=Zikan Zaclaw
 item.zikan_despear.name=Zikan Despear
 item.zikan_despear_kama.name=Zikan Despear (Kama)
 item.zikan_despear_tsue.name=Zikan Despear (Tsue)
+
+item.zamonas_bow.name=Zamonas' Bow
+item.barlckxs_sword.name=Barlckxs' Sword
 
 item.zi_o_ridewatch.name=Zi-O Ridewatch
 item.geiz_ridewatch.name=Geiz Ridewatch
@@ -3096,7 +3224,6 @@ item.woz_ridewatch.name=Woz Ridewatch
 item.unfinished_grandzi_o_ridewatch_1.name=Unfinished Grand Zi-O Ridewatch Part
 item.unfinished_grandzi_o_ridewatch_2.name=Unfinished Grand Zi-O Ridewatch Part
 item.kodama_suika_arms.name=Kodama Suika Arms
-item.another_build_ridewatch.name=Another Build Ridewatch
 item.ryusoulger_ridewatch.name=Ryusoulger Ridewatch
 
 item.another_zero_one_ridewatch.name=Another Zero-One Watch
@@ -3333,7 +3460,9 @@ item.raimeiken_ikazuchi.name=Raimeiken Ikazuchi
 item.gekkou_raimeiken_ikazuchi.name=Gekkou Raimeiken Ikazuchi
 item.ankokuken_kurayami.name=Ankokuken Kurayami
 item.onjuuken_suzune.name=Onjuuken Suzune
-    
+ 
+item.destruction_shield.name=Destruction Shield
+      
 
 item.kingexcalibur.name=Kingexcalibur
 item.kougouken_saikou.name=Kougouken Saikou
@@ -3476,15 +3605,26 @@ item.revicetroso.name=Revice Chestplate
 item.revicelegs.name=Revice Leggings
         
 item.revice_driver.name=Revice Driver       
-item.vice_belt.name=Buddy Buckle(Vice)    
+item.vice_belt.name=Buddy Buckle (Vice)    
 
-item.two_sidriver_evil.name=Two Sidriver(Evil)
-item.two_sidriver_live.name=Two Sidriver(Live)
+item.two_sidriver_evil.name=Two Sidriver (Evil)
+item.two_sidriver_live.name=Two Sidriver (Live)
 item.demons_driver.name=Demons Driver
 item.libera_driver.name=Libera Driver
 item.vail_driver.name=Vail Driver
 item.over_demons_driver.name=Demons Driver (Over Demons)
-item.week_endriver.name=Week Endriver
+item.week_endriver.name=Week Endriver (Aguilera)
+item.dark_week_endriver.name=Week Endriver (Dark Aguilera)
+
+item.demons_driver_demons_trooper_a.name=Demons Driver (Trooper a)
+item.demons_driver_demons_trooper_b.name=Demons Driver (Trooper b)
+item.destream_driver.name=Destream Driver
+item.vail_belt.name=Crimson Vail Belt
+item.chimera_driver.name=Chimera Driver (Chimera)
+item.chimera_driver_daimon.name=Chimera Driver (Daimon)
+item.juuga_driver.name=Juuga Driver
+item.cyclotron_driver.name=Cyclotron Driver
+item.cyclotron_driver_break.name=Cyclotron Driver (Break)
     
 item.rex_vistamp.name=Rex Vistamp
 item.barid_rex_vistamp_closed.name=Barid Rex Vistamp (Incomplete)
@@ -3492,6 +3632,8 @@ item.barid_rex_vistamp.name=Barid Rex Vistamp
 item.volcano_vistamp.name=Volcano Vistamp
 item.rolling_vistamp.name=Rolling Vistamp
 item.thunder_gale_vistamp.name=Thunder Gale Vistamp
+item.gold_spino_vistamp.name=Gold Spino Vistamp 
+item.true_rex_vistamp.name=True Rex Vistamp
 
 item.crow_vistamp.name=Crow Vistamp
 item.holy_wing_vistamp.name=Holy Wing Vistamp
@@ -3510,6 +3652,7 @@ item.neo_batta_vistamp.name=Neo Batta Vistamp
 item.kangaroo_vistamp.name=Kangaroo Vistamp
 item.bat_vistamp.name=Bat Vistamp
 item.spider_vistamp.name=Spider Vistamp
+item.giant_spider_vistamp.name=Giant Spider Vistamp
 item.batta_vistamp.name=Batta Vistamp
 item.mogura_vistamp.name=Mogura Vistamp
 item.scorpion_vistamp.name=Scorpion Vistamp
@@ -3519,6 +3662,24 @@ item.cobra_vistamp.name=Cobra Vistamp
 item.condor_vistamp.name=Condor Vistamp
 item.white_leo_vistamp.name=White Leo Vistamp
 item.quetzalcoatlus_vistamp.name=Quetzalcoatlus Vistamp
+
+item.giffard_rex_vistamp.name=Giffard Rex Vistamp
+item.fifty_gale_vistamp.name=Fifty Gale Vistamp
+item.perfect_wing_vistamp.name=Perfect Wing Vistamp
+item.crimson_vail_vistamp.name=Crimson Vail Vistamp
+item.king_cobra_vistamp.name=King Cobra Vistamp
+item.hercules_vistamp.name=Hercules Vistamp
+item.spider_trooper_vistamp.name=Trooper Spider Vistamp
+item.kuwagata_trooper_vistamp.name=Trooper Kuwagata Vistamp
+item.twin_chimera_vistamp.name=Twin Chimera Vistamp
+item.tri_chimera_vistamp.name=Tri Chimera Vistamp
+item.juuga_vistamp.name=Juuga Vistamp
+item.king_crab_vistamp.name=King Crab Vistamp
+item.kurosai_vistamp.name=Kurosai Vistamp
+item.octopus_vistamp.name=Octopus Vistamp
+item.oomukade_vistamp.name=Oomukade Vistamp
+item.hedgehog_vistamp.name=Hedgehog Vistamp
+item.komodo_dragon_vistamp.name=Komodo Dragon Vistamp
 
 
 item.kirin_vistamp.name=Kirin Vistamp
@@ -3554,8 +3715,7 @@ item.mammoth_vistamp_china.name=Mammoth Vistamp (Chinese Exclusive)
 item.telemag_rex_vistamp.name=Rex Vistamp (Glitter)
 item.giff_junior_vistamp.name=Giff Junior Vistamp
            
-
-item.proto_vistamp.name=Proto Vistamp
+item.proto_vistamp.name=Blank Vistamp
     
 item.oblivion_stamp.name=Oblivian Stamp
 item.deadman_stamp.name=Deadman Stamp
@@ -3587,6 +3747,10 @@ item.giff_junior_sword.name=Giff Junior Sword
 item.paranegro.name=Paranegro
 item.buffalo_disks.name=Buffalo Gekirin
 
+item.giff_stamp.name=Giff Stamp
+item.diablo_stamp.name=Diablo Stamp
+
+item.giff_eye.name=Giff's eye
        
 item.amazonshead.name=Amazons Helmet
 item.amazonstroso.name=Amazons Chestplate 
@@ -3615,9 +3779,201 @@ item.sigma_amazon_cell_vial.name=Sigma Amazon Cell Sample
 item.neo_amazon_cell_vial.name=Neo Amazon Cell Sample
 
 item.empty_vial.name=Empty Vial
-
 item.gaga_armlet.name=Gaga Armlet
 item.gigi_armlet.name=Gigi Armlet
+
+item.black_sun_head.name=Black Sun Helmet
+item.black_sun_troso.name=Black Sun Chestplate
+item.black_sun_legs.name=Black Sun Leggings
+
+
+item.century_king_black_blade.name=Century King Black Blade
+item.century_king_shadow_blade.name=Century King Shadow Blade
+item.satansabre.name=Satansaber
+
+item.king_stone_sun.name=Kingstone Sun
+item.king_stone_moon.name=Kingstone Moon
+item.century_king_sun_driver.name=Century King Sun Driver
+item.century_king_moon_driver.name=Century King Moon Driver
+item.kaijin_stone.name=Kaijin Stone
+item.creation_king_extract_vial.name=Creation King extract
+item.heat_heaven.name=Heat Heaven
+
+
+
+item.magnum_shooter_40x.name=Magnum Shooter 40X
+item.magnum_shooter_40x_rifle.name=Magnum Shooter 40X(Rifle)
+    
+item.zombie_breaker.name=Zombie Breaker
+item.zombie_breaker_poison_charge.name=Zombie Breaker(Poison Charge)
+
+item.beat_axe.name=Beat Axe
+
+item.ninja_dueler.name=Ninja Dueler
+item.ninja_dueler_twin_blade_mode.name=Ninja Dueler
+item.ninja_dueler_twin_blade_mode2.name=Ninja Dueler
+
+item.raising_sword.name=Raising Sword
+
+item.gigant_sword.name=Gigant Sword
+item.gigant_hammer.name=Gigant Hammer
+item.gigant_blaster.name=Gigant Blaster
+
+item.raise_hammer.name=Raise Hammer
+item.raise_arrow.name=Raise Arrow
+item.raise_water.name=Raise Water
+item.raise_shield.name=Raise Shield
+item.raise_claw.name=Raise Claw   
+item.raise_chain_array.name=Raise Chain Array  
+item.raise_propeller.name=Raise Propeller 
+
+item.geatshead.name=Geats Helmet
+item.geatstroso.name=Geats Chestplate 
+item.geatslegs.name=Geats Leggings
+
+item.desire_driver_geats.name=Desire Driver(Geats)
+item.desire_driver_tycoon.name=Desire Driver(Tycoon)
+item.desire_driver_na_go.name=Desire Driver(Na-Go)
+item.desire_driver_buffa.name=Desire Driver(Buffa)
+item.desire_driver_shirowe.name=Desire Driver(Shirowe)
+item.desire_driver_da_paan.name=Desire Driver(Da.Paan)
+item.desire_driver_mary.name=Desire Driver(Mary)
+item.desire_driver_ginpen.name=Desire Driver(Ginpen)
+item.desire_driver_punk_jack.name=Desire Driver(Punkjack)
+item.desire_driver_reta.name=Desire Driver(Letter)
+item.desire_driver_keirou.name=Desire Driver(Keilow)
+item.desire_driver_nudge_sparrow.name=Desire Driver(Nadge-Sparrow)
+item.desire_driver_lopo.name=Desire Driver(Lopo)
+item.desire_driver_seeker.name=Desire Driver(Seeker)
+item.desire_driver_revi.name=Desire Driver(Revi)
+item.desire_driver_vice.name=Desire Driver(Vice)
+
+item.raise_riser_belt_ziin.name=Raise Riser Belt (Ziin)
+item.raise_riser_belt_beroba.name=Raise Riser Belt (Beroba)
+item.raise_riser_belt_kekera.name=Raise Riser Belt (Kekera)
+item.raise_riser_belt_kyuun.name=Raise Riser Belt (Kyuun)
+
+
+item.desire_driver_jyamato.name=Desire Driver(Jyamato)
+item.desire_driver_gm.name=Desire Driver (GM)
+item.desire_driver_gm_chirami.name=Desire Driver (GM)
+item.vision_driver.name=Vision Driver (Glare)
+item.vision_driver_gazer.name=Vision Driver (Gazer)
+item.vision_driver_chirami.name=Vision Driver (Glare2)
+
+item.magnum_raise_buckle.name=Magnum Buckle
+item.boost_raise_buckle.name=Boost Buckle
+item.boost_markii_raise_buckle.name=Boost MarkII Buckle
+item.unite_grip.name=Unite Grip
+
+item.zombie_raise_buckle.name=Zombie Buckle
+item.ninja_raise_buckle.name=Ninja Buckle
+item.monster_raise_buckle.name=Monster Buckle
+item.beat_raise_buckle.name=Beat Buckle
+  
+item.command_twin_buckle_jet.name=Command Jet Buckle
+item.command_twin_buckle_cannon.name=Command Cannon Buckle
+item.fever_slot_raise_buckle.name=Feverslot Buckle
+
+item.gigant_sword_buckle.name=Gigant Sword Buckle
+item.gigant_hammer_buckle.name=Gigant Hammer Buckle
+item.gigant_blaster_buckle.name=Gigant Blaster Buckle
+item.powered_builder_raise_buckle.name=Powered Builder Buckle
+item.gigant_container_buckle.name=Gigant Container Buckle
+
+item.magnum_shooter_40x_raise_buckle.name=Magnum Shooter 40X Buckle
+item.ninja_dueler_raise_buckle.name=Ninja Dueler Buckle
+item.zombie_breaker_raise_buckle.name=Zombie Breaker Buckle
+item.beat_axe_raise_buckle.name=Beat Axe Buckle
+ 
+item.hammer_raise_buckle.name=Hammer Buckle
+item.water_raise_buckle.name=Water Buckle
+item.arrow_raise_buckle.name=Arrow Buckle
+item.shield_raise_buckle.name=Shield Buckle
+item.chain_array_raise_buckle.name=Chain Array Buckle
+item.claw_raise_buckle.name=Claw Buckle
+item.drill_raise_buckle.name=Drill Buckle
+item.propeller_raise_buckle.name=Propeller Buckle
+
+item.christmas_buckle.name=Christmas Buckle
+item.jyamato_buckle.name=Jyamato Buckle
+
+item.beat_raise_buckle_theme.name=Beat Buckle (Theme Song ver)
+
+
+item.golden_hammer_raise_buckle.name=Hammer Buckle (Gold Plating ver)
+item.silver_arrow_raise_buckle.name=Arrow Buckle (Silver Plating ver)
+
+item.clear_arrow_raise_buckle.name=Arrow Buckle (Clear ver)
+    
+item.revice_driver_raise_buckle.name=Revice Driver Buckle
+item.two_si_driver_raise_buckle.name=Two Sidriver Buckle
+item.demons_driver_raise_buckle.name=Demons Driver Buckle
+item.libera_driver_raise_buckle.name=Libera Driver Buckle
+          
+item.seiken_swordriver_raise_buckle.name=Seiken Swordriver Buckle
+item.zero_one_driver_raise_buckle.name=Zero-One Driver Buckle
+item.zikuu_driver_raise_buckle.name=Ziku-Driver Buckle
+item.build_driver_raise_buckle.name=Build Driver Buckle
+item.gamer_driver_raise_buckle.name=Gamer Driver Buckle
+item.ghost_driver_raise_buckle.name=Ghost Driver Buckle
+item.drive_driver_raise_buckle.name=Drive Driver Buckle
+item.sengoku_driver_raise_buckle.name=Sengoku Driver Buckle
+item.wizardriver_raise_buckle.name=Wizardriver Buckle
+item.fourze_driver_raise_buckle.name=Fourze Driver Buckle
+item.ooo_driver_raise_buckle.name=OOO Driver Buckle 
+item.double_driver_raise_buckle.name=Doubledriver Buckle
+item.deca_driver_raise_buckle.name=Decadriver Buckle
+item.kivat_belt_raise_buckle.name=Kivat Belt Buckle
+item.den_o_belt_raise_buckle.name=Den-O Belt Buckle
+item.kabuto_zector_raise_buckle.name=Kabuto Zecter Buckle
+item.ongekiko_kaentsuzumi_raise_buckle.name=Ongekiko Kaentsuzumi Buckle
+item.blay_buckle_raise_buckle.name=Blay Buckle Buckle
+item.faiz_driver_raise_buckle.name=Faiz Driver Buckle
+item.v_buckle_raise_buckle.name=V Buckle Buckle
+item.alter_ring_raise_buckle.name=Altering Buckle
+item.arcle_raise_buckle.name=Arcle Buckle
+item.king_stone_raise_buckle.name=Kingstone Buckle
+item.double_typhoon_raise_buckle.name=Double Typhoon Buckle
+item.typhoon_raise_buckle.name=Typhoon Buckle
+    
+item.ouja_v_buckle_raise_buckle.name=V Buckle Buckle (Ouja)
+
+item.king_ohger_raise_buckle.name=King-Ohger Buckle
+item.blank_rider_core_id.name=Blank Rider Core ID
+
+item.geats_rider_core_id.name=Kamen Rider Geats Core ID
+item.tycoon_rider_core_id.name=Kamen Rider Tycoon Core ID
+item.na_go_rider_core_id.name=Kamen Rider Na-Go Core ID
+item.buffa_rider_core_id.name=Kamen Rider Buffa Core ID
+item.shirowe_rider_core_id.name=Kamen Rider Shirowe Core ID
+item.da_paan_rider_core_id.name=Kamen Rider Da.Paan Core ID
+item.mary_rider_core_id.name=Kamen Rider Mary Core ID
+item.ginpen_rider_core_id.name=Kamen Rider Ginpen Core ID
+item.punk_jack_rider_core_id.name=Kamen Rider Punkjack Core ID   
+item.keirou_rider_core_id.name=Kamen Rider Keilow Core ID
+item.reta_rider_core_id.name=Kamen Rider Letter Core ID
+item.nudge_sparrow_rider_core_id.name=Kamen Rider Nadge-Sparrow Core ID   
+item.lopo_rider_core_id.name=Kamen Rider Lopo Core ID   
+item.seeker_rider_core_id.name=Kamen Rider Seeker Core ID   
+item.revi_rider_core_id.name=Kamen Rider Revi Core ID   
+item.vice_rider_core_id.name=Kamen Rider Vice Core ID   
+  
+item.buffa_rider_core_id_cracked.name=Kamen Rider Buffa Core ID (Cracked)
+  
+item.discore_id.name=DisCore ID
+item.providence_card.name=Providence Card (Gazer)
+item.providence_card_glare.name=Providence Card (Glare)
+item.providence_card_glare2.name=Providence Card (Glare2)
+
+item.ziin_raise_riser_card.name=Raise Riser Card (Ziin)
+item.beroba_raise_riser_card.name=Raise Riser Card (Beroba)
+item.kekera_raise_riser_card.name=Raise Riser Card (Kekera)
+item.kyuun_raise_riser_card.name=Raise Riser Card (Kyuun)
+
+item.bikkuri_mission_box.name=Bikkuri Mission Box
+item.hatena_mission_box.name=Hatena Mission Box
+item.gigant_mission_box.name=Support Mission Box Type Geats
 
 itemGroup.tab_kikaider=Android Kikaider
 item.kikaider_circuit.name=Kikaider Circuit
@@ -3637,6 +3993,8 @@ item.red_hakaider_belt.name=Red Hakaider Belt
 item.silver_hakaider_belt.name=Silver Hakaider Belt
 item.blue_hakaider_belt.name=Blue Hakaider Belt
 
+
+item.rider3_vs_the_demon_of_general_black.name=Rider 3 vs. The Demon of General Black Manga
 item.card_warrior_kamen_rider_manga.name=Card Warrior Kamen Rider Manga
 item.herculespader_sword.name=Herculespader Sword
 item.flaresalamander_sword.name=Flaresalamander Sword

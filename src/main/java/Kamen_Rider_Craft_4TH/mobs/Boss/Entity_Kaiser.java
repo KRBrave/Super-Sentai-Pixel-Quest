@@ -102,28 +102,28 @@ public class Entity_Kaiser extends EntityBossBase
 			{
 
 			case 0:
-				this.dropItem(RiderItems.foundation_kuwagata, 1);
+				this.dropItem(RiderItems.foundation_x_kuwagata, 1);
 				break;
 			case 1:
-				this.dropItem(RiderItems.foundation_lion, 1);
+				this.dropItem(RiderItems.foundation_x_lion, 1);
 				break;
 			case 2:
-				this.dropItem(RiderItems.foundation_shachi, 1);
+				this.dropItem(RiderItems.foundation_x_shachi, 1);
 				break;
 			case 3:
-				this.dropItem(RiderItems.foundation_kamakiri, 1); 
+				this.dropItem(RiderItems.foundation_x_kamakiri, 1); 
 				break;
 			case 4:
-				this.dropItem(RiderItems.foundation_gorilla, 1);
+				this.dropItem(RiderItems.foundation_x_gorilla, 1);
 				break;
 			case 5:
-				this.dropItem(RiderItems.foundation_unagi, 1);
+				this.dropItem(RiderItems.foundation_x_unagi, 1);
 				break;
 			case 6:
-				this.dropItem(RiderItems.foundation_cheetah, 1);
+				this.dropItem(RiderItems.foundation_x_cheetah, 1);
 				break;
 			case 7:
-				this.dropItem(RiderItems.foundation_taka, 1);
+				this.dropItem(RiderItems.foundation_x_taka, 1);
 				break;
 			}
 		}

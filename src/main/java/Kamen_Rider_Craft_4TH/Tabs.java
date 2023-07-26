@@ -14,14 +14,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import java.util.function.BiFunction;
 
 public class Tabs {
-	/**
-	private static BiFunction<String, Item, CreativeTabs> function = (name, item) -> new CreativeTabs(name) {
-		@Override
-		public ItemStack createIcon() {
-			return new ItemStack(item);
-		}
-	};
-**/
+
+	
 	public static ToolMaterial tokuToolMaterial = EnumHelper.addToolMaterial("tokuToolMaterial", 10, 3500, 12.0F, 5.0F, 22);
 
 	public static ToolMaterial ridol_stick = EnumHelper.addToolMaterial("ridol_stick", 10, 6000, 12.0F, 3.0F, 22);
@@ -259,6 +253,8 @@ public class Tabs {
 			return new ItemStack(ShowaRiderItems.black_rx_head);
 		}
 	};
+	
+	
 	public static CreativeTabs tabshin = new CreativeTabs("tabshin")
 	{
 		@SideOnly(Side.CLIENT)
@@ -573,6 +569,8 @@ public class Tabs {
 			return new ItemStack(ReiwaRiderItems.saberhead);
 		}
 	};
+
+	
 	public static CreativeTabs tabrevice = new CreativeTabs("tabrevice")
 	{
 		@SideOnly(Side.CLIENT)
@@ -585,6 +583,19 @@ public class Tabs {
 			return new ItemStack(ReiwaRiderItems.revicehead);
 		}
 	};
+	public static CreativeTabs tabgeats = new CreativeTabs("tabgeats")
+	{
+		 @SideOnly(Side.CLIENT)
+		    public net.minecraft.util.ResourceLocation getBackgroundImage()
+		    {
+		        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_geats_items.png");
+		    }
+		
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(ReiwaRiderItems.geatshead);
+		}
+	};
 	public static CreativeTabs tabamazons = new CreativeTabs("tabamazons")
 	{
 		 @SideOnly(Side.CLIENT)
@@ -595,6 +606,18 @@ public class Tabs {
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(ShowaRiderItems.amazonshead);
+		}
+	};
+	public static CreativeTabs tabblack_sun = new CreativeTabs("tabblack_sun")
+	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_black_sun_items.png");
+	    }
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(ShowaRiderItems.black_sun_head);
 		}
 	};
 	public static CreativeTabs tabG = new CreativeTabs("tabG")
@@ -621,7 +644,7 @@ public class Tabs {
 	{
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.icepop1);
+			return new ItemStack(miscellaneousRiderItems.icepop1);
 		}
 	};
 	

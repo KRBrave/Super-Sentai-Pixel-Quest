@@ -142,9 +142,9 @@ public class Entity_core extends EntityBossBase
 		if (!this.world.isRemote){
 
 			this.dropItem(RiderItems.core_driver, 1);
-			this.dropItem(RiderItems.black_sasori, 1);
-			this.dropItem(RiderItems.black_kani, 1);
-			this.dropItem(RiderItems.black_ebi, 1);
+			this.dropItem(RiderItems.sasori, 1);
+			this.dropItem(RiderItems.kani, 1);
+			this.dropItem(RiderItems.ebi, 1);
 			this.dropItem(RiderItems.memory_memory, 1);
 
 			

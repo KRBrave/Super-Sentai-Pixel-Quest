@@ -5,6 +5,8 @@ import Kamen_Rider_Craft_4TH.ReiwaRiderItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.ShowaRiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
+import Kamen_Rider_Craft_4TH.item.geats.Item_mission_box;
+import Kamen_Rider_Craft_4TH.item.geats.Item_rider_core_id;
 import Kamen_Rider_Craft_4TH.item.saber.Item_wonder_ride_book;
 import Kamen_Rider_Craft_4TH.util.IHasModel;
 import com.google.common.collect.Lists;
@@ -27,7 +29,7 @@ public class Item_form_change extends Item implements IHasModel
 
 	private String FORM_NAME;
 	private List<PotionEffect> potionEffectList;
-	private Item BELT;
+	private int BELT;
 	private List<Item> NEEDSITEM = new ArrayList<Item>();
 	protected  Class<? extends item_rider_driver> BELTCLASS;
 	protected String RIDER_NAME;
@@ -36,7 +38,7 @@ public class Item_form_change extends Item implements IHasModel
 	private String REND2;
 	private List<Item_form_change> alternative = new ArrayList<Item_form_change>();
 
-	public Item_form_change(String name,Class<? extends item_rider_driver> beltClass,Item belt,String formName,String ridername,PotionEffect... effects)
+	public Item_form_change(String name,Class<? extends item_rider_driver> beltClass,int belt,String formName,String ridername,PotionEffect... effects)
 	{
 		super();
 		this.setMaxDamage(0);
@@ -59,7 +61,7 @@ public class Item_form_change extends Item implements IHasModel
 		return potionEffectList;
 	}
 
-	public Item getBelt() {
+	public int getBelt() {
 		return BELT;
 	}
 
@@ -118,7 +120,14 @@ public class Item_form_change extends Item implements IHasModel
 		return this;
 	}
 
-
+	public Item_form_change AddToList(List<Item> list,int num)
+	{
+		for (int i1 = 0; i1 < num; ++i1)
+		{
+			list.add(this);
+		}
+		return this;
+	}
 
 
 

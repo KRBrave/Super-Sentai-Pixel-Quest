@@ -36,7 +36,7 @@ public class item_amazonsdriver extends item_rider_driver
 
 	public item_amazonsdriver (String name, ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,ShowaRiderItems.amazonshead, ShowaRiderItems.amazonstroso, ShowaRiderItems.amazonslegs);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,ShowaRiderItems.amazonshead, ShowaRiderItems.amazonstroso, ShowaRiderItems.amazonslegs, ShowaRiderItems.amazon_cell_vial);
 	}
 
 	@Override
@@ -244,20 +244,20 @@ public class item_amazonsdriver extends item_rider_driver
 								return Refercence.MODID+":textures/armor/"+rider+ext;	
 							
 					}else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
-						return Refercence.MODID+":textures/armor/blank"+ext;
+						return "blank";
 					} else{
-						return Refercence.MODID+":textures/armor/blank"+ext;
+						return "blank";
 
 					}
 				}else{
-					return Refercence.MODID+":textures/armor/blank"+ext;
+					return "blank";
 				}
 			}else{
-				return Refercence.MODID+":textures/armor/blank"+ext;
+				return "blank";
 			}
 
 		}
-		return Refercence.MODID+":textures/armor/blank"+ext;
+		return "blank";
 
 	}
 
@@ -272,12 +272,6 @@ public class item_amazonsdriver extends item_rider_driver
 	{
 		return maxDamageArray;
 	}
-	
-    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
-    {
-    	return ShowaRiderItems.amazon_cell_vial == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
-    }
-
 
 	
 	

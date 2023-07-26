@@ -70,7 +70,7 @@ public class item_Fourzedriver extends item_rider_driver
 
 	public item_Fourzedriver (String name,ArmorMaterial par2EnumArmorMaterial,String rider)
 	{
-		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.Fourzehead, RiderItems.Fourzetroso, RiderItems.Fourzelegs);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.Fourzehead, RiderItems.Fourzetroso, RiderItems.Fourzelegs, RiderItems.astroswitch);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
@@ -168,9 +168,8 @@ public class item_Fourzedriver extends item_rider_driver
 										if(armor.hasTagCompound()){
 
 											if (CircleModuleName[armor.getTagCompound().getInteger("corecircle")]=="rocket"){
-												player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false));
-												player.fallDistance=0; 
-												player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 4,true,false));
+												player.addPotionEffect(new PotionEffect(PotionCore.BOOST_POTION, 5, 0,true,false));
+												
 											}else if (CircleModuleName[armor.getTagCompound().getInteger("corecircle")]=="chain_array"){
 												if (player.getHeldItemMainhand().isEmpty())
 												{
@@ -449,7 +448,8 @@ public class item_Fourzedriver extends item_rider_driver
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 5, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 5, 0,true,false));
 											player.fallDistance=0; 
-											player.addPotionEffect(new PotionEffect(PotionCore.FLY_POTION, 5, 4,true,false));
+
+											player.addPotionEffect(new PotionEffect(PotionCore.BOOST_POTION, 5, 2,true,false));
 										}
 										if (this.get_core(armor)==6){
 											if (player.getHeldItemMainhand().isEmpty())
@@ -592,21 +592,19 @@ public class item_Fourzedriver extends item_rider_driver
 								return Refercence.MODID+":textures/armor/"+rider+ext;	
 							}
 							
-					}else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
-						return Refercence.MODID+":textures/armor/blank"+ext;
-					} else{
-						return Refercence.MODID+":textures/armor/blank"+ext;
-
 					}
+						return "blank";
+
+					
 				}else{
-					return Refercence.MODID+":textures/armor/blank"+ext;
+					return "blank";
 				}
 			}else{
-				return Refercence.MODID+":textures/armor/blank"+ext;
+				return "blank";
 			}
 
 		}
-		return Refercence.MODID+":textures/armor/blank"+ext;
+		return "blank";
 
 	}
 
@@ -619,11 +617,6 @@ public class item_Fourzedriver extends item_rider_driver
 	static int[] getMaxDamageArray()
 	{
 		return maxDamageArray;
-	}
-
-	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
-	{
-		return RiderItems.astroswitch == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

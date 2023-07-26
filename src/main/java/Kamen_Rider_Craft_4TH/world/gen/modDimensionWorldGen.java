@@ -25,7 +25,6 @@ public class modDimensionWorldGen
     public static final String NORTHERN_BASE_NAME = "northern_base";
     public static final int NORTHERN_BASE_DIM_ID = DimensionManager.getNextFreeDimId()+2;
     public static final DimensionType NORTHERN_BASE_DIM_TYPE = DimensionType.register(NORTHERN_BASE_NAME, "_"+NORTHERN_BASE_NAME, NORTHERN_BASE_DIM_ID, worldProvider_northern_base.class, true);
-   
     
     public static final String RABBIT_HUTCH_NAME = "rabbit_hutch";
     public static final int RABBIT_HUTCH_DIM_ID = DimensionManager.getNextFreeDimId()+4;

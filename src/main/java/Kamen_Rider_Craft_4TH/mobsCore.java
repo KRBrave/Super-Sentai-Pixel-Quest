@@ -22,125 +22,39 @@ import Kamen_Rider_Craft_4TH.mobs.entity_tako_can;
 import Kamen_Rider_Craft_4TH.mobs.entity_tora_can;
 import Kamen_Rider_Craft_4TH.mobs.entity_tricera_can;
 import Kamen_Rider_Craft_4TH.mobs.entity_unagi_can;
-import Kamen_Rider_Craft_4TH.mobs.Boss.EntityChronos;
-import Kamen_Rider_Craft_4TH.mobs.Boss.EntityTerror;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Ancient_OOO;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Arc_zero;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_BloodStalk;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Build_RT;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Calibur;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Duke;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Durendal;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_EngineBros;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Eternal;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Evil;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Falchion;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Ginga;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_HellBros;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Idunn_Shin;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Kaiser;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_KaiserReverse;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Marika;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_NightRogue;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Para_dx;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Red_Poppy;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_RemoconBros;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Sabela;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Sigurd;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Solomon;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Tyrant;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_White_Woz;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_ZangetsuShin;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_ankh_complete;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_ankh_lost;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_another_build;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_bikaiser;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_clay_doll_dopant;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_commander_dopant;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_core;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_daiouika_deadman;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_demushu;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_dodomagia;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_evolt;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_evolt_2;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_evolt_3;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_gamel;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_gaoh;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_genm;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_grease;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_horobi;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_ikazuchi;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_jin;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_kazari;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_kurokage_shin;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_legeiel;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_legeiel_forbidden;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_lord_baron;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_magia;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_mezool;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_muchiri;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_naki;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_nazca_dopant;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_orga;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_poseidon;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_power_up_core;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_red_nazca_dopant;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_redyue;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_roshuo;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_shocker_riders;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_smilodon_dopant;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_storious;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_super_gingaoh;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_taboo_dopant;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_uva;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_weather_dopant;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_zooous;
-import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_zooous_predator;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_abaddon_high;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_aranbura_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_blood;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_charlie_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_charybdis_hercules;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_dark_graphite_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_desast;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_dire_wolf_sold_magia;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_eden;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_gatton_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_graphite_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_guren_graphite_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_kaiden_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_killbus;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_lovelica_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_metal_build;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_motors_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_raider;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_revol_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_salty_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_serval_tiger_sold_magia;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_storious_rider;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_vernier_bugster;
-import Kamen_Rider_Craft_4TH.mobs.Boss.entity_zaia;
+import Kamen_Rider_Craft_4TH.mobs.Boss.*;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityBugsterVirus;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityByakkoInves;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityElementaryInvesBlue;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityElementaryInvesGreen;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityElementaryInvesRed;
+import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityGMRider;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityHekijaInves;
+import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityJyamatoRider;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityKurokageTroopers;
+import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityMageCaptain;
+import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityMageFootSoldiers;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityMasquerade;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityNebulaBugsterVirus;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityRidePlayer;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityRiotrooper;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.EntityShimi;
+import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_anguis_masculus;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_foundation_x_masquerade;
+import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_ghouls;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_giff_junior;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_giger;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_hard_guardian;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_knight_soldier;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_magiadodo_chick;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_needle_smash;
+import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_neotrooper;
+import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_pantheras_luteus;
+import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_pawn_jyamato;
+import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_shadow_trooper;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_trilobite_magia;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_yummy;
+import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_zectrooper;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entity_zu_gumun_ba;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entitydestron_combatman;
 import Kamen_Rider_Craft_4TH.mobs.Henchmen.Entitygamma_commando;
@@ -290,19 +204,40 @@ public class mobsCore {
 
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":ZuGumunBaMob"), Entity_zu_gumun_ba.class, "ZuGumunBaMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xf8ba57, 0xaf8e59);
-		EntityRegistry.addSpawn(Entity_zu_gumun_ba.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(2),Biome.getBiome(3),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(6),Biome.getBiome(7),Biome.getBiome(10),Biome.getBiome(11),Biome.getBiome(12),Biome.getBiome(14),Biome.getBiome(15),Biome.getBiome(16),Biome.getBiome(17),Biome.getBiome(18),Biome.getBiome(19),Biome.getBiome(20),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(24),Biome.getBiome(25),Biome.getBiome(26),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(35),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(129),Biome.getBiome(130),Biome.getBiome(131),Biome.getBiome(132),Biome.getBiome(133),Biome.getBiome(134),Biome.getBiome(140),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
+		EntityRegistry.addSpawn(Entity_zu_gumun_ba.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(27),Biome.getBiome(34));
 
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":PantherasLuteusMob"), Entity_pantheras_luteus.class, "PantherasLuteusMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xffbe2e, 0xff3333);
+		EntityRegistry.addSpawn(Entity_zu_gumun_ba.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(16),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39));
+
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":ElOfTheWaterMob"),Entity_el_of_the_water.class, "ElOfTheWaterMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x27262d, 0xd1cfda);
+		
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":AnguisMasculusMob"),Entity_anguis_masculus.class, "AnguisMasculusMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x445a94, 0xceb42b);
+		EntityRegistry.addSpawn(Entity_anguis_masculus.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
+
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":AnotherAgitoMob"),Entity_AnotherAgito.class, "AnotherAgitoMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x273d31, 0x131313);
+		
+		
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":RiotrooperMob"),EntityRiotrooper.class, "RiotrooperMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xf1c192, 0x854303);
-		EntityRegistry.addSpawn(EntityRiotrooper.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(8));
+		EntityRegistry.addSpawn(EntityRiotrooper.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":OrgaMob"), Entity_orga.class, "OrgaMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x000000,0xc3ae4c);
 
-
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":GaohMob"), Entity_gaoh.class, "GaohMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x1d1d1d,0xdea302);
+
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":ZECTrooperMob"),Entity_zectrooper.class, "ZECTrooperMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x1d1d1d, 0x1d1d1d);
+		EntityRegistry.addSpawn(Entity_zectrooper.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
+
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":Shadow_TrooperMob"),Entity_shadow_trooper.class, "Shadow_TrooperMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x1d1d1d, 0x1d1d1d);
+		EntityRegistry.addSpawn(Entity_shadow_trooper.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":NeoTrooperMob"),Entity_neotrooper.class, "NeoTrooperMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x1d1d1d, 0x1d1d1d);		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":CaucasusMob"),Entity_Caucasus.class, "CaucasusMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x999999,0xf4c600);		
+		
 		
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":new_mole_imagin_sandMob"), Entitynew_mole_imagin_sand.class, "new_mole_imagin_sandMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xb7b7b1, 0x92908b);
-		EntityRegistry.addSpawn(Entitynew_mole_imagin_sand.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(2),Biome.getBiome(3),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(6),Biome.getBiome(7),Biome.getBiome(10),Biome.getBiome(11),Biome.getBiome(12),Biome.getBiome(14),Biome.getBiome(15),Biome.getBiome(16),Biome.getBiome(17),Biome.getBiome(18),Biome.getBiome(19),Biome.getBiome(20),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(24),Biome.getBiome(25),Biome.getBiome(26),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(35),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(129),Biome.getBiome(130),Biome.getBiome(131),Biome.getBiome(132),Biome.getBiome(133),Biome.getBiome(134),Biome.getBiome(140),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
-		
+		EntityRegistry.addSpawn(Entitynew_mole_imagin_sand.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(2),Biome.getBiome(32),Biome.getBiome(33));
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":new_mole_imaginMob"), Entitynew_mole_imagin.class, "new_mole_imaginMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xb7b7b1, 0x92908b);
 		
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":MomotarosMob"), EntityMomotaros.class, "MomotarosMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x790000,0xef0000);
@@ -311,16 +246,16 @@ public class mobsCore {
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":RyutarosMob"), EntityRyutaros.class, "RyutarosMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x3b114e,0x2a0b38);
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":MasqueradeMob"), EntityMasquerade.class, "MasqueradeMob", newMobID(), TokuCraft_core.instance, 80, 3, false,000000, 0xFFFFFF);
-		EntityRegistry.addSpawn(EntityMasquerade.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(2),Biome.getBiome(3),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(6),Biome.getBiome(7),Biome.getBiome(10),Biome.getBiome(11),Biome.getBiome(12),Biome.getBiome(14),Biome.getBiome(15),Biome.getBiome(16),Biome.getBiome(17),Biome.getBiome(18),Biome.getBiome(19),Biome.getBiome(20),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(24),Biome.getBiome(25),Biome.getBiome(26),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(35),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(129),Biome.getBiome(130),Biome.getBiome(131),Biome.getBiome(132),Biome.getBiome(133),Biome.getBiome(134),Biome.getBiome(140),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
+		EntityRegistry.addSpawn(EntityMasquerade.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(29),Biome.getBiome(28));
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":FoundationXMasqueradeMob"), Entity_foundation_x_masquerade.class, "FoundationXMasqueradeMob", newMobID(), TokuCraft_core.instance, 80, 3, false,000000, 0xFFFFFF);
-		EntityRegistry.addSpawn(Entity_foundation_x_masquerade.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(8));
+		EntityRegistry.addSpawn(Entity_foundation_x_masquerade.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":EternalMob"), Entity_Eternal.class, "EternalMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xffe892, 0xFFFFFF);
 
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":yummyMob"), Entity_yummy.class, "yummyMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x9f9789,0x161616);
-		EntityRegistry.addSpawn(Entity_yummy.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(2),Biome.getBiome(3),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(6),Biome.getBiome(7),Biome.getBiome(10),Biome.getBiome(11),Biome.getBiome(12),Biome.getBiome(14),Biome.getBiome(15),Biome.getBiome(16),Biome.getBiome(17),Biome.getBiome(18),Biome.getBiome(19),Biome.getBiome(20),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(24),Biome.getBiome(25),Biome.getBiome(26),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(35),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(129),Biome.getBiome(130),Biome.getBiome(131),Biome.getBiome(132),Biome.getBiome(133),Biome.getBiome(134),Biome.getBiome(140),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
+		EntityRegistry.addSpawn(Entity_yummy.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(3),Biome.getBiome(2),Biome.getBiome(17));
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":knight_soldierMob"), Entity_knight_soldier.class, "knight_soldierMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xca570f,0x919191);
 
@@ -341,6 +276,7 @@ public class mobsCore {
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":poseidonMob"), Entity_poseidon.class, "poseidonMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xff0000, 0x08dfdd);
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":Ancient_OOOMob"), Entity_Ancient_OOO.class, "Ancient_OOOMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xe59701, 0x1f1f1f);
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":GodaMob"), Entity_Goda.class, "GodaMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x4e00ac, 0x1f1f1f);
 
 		
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":TakaCanMob"), entity_taka_can.class, "TakaCanMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xb8b8b8, 0xbd0000);
@@ -353,26 +289,45 @@ public class mobsCore {
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":PteraCanMob"), entity_ptera_can.class, "PteraCanMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xb8b8b8, 0xaa00cf);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":TriceraCanMob"), entity_tricera_can.class, "TriceraCanMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xb8b8b8, 0x246b4e);
 
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":ghoulsMob"), Entity_ghouls.class, "ghoulsMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x9f9789,0x161616);
+		EntityRegistry.addSpawn(Entity_ghouls.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(4),Biome.getBiome(6),Biome.getBiome(27));
+
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":medusaPhantomMob"), entity_medusa_phantom.class, "medusaPhantomMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xe28ce2,0x2da623);
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":phoenixPhantomMob"), entity_phoenix_phantom.class, "phoenixPhantomMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xb00000,0xeaa413);
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":gremlinPhantomMob"), entity_gremlin_phantom.class, "gremlinPhantomMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xb20834c,0x222222);
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":wisemanMob"), Entity_wiseman.class, "wisemanMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xffffff,0xd79e0b);
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":MageFootSoldiersMob"), EntityMageFootSoldiers.class, "MageFootSoldiersMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xbb9548,0x050505);
+		EntityRegistry.addSpawn(EntityMageFootSoldiers.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":MageCaptainMob"), EntityMageCaptain.class, "MageCaptainMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xbb9548,0x050505);
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":SorcererMob"), EntitySorcerer.class, "SorcererMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x050505,0xebc256);
+		
+		
 		EntityRegistry.registerModEntity(new ResourceLocation( Refercence.MODID+":BugsterVirusMob"),EntityBugsterVirus.class, "BugsterVirusMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xe88936,000000);
-		EntityRegistry.addSpawn(EntityBugsterVirus.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(2),Biome.getBiome(3),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(6),Biome.getBiome(7),Biome.getBiome(10),Biome.getBiome(11),Biome.getBiome(12),Biome.getBiome(14),Biome.getBiome(15),Biome.getBiome(16),Biome.getBiome(17),Biome.getBiome(18),Biome.getBiome(19),Biome.getBiome(20),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(24),Biome.getBiome(25),Biome.getBiome(26),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(35),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(129),Biome.getBiome(130),Biome.getBiome(131),Biome.getBiome(132),Biome.getBiome(133),Biome.getBiome(134),Biome.getBiome(140),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
-	
+		//EntityRegistry.addSpawn(EntityBugsterVirus.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(2),Biome.getBiome(3),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(6),Biome.getBiome(7),Biome.getBiome(10),Biome.getBiome(11),Biome.getBiome(12),Biome.getBiome(14),Biome.getBiome(15),Biome.getBiome(16),Biome.getBiome(17),Biome.getBiome(18),Biome.getBiome(19),Biome.getBiome(20),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(24),Biome.getBiome(25),Biome.getBiome(26),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(35),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(129),Biome.getBiome(130),Biome.getBiome(131),Biome.getBiome(132),Biome.getBiome(133),Biome.getBiome(134),Biome.getBiome(140),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
+
 		EntityRegistry.registerModEntity(new ResourceLocation( Refercence.MODID+":nebula_BugsterVirusMob"),EntityNebulaBugsterVirus.class, "nebula_BugsterVirusMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x4DD1E4,0xE9E9E9);
-		EntityRegistry.addSpawn(EntityNebulaBugsterVirus.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(8));
-	
-		
+		EntityRegistry.addSpawn(EntityNebulaBugsterVirus.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
+
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":GammaCommandoMob"),Entitygamma_commando.class, "GammaCommandoMob", newMobID(), TokuCraft_core.instance, 80, 3, false,000000, 0x6f6f6f);
-		EntityRegistry.addSpawn(Entitygamma_commando.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(2),Biome.getBiome(3),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(6),Biome.getBiome(7),Biome.getBiome(10),Biome.getBiome(11),Biome.getBiome(12),Biome.getBiome(14),Biome.getBiome(15),Biome.getBiome(16),Biome.getBiome(17),Biome.getBiome(18),Biome.getBiome(19),Biome.getBiome(20),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(24),Biome.getBiome(25),Biome.getBiome(26),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(35),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(129),Biome.getBiome(130),Biome.getBiome(131),Biome.getBiome(132),Biome.getBiome(133),Biome.getBiome(134),Biome.getBiome(140),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
-	
+		EntityRegistry.addSpawn(Entitygamma_commando.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(25),Biome.getBiome(26));
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":PoppyMob"),EntityPoppy.class, "PoppyMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xfcfb81,0xff84ac);
-		
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":RidePlayerMob"),EntityRidePlayer.class, "RidePlayerMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xf1c192, 0x854303);
-		EntityRegistry.addSpawn(EntityRidePlayer.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(8));
-		
+		EntityRegistry.addSpawn(EntityRidePlayer.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":genmMob"),Entity_genm.class, "genmMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x262626, 0x9a03d9);
-		
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":Para_dxMob"),Entity_Para_dx.class, "Para_dxMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xff0000, 0x2a00ff);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":Red_PoppyMob"),Entity_Red_Poppy.class, "Red_PoppyMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xfcfb81,0xff84ac);
-		
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":ChronosMob"),EntityChronos.class, "ChronosMob", newMobID(), TokuCraft_core.instance, 80, 3, false,000000, 0x44df00);
 
 		EntityRegistry.registerModEntity(new ResourceLocation( Refercence.MODID+":MightyBugsterMob"),entity_mighty_bugster.class, "MightyBugsterMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xe88936,0xd3d3d3);
@@ -388,7 +343,7 @@ public class mobsCore {
 		EntityRegistry.registerModEntity(new ResourceLocation( Refercence.MODID+":KaidenBugsterMob"),entity_kaiden_bugster.class, "KaidenBugsterMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x8b8b8b,0x810000);
 		EntityRegistry.registerModEntity(new ResourceLocation( Refercence.MODID+":CharlieBugsterMob"),entity_charlie_bugster.class, "CharlieBugsterMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x00b9f5,0xbc9600);
 		EntityRegistry.registerModEntity(new ResourceLocation( Refercence.MODID+":LovelyBugsterMob"),entity_lovely_bugster.class, "LovelyBugsterMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x1d1d1d,0xe28736);
-		EntityRegistry.addSpawn(entity_lovely_bugster.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(8));
+		EntityRegistry.addSpawn(entity_lovely_bugster.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
 		EntityRegistry.registerModEntity(new ResourceLocation( Refercence.MODID+":LovelicaBugsterMob"),entity_lovelica_bugster.class, "LovelicaBugsterMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xea6dbc,0x3c9d6e);
 		
 		EntityRegistry.registerModEntity(new ResourceLocation( Refercence.MODID+":GraphiteBugsterMob"),entity_graphite_bugster.class, "GraphiteBugsterMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x007108,0x002a03);
@@ -398,25 +353,25 @@ public class mobsCore {
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":AnotherBuildMob"),Entity_another_build.class, "AnotherBuildMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x610101,0x0808d1);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":WhiteWozMob"),Entity_White_Woz.class, "WhiteWozMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xdadada, 0x7ffc40);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":GingaMob"),Entity_Ginga.class, "GingaMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xdadada, 0x7600c6);
-		
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":EvoltMob"),Entity_evolt.class, "EvoltMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xB90025,0xE6BFDF);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":EvoltMob2"),Entity_evolt_2.class, "EvoltMob2", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xB90025,0xE6BFDF);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":EvoltMob3"),Entity_evolt_3.class, "EvoltMob3", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xB90025,0xE6BFDF);
-		
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":GuardianMob"),Entityguardian.class, "GuardianMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x5C5C5C,0x466382);
-		EntityRegistry.addSpawn(Entityguardian.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(6),Biome.getBiome(7),Biome.getBiome(11),Biome.getBiome(129),Biome.getBiome(132),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(14),Biome.getBiome(15),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(27),Biome.getBiome(28));
-		
+		EntityRegistry.addSpawn(Entityguardian.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(1));
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":HokutoGuardianMob"),Entityguardian_hokuto.class, "HokutoGuardianMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x5C5C5C,0x466382);
-		EntityRegistry.addSpawn(Entityguardian_hokuto.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(3),Biome.getBiome(5),Biome.getBiome(11),Biome.getBiome(12),Biome.getBiome(13),Biome.getBiome(140),Biome.getBiome(19),Biome.getBiome(26),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(133),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162));
-		
+		EntityRegistry.addSpawn(Entityguardian_hokuto.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(3));
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":SeitoGuardianMob"),Entityguardian_seito.class, "SeitoGuardianMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x5C5C5C,0x466382);
-		EntityRegistry.addSpawn(Entityguardian_seito.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(2),Biome.getBiome(17),Biome.getBiome(35),Biome.getBiome(37),Biome.getBiome(130),Biome.getBiome(16),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
-		
+		EntityRegistry.addSpawn(Entityguardian_seito.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(2),Biome.getBiome(34));
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":HardGuardianMob"),Entity_hard_guardian.class, "HardGuardianMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x195734,0xEACA00);
-		EntityRegistry.addSpawn(Entity_hard_guardian.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(8));
+		EntityRegistry.addSpawn(Entity_hard_guardian.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":DownfallGuardianMob"),entity_guardian_downfall.class, "DownfallGuardianMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x5C5C5C,0x947d21);
-		EntityRegistry.addSpawn(entity_guardian_downfall.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(8));
+		EntityRegistry.addSpawn(entity_guardian_downfall.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":Model_lazer_bike"),EntityLazer.class, "LazerMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xFDE800,0xEE3F87);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":Model_exaid_bike"),EntityExaidBike.class, "exaidBikeMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xFDE800,0xEE3F87);
@@ -491,8 +446,6 @@ public class mobsCore {
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":TyrantMob"),Entity_Tyrant.class, "TyrantMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x0d0d0d, 0xc82d2d);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":IdunnShinMob"),Entity_Idunn_Shin.class, "IdunnShinMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xdc0d0d, 0xdcb40d);
 
-
-
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":roshuoMob"),Entity_roshuo.class, "roshuoMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xefefef, 0x97c3c5);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":redyueMob"),Entity_redyue.class, "redyueMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xb69d02, 0x277a44);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":demushuMob"),Entity_demushu.class, "demushuMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xb50000, 0x790000);
@@ -500,16 +453,16 @@ public class mobsCore {
 		
 	
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":TrilobiteMagiaMob"),Entity_trilobite_magia.class, "TrilobiteMagiaMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x060606,0xa2a2a2);
-		EntityRegistry.addSpawn(Entity_trilobite_magia.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(6),Biome.getBiome(7),Biome.getBiome(11),Biome.getBiome(129),Biome.getBiome(132),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(14),Biome.getBiome(15),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(27),Biome.getBiome(28));
-		
+		EntityRegistry.addSpawn(Entity_trilobite_magia.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(1));
+
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":dodoChickMob"),Entity_magiadodo_chick.class, "dodoChickMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x7d0b0a,0x242424);
-		EntityRegistry.addSpawn(Entity_magiadodo_chick.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(8));
+		EntityRegistry.addSpawn(Entity_magiadodo_chick.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":BattleRaiderMob"),entity_battle_raider.class, "BattleRaiderMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x1d1d1d,0x000000);
-		EntityRegistry.addSpawn(entity_battle_raider.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(8));
+		EntityRegistry.addSpawn(entity_battle_raider.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":AbaddonMob"),entity_abaddon_low.class, "AbaddonMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x5d6837,0xc1b810);
-		EntityRegistry.addSpawn(entity_abaddon_low.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(8));
+		EntityRegistry.addSpawn(entity_abaddon_low.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":MagiaMob"),Entity_magia.class, "MagiaMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x060606,0xa2a2a2);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":horobiMob"),Entity_horobi.class, "horobiMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x8a00c3,0x383838);
@@ -534,8 +487,8 @@ public class mobsCore {
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":IsMob"),EntityIS.class, "IsMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xf7f7f7,0x20cc89);
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":ShimiMob"), EntityShimi.class, "ShimiMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x282828, 0xe2e2e2);
-		EntityRegistry.addSpawn(EntityShimi.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(2),Biome.getBiome(3),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(6),Biome.getBiome(7),Biome.getBiome(10),Biome.getBiome(11),Biome.getBiome(12),Biome.getBiome(14),Biome.getBiome(15),Biome.getBiome(16),Biome.getBiome(17),Biome.getBiome(18),Biome.getBiome(19),Biome.getBiome(20),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(24),Biome.getBiome(25),Biome.getBiome(26),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(35),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(129),Biome.getBiome(130),Biome.getBiome(131),Biome.getBiome(132),Biome.getBiome(133),Biome.getBiome(134),Biome.getBiome(140),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
-
+		EntityRegistry.addSpawn(EntityShimi.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(5),Biome.getBiome(30),Biome.getBiome(35),Biome.getBiome(36));
+				
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":CaliburMob"),Entity_Calibur.class, "CaliburMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x060606,0xa2a2a2);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":FalchionMob"),Entity_Falchion.class, "FalchionMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x0d0d0d,0xff5503);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":SabelaMob"),Entity_Sabela.class, "SabelaMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x8c1f1f,0xe2ab27);
@@ -554,16 +507,24 @@ public class mobsCore {
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":DesastMob"),entity_desast.class, "DesastMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x131313,0xb40000);
 
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":ChaybdisMob"),entity_charybdis.class, "ChaybdisMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xeaeaea,0xd9a900);
-		EntityRegistry.addSpawn(entity_charybdis.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(8));
+		EntityRegistry.addSpawn(entity_charybdis.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":ChaybdisHerculesMob"),entity_charybdis_hercules.class, "ChaybdisHerculesMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xeaeaea,0xb43939);
 	
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":ViceMob"),EntityVice.class, "ViceMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0xeaeaea,0xd9a900);
 		
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":GiffJuniorMob"), Entity_giff_junior.class, "giffJuniorMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x282828, 0xe2e2e2);
-		EntityRegistry.addSpawn(Entity_giff_junior.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(2),Biome.getBiome(3),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(6),Biome.getBiome(7),Biome.getBiome(10),Biome.getBiome(11),Biome.getBiome(12),Biome.getBiome(14),Biome.getBiome(15),Biome.getBiome(16),Biome.getBiome(17),Biome.getBiome(18),Biome.getBiome(19),Biome.getBiome(20),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(24),Biome.getBiome(25),Biome.getBiome(26),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(35),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(129),Biome.getBiome(130),Biome.getBiome(131),Biome.getBiome(132),Biome.getBiome(133),Biome.getBiome(134),Biome.getBiome(140),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
-
+		EntityRegistry.addSpawn(Entity_giff_junior.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(3),Biome.getBiome(1),Biome.getBiome(30),Biome.getBiome(31));
+		
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":EvilMob"),Entity_Evil.class, "EvilMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x03c8a9,0xa7a7a7);
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":DaiouikaDeadmanMob"),Entity_daiouika_deadman.class, "DaiouikaDeadmanMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x00a8b8,0xd8d8d8);
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":PawnJyamatoMob"), Entity_pawn_jyamato.class, "PawnJyamatoMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x282828, 0xe2e2e2);
+		EntityRegistry.addSpawn(Entity_pawn_jyamato.class, 15, 1, 4 ,EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(4),Biome.getBiome(5),Biome.getBiome(18));
+
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":JyamatoRiderMob"),EntityJyamatoRider.class, "JyamatoRiderMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x857559,0x25fa00);
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":GMRiderMob"),EntityGMRider.class, "GMRiderMob", newMobID(), TokuCraft_core.instance, 80, 3, false,0x664ecb,0xff0019);
+		EntityRegistry.addSpawn(EntityGMRider.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(8));
 		
 	}
 

@@ -1,5 +1,6 @@
 package Kamen_Rider_Craft_4TH.blocks;
 
+import Kamen_Rider_Craft_4TH.PqRiderItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.TokuCraft_core;
 import Kamen_Rider_Craft_4TH.util.IHasModel;
@@ -89,9 +90,9 @@ public class ore_block extends Block implements IHasModel {
 			if (rand < 50) return RiderItems.drake_zecter;
 			if (rand < 60) return RiderItems.sasword_zecter;
 			if (rand < 62) return RiderItems.hyper_zecter;
-			if (rand < 63) return RiderItems.perfectthebee_zecter;
-			if (rand < 64) return RiderItems.perfectsasword_zecter;
-			if (rand < 65) return RiderItems.perfectdrake_zecter;
+			if (rand < 63) return RiderItems.perfect_thebee_zecter;
+			if (rand < 64) return RiderItems.perfect_sasword_zecter;
+			if (rand < 65) return RiderItems.perfect_drake_zecter;
 			return CRYSTAL;
 		}
 		
@@ -281,42 +282,17 @@ public class ore_block extends Block implements IHasModel {
 
 
 		if (CRYSTAL == RiderItems.wizardgem){
-			int rand = generator.nextInt(200);
+			int rand = generator.nextInt(100);
 
-			if (rand < 10) return RiderItems.flame_ring;
-			if (rand < 20) return RiderItems.water_ring;
-			if (rand < 30) return RiderItems.hurricane_ring;
-			if (rand < 40) return RiderItems.land_ring;
-			if (rand < 45) return RiderItems.flame_ring_dragon;
-			if (rand < 50) return RiderItems.water_ring_dragon;
-			if (rand < 55) return RiderItems.hurricane_ring_dragon;
-			if (rand < 60) return RiderItems.land_ring_dragon;
-			if (rand < 62) return RiderItems.infinity_ring;
-			if (rand < 64) return RiderItems.special_rush_ring;
-			if (rand < 65) return RiderItems.finish_strike_ring;
-			if (rand < 66) return RiderItems.hope_ring;
+			if (rand < 10) return RiderItems.wizardgem_red;
+			if (rand < 20) return RiderItems.wizardgem_blue;
+			if (rand < 30) return RiderItems.wizardgem_green;
+			if (rand < 40) return RiderItems.wizardgem_yellow;
+			if (rand < 42) return RiderItems.wizardgem_violet;
 			return CRYSTAL;
 		}
 
-		if (CRYSTAL == RiderItems.wizardgem2){
-			int rand = generator.nextInt(200);
-
-			if (rand < 30) return RiderItems.beast_ring;
-			if (rand < 40) return RiderItems.dolphi_ring;
-			if (rand < 50) return RiderItems.falco_ring;
-			if (rand < 60) return RiderItems.chameleo_ring;
-			if (rand < 70) return RiderItems.buffa_ring;
-			if (rand < 75) return RiderItems.hyper_ring;
-			if (rand < 80) return RiderItems.mage_b_ring;
-			if (rand < 85) return RiderItems.mage_g_ring;
-			if (rand < 90) return RiderItems.mage_o_ring;
-			if (rand < 92) return RiderItems.sorcerer_ring;
-			if (rand < 94) return RiderItems.wiseman_ring;
-			if (rand < 95) return RiderItems.black_ring;
-			if (rand < 97) return RiderItems.dark_ring;
-			return CRYSTAL;
-		}
-
+		
 
 		if (CRYSTAL == RiderItems.ghost_icons) {
 			int rand = generator.nextInt(300);
@@ -382,93 +358,36 @@ public class ore_block extends Block implements IHasModel {
 			int rand = generator.nextInt(700);
 
 			if (rand < 10) return RiderItems.cellmedal;
-			if (rand < 20) return RiderItems.foundation_tora;
-			if (rand < 30) return RiderItems.foundation_batta;
-			if (rand < 35) return RiderItems.foundation_cheetah;
-			if (rand < 40) return RiderItems.foundation_kamakiri;
-			if (rand < 44) return RiderItems.foundation_lion;
-			if (rand < 48) return RiderItems.foundation_kuwagata;
-			if (rand < 53) return RiderItems.foundation_sai;
-			if (rand < 55) return RiderItems.foundation_gorilla;
-			if (rand < 59) return RiderItems.foundation_zou;
-			if (rand < 61) return RiderItems.foundation_condor;
-			if (rand < 63) return RiderItems.foundation_kujaku;
-			if (rand < 65) return RiderItems.foundation_shachi;
-			if (rand < 67) return RiderItems.foundation_unagi;
-			if (rand < 69) return RiderItems.foundation_tako;
-			if (rand < 70) return RiderItems.foundation_ptera;
-			if (rand < 71) return RiderItems.foundation_tricera;
-			if (rand < 72) return RiderItems.foundation_tyranno;
-			if (rand < 109) return RiderItems.foundation_shika;
-			if (rand < 114) return RiderItems.foundation_gazelle;
-			if (rand < 119) return RiderItems.foundation_ushi;
-			if (rand < 124) return RiderItems.foundation_seiuchi;
-			if (rand < 129) return RiderItems.foundation_shirokuma;
-			if (rand < 134) return RiderItems.foundation_penguin;
-			if (rand < 139) return RiderItems.foundation_mukade;
-			if (rand < 144) return RiderItems.foundation_hachi;
-			if (rand < 149) return RiderItems.foundation_ari;
-			if (rand < 154) return RiderItems.foundation_ebi;
-			if (rand < 159) return RiderItems.foundation_kani;
-			if (rand < 164) return RiderItems.foundation_sasori;
-			if (rand < 169) return RiderItems.foundation_yadokari;
-			if (rand < 102) return RiderItems.foundation_love;
-			if (rand < 103) return RiderItems.foundation_love2;
-			if (rand < 104) return RiderItems.foundation_love3;
-			if (rand < 80) return RiderItems.foundation_cobra;
-			if (rand < 90) return RiderItems.foundation_kame;
-			if (rand < 100) return RiderItems.foundation_wani;
-			if (rand < 175) return RiderItems.foundation_panda;
-			if (rand < 180) return RiderItems.foundation_kangaroo;
-			if (rand < 208) return RiderItems.foundation_imagin;
-			if (rand < 221) return RiderItems.foundation_shocker;
-			if (rand < 234) return RiderItems.foundation_same;
-			if (rand < 247) return RiderItems.foundation_kujira;
-			if (rand < 250) return RiderItems.foundation_ookamiuo;
-			if (rand <260) return RiderItems.black_taka;
-			if (rand < 270) return RiderItems.black_tora;
-			if (rand < 280) return RiderItems.black_batta;
-			if (rand < 295) return RiderItems.black_cheetah;
-			if (rand < 300) return RiderItems.black_kamakiri;
-			if (rand < 310) return RiderItems.black_lion;
-			if (rand < 320) return RiderItems.black_kuwagata;
-			if (rand < 330) return RiderItems.black_sai;
-			if (rand < 340) return RiderItems.black_gorilla;
-			if (rand < 350) return RiderItems.black_zou;
-			if (rand < 360) return RiderItems.black_condor;
-			if (rand < 370) return RiderItems.black_kujaku;
-			if (rand < 380) return RiderItems.black_shachi;
-			if (rand < 390) return RiderItems.black_unagi;
-			if (rand < 400) return RiderItems.black_tako;
-			if (rand < 410) return RiderItems.black_ptera;
-			if (rand < 420) return RiderItems.black_tricera;
-			if (rand < 430) return RiderItems.black_tyranno;
-			if (rand < 440) return RiderItems.black_shika;
-			if (rand < 450) return RiderItems.black_gazelle;
-			if (rand < 460) return RiderItems.black_ushi;
-			if (rand < 470) return RiderItems.black_seiuchi;
-			if (rand < 480) return RiderItems.black_shirokuma;
-			if (rand < 490) return RiderItems.black_penguin;
-			if (rand < 500) return RiderItems.black_mukade;
-			if (rand < 510) return RiderItems.black_hachi;
-			if (rand < 520) return RiderItems.black_ari;
-			if (rand < 530) return RiderItems.black_ebi;
-			if (rand < 540) return RiderItems.black_kani;
-			if (rand < 550) return RiderItems.black_sasori;
-			if (rand < 560) return RiderItems.black_yadokari;
-			if (rand < 570) return RiderItems.black_love;
-			if (rand < 580) return RiderItems.black_love2;
-			if (rand < 590) return RiderItems.black_love3;
-			if (rand < 600) return RiderItems.black_cobra;
-			if (rand < 610) return RiderItems.black_kame;
-			if (rand < 620) return RiderItems.black_wani;
-			if (rand < 630) return RiderItems.black_panda;
-			if (rand < 640) return RiderItems.black_kangaroo;
-			if (rand < 660) return RiderItems.black_imagin;
-			if (rand < 666) return RiderItems.black_shocker;
-			if (rand < 670) return RiderItems.black_same;
-			if (rand < 680) return RiderItems.black_kujira;
-			if (rand < 690) return RiderItems.black_ookamiuo;
+	//		if (rand < 70) return PqRiderItems.foundation_ptera;
+	//		if (rand < 71) return PqRiderItems.foundation_tricera;
+	//		if (rand < 72) return PqRiderItems.foundation_tyranno;
+	//		if (rand < 109) return PqRiderItems.foundation_shika;
+	//		if (rand < 114) return PqRiderItems.foundation_gazelle;
+	//		if (rand < 119) return PqRiderItems.foundation_ushi;
+	//		if (rand < 124) return PqRiderItems.foundation_seiuchi;
+	//		if (rand < 129) return PqRiderItems.foundation_shirokuma;
+	//		if (rand < 134) return PqRiderItems.foundation_penguin;
+	//		if (rand < 139) return PqRiderItems.foundation_mukade;
+	//		if (rand < 144) return PqRiderItems.foundation_hachi;
+	//		if (rand < 149) return PqRiderItems.foundation_ari;
+	//		if (rand < 154) return PqRiderItems.foundation_ebi;
+	//		if (rand < 159) return PqRiderItems.foundation_kani;
+	//		if (rand < 164) return PqRiderItems.foundation_sasori;
+	//		if (rand < 169) return PqRiderItems.foundation_yadokari;
+			if (rand < 102) return PqRiderItems.foundation_love;
+			if (rand < 103) return PqRiderItems.foundation_love2;
+			if (rand < 104) return PqRiderItems.foundation_love3;
+	//		if (rand < 80) return PqRiderItems.foundation_cobra;
+	//		if (rand < 90) return PqRiderItems.foundation_kame;
+	//		if (rand < 100) return PqRiderItems.foundation_wani;
+	//		if (rand < 175) return PqRiderItems.foundation_panda;
+	//		if (rand < 180) return PqRiderItems.foundation_kangaroo;
+	//		if (rand < 208) return PqRiderItems.foundation_imagin;
+	//		if (rand < 221) return PqRiderItems.foundation_shocker;
+	//		if (rand < 234) return PqRiderItems.foundation_same;
+	//		if (rand < 247) return PqRiderItems.foundation_kujira;
+	//		if (rand < 250) return PqRiderItems.foundation_ookamiuo;
+	
 			return CRYSTAL;
 		}
 

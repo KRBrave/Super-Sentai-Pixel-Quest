@@ -54,7 +54,8 @@ public class item_drivedriver extends item_rider_driver
 	public static final String[] CoreName2= new String[] {"mach","mach_dead_heat","chaser","mach_chaser","mach_dead_heat_drive","super_dead_heat","chaser_mach","super_deadheat_mach"};
 
 	public static final String[] CoreName3= new String[] {"mach_dead_heat_drive","super_dead_heat"};
-
+	
+	public static final String[] CoreName4= new String[] {"mashin_chaser","chou_mashin_chaser"};
 
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
@@ -66,7 +67,7 @@ public class item_drivedriver extends item_rider_driver
 
 	public item_drivedriver (String name,ArmorMaterial par2EnumArmorMaterial,String rider)
 	{
-		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.drivehead, RiderItems.drivetroso, RiderItems.drivelegs);
+		super(name,par2EnumArmorMaterial,4,rider,(Item_form_change) RiderItems.keyfuestle,RiderItems.drivehead, RiderItems.drivetroso, RiderItems.drivelegs, RiderItems.proto_speedshift);
 	}
 
 	@Override
@@ -162,6 +163,9 @@ public class item_drivedriver extends item_rider_driver
 
 	}else  if (belt==RiderItems.drivedrivergold){
 		return itemstack.hasTagCompound() ? tireName[itemstack.getTagCompound().getInteger("core2")] : "gold";
+
+	}else  if (belt==RiderItems.drivedriverbronze){
+		return itemstack.hasTagCompound() ? tireName[itemstack.getTagCompound().getInteger("core2")] : "bronze";
 
 	}else if (belt==RiderItems.drivedriverbrain){
 		return itemstack.hasTagCompound() ? tireName[itemstack.getTagCompound().getInteger("core2")] : "brain";
@@ -345,24 +349,36 @@ public class item_drivedriver extends item_rider_driver
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 1,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 5, 2,true,false));
+										
+										if (this.get_lock(armor)=="kourin_magarl"){
+
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
+
+										}else if (this.get_lock(armor)=="kourin_kaksarn"){
+
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 2,true,false));
+
+										}else if (this.get_lock(armor)=="kourin_tomarle"){
+
+											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 5, 10,true,false));
+
+										}
 									}
-									else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.proto_drivedriver){
-										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 0,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 0,true,false));
-									}
-									else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.proto_drivedriver){
-										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 0,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 0,true,false));
-									}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.drivedriver_dark){
+									
+									else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.drivedriver_dark){
 
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false));
 									}
-									else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.drivedriver){
+								
+									else {
 
-
-										if (this.get_core(armor)==0){
+										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.proto_drivedriver){
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 0,true,false));
+										}
+										else if (this.get_core(armor)==0){
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 5, 1,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 5, 0,true,false));
 
@@ -626,26 +642,23 @@ public  String getTexture(Entity entity, int num,String ext)
 						return Refercence.MODID+":textures/armor/"+CoreName2[item_drivedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
 					}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.mach_driver_honoh_drive){
 						return Refercence.MODID+":textures/armor/"+CoreName3[item_drivedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.break_gunner_2){
+						return Refercence.MODID+":textures/armor/"+CoreName4[item_drivedriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
 					}else {
 
 						return Refercence.MODID+":textures/armor/"+rider+ext;	
 					}
-
-				}else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14){
-					return Refercence.MODID+":textures/armor/blank"+ext;
-				} else{
-					return Refercence.MODID+":textures/armor/blank"+ext;
-
 				}
+				
 			}else{
-				return Refercence.MODID+":textures/armor/blank"+ext;
+				return "blank";
 			}
 		}else{
-			return Refercence.MODID+":textures/armor/blank"+ext;
+			return "blank";
 		}
 
 	}
-	return Refercence.MODID+":textures/armor/blank"+ext;
+	return "blank";
 
 }
 
@@ -659,11 +672,6 @@ public  String getTexture(Entity entity, int num,String ext)
 static int[] getMaxDamageArray()
 {
 	return maxDamageArray;
-}
-
-public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) 
-{
-	return RiderItems.proto_speedshift == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 }
 
 

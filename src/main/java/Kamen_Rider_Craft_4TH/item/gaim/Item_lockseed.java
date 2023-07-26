@@ -163,7 +163,7 @@ public class Item_lockseed extends Item implements IHasModel
 									item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 								}
 							}
-							else if (ARMS[num2] == "zangetsu_kachidoki_arms")
+							else if (ARMS[num2] != "zangetsu_kachidoki_arms")
 							{
 								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2, "1");
 								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
@@ -197,7 +197,7 @@ public class Item_lockseed extends Item implements IHasModel
 								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 							}
 						}
-							else if (ARMS[num2]=="ryugen_kachidoki_arms")
+							else if (ARMS[num2]!="ryugen_kachidoki_arms")
 							{
 								item_Gaimdriver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3,"1");
 								item_Gaimdriver.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);

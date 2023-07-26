@@ -5,6 +5,7 @@ import Kamen_Rider_Craft_4TH.blocks.BlockCustomDoor;
 import Kamen_Rider_Craft_4TH.blocks.BlockCustomStaris;
 import Kamen_Rider_Craft_4TH.blocks.GameCreatorBlock;
 import Kamen_Rider_Craft_4TH.blocks.cell_medal_programer_block;
+import Kamen_Rider_Craft_4TH.blocks.g_chip_programer_block;
 import Kamen_Rider_Craft_4TH.blocks.gaia_memory_refiner_block;
 import Kamen_Rider_Craft_4TH.blocks.game_block;
 import Kamen_Rider_Craft_4TH.blocks.ganbarizing_block;
@@ -30,6 +31,7 @@ import Kamen_Rider_Craft_4TH.mobs.Boss.EntityTerror;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Ancient_OOO;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Arc_zero;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Durendal;
+import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Goda;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_HellBros;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_NightRogue;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Sabela;
@@ -50,6 +52,7 @@ import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_redyue;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_roshuo;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_super_gingaoh;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_taboo_dopant;
+import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_wiseman;
 import Kamen_Rider_Craft_4TH.mobs.Boss.entity_storious_rider;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPlanks;
@@ -73,7 +76,8 @@ public class RiderBlocks {
 	
 	public static Block kamiyama_wall = CustomBlock.builder().material(Material.WOOD).hardness(1F).blockType(BlockType.BASIC).name("kamiyama_wall").setCreativeTabe(Tabs.tabdecor).build();
 	
-	public static Block door_kamiyama = new BlockCustomDoor("door_kamiyama").setCreativeTab(Tabs.tabdecor);
+	public static Block door_kamiyama = new BlockCustomDoor("door_kamiyama").setHardness(1F).setCreativeTab(Tabs.tabdecor);
+	
 	
 	public static Block denliner_interior = CustomBlock.builder().material(Material.ROCK).hardness(1F).blockType(BlockType.BASIC).name("denliner_interior").setCreativeTabe(Tabs.tabdecor).build();
 	public static Block denliner_interior_darker = CustomBlock.builder().material(Material.ROCK).hardness(1F).blockType(BlockType.BASIC).name("denliner_interior_darker").setCreativeTabe(Tabs.tabdecor).build();
@@ -182,6 +186,12 @@ public class RiderBlocks {
 	
 	public static Block bakusou_trophy = new game_block("bakusou_trophy", Material.ROCK, 0).setCreativeTab(Tabs.tabdecor);
 	
+	
+	public static Block g_chip_programer = new g_chip_programer_block("g_chip_programer",Material.ROCK, 2).setHardness(9.9F).setCreativeTab(Tabs.tabagito);
+	public static Block overlord_oopart = CustomBlock.builder().material(Material.ROCK).hardness(1F).blockType(BlockType.BASIC).name("overlord_oopart").setCreativeTabe(Tabs.tabdecor).build();
+	public static Block overlord_oopart2 = CustomBlock.builder().material(Material.ROCK).hardness(1F).blockType(BlockType.DIRECTIONAL).name("overlord_oopart2").setCreativeTabe(Tabs.tabdecor).build();
+	
+	
 	public static Block gaia_memory_refiner = new gaia_memory_refiner_block("gaia_memory_refiner",Material.ROCK, 2).setHardness(9.9F).setCreativeTab(Tabs.tabW);
 	
 	public static Block cell_medal_programer = new cell_medal_programer_block("cell_medal_programer",Material.ROCK, 2).setHardness(9.9F).setCreativeTab(Tabs.tabOOO);
@@ -213,6 +223,7 @@ public class RiderBlocks {
 	public static Block redyue_boss_block = new mob_block("redyue_boss_block", Entity_redyue::new).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabGaim);
 	public static Block lord_baron_boss_block = new mob_block("lord_baron_boss_block", Entity_lord_baron::new).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabGaim);
 
+	
 	public static Block gaoh_boss_block = new mob_block("gaoh_boss_block", Entity_gaoh::new).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabden_o);
 	
 	public static Block taboo_bossblock = new mob_blockFlying("taboo_bossblock", Entity_taboo_dopant::new).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabW);
@@ -223,8 +234,12 @@ public class RiderBlocks {
 	public static Block poseidon_boss_block = new mob_block("poseidon_boss_block", Entity_poseidon::new).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabOOO);
 	
 	public static Block ancient_ooo_boss_block = new mob_block("ancient_ooo_boss_block", Entity_Ancient_OOO::new).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabOOO);
+	public static Block goda_boss_block = new mob_block("goda_boss_block", Entity_Goda::new).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabOOO);
 	
 	public static Block super_ginga_oh_boss_block = new mob_block("super_ginga_oh_boss_block", Entity_super_gingaoh::new).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabFourze);
+	
+	public static Block wiseman_block = new mob_block("wiseman_block", Entity_wiseman::new).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabwizard);
+	
 	
 	public static Block another_build_block = new mob_block("another_build_block", Entity_another_build::new).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabzi_o);
 	public static Block woz_boss_block = new mob_block("woz_boss_block", Entity_White_Woz::new).setHardness(9.9F).setLightLevel(0.1f).setCreativeTab(Tabs.tabzi_o);
