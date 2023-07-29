@@ -63,11 +63,11 @@ public class EntityKurokageTroopers extends Entity_base_henchmen
 	public EntityKurokageTroopers(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.kagematsu));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(GaimItems.Gaimtroso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(GaimItems.Gaimhead));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(GaimItems.sengoku_driver_kurokage_troopers));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(GaimItems.Gaimlegs));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.kagematsu));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.Gaimtroso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.Gaimhead));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.sengoku_driver_kurokage_troopers));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.Gaimlegs));
 	}
 
 	protected void applyEntityAttributes()
@@ -88,7 +88,7 @@ public class EntityKurokageTroopers extends Entity_base_henchmen
 	{
 		if (!this.world.isRemote){
 
-			this.dropItem(GaimItems.himawari_lockseed, this.rand.nextInt(4));
+			this.dropItem(RiderItems.himawari_lockseed, this.rand.nextInt(4));
 				if (this.getAttackTarget()instanceof EntityPlayer){
 					EntityPlayer playerIn=	(EntityPlayer) this.getAttackTarget();
 					 EntityBossBase entityboss  = new Entity_ZangetsuShin(world);
@@ -140,10 +140,10 @@ public class EntityKurokageTroopers extends Entity_base_henchmen
 				switch (this.rand.nextInt(25))
 				{
 				case 0:
-					this.dropItem(GaimItems.matsubokkuri_energy_lockseed, 1);
+					this.dropItem(RiderItems.matsubokkuri_energy_lockseed, 1);
 					break;
 				case 1:
-					this.dropItem(GaimItems.fake_donguri_lockseed, 1);
+					this.dropItem(RiderItems.fake_donguri_lockseed, 1);
 					break;
 					}
 				
@@ -151,10 +151,10 @@ public class EntityKurokageTroopers extends Entity_base_henchmen
 			switch (this.rand.nextInt(25))
 			{
 			case 0:
-				this.dropItem(GaimItems.sengoku_driver_kurokage_troopers, 1);
+				this.dropItem(RiderItems.sengoku_driver_kurokage_troopers, 1);
 				break;
 			case 1:
-				this.dropItem(GaimItems.sengoku_driver_kurokage_troopers, 1);
+				this.dropItem(RiderItems.sengoku_driver_kurokage_troopers, 1);
 				break;
 				}
 			}

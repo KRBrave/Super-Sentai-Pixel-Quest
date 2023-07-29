@@ -777,7 +777,7 @@ public class ReiwaRiderItems {
 	public static Item gamer_driver_raise_buckle = new Item_Raise_Buckles(45,"gamer_driver_raise_buckle").AddLegendCrafting(RiderItems.mighty_action_x_gashat).AddCanUseL().AddCanUseR().setCreativeTab(Tabs.tabgeats);
 	public static Item ghost_driver_raise_buckle = new Item_Raise_Buckles(44,"ghost_driver_raise_buckle").AddLegendCrafting(RiderItems.ore_ghost_icon).AddCanUseL().AddCanUseR().setCreativeTab(Tabs.tabgeats);
 	public static Item drive_driver_raise_buckle = new Item_Raise_Buckles(43,"drive_driver_raise_buckle").AddLegendCrafting(RiderItems.speedshift).AddCanUseL().AddCanUseR().setCreativeTab(Tabs.tabgeats);
-	public static Item sengoku_driver_raise_buckle = new Item_Raise_Buckles(42,"sengoku_driver_raise_buckle").AddLegendCrafting(GaimItems.orange_lockseed).AddCanUseL().AddCanUseR().setCreativeTab(Tabs.tabgeats);
+	public static Item sengoku_driver_raise_buckle = new Item_Raise_Buckles(42,"sengoku_driver_raise_buckle").AddLegendCrafting(RiderItems.orange_lockseed).AddCanUseL().AddCanUseR().setCreativeTab(Tabs.tabgeats);
 	public static Item wizardriver_raise_buckle = new Item_Raise_Buckles(41,"wizardriver_raise_buckle").AddLegendCrafting(RiderItems.flame_ring).AddCanUseL().AddCanUseR().setCreativeTab(Tabs.tabgeats);
 	public static Item fourze_driver_raise_buckle = new Item_Raise_Buckles(40,"fourze_driver_raise_buckle").AddLegendCrafting(RiderItems.rocket_swich).AddCanUseL().AddCanUseR().setCreativeTab(Tabs.tabgeats);
 	public static Item ooo_driver_raise_buckle = new Item_Raise_Buckles(39,"ooo_driver_raise_buckle").AddLegendCrafting(RiderItems.taka).AddCanUseL().AddCanUseR().setCreativeTab(Tabs.tabgeats);

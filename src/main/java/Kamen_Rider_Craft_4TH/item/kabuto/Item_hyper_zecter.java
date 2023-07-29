@@ -49,7 +49,7 @@ public class Item_hyper_zecter extends Item implements IHasModel
 
 			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.kabuto_rider_belt){
 				
-					((Item_form_change)PqRiderItems.kabuto_hyper_zecter).onItemRightClick(worldIn, playerIn, handIn);
+					((Item_form_change)RiderItems.kabuto_hyper_zecter).onItemRightClick(worldIn, playerIn, handIn);
 				
 
 			}else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gatack_rider_belt){
@@ -82,7 +82,7 @@ public class Item_hyper_zecter extends Item implements IHasModel
 			
 		}else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.caucasus_rider_belt){
 			
-			((Item_form_change)RiderItems.caucasus_hyper_zecter).onItemRightClick(worldIn, playerIn, handIn);
+			((Item_form_change)PqRiderItems.caucasus_hyper_zecter).onItemRightClick(worldIn, playerIn, handIn);
 			
 		}else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.hercus_rider_belt){
 			
@@ -98,7 +98,7 @@ public class Item_hyper_zecter extends Item implements IHasModel
 			
 		}else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == PqRiderItems.perfect_kabuto_rider_belt){
 				
-				((Item_form_change)RiderItems.perfect_kabuto_hyper_zecter).onItemRightClick(worldIn, playerIn, handIn);
+				((Item_form_change)PqRiderItems.perfect_kabuto_hyper_zecter).onItemRightClick(worldIn, playerIn, handIn);
 			
 		}else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == PqRiderItems.perfect_gatack_rider_belt){
 			

@@ -354,7 +354,7 @@ public class ore_block extends Block implements IHasModel {
 			return CRYSTAL;
 		}
 
-		if (CRYSTAL == RiderItems.foundation_taka){
+		if (CRYSTAL == RiderItems.foundation_x_taka){
 			int rand = generator.nextInt(700);
 
 			if (rand < 10) return RiderItems.cellmedal;

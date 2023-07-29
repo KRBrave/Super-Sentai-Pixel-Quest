@@ -63,7 +63,7 @@ public class EntitySakuraHurricane extends EntityBikeBase
     {
 if (!this.world.isRemote){
 
-    			this.dropItem(GaimItems.sakura_hurricane, 1);
+    			this.dropItem(RiderItems.sakura_hurricane, 1);
 
         
     }

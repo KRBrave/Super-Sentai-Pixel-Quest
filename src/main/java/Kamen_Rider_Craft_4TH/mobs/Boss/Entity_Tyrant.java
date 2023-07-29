@@ -71,11 +71,11 @@ public class Entity_Tyrant extends EntityBossBase
 	public Entity_Tyrant(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.sonic_arrow));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(GaimItems.Gaimtroso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(GaimItems.Gaimhead));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(GaimItems.genesis_driver_tyrant));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(GaimItems.Gaimlegs));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.sonic_arrow));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.Gaimtroso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.Gaimhead));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.genesis_driver_tyrant));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.Gaimlegs));
 		
 	}
   
@@ -102,9 +102,9 @@ public class Entity_Tyrant extends EntityBossBase
     public void onDeath(DamageSource cause)
     {
 if (!this.world.isRemote){
-	this.dropItem(GaimItems.himawari_energy_lockseed, 5);
+	this.dropItem(RiderItems.himawari_energy_lockseed, 5);
 		
-   		this.dropItem(GaimItems.dragon_fruits_energy_lockseed, 1);
+   		this.dropItem(RiderItems.dragon_fruits_energy_lockseed, 1);
 
    		switch (this.rand.nextInt(5))
 		{

@@ -62,7 +62,7 @@ public class EntityRoseAttacker extends EntityBikeBase
     {
 if (!this.world.isRemote){
 
-    			this.dropItem(GaimItems.rose_attacker, 1);
+    			this.dropItem(RiderItems.rose_attacker, 1);
 
         
     }

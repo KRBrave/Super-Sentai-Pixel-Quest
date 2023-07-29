@@ -207,7 +207,7 @@ public class BipedLockseed extends ModelBiped
 			ItemStack stack  =   ((EntityLivingBase) entity).getItemStackFromSlot(EntityEquipmentSlot.FEET);
 			ItemStack stack2  =   ((EntityLivingBase) entity).getItemStackFromSlot(EntityEquipmentSlot.HEAD);
 			if (stack!=null){
-				if (stack.getItem() instanceof item_Gaimdriver & stack2.getItem()==GaimItems.Gaimhead){
+				if (stack.getItem() instanceof item_Gaimdriver & stack2.getItem()==RiderItems.Gaimhead){
 					if (item_Gaimdriver.get_lock(stack)=="energy_dragon_fruits_arms"){
 
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/energy_prototype_dragon_fruits_arms.png"));

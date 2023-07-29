@@ -71,7 +71,7 @@ public class Entity_roshuo extends EntityBossBase
 	public Entity_roshuo(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.joeshuimu));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.joeshuimu));
 
 	}
 
@@ -98,20 +98,20 @@ public class Entity_roshuo extends EntityBossBase
 	public void onDeath(DamageSource cause)
 	{
 		if (!this.world.isRemote){
-			this.dropItem(GaimItems.lord_baron_boss_block_part1, 1);
-			this.dropItem(GaimItems.golden_ringo_lockseed, 1);
-			this.dropItem(GaimItems.kiwami_lockseed, 1);
+			this.dropItem(RiderItems.lord_baron_boss_block_part1, 1);
+			this.dropItem(RiderItems.golden_ringo_lockseed, 1);
+			this.dropItem(RiderItems.kiwami_lockseed, 1);
 
 			switch (this.rand.nextInt(3))
 			{
 			case 0:
-				this.dropItem(GaimItems.joeshuimu, 1);
+				this.dropItem(RiderItems.joeshuimu, 1);
 				break;
 			}
 			switch (this.rand.nextInt(2))
 			{
 			case 0:
-				this.dropItem(GaimItems.king_durian_lockseed, 1);
+				this.dropItem(RiderItems.king_durian_lockseed, 1);
 				break;
 			}
 		}

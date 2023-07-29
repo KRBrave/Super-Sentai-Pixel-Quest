@@ -71,11 +71,11 @@ public class Entity_Sigurd extends EntityBossBase
 	public Entity_Sigurd(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.sonic_arrow));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(GaimItems.Gaimtroso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(GaimItems.Gaimhead));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(GaimItems.genesis_driver_sigurd));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(GaimItems.Gaimlegs));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.sonic_arrow));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.Gaimtroso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.Gaimhead));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.genesis_driver_sigurd));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.Gaimlegs));
 		
 	}
   
@@ -103,14 +103,14 @@ public class Entity_Sigurd extends EntityBossBase
     {
 if (!this.world.isRemote){
 
-	this.dropItem(GaimItems.himawari_energy_lockseed, 5);
+	this.dropItem(RiderItems.himawari_energy_lockseed, 5);
 	
-   		this.dropItem(GaimItems.cherry_energy_lockseed, 1);
+   		this.dropItem(RiderItems.cherry_energy_lockseed, 1);
 
    		switch (this.rand.nextInt(5))
 		{
 		case 0:
-			this.dropItem(GaimItems.sid_lockseed, 1);
+			this.dropItem(RiderItems.sid_lockseed, 1);
 			break;
 		}
    		switch (this.rand.nextInt(5))

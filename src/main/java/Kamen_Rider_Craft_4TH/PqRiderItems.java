@@ -5,6 +5,7 @@ import Kamen_Rider_Craft_4TH.item.kabuto.Item_zecter;
 import Kamen_Rider_Craft_4TH.item.ooo.Itemmedal;
 import Kamen_Rider_Craft_4TH.item.rider_armor_base.Item_form_change;
 import Kamen_Rider_Craft_4TH.item.rider_armor_base.item_rider_driver;
+import Kamen_Rider_Craft_4TH.potion.PotionCore;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
@@ -12,14 +13,100 @@ import net.minecraft.potion.PotionEffect;
 
 public class PqRiderItems {
 
+	//Kuuga
+	public static Item kuuga_super_rising_mighty = new Item_form_change("kuuga_super_rising_mighty",item_rider_driver.class,4,"_super_rising_mighty","kuuga"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false)
+			,new PotionEffect(MobEffects.SPEED, 5, 1,true,false)
+			,new PotionEffect(PotionCore.PUNCH_BOOST_POTION, 5, 7,true,false)).setCreativeTab(Tabs.tabkuuga);
+
+	public static Item kuuga_super_rising_dragon = new Item_form_change("kuuga_super_rising_dragon",item_rider_driver.class,4,"_super_rising_dragon","kuuga"
+			,new PotionEffect(MobEffects.HASTE, 5, 3,true,false)
+			,new PotionEffect(MobEffects.SPEED, 5, 2,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false)).setCreativeTab(Tabs.tabkuuga);
+
+	public static Item kuuga_super_rising_pegasus = new Item_form_change("kuuga_super_rising_pegasus",item_rider_driver.class,4,"_super_rising_pegasus","kuuga"
+			,new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false)
+			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 5,true,false)
+			,new PotionEffect(MobEffects.SPEED, 5, 2,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false)).setCreativeTab(Tabs.tabkuuga);
+
+	public static Item kuuga_super_rising_titan = new Item_form_change("kuuga_super_rising_titan",item_rider_driver.class,4,"_super_rising_titan","kuuga"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 3,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false)).setCreativeTab(Tabs.tabkuuga);
+	
+	public static Item kuuga_rising_growing = new Item_form_change("kuuga_rising_growing",item_rider_driver.class,4,"_rising_growing","kuuga").setCreativeTab(Tabs.tabkuuga);
+
+	public static Item kuuga_amazing_dragon = new Item_form_change("kuuga_amazing_dragon",item_rider_driver.class,4,"_amazing_dragon","kuuga"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 2,true,false)
+			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false)
+			,new PotionEffect(MobEffects.HASTE, 5, 4,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false)).setCreativeTab(Tabs.tabkuuga);
+	
+	public static Item kuuga_amazing_pegasus = new Item_form_change("kuuga_amazing_pegasus",item_rider_driver.class,4,"_amazing_pegasus","kuuga"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 2,true,false)
+			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false)
+			,new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false)
+			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 5,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false)).setCreativeTab(Tabs.tabkuuga);
+	
+	public static Item kuuga_amazing_titan = new Item_form_change("kuuga_amazing_titan",item_rider_driver.class,4,"_amazing_titan","kuuga"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 4,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false)).setCreativeTab(Tabs.tabkuuga);
+	
+	public static Item kuuga_amazing_ultimate = new Item_form_change("kuuga_amazing_ultimate",item_rider_driver.class,5,"_amazing_ultimate","kuuga"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 9,true,false)
+			,new PotionEffect(MobEffects.SPEED, 5, 6,true,false)
+			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 7,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 8,true,false)
+			,new PotionEffect(PotionCore.PUNCH_BOOST_POTION, 5, 13,true,false)
+			,new PotionEffect(PotionCore.FIRE_PUNCH_POTION, 5, 5,true,false)).setCreativeTab(Tabs.tabkuuga);
+	
+	public static Item kuuga_super_amazing_mighty = new Item_form_change("kuuga_super_amazing_mighty",item_rider_driver.class,5,"_super_amazing_mighty","kuuga"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 3,true,false)
+			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false)
+			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 2,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false)
+			,new PotionEffect(PotionCore.PUNCH_BOOST_POTION, 5, 9,true,false)).setCreativeTab(Tabs.tabkuuga);
+	
+	public static Item kuuga_super_amazing_dragon = new Item_form_change("kuuga_super_amazing_dragon",item_rider_driver.class,5,"_super_amazing_dragon","kuuga"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 3,true,false)
+			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false)
+			,new PotionEffect(MobEffects.HASTE, 5, 4,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false)).setCreativeTab(Tabs.tabkuuga);
+	
+	public static Item kuuga_super_amazing_pegasus = new Item_form_change("kuuga_super_amazing_pegasus",item_rider_driver.class,5,"_super_amazing_pegasus","kuuga"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 3,true,false)
+			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false)
+			,new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false)
+			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 5,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false)).setCreativeTab(Tabs.tabkuuga);
+	
+	public static Item kuuga_super_amazing_titan = new Item_form_change("kuuga_super_amazing_titan",item_rider_driver.class,5,"_super_amazing_titan","kuuga"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 5,true,false)
+			,new PotionEffect(MobEffects.SPEED, 5, 1,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 6,true,false)).setCreativeTab(Tabs.tabkuuga);
+	
+	public static Item kuuga_super_amazing_ultimate = new Item_form_change("kuuga_super_amazing_ultimate",item_rider_driver.class,5,"_super_amazing_ultimate","kuuga"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 10,true,false)
+			,new PotionEffect(MobEffects.SPEED, 5, 7,true,false)
+			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 8,true,false)
+			,new PotionEffect(MobEffects.STRENGTH, 5, 9,true,false)
+			,new PotionEffect(PotionCore.PUNCH_BOOST_POTION, 5, 14,true,false)
+			,new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false)
+			,new PotionEffect(PotionCore.FIRE_PUNCH_POTION, 5, 6,true,false)).setCreativeTab(Tabs.tabkuuga);
 	
 	//KAbuto
+	public static Item caucasus_hyper_zecter = new Item_form_change("caucasus_hyper_zecter",item_rider_driver.class,0,"_hyper","caucasus"
+			,new PotionEffect(MobEffects.HASTE, 5, 3,true,false),new PotionEffect(MobEffects.SPEED, 5, 7,true,false),
+			new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false),new PotionEffect(MobEffects.RESISTANCE, 5, 4,true,false)
+			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false),new PotionEffect(MobEffects.NIGHT_VISION, 500, 0,true,false));
+	
 	public static Item perfect_kabuto_zecter_cast = new Item_form_change("perfect_kabuto_zecter_cast",item_rider_driver.class,1,"_mask","perfect_kabuto"
 			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
 	public static Item perfect_kabuto_zecter = new Item_zecter(perfect_kabuto_zecter_cast,"perfect_kabuto_zecter",item_rider_driver.class,0,"","perfect_kabuto"
 			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false)).setCreativeTab(Tabs.tabkabuto);
 
-	public static Item kabuto_hyper_zecter = new Item_form_change("kabuto_hyper_zecter",item_rider_driver.class,0,"_hyper","kabuto"
+	public static Item perfect_kabuto_hyper_zecter = new Item_form_change("perfect_kabuto_hyper_zecter",item_rider_driver.class,0,"_hyper","kabuto"
 			,new PotionEffect(MobEffects.HASTE, 5, 3,true,false),new PotionEffect(MobEffects.SPEED, 5, 7,true,false),
 			new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false),new PotionEffect(MobEffects.RESISTANCE, 5, 4,true,false)
 			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false),new PotionEffect(MobEffects.NIGHT_VISION, 500, 0,true,false));

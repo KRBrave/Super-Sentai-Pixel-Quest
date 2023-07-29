@@ -71,11 +71,11 @@ public class Entity_Idunn_Shin extends EntityBossBase
 	public Entity_Idunn_Shin(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.sonic_arrow));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(GaimItems.Gaimtroso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(GaimItems.Gaimhead));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.sonic_arrow));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.Gaimtroso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.Gaimhead));
 		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(GaimItems.genesis_driver_idunn_shin));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(GaimItems.Gaimlegs));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.Gaimlegs));
 		
 	}
   
@@ -102,7 +102,7 @@ public class Entity_Idunn_Shin extends EntityBossBase
     public void onDeath(DamageSource cause)
     {
 if (!this.world.isRemote){
-	this.dropItem(GaimItems.himawari_energy_lockseed, 5);
+	this.dropItem(RiderItems.himawari_energy_lockseed, 5);
 		
    		this.dropItem(GaimItems.forbidden_ringo_energy_lockseed, 1);
 

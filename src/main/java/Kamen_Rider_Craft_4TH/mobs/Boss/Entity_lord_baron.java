@@ -71,7 +71,7 @@ public class Entity_lord_baron extends EntityBossBase
 	public Entity_lord_baron(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(GaimItems.guronbaryamu));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.guronbaryamu));
 		
 	}
   
@@ -99,13 +99,13 @@ public class Entity_lord_baron extends EntityBossBase
     {
 if (!this.world.isRemote){
 
-   		this.dropItem(GaimItems.forbidden_ringo_lockseed, 1);
-   		this.dropItem(GaimItems.fifteen_lockseed, 1);
-   		this.dropItem(GaimItems.guronbaryamu, 1);
+   		this.dropItem(RiderItems.forbidden_ringo_lockseed, 1);
+   		this.dropItem(RiderItems.fifteen_lockseed, 1);
+   		this.dropItem(RiderItems.guronbaryamu, 1);
    		switch (this.rand.nextInt(5))
 		{
 		case 0:
-			this.dropItem(GaimItems.maja_lockseed, 1);
+			this.dropItem(RiderItems.maja_lockseed, 1);
 			break;
 		}
        }
