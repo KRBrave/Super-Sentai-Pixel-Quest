@@ -188,57 +188,39 @@ public class item_OOOdriver extends item_rider_driver
 
 				model_belt_plus armorModel = new model_belt_plus();
 
-				Item[] Medel_head= new Item[] 
-				{		RiderItems.taka_OOOdriver,RiderItems.kuwagata_OOOdriver,RiderItems.lion_OOOdriver,
+				Item[] Medel_head= new Item[] {RiderItems.taka_OOOdriver,RiderItems.kuwagata_OOOdriver,RiderItems.lion_OOOdriver,
 						RiderItems.sai_OOOdriver,RiderItems.shachi_OOOdriver,RiderItems.ptera_OOOdriver,RiderItems.cobra_OOOdriver,
-						RiderItems.super_taka_OOOdriver,RiderItems.love_OOOdriver,RiderItems.same_OOOdriver,
-						RiderItems.shika_OOOdriver,RiderItems.seiuchi_OOOdriver,RiderItems.mukade_OOOdriver,
-						RiderItems.sasori_new_OOOdriver,RiderItems.taka_OOOdriver,RiderItems.taka_OOOdriver,
-						PqRiderItems.super_ptera_OOOdriver,PqRiderItems.super_kuwagata_OOOdriver,PqRiderItems.super_lion_OOOdriver,
+						RiderItems.super_taka_OOOdriver,RiderItems.love_OOOdriver,RiderItems.same_OOOdriver,RiderItems.shika_OOOdriver,
+						RiderItems.seiuchi_OOOdriver,RiderItems.mukade_OOOdriver,RiderItems.sasori_new_OOOdriver,RiderItems.taka_OOOdriver,
+						RiderItems.taka_OOOdriver,RiderItems.cobra_OOOdriver,RiderItems.taka_OOOdriver,RiderItems.taka_OOOdriver,
+						RiderItems.taka_OOOdriver,RiderItems.mukade_OOOdriver,PqRiderItems.super_lion_OOOdriver,
 						PqRiderItems.super_sai_OOOdriver,PqRiderItems.super_shachi_OOOdriver,PqRiderItems.super_cobra_OOOdriver,
 						PqRiderItems.super_same_OOOdriver,PqRiderItems.super_shika_OOOdriver,PqRiderItems.super_seiuchi_OOOdriver,
 						PqRiderItems.super_mukade_OOOdriver,PqRiderItems.super_ebi_new_OOOdriver,PqRiderItems.super_love_OOOdriver,
-						RiderItems.ptera_OOOdriver,RiderItems.taka_OOOdriver,RiderItems.kuwagata_OOOdriver,
-						RiderItems.lion_OOOdriver,RiderItems.sai_OOOdriver,RiderItems.shachi_OOOdriver,RiderItems.cobra_OOOdriver,
-						RiderItems.same_OOOdriver,RiderItems.shika_OOOdriver,RiderItems.seiuchi_OOOdriver,RiderItems.mukade_OOOdriver,
-						RiderItems.ebi_new_OOOdriver,RiderItems.love_OOOdriver,RiderItems.cobra_OOOdriver
-				};
-				Item[] Medel_chest= new Item[] 
-				{		RiderItems.tora_OOOdriver,RiderItems.kamakiri_OOOdriver,RiderItems.gorilla_OOOdriver,
-						RiderItems.kujaku_OOOdriver,RiderItems.unagi_OOOdriver,RiderItems.tricera_OOOdriver,
-						RiderItems.kame_OOOdriver,RiderItems.imagin_OOOdriver,RiderItems.panda_OOOdriver,
-						RiderItems.super_tora_OOOdriver,RiderItems.kangaroo_OOOdriver,RiderItems.love2_OOOdriver,
-						RiderItems.kujira_OOOdriver,RiderItems.gazelle_OOOdriver,RiderItems.shirokuma_OOOdriver,
-						RiderItems.hachi_OOOdriver,RiderItems.kani_new_OOOdriver,RiderItems.yadokari_OOOdriver,
-						RiderItems.tora_OOOdriver,PqRiderItems.super_tricera_OOOdriver,PqRiderItems.super_kujaku_OOOdriver,
+						PqRiderItems.super_ptera_OOOdriver,PqRiderItems.super_kuwagata_OOOdriver};
+				Item[] Medel_chest= new Item[] {RiderItems.tora_OOOdriver,RiderItems.kamakiri_OOOdriver,RiderItems.gorilla_OOOdriver,
+						RiderItems.kujaku_OOOdriver,RiderItems.unagi_OOOdriver,RiderItems.tricera_OOOdriver,RiderItems.kame_OOOdriver,
+						RiderItems.imagin_OOOdriver,RiderItems.panda_OOOdriver,RiderItems.super_tora_OOOdriver,RiderItems.kangaroo_OOOdriver,
+						RiderItems.love2_OOOdriver,RiderItems.kujira_OOOdriver,RiderItems.gazelle_OOOdriver,RiderItems.shirokuma_OOOdriver,
+						RiderItems.hachi_OOOdriver,RiderItems.kani_new_OOOdriver,RiderItems.yadokari_OOOdriver,RiderItems.tora_OOOdriver,
+						RiderItems.gorilla_OOOdriver,RiderItems.kujaku_OOOdriver,RiderItems.tora_OOOdriver,RiderItems.tora_OOOdriver,
+						RiderItems.hachi_OOOdriver,PqRiderItems.super_tricera_OOOdriver,PqRiderItems.super_kujaku_OOOdriver,
 						PqRiderItems.super_kamakiri_OOOdriver,PqRiderItems.super_gorilla_OOOdriver,PqRiderItems.super_unagi_OOOdriver,
 						PqRiderItems.super_kame_OOOdriver,PqRiderItems.super_imagin_OOOdriver,PqRiderItems.super_kujira_OOOdriver,
 						PqRiderItems.super_gazelle_OOOdriver,PqRiderItems.super_shirokuma_OOOdriver,PqRiderItems.super_hachi_OOOdriver,
-						PqRiderItems.super_kani_new_OOOdriver,PqRiderItems.super_love2_OOOdriver,PqRiderItems.super_panda_OOOdriver,
-						PqRiderItems.super_kangaroo_OOOdriver,PqRiderItems.super_yadokari_OOOdriver,RiderItems.tricera_OOOdriver,RiderItems.kujaku_OOOdriver,
-						RiderItems.kamakiri_OOOdriver,RiderItems.tora_OOOdriver,RiderItems.gorilla_OOOdriver,
-						RiderItems.unagi_OOOdriver,RiderItems.kame_OOOdriver,RiderItems.imagin_OOOdriver,RiderItems.kujira_OOOdriver,
-						RiderItems.gazelle_OOOdriver,RiderItems.shirokuma_OOOdriver,RiderItems.hachi_OOOdriver,
-						RiderItems.kani_new_OOOdriver,RiderItems.love2_OOOdriver,RiderItems.panda_OOOdriver,
-						RiderItems.kangaroo_OOOdriver,RiderItems.yadokari_OOOdriver,RiderItems.gorilla_OOOdriver
-				};
-				Item[] Medel_legs= new Item[] 
-				{		RiderItems.batta_OOOdriver,RiderItems.cheetah_OOOdriver,RiderItems.zou_OOOdriver,RiderItems.condor_OOOdriver,
-						RiderItems.tako_OOOdriver,RiderItems.tyranno_OOOdriver,RiderItems.wani_OOOdriver,RiderItems.shocker_OOOdriver,
-						RiderItems.super_batta_OOOdriver,RiderItems.kangaroo2_OOOdriver,RiderItems.love3_OOOdriver,
+						PqRiderItems.super_kani_new_OOOdriver,PqRiderItems.super_panda_OOOdriver,
+						PqRiderItems.super_kangaroo_OOOdriver,PqRiderItems.super_yadokari_OOOdriver,PqRiderItems.super_love2_OOOdriver};
+				Item[] Medel_legs= new Item[] {RiderItems.batta_OOOdriver,RiderItems.cheetah_OOOdriver,RiderItems.zou_OOOdriver,
+						RiderItems.condor_OOOdriver,RiderItems.tako_OOOdriver,RiderItems.tyranno_OOOdriver,RiderItems.wani_OOOdriver,
+						RiderItems.shocker_OOOdriver,RiderItems.super_batta_OOOdriver,RiderItems.kangaroo2_OOOdriver,RiderItems.love3_OOOdriver,
 						RiderItems.ookamiuo_OOOdriver,RiderItems.ushi_OOOdriver,RiderItems.penguin_OOOdriver,RiderItems.ari_OOOdriver,
-						RiderItems.ebi_new_OOOdriver,RiderItems.batta_OOOdriver,PqRiderItems.super_tyranno_OOOdriver,
+						RiderItems.ebi_new_OOOdriver,RiderItems.batta_OOOdriver,RiderItems.ookamiuo_OOOdriver,RiderItems.condor_OOOdriver,
+						RiderItems.batta_OOOdriver,RiderItems.batta_OOOdriver,RiderItems.ari_OOOdriver,PqRiderItems.super_tyranno_OOOdriver,
 						PqRiderItems.super_condor_OOOdriver,PqRiderItems.super_cheetah_OOOdriver,PqRiderItems.super_zou_OOOdriver,
 						PqRiderItems.super_tako_OOOdriver,PqRiderItems.super_wani_OOOdriver,PqRiderItems.super_shocker_OOOdriver,
 						PqRiderItems.super_ookamiuo_OOOdriver,PqRiderItems.super_ushi_OOOdriver,PqRiderItems.super_penguin_OOOdriver,
 						PqRiderItems.super_ari_OOOdriver,PqRiderItems.super_sasori_new_OOOdriver,PqRiderItems.super_love3_OOOdriver,
-						PqRiderItems.super_kangaroo2_OOOdriver,RiderItems.tyranno_OOOdriver,RiderItems.condor_OOOdriver,
-						RiderItems.batta_OOOdriver,RiderItems.cheetah_OOOdriver,RiderItems.zou_OOOdriver,RiderItems.tako_OOOdriver,
-						RiderItems.wani_OOOdriver,RiderItems.shocker_OOOdriver,RiderItems.ookamiuo_OOOdriver,
-						RiderItems.ushi_OOOdriver,RiderItems.penguin_OOOdriver,RiderItems.ari_OOOdriver,
-						RiderItems.sasori_new_OOOdriver,RiderItems.love3_OOOdriver,RiderItems.kangaroo2_OOOdriver,
-						RiderItems.ookamiuo_OOOdriver
-				};
+						PqRiderItems.super_kangaroo2_OOOdriver};
 
 				armorModel.belt=stack;
 

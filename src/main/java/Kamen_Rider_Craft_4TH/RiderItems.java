@@ -108,7 +108,7 @@ import static Kamen_Rider_Craft_4TH.blocks.custom.Property.TRANSPARENT;
 import static Kamen_Rider_Craft_4TH.item.item_panel.PanelColor.*;
 
 public class RiderItems {
-
+ 
 
 
 	public static Item energy = new Item_ore("energy").setCreativeTab(Tabs.tabmisc);
@@ -1057,15 +1057,10 @@ public static Item oni_ore = new Item_ore("oni_ore").setCreativeTab(Tabs.tabhibi
 	public static Item kabuto_zecter = new Item_zecter(kabuto_zecter_cast,"kabuto_zecter",item_rider_driver.class,0,"","kabuto"
 			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false)).setCreativeTab(Tabs.tabkabuto);
 	
-	public static Item perfect_kabuto_zecter_cast = new Item_form_change("perfect_kabuto_zecter_cast",item_rider_driver.class,1,"_mask","perfect_kabuto"
-			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
-	public static Item perfect_kabuto_zecter = new Item_zecter(perfect_kabuto_zecter_cast,"perfect_kabuto_zecter",item_rider_driver.class,0,"","perfect_kabuto"
-			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false)).setCreativeTab(Tabs.tabkabuto);
-
 
 	public static Item hyper_zecter = new Item_hyper_zecter("hyper_zecter").setCreativeTab(Tabs.tabkabuto);
 	
-	public static Item kabuto_hyper_zecter = new Item_form_change("kabuto_hyper_zecter",item_rider_driver.class,0,"_hyper","kabuto"
+	public static Item perfect_kabuto_hyper_zecter = new Item_form_change("perfect_kabuto_hyper_zecter",item_rider_driver.class,0,"_hyper","perfect_kabuto"
 			,new PotionEffect(MobEffects.HASTE, 5, 3,true,false),new PotionEffect(MobEffects.SPEED, 5, 7,true,false),
 			new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false),new PotionEffect(MobEffects.RESISTANCE, 5, 4,true,false)
 			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false),new PotionEffect(MobEffects.NIGHT_VISION, 500, 0,true,false));
@@ -1076,88 +1071,56 @@ public static Item oni_ore = new Item_ore("oni_ore").setCreativeTab(Tabs.tabhibi
 			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false),
 					new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false)).setCreativeTab(Tabs.tabkabuto);
 	
-	public static Item perfect_thebee_zecter_cast = new Item_form_change("perfect_thebee_zecter_cast",item_rider_driver.class,0,"_mask","perfect_thebee"
-			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
-	public static Item perfect_thebee_zecter = new Item_zecter(perfect_thebee_zecter_cast,"perfect_thebee_zecter",item_rider_driver.class,0,"","perfect_thebee"
-			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false),
-					new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false)).setCreativeTab(Tabs.tabkabuto);
-
-	public static Item drake_zecter_cast = new Item_form_change("drake_zecter_cast",item_rider_driver.class,0,"_mask","drake"
+public static Item drake_zecter_cast = new Item_form_change("drake_zecter_cast",item_rider_driver.class,0,"_mask","drake"
 			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
 	public static Item drake_zecter = new Item_zecter(drake_zecter_cast,"drake_zecter",item_rider_driver.class,0,"","drake"
 			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false)
 			,new PotionEffect(MobEffects.NIGHT_VISION, 5, 0,true,false)).setCreativeTab(Tabs.tabkabuto);
 	
-	public static Item perfect_drake_zecter_cast = new Item_form_change("perfect_drake_zecter_cast",item_rider_driver.class,0,"_mask","perfect_drake"
-			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
-	public static Item perfect_drake_zecter = new Item_zecter(perfect_drake_zecter_cast,"perfect_drake_zecter",item_rider_driver.class,0,"","perfect_drake"
-			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false)
-			,new PotionEffect(MobEffects.NIGHT_VISION, 5, 0,true,false)).setCreativeTab(Tabs.tabkabuto);
-
-
 	public static Item sasword_zecter_cast = new Item_form_change("sasword_zecter_cast",item_rider_driver.class,0,"_mask","sasword"
 			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
 	public static Item sasword_zecter = new Item_zecter(sasword_zecter_cast,"sasword_zecter",item_rider_driver.class,0,"","sasword"
 			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false),
 			new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false)).setCreativeTab(Tabs.tabkabuto);
 	
-	public static Item perfect_sasword_zecter_cast = new Item_form_change("perfect_sasword_zecter_cast",item_rider_driver.class,0,"_mask","perfect_sasword"
-			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
-	public static Item perfect_sasword_zecter = new Item_zecter(perfect_sasword_zecter_cast,"perfect_sasword_zecter",item_rider_driver.class,0,"","perfect_sasword"
-			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false),
-			new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false)).setCreativeTab(Tabs.tabkabuto);
-
 	public static Item gatack_zecter_cast = new Item_form_change("gatack_zecter_cast",item_rider_driver.class,1,"_mask","gatack"
 			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
 	public static Item gatack_zecter = new Item_zecter(gatack_zecter_cast,"gatack_zecter",item_rider_driver.class,0,"","gatack"
 			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false)
 			,new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false)).setCreativeTab(Tabs.tabkabuto);
 	
-	public static Item perfect_gatack_zecter_cast = new Item_form_change("perfect_gatack_zecter_cast",item_rider_driver.class,1,"_mask","perfect_gatack"
-			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
-	public static Item perfect_gatack_zecter = new Item_zecter(perfect_gatack_zecter_cast,"perfect_gatack_zecter",item_rider_driver.class,0,"","perfect_gatack"
-			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false)
-			,new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false)).setCreativeTab(Tabs.tabkabuto);
-
 	public static Item gatack_hyper_zecter = new Item_form_change("gatack_hyper_zecter",item_rider_driver.class,0,"_hyper","gatack"
 			,new PotionEffect(MobEffects.HASTE, 5, 3,true,false),new PotionEffect(MobEffects.SPEED, 5, 7,true,false),
 			new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false),new PotionEffect(MobEffects.RESISTANCE, 5, 4,true,false)
 			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false),new PotionEffect(MobEffects.NIGHT_VISION, 500, 0,true,false));
- 
-	public static Item kickhopper_zecter = new Item_form_change("kickhopper_zecter",item_rider_driver.class,0,"","kickhopper"
-			,new PotionEffect(MobEffects.RESISTANCE, 5,2,true,false),new PotionEffect(MobEffects.SPEED, 5, 3,true,false),
-			new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 4,true,false),
-			new PotionEffect(MobEffects.JUMP_BOOST, 5, 7,true,false)).setCreativeTab(Tabs.tabkabuto);
-	public static Item perfect_kickhopper_zecter = new Item_form_change("perfect_kickhopper_zecter",item_rider_driver.class,0,"","perfect_kickhopper"
+	
+
+	public static Item kickhopper_zecter_cast = new Item_form_change("kickhopper_zecter_cast",item_rider_driver.class,0,"_mask","kickhopper"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
+	public static Item kickhopper_zecter = new Item_zecter(kickhopper_zecter_cast,"kickhopper_zecter",item_rider_driver.class,0,"","kickhopper"
 			,new PotionEffect(MobEffects.RESISTANCE, 5,2,true,false),new PotionEffect(MobEffects.SPEED, 5, 3,true,false),
 			new PotionEffect(MobEffects.STRENGTH, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 4,true,false),
 			new PotionEffect(MobEffects.JUMP_BOOST, 5, 7,true,false)).setCreativeTab(Tabs.tabkabuto);
 
-	public static Item punchhopper_zecter = new Item_form_change("punchhopper_zecter",item_rider_driver.class,0,"","punchhopper"
+	
+	public static Item punchhopper_zecter_cast = new Item_form_change("punchhopper_zecter_cast",item_rider_driver.class,0,"_mask","puchhopper"
+			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
+	public static Item punchhopper_zecter = new Item_zecter(punchhopper_zecter_cast,"punchhopper_zecter",item_rider_driver.class,0,"","puchhopper"
 			,new PotionEffect(MobEffects.RESISTANCE, 5,2,true,false),new PotionEffect(MobEffects.SPEED, 5, 3,true,false),
 			new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false),new PotionEffect(MobEffects.HASTE, 5, 4,true,false),
 			new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false)).setCreativeTab(Tabs.tabkabuto);
-	public static Item perfect_punchhopper_zecter = new Item_form_change("perfect_punchhopper_zecter",item_rider_driver.class,0,"","perfect_punchhopper"
-			,new PotionEffect(MobEffects.RESISTANCE, 5,2,true,false),new PotionEffect(MobEffects.SPEED, 5, 3,true,false),
-			new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false),new PotionEffect(MobEffects.HASTE, 5, 4,true,false),
-			new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false)).setCreativeTab(Tabs.tabkabuto);
+
 	
 	public static Item dark_kabuto_zecter_cast = new Item_form_change("dark_kabuto_zecter_cast",item_rider_driver.class,1,"_mask","dark_kabuto"
 			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
 	public static Item dark_kabuto_zecter = new Item_zecter(dark_kabuto_zecter_cast,"dark_kabuto_zecter",item_rider_driver.class,0,"","dark_kabuto"
 			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false)).setCreativeTab(Tabs.tabkabuto);
 	
-	public static Item perfect_dark_kabuto_zecter_cast = new Item_form_change("perfect_dark_kabuto_zecter_cast",item_rider_driver.class,1,"_mask","perfect_dark_kabuto"
-			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
-	public static Item perfect_dark_kabuto_zecter = new Item_zecter(perfect_dark_kabuto_zecter_cast,"perfect_dark_kabuto_zecter",item_rider_driver.class,0,"","perfect_dark_kabuto"
-			,new PotionEffect(MobEffects.SPEED, 5, 3,true,false),new PotionEffect(MobEffects.HASTE, 5, 3,true,false)).setCreativeTab(Tabs.tabkabuto);
-
-
 	public static Item dark_hyper_zecter = new Item_form_change("dark_hyper_zecter",item_rider_driver.class,0,"_hyper","dark_kabuto"
 			,new PotionEffect(MobEffects.HASTE, 5, 3,true,false),new PotionEffect(MobEffects.SPEED, 5, 7,true,false),
 			new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false),new PotionEffect(MobEffects.RESISTANCE, 5, 4,true,false)
 			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false),new PotionEffect(MobEffects.NIGHT_VISION, 500, 0,true,false));
- 
+	
 	
 	public static Item caucasus_zecter_cast = new Item_form_change("caucasus_zecter_cast",item_rider_driver.class,0,"_mask","caucasus"
 			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
@@ -1167,6 +1130,11 @@ public static Item oni_ore = new Item_ore("oni_ore").setCreativeTab(Tabs.tabhibi
 			,new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false),new PotionEffect(MobEffects.RESISTANCE, 5, 4,true,false)
 			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false),new PotionEffect(MobEffects.NIGHT_VISION, 500, 0,true,false)).setCreativeTab(Tabs.tabkabuto);
 
+	public static Item caucasus_hyper_zecter = new Item_form_change("caucasus_hyper_zecter",item_rider_driver.class,0,"_hyper","caucasus"
+			,new PotionEffect(MobEffects.HASTE, 5, 3,true,false),new PotionEffect(MobEffects.SPEED, 5, 7,true,false),
+			new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false),new PotionEffect(MobEffects.RESISTANCE, 5, 4,true,false)
+			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false),new PotionEffect(MobEffects.NIGHT_VISION, 500, 0,true,false));
+	
 
 	public static Item hercus_zecter_cast = new Item_form_change("hercus_zecter_cast",item_rider_driver.class,0,"_mask","hercus"
 			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
@@ -1174,6 +1142,7 @@ public static Item oni_ore = new Item_ore("oni_ore").setCreativeTab(Tabs.tabhibi
 	public static Item hercus_zecter = new Item_zecter(hercus_zecter_cast,"hercus_zecter",item_rider_driver.class,0,"","hercus"
 			,new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false),new PotionEffect(MobEffects.SPEED, 5, 3,true,false),
 			new PotionEffect(MobEffects.HASTE, 5, 3,true,false)).setCreativeTab(Tabs.tabkabuto);
+	
 
 	public static Item ketaros_zecter_cast = new Item_form_change("ketaros_zecter_cast",item_rider_driver.class,0,"_mask","ketaros"
 			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
@@ -1181,37 +1150,14 @@ public static Item oni_ore = new Item_ore("oni_ore").setCreativeTab(Tabs.tabhibi
 	public static Item ketaros_zecter = new Item_zecter(ketaros_zecter_cast,"ketaros_zecter",item_rider_driver.class,0,"","ketaros"
 			,new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false),new PotionEffect(MobEffects.SPEED, 5, 3,true,false),
 			new PotionEffect(MobEffects.HASTE, 5, 3,true,false)).setCreativeTab(Tabs.tabkabuto);
-
-	public static Item lady_zecter = new Item_form_change("lady_zecter",item_rider_driver.class,0,"","lady"
-			,new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false),new PotionEffect(MobEffects.SPEED, 5, 3,true,false),
-			new PotionEffect(MobEffects.HASTE, 5, 3,true,false)).setCreativeTab(Tabs.tabkabuto);
-
-	public static Item perfect_caucasus_zecter_cast = new Item_form_change("perfect_caucasus_zecter_cast",item_rider_driver.class,0,"_mask","perfect_caucasus"
+	
+	public static Item lady_zecter_cast = new Item_form_change("lady_zecter_cast",item_rider_driver.class,0,"_mask","lady"
 			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
-
-	public static Item perfect_caucasus_zecter = new Item_zecter(perfect_caucasus_zecter_cast,"perfect_caucasus_zecter",item_rider_driver.class,0,"","perfect_caucasus"
-			,new PotionEffect(MobEffects.HASTE, 5, 3,true,false),new PotionEffect(MobEffects.SPEED, 5, 7,true,false)
-			,new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false),new PotionEffect(MobEffects.RESISTANCE, 5, 4,true,false)
-			,new PotionEffect(MobEffects.JUMP_BOOST, 5, 4,true,false),new PotionEffect(MobEffects.NIGHT_VISION, 500, 0,true,false)).setCreativeTab(Tabs.tabkabuto);
-
-	public static Item perfect_hercus_zecter_cast = new Item_form_change("perfect_hercus_zecter_cast",item_rider_driver.class,0,"_mask","perfect_hercus"
-			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
-
-	public static Item perfect_hercus_zecter = new Item_zecter(perfect_hercus_zecter_cast,"perfect_hercus_zecter",item_rider_driver.class,0,"","perfect_hercus"
+	public static Item lady_zecter = new Item_zecter(lady_zecter_cast,"lady_zecter",item_rider_driver.class,0,"","lady"
 			,new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false),new PotionEffect(MobEffects.SPEED, 5, 3,true,false),
 			new PotionEffect(MobEffects.HASTE, 5, 3,true,false)).setCreativeTab(Tabs.tabkabuto);
 
-	public static Item perfect_ketaros_zecter_cast = new Item_form_change("perfect_ketaros_zecter_cast",item_rider_driver.class,0,"_mask","perfect_ketaros"
-			,new PotionEffect(MobEffects.RESISTANCE, 5, 1,true,false),new PotionEffect(MobEffects.SLOWNESS, 5, 0,true,false));
-
-	public static Item perfect_ketaros_zecter = new Item_zecter(perfect_ketaros_zecter_cast,"perfect_ketaros_zecter",item_rider_driver.class,0,"","perfect_ketaros"
-			,new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false),new PotionEffect(MobEffects.SPEED, 5, 3,true,false),
-			new PotionEffect(MobEffects.HASTE, 5, 3,true,false)).setCreativeTab(Tabs.tabkabuto);
-
-	public static Item perfect_lady_zecter = new Item_form_change("perfect_lady_zecter",item_rider_driver.class,0,"","perfect_lady"
-			,new PotionEffect(MobEffects.STRENGTH, 5, 1,true,false),new PotionEffect(MobEffects.SPEED, 5, 3,true,false),
-			new PotionEffect(MobEffects.HASTE, 5, 3,true,false)).setCreativeTab(Tabs.tabkabuto);
-
+	
 	
 
 	public static Item kabutohead = new item_rider_armor("kabutohead",item_rider_driver.class,ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
@@ -1236,22 +1182,6 @@ public static Item oni_ore = new Item_ore("oni_ore").setCreativeTab(Tabs.tabhibi
 
 	public static Item lady_rider_belt = new item_rider_driver("lady_rider_belt",ArmorMaterial.DIAMOND, 4,"lady", (Item_form_change) lady_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
-	public static Item perfect_kabuto_rider_belt = new item_rider_driver("perfect_kabuto_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_kabuto", (Item_form_change) perfect_kabuto_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
-	public static Item perfect_gatack_rider_belt = new item_rider_driver("perfect_gatack_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_gatack", (Item_form_change) perfect_gatack_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
-	public static Item perfect_thebee_rider_belt = new item_rider_driver("perfect_thebee_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_thebee", (Item_form_change) perfect_thebee_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
-	public static Item perfect_drake_rider_belt = new item_rider_driver("perfect_drake_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_drake", (Item_form_change) perfect_drake_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
-	public static Item perfect_sasword_rider_belt = new item_rider_driver("perfect_sasword_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_sasword", (Item_form_change) perfect_sasword_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
-	public static Item perfect_kickhopper_rider_belt = new item_rider_driver("perfect_kickhopper_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_kickhopper", (Item_form_change) perfect_kickhopper_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
-	public static Item perfect_puchhopper_rider_belt = new item_rider_driver("perfect_puchhopper_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_puchhopper", (Item_form_change) perfect_punchhopper_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
-	public static Item perfect_dark_kabuto_rider_belt = new item_rider_driver("perfect_dark_kabuto_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_dark_kabuto", (Item_form_change) perfect_dark_kabuto_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
-
-	public static Item perfect_caucasus_rider_belt = new item_rider_driver("perfect_caucasus_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_caucasus", (Item_form_change) perfect_caucasus_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
-
-	public static Item perfect_hercus_rider_belt = new item_rider_driver("perfect_hercus_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_hercus", (Item_form_change) perfect_hercus_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
-
-	public static Item perfect_ketaros_rider_belt = new item_rider_driver("perfect_ketaros_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_ketaros", (Item_form_change) perfect_ketaros_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
-
-	public static Item perfect_lady_rider_belt = new item_rider_driver("perfect_lady_rider_belt",ArmorMaterial.DIAMOND, 4,"perfect_lady", (Item_form_change) perfect_lady_zecter, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 
 	public static Item zectrooper_belt = new item_rider_driver("zectrooper_belt",ArmorMaterial.DIAMOND, 4,"zectrooper", (Item_form_change) faiz_mission_memory, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);
 	public static Item shadow_trooper_belt = new item_rider_driver("shadow_trooper_belt",ArmorMaterial.DIAMOND, 4,"shadow_trooper", (Item_form_change) faiz_mission_memory, kabutohead, kabutotroso, kabutolegs, RiderItems.mini_zecter).setMaxStackSize(1).setCreativeTab(Tabs.tabkabuto);

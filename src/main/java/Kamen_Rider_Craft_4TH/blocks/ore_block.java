@@ -90,9 +90,9 @@ public class ore_block extends Block implements IHasModel {
 			if (rand < 50) return RiderItems.drake_zecter;
 			if (rand < 60) return RiderItems.sasword_zecter;
 			if (rand < 62) return RiderItems.hyper_zecter;
-			if (rand < 63) return RiderItems.perfect_thebee_zecter;
-			if (rand < 64) return RiderItems.perfect_sasword_zecter;
-			if (rand < 65) return RiderItems.perfect_drake_zecter;
+			if (rand < 63) return PqRiderItems.perfect_thebee_zecter;
+			if (rand < 64) return PqRiderItems.perfect_sasword_zecter;
+			if (rand < 65) return PqRiderItems.perfect_drake_zecter;
 			return CRYSTAL;
 		}
 		

@@ -4,6 +4,7 @@ package Kamen_Rider_Craft_4TH.mobs.Henchmen;
 import java.util.Calendar;
 import java.util.UUID;
 
+import Kamen_Rider_Craft_4TH.PqRiderItems;
 import Kamen_Rider_Craft_4TH.RiderItems;
 import Kamen_Rider_Craft_4TH.mobs.Boss.EntityBossBase;
 import Kamen_Rider_Craft_4TH.mobs.Boss.Entity_Caucasus;
@@ -117,13 +118,13 @@ public class Entity_neotrooper extends Entity_base_henchmen
 			switch (this.rand.nextInt(10))
 			{
 			case 1:
-				this.dropItem(RiderItems.perfect_thebee_zecter, 1);
+				this.dropItem(PqRiderItems.perfect_thebee_zecter, 1);
 				break;
 			case 2:
-				this.dropItem(RiderItems.perfect_drake_zecter, 1);
+				this.dropItem(PqRiderItems.perfect_drake_zecter, 1);
 				break;
 			case 3:
-				this.dropItem(RiderItems.perfect_sasword_zecter, 1);
+				this.dropItem(PqRiderItems.perfect_sasword_zecter, 1);
 				break;
 			}
 		}
