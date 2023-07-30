@@ -60,21 +60,21 @@ public class item_Gaimdriver extends item_rider_driver
 			"faiz_arms","blade_arms","hibiki_arms","kabuto_arms","den_o_arms",
 			"kiva_arms","gaim_arms","kabi_orange_arms","maja_arms","jimbar_dragon_arms",
 			"jimbar_melon_arms_zangetsu","jimbar_melon_arms_barvo","natsumikan_arms","black_baron_arms", "zangetsu_kachidoki_arms",
-			"lychee_arms","king_durian_arms","hells_arms","","",
-			"","","","","",
-			"","","","","",
-			"","","","","",
-			"","","","","",
-			"","","","","",
-			"","","","","",
-			"","","","","",
-			"","","","","",
-			"","","","","",
-			"","","","","",
-			"","ryugen_kachidoki_arms","ryugen_kiwami_arms","","",
+			"lychee_arms","king_durian_arms","hells_arms","haljo_heguri_arms","diyu_heguri_arms",
+			"lucifer_heguri_arms","silver_lucifer_heguri_arms","golden_lucifer_heguri_arms","proto_nokuni_heguri_arms","enma_heguri_arms",
+			"black_lucifer_heguri_arms","nether_heguri_arms","abyss_heguri_arms","naraka_heguri_arms","helreginn_heguri_arms",
+			"apollyon_heguri_arms","taishan_heguri_arms","orcus_heguri_arms","inferno_heguri_arms","nokuni_heguri_arms",
+			"tartarus_heguri_arms","daimaoh_heguri_arms","zetsubo_heguri_arms","taizai_heguri_arms","yomi_heguri_arms",
+			"sin_heguri_arms","hades_heguri_arms","jigoku_heguri_arms","submondo_heguri_arms","cherry_arms",
+			"dragonfruit_arms","marron_arms","peach_arms","energy_kurumi_arms","energy_donguri_arms",
+			"energy_pine_arms","energy_ichigo_arms","energy_orange_arms","energy_banana_arms","energy_budou_arms",
+			"energy_suika_arms","energy_mango_arms","energy_durian_arms","energy_kiwi_arms","energy_blood_orange_arms",
+			"energy_fifteen_arms","energy_golden_ringo_arms","energy_silver_ringo_arms","energy_black_ringo_arms","energy_watermelon_arms",
+			"energy_forbidden_ringo_arms","energy_zakuro_arms","energy_maja_arms","energy_lychee_arms","energy_king_durian_arms",
+			"energy_helheim_arms","ryugen_kachidoki_arms","ryugen_kiwami_arms","","",
 			"","","","","",};
 
-	public static final String[] CoreName= new String[] {"gaim","gaim_jimbar","gaim_kachidoki","gaim_kiwami","gaim_yami", "gaim_fresh","gaim_drive"};
+	public static final String[] CoreName= new String[] {"","_jimbar","_kachidoki","_kiwami","_yami", "_fresh","_drive","_yomi","_watermelon","_lychee","_king","_hex"};
 
 
 
@@ -135,18 +135,18 @@ public class item_Gaimdriver extends item_rider_driver
 						RiderItems.sengoku_driver_faiz,RiderItems.sengoku_driver_blade,RiderItems.sengoku_driver_hibiki,RiderItems.sengoku_driver_kaubuto,RiderItems.sengoku_driver_den_o,
 						RiderItems.sengoku_driver_kiva,RiderItems.sengoku_driver_gaim_lock,RiderItems.sengoku_driver_kabi_orange,RiderItems.sengoku_driver_maja_lock,RiderItems.sengoku_driver_jinba_dragon,
 						RiderItems.sengoku_driver_jinba_melon_melon,RiderItems.sengoku_driver_jinba_melon_durian,RiderItems.sengoku_driver_natsumikan,RiderItems.sengoku_driver_black_baron,RiderItems.sengoku_driver_zangetsu_kachidoki,
-						RiderItems.sengoku_driver_lychee,RiderItems.sengoku_driver_king_durian,RiderItems.sengoku_driver_hells,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
-						ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
-						ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
-						ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
-						ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
-						ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
-						ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
-						ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
-						ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
-						ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
-						ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
-						ShowaRiderItems.blanknoitem,GaimItems.sengoku_driver_ryugen_kachidoki,GaimItems.sengoku_driver_ryugen_kiwami,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
+						RiderItems.sengoku_driver_lychee,RiderItems.sengoku_driver_king_durian,RiderItems.sengoku_driver_hells,GaimItems.sengoku_driver_haljo_heguri,GaimItems.sengoku_driver_diyu_heguri,
+						GaimItems.sengoku_driver_lucifer_heguri,GaimItems.sengoku_driver_silver_lucifer_heguri,GaimItems.sengoku_driver_golden_lucifer_heguri,GaimItems.sengoku_driver_golden_lucifer_heguri,GaimItems.sengoku_driver_enma_heguri,
+						GaimItems.sengoku_driver_black_lucifer_heguri,GaimItems.sengoku_driver_nether_heguri,GaimItems.sengoku_driver_abyss_heguri,GaimItems.sengoku_driver_naraka_heguri,GaimItems.sengoku_driver_helreginn_heguri,
+						GaimItems.sengoku_driver_apollyon_heguri,GaimItems.sengoku_driver_taishan_heguri,GaimItems.sengoku_driver_orcus_heguri,GaimItems.sengoku_driver_inferno_heguri,GaimItems.sengoku_driver_nokuni_heguri,
+						GaimItems.sengoku_driver_tartarus_heguri,GaimItems.sengoku_driver_daimaoh_heguri,GaimItems.sengoku_driver_zetsubo_heguri,GaimItems.sengoku_driver_taizai_heguri,GaimItems.sengoku_driver_yomi_heguri,
+						GaimItems.sengoku_driver_sin_heguri,GaimItems.sengoku_driver_hades_heguri,GaimItems.sengoku_driver_jigoku_heguri,GaimItems.sengoku_driver_submondo_heguri,GaimItems.sengoku_driver_cherry,
+						GaimItems.sengoku_driver_dragonfruit,GaimItems.sengoku_driver_marron,GaimItems.sengoku_driver_peach,GaimItems.sengoku_driver_kurumi_energy,GaimItems.sengoku_driver_donguri_energy,
+						GaimItems.sengoku_driver_pine_energy,GaimItems.sengoku_driver_ichigo_energy,GaimItems.sengoku_driver_orange_energy,GaimItems.sengoku_driver_banana_energy,GaimItems.sengoku_driver_budou_energy,
+						GaimItems.sengoku_driver_suika_energy,GaimItems.sengoku_driver_mango_energy,GaimItems.sengoku_driver_durian_energy,GaimItems.sengoku_driver_kiwi_energy,GaimItems.sengoku_driver_blood_orange_energy,
+						GaimItems.sengoku_driver_fifteen_lock_energy,GaimItems.sengoku_driver_golden_ringo_energy,GaimItems.sengoku_driver_silver_ringo_energy,GaimItems.sengoku_driver_black_ringo_energy,GaimItems.sengoku_driver_watermelon_energy,
+						GaimItems.sengoku_driver_forbidden_ringo_energy,GaimItems.sengoku_driver_zakuro_energy,GaimItems.sengoku_driver_maja_lock_energy,GaimItems.sengoku_driver_lychee_energy,GaimItems.sengoku_driver_king_durian_energy,
+						GaimItems.sengoku_driver_hells_energy,GaimItems.sengoku_driver_ryugen_kachidoki,GaimItems.sengoku_driver_ryugen_kiwami,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,
 						ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem,ShowaRiderItems.blanknoitem};
 
 				if (stack.hasTagCompound()){
@@ -475,65 +475,11 @@ public class item_Gaimdriver extends item_rider_driver
 					item_rider_driver belt =((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem());
 					String rider = ((item_rider_driver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 
-					if (num==2||num==5||num==3||num==6||num==8||num==12){
-
-
-						if (belt.Rider == "ryugen"){
-							
-							if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="ryugen_kiwami_arms"){
-
-								return Refercence.MODID+":textures/armor/"+ "ryugen_kiwami" +".png";
-							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="ryugen_kachidoki_arms"){
-
-								return Refercence.MODID+":textures/armor/"+ "ryugen_kachidoki" +".png";
-							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="yomotsu_heguri_arms"){
-							
-								return Refercence.MODID+":textures/armor/"+ "ryugen_yomi" +".png";
-							}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="jimbar_dragon_arms"){
-
-								return Refercence.MODID+":textures/armor/"+ "ryugen_jimber" +".png";
-							}else
-								return Refercence.MODID+":textures/armor/"+ "ryugen" +".png";
-							}else if (belt.Rider == "barvo"){
-
-								if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="jimbar_melon_arms_barvo"){
-
-									return Refercence.MODID+":textures/armor/"+ "barvo_jimber" +".png";
-								}else if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="king_durian_arms"){
-									return Refercence.MODID+":textures/armor/"+ "barvo_king" +".png";
-								}else
-									return Refercence.MODID+":textures/armor/"+ "barvo" +".png";
-							}else if (belt.Rider == "zangetsu"){
-
-								if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="zangetsu_kachidoki_arms"){
-
-									return Refercence.MODID+":textures/armor/"+ "zangetsu_kachidoki" +".png";
-								}else	if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="watermelon_arms"){
-
-									return Refercence.MODID+":textures/armor/"+ "zangetsu_watermelon" +".png";
-								}else
-									return Refercence.MODID+":textures/armor/"+ "zangetsu" +".png";
-							}else if (belt.Rider == "duke"){
-
-								if (item_Gaimdriver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="energy_dragon_fruits_arms"){
-
-									return Refercence.MODID+":textures/armor/"+ "duke_hex" +".png";
-								}else
-									return Refercence.MODID+":textures/armor/"+ "duke" +".png";
-								
-							}
-						
-						if (belt.Rider == "gaim"){
-							return Refercence.MODID+":textures/armor/"+ CoreName[item_Gaimdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"1")] +".png";
-						
-						}else{
-							
-								return Refercence.MODID+":textures/armor/"+ belt.Rider +".png";
-
-						}
-						
-
-					}else if (num==1||num==13||num==11||num==10){
+					if (num==2||num==5||num==3||num==6||num==8||num==12)
+					{
+						return Refercence.MODID+":textures/armor/"+ belt.Rider+ CoreName[item_Gaimdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),"1")] +".png";
+					}
+					else if (num==1||num==13||num==11||num==10){
 
 
 						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()== RiderItems.sengoku_driver_kurokage_troopers&get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="matsubokkuri_arms")
