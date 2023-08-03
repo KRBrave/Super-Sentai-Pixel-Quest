@@ -678,6 +678,90 @@ public class Itemo_scanner extends Item  implements IHasModel
 									}
 								}
 							}
+					// super Seishirogin
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==27){
+								player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 25,2,true,false));
+							}
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==33){
+								player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));											
+							}
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "3")==31){
+								player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 25,2,true,false));
+								if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==33){
+									if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==27){
+										player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 25,4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false));	
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 25,6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 25,1,true,false));
+									}
+								}
+							}
+					// Super Mukachiri
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==28){
+								player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 25,2,true,false));
+							}
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==34){
+								player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 25,4,true,false));										
+							}
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "3")==32){
+								player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 25,2,true,false));	
+								if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==34){
+									if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==28){
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 25,4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 25,6,true,false));	
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 25,4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 25,1,true,false));
+									}
+								}
+							}
+					// Super Bikaso
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==29){
+								player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 25,0,true,false));
+							}
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==24){
+								player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 2,true,false));										
+							}
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "3")==33){
+								player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 25,2,true,false));
+								if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==34){
+									if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==29){
+										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 25,0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false));		
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 25,4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 25,4,true,false));
+									}
+								}
+							}
+					// Super Yadokari							
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==38){
+							player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5, 4,true,false));	
+						}
+							
+					// Super Kangaroo
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==37){
+								player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 25,2,true,false));
+							}
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "3")==35){
+								player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 25,2,true,false));
+							}
+					// Super Love
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==30){
+								player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 25,2,true,false));
+							}
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==39){
+								player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 25,2,true,false));													
+							}
+							if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "3")==37){
+								player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 25,2,true,false));
+								if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "2")==39){
+									if (item_OOOdriver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET), "1")==30){
+										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 25,4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 25,4,true,false));	
+										player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 25,4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 25,0,true,false));
+									}
+								}
+							}
 							}
 						}
 					}

@@ -2,6 +2,8 @@ package Kamen_Rider_Craft_4TH;
 
 import Kamen_Rider_Craft_4TH.item.Item_ore;
 import Kamen_Rider_Craft_4TH.item.kabuto.Item_zecter;
+import Kamen_Rider_Craft_4TH.item.ooo.Item_purple_medals;
+import Kamen_Rider_Craft_4TH.item.ooo.Item_super_medals;
 import Kamen_Rider_Craft_4TH.item.ooo.Itemmedal;
 import Kamen_Rider_Craft_4TH.item.rider_armor_base.Item_form_change;
 import Kamen_Rider_Craft_4TH.item.rider_armor_base.item_rider_driver;
@@ -360,7 +362,7 @@ public class PqRiderItems {
 	public static Item super_hachi = new Itemmedal(34, "2","super_hachi").setCreativeTab(Tabs.tabOOO);
 	public static Item super_kani_new = new Itemmedal(35, "2","super_kani_new").setCreativeTab(Tabs.tabOOO);
 	public static Item super_panda = new Itemmedal(36, "2","super_panda").setCreativeTab(Tabs.tabOOO);
-	public static Item super_kangaroo = new Itemmedal(37, "2","super_kangaroo").Shift_form(78, "3").setCreativeTab(Tabs.tabOOO);
+	public static Item super_kangaroo = new Itemmedal(37, "2","super_kangaroo").Shift_form(35, "3").setCreativeTab(Tabs.tabOOO);
 	public static Item super_yadokari = new Itemmedal(38, "2","super_yadokari").setCreativeTab(Tabs.tabOOO);
 	
 	public static Item super_tyranno = new Itemmedal(22, "3","super_tyranno").setCreativeTab(Tabs.tabOOO);
@@ -428,6 +430,8 @@ public class PqRiderItems {
 	public static Item super_love_OOOdriver = new Item_ore("super_love_ooodriver");
 	public static Item super_love2_OOOdriver = new Item_ore("super_love2_ooodriver");
 	public static Item super_love3_OOOdriver = new Item_ore("super_love3_ooodriver");
+	
+	public static Item blank_super_medal1 = new Item_super_medals("blank_super_medal1").setCreativeTab(Tabs.tabOOO);
 	
 	public static void init() {
 	}
