@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "super_medal",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft4th:kujira"
+    }, 
+    {
+      "item": "kamenridercraft4th:hachi"
+    } , 
+    {
+      "item": "kamenridercraft4th:shirokuma"
+    } , 
+    {
+      "item": "kamenridercraft4th:gazelle"
+    } , 
+    {
+      "item": "kamenridercraft4th:kani_new"
+    } , 
+    {
+      "item": "kamenridercraft4th:love_core2"
+    } , 
+    {
+      "item": "kamenridercraft4th:yadokari"
+    } 
+    ],
+  "result": {
+    "item": "kamenridercraft4th:blank_future_super_medal2"
+  }
+}

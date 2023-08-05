@@ -122,7 +122,7 @@ if (!this.world.isRemote){
    		switch (this.rand.nextInt(5))
 		{
 		case 0:
-			this.dropItem(GaimItems.helheim_energy_lockseed, 1);
+			this.dropItem(GaimItems.hell_energy_lockseed, 1);
 			break;
 		}
    		switch (this.rand.nextInt(5))

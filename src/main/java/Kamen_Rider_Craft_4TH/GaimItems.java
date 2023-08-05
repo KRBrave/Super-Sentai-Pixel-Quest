@@ -208,7 +208,7 @@ public class GaimItems {
     public static Item sengoku_driver_king_durian_energy  = new Item_ore("sengoku_driver_king_durian_energy");
     public static Item king_durian_energy_lockseed  = new Item_lockseed(4,120,"king_durian_energy_lockseed").setCreativeTab(Tabs.tabGaim);
     public static Item sengoku_driver_hells_energy  = new Item_ore("sengoku_driver_hells_energy");
-    public static Item helheim_energy_lockseed  = new Item_lockseed(4,121,"helheim_energy_lockseed").setCreativeTab(Tabs.tabGaim);
+    public static Item hell_energy_lockseed  = new Item_lockseed(4,121,"hell_energy_lockseed").setCreativeTab(Tabs.tabGaim);
     
     public static Item genesis_driver_gaim_shin = new item_Gaimdriver("genesis_driver_gaim_shin",ArmorMaterial.DIAMOND, 4, 3,"gaim_shin","energy_orange_arms",0,sengoku_driver_orange_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);
     public static Item genesis_driver_ryugen_shin = new item_Gaimdriver("genesis_driver_ryugen_shin",ArmorMaterial.DIAMOND, 4, 3,"ryugen_shin","energy_budou_arms",0,sengoku_driver_budou_energy).setMaxStackSize(1).setCreativeTab(Tabs.tabGaim);

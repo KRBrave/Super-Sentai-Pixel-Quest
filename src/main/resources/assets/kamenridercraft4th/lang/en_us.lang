@@ -804,7 +804,15 @@ item.birth_core_eyes.name=Glowing Eyes Birth Medal
 
 item.purple_medals_sealed.name=Sealed Purple Medals
 item.purple_medals_opened.name=Opened Purple Medals
-item.purple_medals_empty.name=Empty Purple Medal Holder 
+item.purple_medals_empty.name=Empty Purple Medal Holder
+
+item.blank_super_medal1.name=Unidentified Super Medal
+item.blank_super_medal2.name=Unidentified Super Medal
+item.blank_super_medal3.name=Unidentified Super Medal
+
+item.blank_future_super_medal1.name=Unidentified Super Medal
+item.blank_future_super_medal2.name=Unidentified Super Medal
+item.blank_future_super_medal3.name=Unidentified Super Medal
 
 item.cell_alloy_ingot.name=Cell Alloy Ingot
 item.ride_vendor.name=Ride Vendor

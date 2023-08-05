@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "super_medal",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft4th:same"
+    }, 
+    {
+      "item": "kamenridercraft4th:mukade"
+    } , 
+    {
+      "item": "kamenridercraft4th:seiuchi"
+    } , 
+    {
+      "item": "kamenridercraft4th:shika"
+    } , 
+    {
+      "item": "kamenridercraft4th:ebi_new"
+    } , 
+    {
+      "item": "kamenridercraft4th:love_core"
+    } 
+    ],
+  "result": {
+    "item": "kamenridercraft4th:blank_future_super_medal1"
+  }
+}

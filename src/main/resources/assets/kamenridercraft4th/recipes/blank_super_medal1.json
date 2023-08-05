@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "super_medal",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft4th:taka"
+    }, 
+    {
+      "item": "kamenridercraft4th:kuwagata"
+    } , 
+    {
+      "item": "kamenridercraft4th:lion"
+    } , 
+    {
+      "item": "kamenridercraft4th:sai"
+    } , 
+    {
+      "item": "kamenridercraft4th:shachi"
+    } , 
+    {
+      "item": "kamenridercraft4th:ptera"
+    } , 
+    {
+      "item": "kamenridercraft4th:cobra"
+    }  
+    ],
+  "result": {
+    "item": "kamenridercraft4th:blank_super_medal1"
+  }
+}

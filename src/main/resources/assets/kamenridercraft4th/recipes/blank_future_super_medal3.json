@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "super_medal",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft4th:ookamiuo"
+    }, 
+    {
+      "item": "kamenridercraft4th:ari"
+    } , 
+    {
+      "item": "kamenridercraft4th:sasori_new"
+    } , 
+    {
+      "item": "kamenridercraft4th:ushi"
+    } , 
+    {
+      "item": "kamenridercraft4th:penguin"
+    } , 
+    {
+      "item": "kamenridercraft4th:love_core3"
+    } 
+    ],
+  "result": {
+    "item": "kamenridercraft4th:blank_super_medal3"
+  }
+}
