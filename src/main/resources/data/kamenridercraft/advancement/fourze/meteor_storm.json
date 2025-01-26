@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:meteor_storm_switch"
+	},
+	"title": "Evolvin' Storm",
+	"description": "Transform into Meteor Storm",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:fourze/meteor",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:fourze_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:fourze_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:fourze_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:meteor_driver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:meteor_storm_switch\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

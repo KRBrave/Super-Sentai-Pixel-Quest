@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:decade_ridewatch"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:zi_o/decade_complete_ridewatch",
+	  "kamenridercraft:zi_o/ride_heisaber"
+	]
+  },
+  "sends_telemetry_event": false
+}

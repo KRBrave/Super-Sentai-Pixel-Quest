@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:mach_driver_honoh_chaser"
+	},
+	"title": "For individuality of all beings",
+	"description": "Transform into Kamen Rider Chaser",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:drive/mach",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:drive_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:drive_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:drive_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:mach_driver_honoh_chaser"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

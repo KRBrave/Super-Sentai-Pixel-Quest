@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:rampage_gatling_progrisekey"
+	},
+	"title": "Gathering Round!",
+	"description": "Transform into RampageVulcan",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:zero_one/assault_wolf",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:zero_onehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:zero_onetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:zero_onelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:shotriser_vulcan"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:rampage_gatling_progrisekey\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

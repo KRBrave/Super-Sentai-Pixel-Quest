@@ -1,0 +1,114 @@
+package com.kelco.kamenridercraft.item.revice;
+
+import com.google.common.collect.Lists;
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
+import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.Revice_Rider_Items;
+import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
+import net.neoforged.neoforge.registries.DeferredItem;
+
+public class DemonsDriverItem extends RiderDriverItem {
+
+
+	public DemonsDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Item.Properties properties)
+	{
+		super(material, rider, baseFormItem, head, torso, legs, properties);
+ 
+		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get());
+		Num_Base_Form_Item=5;
+	}
+
+	@Override
+	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
+	{
+		boolean fly = rider instanceof Player player && player.getAbilities().flying;
+		switch (equipmentSlot) {
+			case EquipmentSlot.FEET:
+				String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
+				if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
+					belt = get_Form_Item(itemstack,1).getBeltTex();
+				}
+				return "belts/"+belt;
+			case EquipmentSlot.CHEST:
+				return get_Form_Item(itemstack,1).getFormName(fly)+"_genomix_1";
+			case EquipmentSlot.LEGS:
+				return "_genomix_2";
+			default:
+				return riderName+ get_Form_Item(itemstack,1).getFormName(fly);
+		}	
+
+	}
+
+	public ResourceLocation getModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+		int num = 1;
+		if (slot == EquipmentSlot.CHEST||slot == EquipmentSlot.LEGS) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/default_wings_armor.geo.json");
+		
+		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying == true){
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel());
+		}
+		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model());
+
+	}
+
+	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
+
+		switch (currentSlot) {
+			case HEAD ->{
+				if (part =="head") return true;
+				if (part =="body") return true;
+				if (part =="rightArm") return true;
+				if (part =="leftArm") return true;
+				if (part =="rightLeg") return true;
+				if (part =="leftLeg") return true;
+			}
+			case CHEST -> {
+				if (part =="body") return get_Form_Item(itemstack, 4)== Revice_Rider_Items.SCORPION_VISTAMP.get();
+
+				if (get_Form_Item(itemstack, 1)== Revice_Rider_Items.GIANT_SPIDER_VISTAMP.get()){
+					if (part == "rightArm") return get_Form_Item(itemstack, 2) == Revice_Rider_Items.KOMODO_DRAGON_VISTAMP_DEMONS.get();
+					if (part == "leftArm") return get_Form_Item(itemstack, 3) == Revice_Rider_Items.CROCODILE_VISTAMP_DEMONS.get();
+
+				}else {
+					if (part == "rightArm") return get_Form_Item(itemstack, 2) == Revice_Rider_Items.ANOMALOCARIS_VISTAMP.get();
+					if (part == "leftArm") return get_Form_Item(itemstack, 2) == Revice_Rider_Items.ANOMALOCARIS_VISTAMP.get();
+				}
+				if (part =="rightLeg") return get_Form_Item(itemstack, 5)== Revice_Rider_Items.BATTA_VISTAMP.get();
+				if (part =="leftLeg") return get_Form_Item(itemstack, 5)== Revice_Rider_Items.BATTA_VISTAMP.get();
+			}
+			case LEGS -> {
+				if (part =="body") return get_Form_Item(itemstack, 3)== Revice_Rider_Items.CONDOR_VISTAMP_DEMONS.get();
+
+				if (part =="rightArm") return get_Form_Item(itemstack, 2)== Revice_Rider_Items.MOGURA_VISTAMP.get();
+
+
+			}
+			default -> {}
+		}
+		return false;
+	}
+
+	@Override
+    public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
+    {
+		if (((RiderFormChangeItem) ITEM).getSlot()==1&Modded_item_core.BLANK_FORM.get()!=ITEM) {
+			for (int n = 2; n < 6; n++) {
+				tag.putString("slot_tex" + n, (Modded_item_core.BLANK_FORM.get()).toString());
+				tag.putInt("slot" + n, Item.getId(Modded_item_core.BLANK_FORM.get()));
+			}
+			CustomData.set(DataComponents.CUSTOM_DATA, belt, tag);
+		}
+	}
+}

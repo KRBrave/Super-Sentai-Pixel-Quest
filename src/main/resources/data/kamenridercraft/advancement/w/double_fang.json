@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:fang_memory"
+	},
+	"title": "Wild Skilled Warrior",
+	"description": "Transform into one of Double's Fang forms",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:w/double_trigger",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:whead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:wtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:wlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:wdriver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:fang_memory\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

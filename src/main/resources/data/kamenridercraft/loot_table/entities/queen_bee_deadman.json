@@ -1,0 +1,59 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:proto_queen_bee_vistamp",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:proto_vistamp",
+            "weight": 4
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:rex_vistamp_christmas",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:koala_vistamp",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:raflessia_vistamp",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:proto_vistamp",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

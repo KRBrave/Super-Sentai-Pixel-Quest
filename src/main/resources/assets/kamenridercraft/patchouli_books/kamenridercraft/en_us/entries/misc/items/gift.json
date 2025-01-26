@@ -1,0 +1,19 @@
+{
+	"name": "Gift",
+	"icon": "kamenridercraft:gift",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Gives random Christmas items when opened"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gift",
+			"title": " ",
+			"text": "Obtained every 4.3 minutes with the Merry Christmas effect"
+		}
+	]
+}

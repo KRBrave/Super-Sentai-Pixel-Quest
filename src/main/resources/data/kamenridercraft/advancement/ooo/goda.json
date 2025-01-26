@@ -1,0 +1,24 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:goda_boss_block"
+	},
+	"title": "Core Medals of Strongest Power",
+	"description": "Defeat Kamen Rider Goda",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ooo/ancient_ooo",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:player_killed_entity",
+	  "conditions": {
+		"entity": {
+		  "type": "kamenridercraft:goda"
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:g4_belt"
+	},
+	"title": "Rocket Man",
+	"description": "Transform into Kamen Rider G4",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:agito/g3_mild",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:agitohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:agitotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:agitolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:g4_belt"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

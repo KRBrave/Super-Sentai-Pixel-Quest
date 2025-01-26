@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:neo_amazons_driver_neo_alpha"
+	},
+	"title": "Chainsaw Ma(zo)n",
+	"description": "Transform into Kamen Rider Amazon Neo Alpha",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:extras/amazon_new_omega",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:amazonshead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:amazonstroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:amazonslegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:neo_amazons_driver_neo_alpha"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

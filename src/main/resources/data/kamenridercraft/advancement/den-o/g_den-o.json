@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:rider_ticket_g"
+	},
+	"title": "For complete control of all time",
+	"description": "Transform into Kamen Rider G Den-O",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:den-o/yuuki",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:den_ohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:den_otroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:den_olegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:g_den_o_belt"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

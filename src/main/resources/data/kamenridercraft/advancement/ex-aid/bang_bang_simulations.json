@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:bang_bang_simulation_gashat"
+	},
+	"title": "Remember, No Bugsters.",
+	"description": "Transform into Snipe Simulation Gamer Level 50",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ex-aid/snipe",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ex_aidhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ex_aidtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ex_aidlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:gamer_driver_snipe"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:bang_bang_simulation_gashat\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

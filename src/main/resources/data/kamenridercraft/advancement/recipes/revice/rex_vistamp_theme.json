@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:rex_vistamp_theme"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:revice/vice_belt",
+	  "kamenridercraft:zi_o/vice_ridewatch"
+	]
+  },
+  "sends_telemetry_event": false
+}

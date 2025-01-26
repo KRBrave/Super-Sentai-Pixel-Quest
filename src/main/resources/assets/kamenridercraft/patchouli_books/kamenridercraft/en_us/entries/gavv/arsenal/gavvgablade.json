@@ -1,0 +1,16 @@
+{
+	"name": "Gavvgablade",
+	"icon": "kamenridercraft:gavvgablade",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by Gavv's $(l:gavv/riders/gavv#poppingummy)base$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/gavvgablade"
+		}
+	]
+}

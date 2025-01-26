@@ -1,0 +1,12 @@
+{
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:impossible"
+	}
+  },
+  "rewards": {
+    "loot": [
+      "kamenridercraft:patchouli_guide"
+    ]
+  }
+}

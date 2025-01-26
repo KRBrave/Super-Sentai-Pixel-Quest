@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:g/main",
+    "name": "Kamen Rider G",
+    "description": "",
+    "icon": "kamenridercraft:ghead",
+    "sortnum": 0
+}

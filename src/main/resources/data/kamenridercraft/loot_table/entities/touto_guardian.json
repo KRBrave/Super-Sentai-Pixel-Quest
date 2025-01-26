@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:diamond_full_bottle"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:gorilla_full_bottle"
+		},
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:tank_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:rabbit_full_bottle"
+		  },
+		{
+		  "type": "minecraft:item",
+		  "weight": 5,
+		  "name": "kamenridercraft:nebula_gas_sample"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:full_bottle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

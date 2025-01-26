@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:specialshift"
+	},
+	"title": "Brand New Whip",
+	"description": "Transform into Drive type Special",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:drive/tridoron",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:drive_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:drive_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:drive_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:drivedriver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:specialshift\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

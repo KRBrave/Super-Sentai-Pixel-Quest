@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+  	  "id": "kamenridercraft:fantasy_raise_buckle"
+    },
+    "title": "Kurama Foundation Inheritance",
+    "description": "Transform into Na-Go Fantasy Form",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:geats/na-go",
+  "criteria": {
+    "requirement": {
+  	"trigger": "minecraft:inventory_changed",
+  	"conditions": {
+  	  "player": {
+  		"equipment": {
+  		  "head": {
+  			"items": [
+  			  "kamenridercraft:geatshead"
+  			]
+  		  },
+  		  "chest": {
+  			"items": [
+  			  "kamenridercraft:geatstroso"
+  			]
+  		  },
+  		  "legs": {
+  			"items": [
+  			  "kamenridercraft:geatslegs"
+  			]
+  		  },
+  		  "feet": {
+  			"items": [
+  			  "kamenridercraft:desire_driver_na_go"
+  			],
+  		  	"predicates": {
+                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:fantasy_raise_buckle\"}"
+              }
+  		  }
+  		}
+  	  }
+  	}
+    }
+  }
+}

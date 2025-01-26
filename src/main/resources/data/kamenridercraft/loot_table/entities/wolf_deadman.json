@@ -1,0 +1,74 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:wolf_vistamp",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:proto_vistamp",
+            "weight": 4
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:buffalo_vistamp",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:kuwagata_vistamp",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:rex_vistamp_theme",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:sabertiger_vistamp",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:cheetah_vistamp",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:giraffa_vistamp",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:proto_vistamp",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

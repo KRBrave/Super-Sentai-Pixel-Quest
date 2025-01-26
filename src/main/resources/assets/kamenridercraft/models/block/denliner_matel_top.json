@@ -1,0 +1,12 @@
+{
+   "parent": "block/orientable",
+    "textures": {
+      "particle": "kamenridercraft:block/denliner_matel",
+        "up": "kamenridercraft:block/denliner_matel_top1",
+        "down": "kamenridercraft:block/denliner_interior",
+        "west": "kamenridercraft:block/denliner_matel",
+        "north": "kamenridercraft:block/denliner_matel_side1",
+        "south": "kamenridercraft:block/denliner_matel_side2",
+        "east": "kamenridercraft:block/denliner_matel"
+    }
+}

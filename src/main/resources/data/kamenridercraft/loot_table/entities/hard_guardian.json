@@ -1,0 +1,78 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:black_lost_bat_full_bottle"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:black_lost_cd_full_bottle"
+		},
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_castle_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_fukurou_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_kuwagata_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_shimauma_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_hammer_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_spanner_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_hasami_full_bottle"
+		  },
+		{
+		  "type": "minecraft:item",
+		  "weight": 8,
+		  "name": "kamenridercraft:full_bottle"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:full_bottle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}
